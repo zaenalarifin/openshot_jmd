@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Old Dust</title>
+	<description translatable="True">Old Dust Description</description>
+	<icon>old_dust.png</icon>
+	<category>Video</category>
+	<service>dust</service>
+	
+	<param name="maxdiameter" type="spinner" title="Max Diameter" description="">
+		<min>0.0</min>
+		<max>20.0</max>
+		<default>10.0</default>
+	</param>
+	
+	<param name="maxcount" type="spinner" title="Max Count" description="">
+		<min>0.0</min>
+		<max>20.0</max>
+		<default>2.0</default>
+	</param>
+
+</effect>

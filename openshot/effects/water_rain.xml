@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Water</title>
+	<description translatable="True">Water Rain Description</description>
+	<icon>water_rain.png</icon>
+	<category>Video</category>
+	<service>frei0r.water</service>
+	
+	<param name="physics" type="spinner" title="Physics" description="">
+		<min>1.0</min>
+		<max>4.0</max>
+		<default>4.0</default>
+	</param>
+	
+	<param name="distort" type="dropdown" title="Distort" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>1.0</default>
+	</param>
+	
+	<param name="rain" type="dropdown" title="Rain" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>1.0</default>
+	</param>
+	
+	<param name="smooth" type="dropdown" title="Smooth" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>1.0</default>
+	</param>
+	
+	<param name="surfer" type="dropdown" title="Surfer" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>0.0</default>
+	</param>
+	
+	<param name="swirl" type="dropdown" title="Swirl" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>0.0</default>
+	</param>
+	
+	<param name="randomize_swirl" type="dropdown" title="Randomize Swirl" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>0.0</default>
+	</param>
+
+</effect>

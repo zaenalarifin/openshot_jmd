@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Burning TV</title>
+	<description translatable="True">Burning TV Description</description>
+	<icon>burningtv.png</icon>
+	<category>Video</category>
+	<service>burningtv</service>
+	
+	<param name="foreground" type="spinner" title="Foreground" description="">
+		<min>0.0</min>
+		<max>10.0</max>
+		<default>3.0</default>
+	</param>
+	
+	<param name="threshold" type="spinner" title="Threshold" description="">
+		<min>0.0</min>
+		<max>10.0</max>
+		<default>6.0</default>
+	</param>
+
+</effect>

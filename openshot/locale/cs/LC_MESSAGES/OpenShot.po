@@ -1,0 +1,2720 @@
+# Czech translation for openshot
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openshot package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openshot\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-02-23 01:08+0000\n"
+"PO-Revision-Date: 2010-02-26 23:27+0000\n"
+"Last-Translator: Sesivany <Unknown>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-02-28 04:55+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:42
+msgid "OpenShot Project (*.osp)"
+msgstr "OpenShot projekt (*.osp)"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:306
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1166
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1176
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1186
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1195
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3009
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3078
+#: /home/jonathan/openshot/openshot/classes/open_project.py:100
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:120
+msgid "Error!"
+msgstr "Chyba!"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+msgid ""
+"There was an error opening this project file.  Please be sure you open the "
+"correct *.osp file."
+msgstr "Při otevírání souboru nastala chyba. Určitě otevíráte *.osp soubor?"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:147
+#: /home/jonathan/openshot/openshot/windows/Titles.py:269
+#: /home/jonathan/openshot/openshot/windows/Titles.py:272
+#: /home/jonathan/openshot/openshot/windows/Titles.py:449
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3432
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3447
+#: /home/jonathan/openshot/openshot/windows/preferences.py:390
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+msgid "OpenShot Error"
+msgstr "OpenShot chyba"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:147
+msgid "The Title name cannot be blank, the title file has not been created."
+msgstr "Název souboru nesmí být prázdný, soubor nebyl vytvořen."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:195
+msgid "Please enter a name for the new Title file:"
+msgstr "Zadejte prosím nový název souboru:"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:198
+msgid "New Title"
+msgstr "Nový název"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:269
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3432
+#, python-format
+msgid "Please install %s to use this function."
+msgstr "Prosím nainstalujte %s pro použití této funkce."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:272
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3447
+#, python-format
+msgid "There was an error opening '%s', is it installed?"
+msgstr "Chyba při otevírání '%s', je to nainstalované?"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:449
+#: /home/jonathan/openshot/openshot/windows/preferences.py:390
+#, python-format
+msgid "Unexpected Error '%s' while writing to '%s'."
+msgstr "Neočekávaná chyba '%s' při zapisování do '%s'."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:77
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:449
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:574
+msgid "Video & Audio"
+msgstr "Video a audio"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:77
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:440
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:570
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:106
+#: /home/jonathan/openshot/openshot/classes/files.py:178
+msgid "Image Sequence"
+msgstr "Sekvence snímků"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:206
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "All Formats"
+msgstr "Všechny formáty"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:208
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_libvorbis.xml
+msgid "OGG (theora/vorbis)"
+msgstr "OGG (theora/vorbis)"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:252
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:262
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:286
+msgid "Low"
+msgstr "Nízký"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:252
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:262
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:288
+msgid "Med"
+msgstr "Střední"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:252
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:262
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:290
+msgid "High"
+msgstr "Vysoký"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:306
+#, python-format
+msgid ""
+"%s is not a valid OpenShot profile. Profile settings will not be applied."
+msgstr "%s není platný OpenShot profil. Jeho nastavení nebude použito."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:358
+msgid "Openshot Error"
+msgstr "Chyba Openshotu"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:358
+msgid "The following formats/codecs are missing from your system:"
+msgstr "Následující formáty/kodeky chybí ve vašem systému:"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:405
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:69
+msgid "Yes"
+msgstr "Ano"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:407
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:491
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:166
+msgid "No"
+msgstr "Ne"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:505
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:509
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:513
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:517
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:521
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:525
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:529
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:533
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:537
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:541
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:545
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:549
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:553
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid "Validation Error!"
+msgstr "Chyba při validaci!"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:505
+msgid "Please enter a valid File Name."
+msgstr "Zadejte prosím správné jméno souboru."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:509
+msgid "Please select a valid Project Type."
+msgstr "Prosím zvolte platný typ projektu."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:513
+msgid "Please select a valid Target."
+msgstr "Prosim vyberte platný cíl."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:517
+msgid "Please select a valid Profile."
+msgstr "Prosim vyberte platný profil."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:521
+msgid "Please select a valid Quality."
+msgstr "Prosim vyberte platnou kvalitu."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:525
+msgid "Please enter a valid Image Format."
+msgstr "Zadejte prosím správný formát obrázku."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:529
+msgid "Please enter a valid Video Format."
+msgstr "Zadejte prosím správný formát videa."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:533
+msgid "Please enter a valid Video Codec."
+msgstr "Zadejte prosím správný kodek videa."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:537
+msgid "Please enter a valid Bit Rate."
+msgstr "Zadejte prosím správný datový tok videa."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:541
+msgid "Please enter a valid Audio Codec."
+msgstr "Zadejte prosím správný audio kodek."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:545
+msgid "Please enter a valid Sample Rate."
+msgstr "Zadejte prosím správnou vzorkovací frekvenci."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:549
+msgid "Please enter a valid Audio Channels."
+msgstr "Zadejte prosím správný zvukový kanál."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:553
+msgid "Please enter a valid Audio Bit Rate."
+msgstr "Zadejte prosím správný datový tok audia."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:591
+msgid "Confirm Overwrite"
+msgstr "Potvďte přepsání"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:591
+#, python-format
+msgid ""
+"There is already a video file named %s.%s in the selected export folder. "
+"Would you like to overwrite it?"
+msgstr ""
+"Ve vybrané složce už existuje video s názvem %s.%s , chcete ji přepsat?"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:629
+msgid "Export Complete"
+msgstr "Exportování bylo dokončeno"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:630
+#, python-format
+msgid ""
+"The video has been successfully exported to\n"
+"%s"
+msgstr ""
+"Video bylo úspěšně exportováno\n"
+"%s"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:47
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:44
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:44
+msgid "Thumb"
+msgstr "Miniatura"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:48
+msgid "File"
+msgstr "Soubor"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:49
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:358
+msgid "Length"
+msgstr "Délka"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:50
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:138
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:153
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:132
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:203
+msgid "Label"
+msgstr "Popisek"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:59
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:596
+msgid "Choose a Video or Audio File to Begin"
+msgstr "Vyberte video nebo audio soubor"
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:45
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:45
+msgid "Name"
+msgstr "Název"
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:60
+msgid "Dissolve"
+msgstr "Rozpustit"
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+msgid "Please enter a valid project name."
+msgstr "Zadejte prosím správné jméno projektu."
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+msgid "Please enter a valid project type."
+msgstr "Zadejte prosím správný typ projekut."
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:182
+msgid "New project"
+msgstr "Nový projekt"
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:44
+msgid "Current"
+msgstr "Současný"
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:45
+msgid "Action"
+msgstr "Činnost"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:286
+msgid "Session started"
+msgstr "Sezení začalo"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:984
+msgid "Would you like to save this project?"
+msgstr "Chcete uložit tento projekt?"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1146
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1318
+msgid "This feature is still in development."
+msgstr "Tato funkce je ještě ve vývoji."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1166
+msgid ""
+"Unable to open the Help Contents. Please ensure the openshot-doc package is "
+"installed."
+msgstr ""
+"Nemohu otevřít nápovědu, ujistěte se, že máte nainstalován balík openshot-"
+"doc."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1176
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1186
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1195
+msgid "Unable to open the Launchpad web page."
+msgstr "Nemohu otevřít webovou stránku Launchpadu."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1378
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1417
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1497
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1519
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1552
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:854
+msgid "Video Preview"
+msgstr "Náhled videa"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1380
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1419
+#, python-format
+msgid "Video Preview (%sX)"
+msgstr "Náhled videa (%sX)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1527
+msgid "Video Preview (Paused)"
+msgstr "Náhled videa (pozastaveno)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1717
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2105
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2118
+#: /home/jonathan/openshot/openshot/classes/sequences.py:50
+#: /home/jonathan/openshot/openshot/classes/sequences.py:51
+#, python-format
+msgid "Track %s"
+msgstr "Stopa %s"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1863
+#, python-format
+msgid "%s seconds"
+msgstr "%s sekund"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2131
+msgid "Please enter a track name."
+msgstr "Prosím napište jméno stopy"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2148
+msgid "Removed track"
+msgstr "Odstraněná stopa"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2156
+msgid "Moved track up"
+msgstr "Přesunutá stopa nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2176
+msgid "Moved track down"
+msgstr "Přesunutá stopa dolů"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2245
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2201
+msgid "Convert to Mask"
+msgstr "Převést na masku"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2246
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2253
+msgid "Remove Transition"
+msgstr "Odstranit přechod"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2248
+msgid "Convert to Transition"
+msgstr "Převést na přechod"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2249
+msgid "Remove Mask"
+msgstr "Odstranit masku"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2302
+msgid "Changed transition type"
+msgstr "Změněný typ přechodu"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2325
+msgid "Removed transition"
+msgstr "Odstraněný přechod"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2345
+msgid "Please enter the # of seconds to shift the transitions:"
+msgstr "Prosím zadejte # sekund k posunu překladu"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2379
+msgid "Shifted transitions"
+msgstr "Posunuté přechody"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2829
+msgid "Edited title"
+msgstr "Upravený název"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2854
+msgid "Removed clip"
+msgstr "Odstraněný klip"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2874
+msgid "Please enter the # of seconds to shift the clips:"
+msgstr "Prosím zadejte # sekund k posunu klipu"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2908
+msgid "Shifted clips"
+msgstr "Posunuté klipy"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3009
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3078
+#, python-format
+msgid "You must select a clip which is more than %s seconds long."
+msgstr "Musíte vybrat klip, který je delší než %s sekund."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3048
+msgid "Sliced and shuffled clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3125
+msgid "Sliced and cut clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3164
+msgid "Preview File"
+msgstr "Náhled souboru"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3191
+msgid "Convert To Image Sequence"
+msgstr "Převést do sekvence snímků"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3197
+msgid "Thumbnail view"
+msgstr "Zobrazení miniatur"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3203
+msgid "Move File(s) to Folder"
+msgstr "Přesunout soubor(y) do složky"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3222
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3223
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3275
+msgid "Remove from Folder"
+msgstr "Odstranit ze složky"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3231
+msgid "Detail view"
+msgstr "Detailní pohled"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3240
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1547
+msgid "Edit Title (Simple)"
+msgstr "Upravit název (jednoduše)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3245
+msgid "Edit Title (Inkscape)"
+msgstr "Upravit název (Inkscape)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3251
+msgid "Remove File(s)"
+msgstr "Odstranit soubor(y)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3260
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:10
+msgid "File Properties"
+msgstr "Vlastnosti souboru"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:83
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:156
+msgid "Transition"
+msgstr "Přechod"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:77
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:132
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:150
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:181
+msgid "Mask"
+msgstr "Maska"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:115
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:185
+msgid "Up"
+msgstr "Nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:120
+msgid "Down"
+msgstr "Dolů"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:60
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:517
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:590
+msgid "Normal Speed"
+msgstr "Normální rychlost"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:659
+msgid "Forward"
+msgstr "Dopředu"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:653
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:789
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Reverse"
+msgstr "Pozpátku"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:492
+msgid "Start of Clip"
+msgstr "Začátek klipu"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+msgid "End of Clip"
+msgstr "Konec klipu"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:894
+msgid "Modified clip properties"
+msgstr "Upravené vlastnosti klipu"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:54
+#: /home/jonathan/openshot/openshot/windows/preferences.py:204
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:224
+msgid "General"
+msgstr "Všeobecné"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:58
+#: /home/jonathan/openshot/openshot/windows/preferences.py:208
+msgid "AV Formats"
+msgstr "AV Formáty"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:62
+#: /home/jonathan/openshot/openshot/windows/preferences.py:210
+msgid "Profiles"
+msgstr "Profily"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:93
+msgid "Video Codecs"
+msgstr "Video kodeky"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:97
+msgid "Audio Codecs"
+msgstr "Zvukové kodeky"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:101
+msgid "Formats"
+msgstr "Formáty"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:334
+msgid "OpenShot Warning"
+msgstr "OpenShot varování"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:334
+msgid "Invalid or empty preferences file found, loaded default values"
+msgstr "Neplatný nebo prázdný soubor s předvolbami, nahrány výchozí hodnoty"
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "Error"
+msgstr "Chyba"
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "There was an error importing the selected files"
+msgstr "Při importu vybraného souboru došlo k chybě"
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#, python-format
+msgid ""
+"Please enter a valid file name.  The file name must have a %d (or %04d) "
+"where the number section of the file name is supposed to be.  For example:  "
+"MyFile_%d.png."
+msgstr ""
+"Zadejte prosím správné jméno soubor. Jméno souboru obsahovat %d (nebo %04d) "
+"v místě, kde je očekávano rostoucí číslo. Například Fotka_%d.png."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+msgid "Please enter an integer in the Frames per Image textbox."
+msgstr "Zadejte prosím číslo do pole Snímků za sekundu."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid ""
+"At least 2 images must match the file name pattern in the selected folder."
+msgstr "Nejméně 2 obrázky ve vybrané složce musí odpovídat zadanému výběru."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:178
+msgid "A profile with this name already exists. Please use another name."
+msgstr "Profil s tímto názvem už existuje. Navrhněte jiný."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:188
+msgid "Please enter a profile name."
+msgstr "Prosím zadejte jméno profilu."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:193
+msgid "Please enter a valid size."
+msgstr "Prosím zadejte platnou velikost."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:259
+msgid "Do you want to save this profile?."
+msgstr "Chcete uložit tento profil?"
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:274
+#, python-format
+msgid "Are you sure you want to delete the profile %s?"
+msgstr "Jste si jistý že chcete smazat profil %s?"
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:298
+#, python-format
+msgid "The profile %s cannot be deleted."
+msgstr "Profil %s nemůže být smazán."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:333
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:345
+msgid "The profile has been successfully imported."
+msgstr "Profil byl úspěšně importován."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:335
+#, python-format
+msgid "There was an error extracting the file %s"
+msgstr "Chyba při rozbalování souboru %s"
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:347
+#, python-format
+msgid "There was an error copying the file %s"
+msgstr "Chyba při kopírování souboru %s"
+
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+#, python-format
+msgid "The folder %s already exists in this project."
+msgstr "Složka %s už v tomto projektu existuje."
+
+#: /home/jonathan/openshot/openshot/classes/files.py:116
+msgid "Added folder"
+msgstr "Přidané složky"
+
+#: /home/jonathan/openshot/openshot/classes/files.py:163
+msgid "Added file"
+msgstr "Přidané soubory"
+
+#: /home/jonathan/openshot/openshot/classes/files.py:244
+msgid "Removed file"
+msgstr "Odstraněné soubory"
+
+#: /home/jonathan/openshot/openshot/classes/files.py:333
+msgid "Moved to folder"
+msgstr "Přesunuté do složky"
+
+#: /home/jonathan/openshot/openshot/classes/files.py:342
+msgid "Removed from folder"
+msgstr "Odstraněné ze složky"
+
+#: /home/jonathan/openshot/openshot/classes/restore_state.py:86
+#: /home/jonathan/openshot/openshot/classes/open_project.py:94
+msgid "The following file(s) no longer exist."
+msgstr "Následující soubory již neexistují."
+
+#: /home/jonathan/openshot/openshot/classes/transition.py:431
+msgid "Moved transition"
+msgstr "Přesunutý přechod"
+
+#: /home/jonathan/openshot/openshot/classes/open_project.py:100
+msgid ""
+"There was an error opening this project file.  Please be sure you are "
+"selecting a valid .OSP project file."
+msgstr ""
+"Došlo k chybě při otevírání projektu. Ujistěte se, že jste vybrali platný "
+".OSP soubor."
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:104
+msgid "Added effect"
+msgstr "Přidané efekty"
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1684
+msgid "Sliced clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1815
+msgid "Moved clip"
+msgstr "Přesunutý klip"
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1832
+msgid "Resized clip"
+msgstr "Změněný clip"
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1912
+msgid "Changed visibility of clip"
+msgstr "Změněna viditelnost klipu"
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1943
+msgid "Changed audio of clip"
+msgstr "Změněn zvuk v klipu"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:68
+msgid "Default Project"
+msgstr "Výchozí projekt"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:84
+msgid "Default Sequence 1"
+msgstr "Výchozí sekvence 1"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:294
+msgid "Opened project"
+msgstr "Otevřený projekt"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:63
+msgid "usage: %prog [options] inputfile.osp"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:68
+msgid "destination file-name"
+msgstr "cílový název soboru"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:75
+msgid "export folder"
+msgstr "Exportovat složku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:83
+msgid "export as image sequence"
+msgstr "Exportovat jako sekvenci snímků"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:91
+msgid "export as video or audio file"
+msgstr "Exportovat jako obrazový nebo zvukový soubor"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:98
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:105
+msgid "set video codec"
+msgstr "Nastavit video kodek"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:112
+msgid "set video bitrate in format 'number kb/s' or 'number Mb/s'"
+msgstr "Nastavit datový tok u videa  'číslo kb/s' nebo 'číslo Mb/s'"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:119
+msgid "set audio codec"
+msgstr "Nastavit kodek zvuku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:126
+msgid "set audio sample rate"
+msgstr "Nastavit vzorkování zvuku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:133
+msgid "set number of audio channels"
+msgstr "Nastavit počet zvukových kanálů"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:140
+msgid "set video bitrate in format 'number kb/s'"
+msgstr "Nastavit datový tok videa ve formátu 'číslo kb/s'"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:146
+msgid "Error: "
+msgstr "Chyba: "
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:152
+msgid "Warning: "
+msgstr "Upozornění: "
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:160
+msgid "Please specify an input project-file!"
+msgstr "Zadejte prosím vstupní projekt-soubor"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:164
+msgid "Too many arguments!"
+msgstr "Přílis mnoho argumentů!"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:216
+msgid "rendering options:"
+msgstr "Volby renderování"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:217
+msgid "container type:"
+msgstr "Typ kontejneru"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:218
+msgid "video codec:"
+msgstr "Video kodek"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:219
+msgid "video bitrate:"
+msgstr "Datový tok videa"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:220
+msgid "audio codec:"
+msgstr "Kodek zvuku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:221
+msgid "audio sample rate:"
+msgstr "Vzorkování zvuku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:222
+msgid "channels:"
+msgstr "Kanály:"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:223
+msgid "audio bitrate:"
+msgstr "Datový tok zvuku"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:240
+msgid "generating XML file for rendering"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:276
+msgid "Starting rendering to "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:327
+msgid "program interrupted by user"
+msgstr "Program byl přerušen uživatelem"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:334
+msgid "project file correctly rendered"
+msgstr "Projekt byl správně vyrenderován"
+
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:119
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:120
+msgid ""
+"No formats or codecs were found.  Please check the OpenShot preferences and "
+"configure the 'melt' command name."
+msgstr ""
+"Nenalezeny žádné formáty ani kodeky. Zkontroluj v předvolbách programu "
+"nastavení příkazu 'melt'."
+
+#: /home/jonathan/openshot/openshot/classes/track.py:264
+msgid "Changed visibility of track"
+msgstr "Změnit viditelnost stopy"
+
+#: /home/jonathan/openshot/openshot/classes/track.py:293
+msgid "Changed audio of track"
+msgstr "Byl změněn zvuk ve stopě"
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:79
+msgid "Added marker"
+msgstr "Přidána značka"
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:137
+msgid "Added Track"
+msgstr "Přidána stopa"
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:144
+msgid "Renamed track"
+msgstr "Přejmenovaná stopa"
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:8
+msgid "Add Effect"
+msgstr "Přidat efekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:27
+msgid "Effect:"
+msgstr "Efekt:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:131
+msgid "Font Properties"
+msgstr "Vlastnosti písma"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:74
+msgid "Style:"
+msgstr "Styl:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:154
+msgid "<b>Preview</b>"
+msgstr "<b>Náhled</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:954
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:513
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:514
+msgid "Export Video"
+msgstr "Exportovat video"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:41
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:106
+msgid "File Name:"
+msgstr "Název souboru:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:51
+msgid "MyMovie"
+msgstr "Můj film"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:69
+msgid "Export Folder"
+msgstr "Exportní složka"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:96
+msgid "<b>General Options</b>"
+msgstr "<b>Obecné nastavení</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:116
+msgid "<b>Select a Profile to start:</b>"
+msgstr "<b>Vyber startovní profil:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:129
+msgid "Profile:"
+msgstr "Profil:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:157
+msgid "<b>Select from the following options:</b>"
+msgstr "<b>Vyberte z následujících možností:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:173
+msgid "Target:"
+msgstr "Cíl:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:206
+msgid "Video Profile:"
+msgstr "Profil videa:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:239
+msgid "Quality:"
+msgstr "Kvalita:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:272
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:442
+msgid "Simple"
+msgstr "Jednoduché"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:295
+msgid "Export To:"
+msgstr "Exportovat do:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:316
+msgid "<b>Advanced Options</b>"
+msgstr "<b>Pokročilá nastavení</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:377
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:443
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:214
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:282
+msgid "0"
+msgstr "0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:387
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:272
+msgid "Height:"
+msgstr "Výška:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:397
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:266
+msgid "Width:"
+msgstr "Šířka:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:403
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:256
+msgid "Aspect Ratio:"
+msgstr "Poměr stran:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:413
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:246
+msgid "Frame Rate:"
+msgstr "Snímková frekvence:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:423
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:236
+msgid "Pixel Ratio:"
+msgstr "Poměr stran pixelu:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:433
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:226
+msgid "Progressive:"
+msgstr "Progresivní"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:455
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:479
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:178
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:202
+msgid "0:0"
+msgstr "0:0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:467
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:190
+msgid "0.00"
+msgstr "0.00"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:515
+msgid "<b>Profile</b>  (height, width, fps, aspect ratio)"
+msgstr "<b>Profil</b>  (výška, šířka, fps, poměr stran)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:543
+msgid "Image Format:"
+msgstr "Formát obrázku:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:557
+msgid "png"
+msgstr "png"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:572
+msgid "<b>Image Sequence Settings</b>"
+msgstr "<b>Nastavení sekvence snímků</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:601
+msgid "Video Format:"
+msgstr "Video formát:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:616
+msgid "mp4"
+msgstr "mp4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:633
+msgid "Video Codec:"
+msgstr "Video kodek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:648
+msgid "mpeg4"
+msgstr "mpeg4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:669
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:841
+msgid "Bit Rate / Quality:"
+msgstr "Datový tok / Kvalita:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:679
+msgid ""
+"128 kb/s - Low Quality\n"
+"384 kb/s - Video Conferencing\n"
+"1.25 Mb/s – VCD Quality\n"
+"5.00 Mb/s – DVD Quality\n"
+"15.00 Mb/s – HDTV quality\n"
+"40 Mb/s - Blu-ray quality"
+msgstr ""
+"128 kb/s - Nízká kvalita\n"
+"384 kb/s - Videokonference\n"
+"1.25 Mb/s – VCD kvalita\n"
+"5.00 Mb/s – DVD kvalita\n"
+"15.00 Mb/s – HDTV kvalita\n"
+"40 Mb/s - Blu-ray kvalita"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:689
+msgid "15.00 Mb/s – HDTV quality"
+msgstr "15.00 Mb/s – HDTV kvalita"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:707
+msgid "<b>Video Settings</b>"
+msgstr "<b>Video nastavení</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:736
+msgid "Audio Codec:"
+msgstr "Audio kodek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:751
+msgid "mp2"
+msgstr "mp2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:768
+msgid "Sample Rate:"
+msgstr "Vzorkovací frekvence:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:805
+msgid "# of Channels:"
+msgstr "# kanálů:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:820
+msgid "2"
+msgstr "2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:851
+msgid ""
+"32 kb/s - Poor quality\n"
+"64 kb/s - Fair quality\n"
+"96 kb/s - FM quality\n"
+"128 kb/s - Good quality\n"
+"192 kb/s- Better quality\n"
+"256 kb/s- Near CD quality"
+msgstr ""
+"32 kb/s - Chabá kvalita\n"
+"64 kb/s - Slušná kvalita\n"
+"96 kb/s - FM kvalita\n"
+"128 kb/s - Dobrá kvalita\n"
+"192 kb/s- Lepší kvalita\n"
+"256 kb/s- Téměř CD kvalita"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:861
+msgid "256 kb/s- Near CD quality"
+msgstr "256 kb/s- téměř CD kvalita"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:879
+msgid "<b>Audio Settings</b>"
+msgstr "<b>Audio nastavení</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:903
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:490
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:940
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:188
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:332
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:33
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1567
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:122
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:6
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:209
+msgid "Preferences"
+msgstr "Nastavení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:52
+msgid "Imported Image Length:"
+msgstr "Délka importovaného obrázku:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:59
+msgid "Timeline length, in seconds, for all imported images. "
+msgstr "Délka časové osy, v sekundách, pro všechny importované obrázky. "
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:73
+msgid "Max number of steps to keep in history."
+msgstr "Maximální počet kroků uchovávaných v historii."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:90
+msgid "Max History Steps:"
+msgstr "Maximum kroků zpět:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:102
+msgid "Melt Command Name:"
+msgstr "Melt příkaz:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:113
+msgid ""
+"The is the command name for the melt program, which is the MLT command line."
+msgstr "Toto je příkaz pro program melt, což je příkaz MLT."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:147
+msgid "Default Theme:"
+msgstr "Výchozí motiv:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:175
+msgid "Default Profile:"
+msgstr "Výchozí profil"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:185
+msgid "Theme example"
+msgstr "Náhled motivu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:218
+msgid "Project File Type:"
+msgstr "Datový typ projektu:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:244
+msgid "<b>General</b>"
+msgstr "<b>Obecné</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:337
+msgid "Reload Codecs"
+msgstr "Znovu načíst kodeky"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:341
+msgid "Reload if you have installed extra codecs since starting Openshot."
+msgstr ""
+"Znovu načíst, pokud jste nainstalovali extra kodeky od otevření Openshotu."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:364
+msgid "<b>Installed Codecs/Formats</b>"
+msgstr "<b>Nainstalované kodeky/formáty</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:388
+msgid "Manage Profiles"
+msgstr "Spravovat profily"
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:8
+msgid "About OpenShot"
+msgstr "O OpenShotu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:32
+msgid "Project Website (LaunchPad)"
+msgstr "Web projektu (LaunchPad)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:10
+msgid "Transition / Mask Properties"
+msgstr "Přechod / vlastnosti masky"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:31
+msgid "Name:"
+msgstr "Jméno:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:41
+msgid "None"
+msgstr "Žádné"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:66
+msgid "Type:"
+msgstr "Typ:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:95
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:413
+msgid "Direction:"
+msgstr "Směr:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:123
+msgid "Softness:"
+msgstr "Jemnost:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:152
+msgid "Mask Threshold:"
+msgstr "Práh masky:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:198
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1577
+msgid "Apply"
+msgstr "Použít"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:24
+msgid "_File"
+msgstr "_Soubor"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:32
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:398
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:399
+msgid "New Project..."
+msgstr "Nový projekt..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:45
+msgid "Open Project..."
+msgstr "Otevřít projekt..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:59
+msgid "Recent Projects"
+msgstr "Nedávné projekty"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:72
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:482
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:483
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1243
+msgid "Import Files..."
+msgstr "Importovat soubory..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:86
+msgid "Import Image Sequence..."
+msgstr "Importovat sekvenci obrázků..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:105
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:425
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:342
+msgid "Save Project"
+msgstr "Uložit projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:118
+msgid "Save Project As..."
+msgstr "Uložit projekt jako..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:136
+msgid "Export Video..."
+msgstr "Exportovat video"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:168
+msgid "_Edit"
+msgstr "_Upravit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:176
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:447
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:448
+msgid "Undo"
+msgstr "Zpět"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:190
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:460
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:461
+msgid "Redo"
+msgstr "Vpřed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:227
+msgid "_Title"
+msgstr "_Název"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:235
+msgid "New Title..."
+msgstr "Nové titulky..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:248
+msgid "New Sequence..."
+msgstr "Nová sekvence..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:266
+msgid "_View"
+msgstr "_Zobrazit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:274
+msgid "Toolbar"
+msgstr "Panel nástrojů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:283
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:692
+msgid "History"
+msgstr "Historie"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:296
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:304
+msgid "_Contents"
+msgstr "_Obsah"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:323
+msgid "_Report a Bug..."
+msgstr "_Nahlásit chybu..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:337
+msgid "_Ask a Question..."
+msgstr "_Položit otázku..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:351
+msgid "_Translate this Application..."
+msgstr "_Přeložit tuto aplikaci..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:411
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:412
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:11
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:43
+msgid "Open Project"
+msgstr "Otevřít projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:426
+msgid "Save"
+msgstr "Uložit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:501
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:502
+msgid "Take Snapshot"
+msgstr "Udělat snímek"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:566
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:659
+msgid "Project Files"
+msgstr "Soubory projektu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:598
+msgid "Transitions"
+msgstr "Přechody"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:630
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1539
+msgid "Effects"
+msgstr "Efekty"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:752
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:753
+msgid "Seek to Beginning"
+msgstr "Přetočit na začátek"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:763
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:764
+msgid "Previous Marker"
+msgstr "Předchozí značka"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:774
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:775
+msgid "Seek Backward"
+msgstr "Přetáčet vzad"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:785
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:786
+msgid "Play"
+msgstr "Přehrát"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:796
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:797
+msgid "Seek Forward"
+msgstr "Přetáčet vpřed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:807
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:808
+msgid "Next Marker"
+msgstr "Další značka"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:818
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:819
+msgid "Seek to Ending"
+msgstr "Přetočit na konec"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:892
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:893
+msgid "Add Track"
+msgstr "Přidat stopu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:912
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:913
+msgid "Arrow Tool"
+msgstr "Nástroj výběru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:924
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:925
+msgid "Razor Tool"
+msgstr "Nástroj střihu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:935
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:936
+msgid "Resize Tool"
+msgstr "Nástroj pro změnu velikosti"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:946
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:947
+msgid "Snapping Tool"
+msgstr "Přichytávat"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:967
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:968
+msgid "Add Marker"
+msgstr "Přidat značku"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:992
+msgid "Zoom In"
+msgstr "Přiblížit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1012
+msgid "Slide to Zoom"
+msgstr "Táhněte ke změně přiblížení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1026
+msgid "Number of seconds between each line on the timeline"
+msgstr "Počet sekund jednoho dílku v hlavičce časové osy"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1027
+msgid "15 seconds"
+msgstr "15 sekund"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1039
+msgid "Zoom Out"
+msgstr "Oddálit"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1210
+msgid "Timeline - Sequence 1"
+msgstr "Časová osa - sekvence 1"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1259
+msgid "Create Folder..."
+msgstr "Vytvořit složku..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1280
+msgid "Folder Name"
+msgstr "Název složky"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1298
+msgid "Folder Name:"
+msgstr "Název složky:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1368
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1369
+msgid "Add Track Above"
+msgstr "Přidat stopu nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1383
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1384
+msgid "Add Track Below"
+msgstr "Přidat stopu dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1403
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1404
+msgid "Move Track Up"
+msgstr "Přesuň stopu nahorů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1418
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1419
+msgid "Move Track Down"
+msgstr "Přesuň stopu dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1438
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1439
+msgid "Rename Track"
+msgstr "Přejmenovat stopu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1458
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1459
+msgid "Remove Track"
+msgstr "Odstranit stopu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1476
+msgid "Make a copy of this clip"
+msgstr "Zkopíruje tento klip"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1477
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2168
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1496
+msgid "Fade this clip"
+msgstr "Ztlumit tento klip"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1497
+msgid "Fade"
+msgstr "Ztlumení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1511
+msgid "Animate this clip"
+msgstr "Animovat tento klip"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1512
+msgid "Animate"
+msgstr "Animovat"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1526
+msgid "Position and resize this clip"
+msgstr "Pozice a změna velikosti tohoto klipu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1527
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:768
+msgid "Layout"
+msgstr "Rozložení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1563
+msgid "Shift Clips"
+msgstr "Posunout klipy"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1578
+msgid "Remove Clip"
+msgstr "Odstranit klip"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1599
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2234
+msgid "Properties"
+msgstr "Nastavení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1620
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1621
+msgid "Remove Marker"
+msgstr "Odstranit značku"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1635
+msgid "No Fade"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1655
+msgid "Fade In (Fast)"
+msgstr "Fade In (rychlý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1670
+msgid "Fade Out (Fast)"
+msgstr "Fade Out (pomalý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1685
+msgid "Fade In and Out (Fast)"
+msgstr "Fade In a Out (rychlý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1705
+msgid "Fade In (Slow)"
+msgstr "Fade In (pomalý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1720
+msgid "Fade Out (Slow)"
+msgstr "Fade Out (pomalý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1735
+msgid "Fade In and Out (Slow)"
+msgstr "Fade In a Out (pomalý)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1755
+msgid "No Animation"
+msgstr "Bez animace"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1775
+msgid "Zoom In (100% to 150%)"
+msgstr "Přiblížit (ze 100% na 150%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1790
+msgid "Zoom In (50% to 100%)"
+msgstr "Přiblížit (z 50% na 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1805
+msgid "Zoom Out (100% to 50%)"
+msgstr "Oddálit (ze 100% na 50%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1820
+msgid "Zoom Out (150% to 100%)"
+msgstr "Oddálit (ze 150% na 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1840
+msgid "Center to Top"
+msgstr "Ze středu nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1855
+msgid "Center to Left"
+msgstr "Ze středu vlevo"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1870
+msgid "Center To Right"
+msgstr "Ze středu vpravo"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1885
+msgid "Center to Bottom"
+msgstr "Ze středu dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1905
+msgid "Top to Center"
+msgstr "Ze shora na střed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1920
+msgid "Left to Center"
+msgstr "Z leva na střed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1935
+msgid "Right to Center"
+msgstr "Z prava na střed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1950
+msgid "Bottom to Center"
+msgstr "Z dola na střed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1970
+msgid "Top to Bottom"
+msgstr "Shora dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1985
+msgid "Left to Right"
+msgstr "Zleva doprava"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2000
+msgid "Right to Left"
+msgstr "Zprava doleva"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2015
+msgid "Bottom to Top"
+msgstr "Zdola nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2034
+msgid "Reset Layout"
+msgstr "Zrušit rozložení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2054
+msgid "1/4 Size - Center"
+msgstr "1/4 velikosti na střed"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2069
+msgid "1/4 Size - Top Left"
+msgstr "1/4 velikosti - vlevo nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2084
+msgid "1/4 Size - Top Right"
+msgstr "1/4 velikosti vpravo nahoru"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2099
+msgid "1/4 Size - Bottom Left"
+msgstr "1/4 velikosti vlevo dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2114
+msgid "1/4 Size - Bottom Right"
+msgstr "1/4 velikosti vpravo dolů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2134
+msgid "Show All (Maintain Ratio)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2149
+msgid "Show All (Distort)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2167
+msgid "Make a copy of this transition"
+msgstr "Zkopíruje tento přechod"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2187
+msgid "Switch Direction"
+msgstr "Změnit směr"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2215
+msgid "Shift Transitions"
+msgstr "Posunout přechody"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:8
+msgid "Create a Project"
+msgstr "Vytvořit projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:47
+msgid "Project Name:"
+msgstr "Název projektu:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:74
+msgid "Project Folder:"
+msgstr "Složka projektu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:84
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:99
+msgid "Select A Folder"
+msgstr "Vyberte složku"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:102
+msgid ""
+"Project Length:\n"
+"   (in minutes)"
+msgstr ""
+"Délka projektu:\n"
+"   (v minutách)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:131
+msgid "Project Profile:"
+msgstr "Profil projektu:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:305
+msgid ""
+"Use this screen to name your new video project, select the folder location "
+"of your new project, and select the type of project.  "
+msgstr ""
+"Pojmenuj projekt, vyber složku umístění nového projektu a vyber typ "
+"projektu.  "
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:10
+msgid "Title Editor"
+msgstr "Editor titulků"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:56
+msgid "<b>Start here:</b>"
+msgstr "<b>Začněte zde:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:83
+msgid "Create a new title using the selected template."
+msgstr "Vytvoří nové titulky z vybrané šablony."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:84
+msgid "Create new Title"
+msgstr "Vytvořit nové titulky"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:98
+msgid "<b>Editing Tools:</b>"
+msgstr "<b>Editovací nástroje:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:113
+msgid "Set the title text."
+msgstr "Nastavit text"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:114
+msgid "Edit text"
+msgstr "Upravit text"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:130
+msgid "Change the Font properties."
+msgstr "Změnit vlastnosti písma"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:148
+msgid "Choose Font Color."
+msgstr "Vybrat barvu písma."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:167
+msgid "Choose Background Color."
+msgstr "Vybrat barvu pozadí."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:186
+msgid "Edit the title in an external editor."
+msgstr "Upravit titulky v externím editoru."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:187
+msgid "Use Advanced editor"
+msgstr "Použít pokročilý editor"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:275
+msgid "Enter title text"
+msgstr "Zadejte text"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:34
+msgid "<b>File Name:</b>"
+msgstr "<b>Název souboru:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:117
+msgid "<b>File Length:</b>"
+msgstr "<b>Délka souboru:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:143
+msgid "<b>Video Size:</b>"
+msgstr "<b>Velikost videa:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:169
+msgid "<b>Bit Rate:</b>"
+msgstr "<b>Datový tok:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:183
+msgid "<b>File Type:</b>"
+msgstr "<b>Typ souboru:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:233
+msgid "<b>Label:</b>"
+msgstr "<b>Označení:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:8
+msgid "Profiles Manager"
+msgstr "Správce profilů"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:24
+msgid "Profile"
+msgstr "Profil"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:87
+msgid "Profile Name"
+msgstr "Název profilu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:121
+msgid "Size"
+msgstr "Velikost"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:129
+msgid "Aspect Ratio"
+msgstr "Poměr stran"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:191
+msgid "x"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:212
+msgid "Progressive"
+msgstr "Progresivní"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:228
+msgid "Default profile"
+msgstr "Výchozí profil"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:289
+msgid "Frame Rate"
+msgstr "Počet rámců"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:301
+msgid "Pixel Ratio"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:378
+msgid "<b>Profile Properties</b>"
+msgstr "<b>Předvolby projektu</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:442
+msgid "Import"
+msgstr "Importovat"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:8
+msgid "Clip Properties"
+msgstr "Vlastnosti klipu"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:33
+msgid "Preview"
+msgstr "Náhled"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:116
+msgid "N/A"
+msgstr "Nedostupné"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:148
+msgid "Enable Video:"
+msgstr "Povolit video:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:181
+msgid "Enable Audio:"
+msgstr "Povolit audio:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:241
+msgid "<b>In</b> (seconds):"
+msgstr "<b>Začátek</b> (v sekundách):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:275
+msgid "<b>Out</b> (seconds):"
+msgstr "<b>Konec</b> (v sekundách):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:310
+msgid "<b>Length</b> (seconds):"
+msgstr "<b>Délka</b> (v sekundách):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:384
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:465
+msgid "Speed:"
+msgstr "Rychlost:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:527
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Speed"
+msgstr "Rychlost"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:555
+msgid "Key Frame:"
+msgstr "Klíčový snímek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:597
+msgid "Height (%):"
+msgstr "Výška (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:631
+msgid "Width (%):"
+msgstr "Šířka (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:665
+msgid "X (%):"
+msgstr "X (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:699
+msgid "Y (%):"
+msgstr "Y (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:733
+msgid "Alpha:"
+msgstr "Průhlednost:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:786
+msgid "Volume:"
+msgstr "Hlasitost:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:846
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1122
+msgid "Fade In:"
+msgstr "Fade In:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:879
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1155
+msgid "Fade Out:"
+msgstr "Fade Out:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:912
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1188
+msgid "<b>Fade</b> (seconds):"
+msgstr "<b>Fade</b> (v sekundách):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:953
+msgid "Audio"
+msgstr "Audio"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:971
+msgid "Stretch Full Screen:"
+msgstr "Roztáhnout na celou obrazovku:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1003
+msgid "Maintain Aspect Ratio:"
+msgstr "Udržovat správný poměr stran:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1046
+msgid "Horizontal Align:"
+msgstr "Zarovnat horizontálně"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1079
+msgid "Vertical Align:"
+msgstr "Zarovnat vertikálně"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1224
+msgid "Video"
+msgstr "Video"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1335
+msgid ""
+"<b>Effect Settings</b>\n"
+"Click on an effect to view its settings"
+msgstr ""
+"<b>Nastavení efektů</b>\n"
+"Kliknutím na efekt bude zobrazeno jeho nastavení"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:7
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:132
+msgid "Import Image Sequence"
+msgstr "Importovat sekvenci snímků"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:18
+msgid ""
+"Use this screen to import a sequence of numbered images as a video clip.\n"
+"Be sure all pictures are in the same folder, and are sequencially numbered.  "
+"\n"
+"Use a %d for filenames starting with a number. If the filename is \n"
+"padded (i.e. 00001.png, 00002.png, use %05d).\n"
+"\n"
+"For example:\n"
+"/MyImageFolder/Image_1.png\n"
+"/MyImageFolder/Image_2.png\n"
+"\n"
+"or\n"
+"\n"
+"/MyImageFolder/Image_00001.png\n"
+"/MyImageFolder/Image_00002.png\n"
+"\n"
+msgstr ""
+"V tomto dialogu můžete importovat sekvence očíslovaných obrázků a vytvořit z "
+"nich video klip.\n"
+"Ujistěte se, že všechny obrázky jsou ve stejné složce, a že jsou očíslovány "
+"v pořadím v jakém je chcete použít.\n"
+"Použijte %d ve jménu v místu, kde je použita číselná sekvence. Pokud vaše "
+"číslování používá k zarovnání na\n"
+"pevný počet číslic použijte %05d, kde číslo mezi % a d vyjadřuje počet "
+"číslic.\n"
+"\n"
+"Například:\n"
+"/Obrázečky/Obraz_1.png\n"
+"/Obrázečky/Obraz_2.png\n"
+"\n"
+"nebo\n"
+"\n"
+"/Obrázečky/Obraz_00001.png\n"
+"/Obrázečky/Obraz_00002.png\n"
+"\n"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:46
+msgid "Frames per Image:"
+msgstr "Snímků za na jeden obrázek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:56
+msgid "Image Folder:"
+msgstr "Složka s obrázky:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:66
+msgid "File Name Pattern:"
+msgstr "Vzor jména souboru:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:73
+msgid "myfile_%d.png"
+msgstr "můjsoubor_%d.png"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Old Dust"
+msgstr "Starý prach"
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Phaser"
+msgstr "Fázovač"
+
+#: /home/jonathan/openshot/openshot/effects/nervous.xml
+msgid "Nervous"
+msgstr "Nervózní"
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Burning TV"
+msgstr "Vypalování TV"
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Param"
+msgstr "Parametr"
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Chroma Key"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Blur"
+msgstr "Rozostření"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Old Lines"
+msgstr "Staré linky"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Rain"
+msgstr "Déšť"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Surfer"
+msgstr "Surfař"
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Neutral Color"
+msgstr "Neutrální barva"
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Glow"
+msgstr "Rozjasnění"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Y"
+msgstr "Rotace okolo osy Y"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate X"
+msgstr "Rotace okolo osy X"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Z"
+msgstr "Rotace okolo osy Z"
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Amount"
+msgstr "Množství"
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Amplitude"
+msgstr "Amplituda"
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Variance"
+msgstr "Odchylka"
+
+#: /home/jonathan/openshot/openshot/effects/two_layer.xml
+msgid "Black and White"
+msgstr "Černobílý"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Down"
+msgstr "Ztmavit deltu"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Width"
+msgstr "Šířka"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "Edgeglow"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Echo"
+msgstr "Echo"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Up"
+msgstr "Zesvětlit deltu"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Swirl"
+msgstr "Víření"
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Foreground"
+msgstr "Popředí"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Scale"
+msgstr "Měřítko"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "End"
+msgstr "Konec"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Oversaturate Color"
+msgstr "Přesytit barvu"
+
+#: /home/jonathan/openshot/openshot/effects/invert.xml
+msgid "Invert"
+msgstr "Převrátit"
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "White Balance"
+msgstr "Vyvážení bílé"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Old Film"
+msgstr "Starý film"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Charcoal"
+msgstr "Kresba uhlem (Charcoal)"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Noise"
+msgstr "Šum"
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Brightness"
+msgstr "Jas"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Red/Green Axis"
+msgstr "Červená/zelená osa"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Water"
+msgstr "Voda"
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Key"
+msgstr "Klíč"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "Cartoon"
+msgstr "Komiks"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "X Offset"
+msgstr "Posun X"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Smooth"
+msgstr "Vyhladit"
+
+#: /home/jonathan/openshot/openshot/effects/remove_red.xml
+msgid "Remove Red"
+msgstr "Odebrat červenou"
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size X"
+msgstr "Zablokovat velikost X"
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size Y"
+msgstr "Zablokovat velikost Y"
+
+#: /home/jonathan/openshot/openshot/effects/sobel.xml
+msgid "Sobel"
+msgstr "Sobel"
+
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Mirror"
+msgstr "Zrcadlit"
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "Nosync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Decay"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Old Grain"
+msgstr "Staré zrno"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Start"
+msgstr "Začátek"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Count"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Start Value"
+msgstr "Počáteční hodnota"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "Trip Level"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "X Scatter"
+msgstr "Rozptýlit X"
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Method"
+msgstr "Metoda"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Contrast"
+msgstr "Kontrast"
+
+#: /home/jonathan/openshot/openshot/effects/hue.xml
+msgid "Hue"
+msgstr "Zabarvení"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Every"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/scan_lines.xml
+msgid "Scan Lines"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Distort"
+msgstr "Deformovat"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Every"
+msgstr "Každý"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Lighter"
+msgstr "Světlejší"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Delta"
+msgstr "Delta"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Diameter"
+msgstr "Maximální průměr"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Y Offset"
+msgstr "Posun Y"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Randomize Swirl"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Y Scatter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "Sepia"
+msgstr "Sépie"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Number"
+msgstr "Číslo"
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Frequency"
+msgstr "Frekvence"
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "v"
+msgstr "v"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "Diff Space"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Pixelate"
+msgstr "Pixelizovat"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "Up Scale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Delay"
+msgstr "Zpoždění"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Mix"
+msgstr "Mixovat"
+
+#: /home/jonathan/openshot/openshot/effects/greyscale.xml
+msgid "Greyscale"
+msgstr "Odstíny šedi"
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain In"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Y"
+msgstr "Otočit Y"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate X"
+msgstr "Otočit X"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Z"
+msgstr "Otočit Z"
+
+#: /home/jonathan/openshot/openshot/effects/saturation.xml
+msgid "Saturation"
+msgstr "Sytost"
+
+#: /home/jonathan/openshot/openshot/effects/remove_green.xml
+msgid "Remove Green"
+msgstr "Odebrat zelenou"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Wave"
+msgstr "Vlna"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "Red Scale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate"
+msgstr "Otočit"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform Y"
+msgstr "Deformovat Y"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform X"
+msgstr "Deformovat X"
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Green Tint"
+msgstr "Zelené zbarvení"
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "Horizontal Sync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain Out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Deinterlace"
+msgstr "Odstranit prokládání"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Physics"
+msgstr "Fyzika"
+
+#: /home/jonathan/openshot/openshot/effects/gamma.xml
+msgid "Gamma"
+msgstr "Gama korekce"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Darker"
+msgstr "Tmavší"
+
+#: /home/jonathan/openshot/openshot/effects/remove_blue.xml
+msgid "Remove Blue"
+msgstr "Odebrat modrou"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Blue/Yellow"
+msgstr "Modrá/Žlutá"
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "u"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "End Value"
+msgstr "Koncová hodnota"
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Pitch"
+msgstr "Výška tónu"
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Threshold"
+msgstr "Práh"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Web"
+msgstr "Webové stránky"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD-PAL"
+msgstr "DVD-PAL"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_flac.xml
+msgid "OGG (theora/flac)"
+msgstr "OGG (theora/flac)"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD"
+msgstr "DVD"
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Xbox 360"
+msgstr "Xbox 360"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_x264.xml
+msgid "MP4 (h.264)"
+msgstr "MP4 (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_x264.xml
+msgid "MOV (h.264)"
+msgstr "MOV (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/metacafe.xml
+msgid "Metacafe"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo.xml
+msgid "Vimeo-SD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "AVCHD Disks"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Vimeo-SD Widescreen"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_flv_x264.xml
+msgid "FLV (h.264)"
+msgstr "FLV (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mp4.xml
+msgid "AVI (mpeg4)"
+msgstr "AVI (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_mpeg4.xml
+msgid "MP4 (mpeg4)"
+msgstr "MP4 (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/apple_tv.xml
+msgid "Apple TV"
+msgstr "Apple TV"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mpeg_mpeg2.xml
+msgid "MPEG (mpeg2)"
+msgstr "MPEG (mpeg2)"
+
+#: /home/jonathan/openshot/openshot/export_presets/nokia_nHD.xml
+msgid "Nokia nHD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_x264.xml
+msgid "AVI (h.264)"
+msgstr "AVI (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube.xml
+msgid "YouTube"
+msgstr "YouTube"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mpeg2.xml
+msgid "AVI (mpeg2)"
+msgstr "AVI (mpeg2)"
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Device"
+msgstr "Zařízení"
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "Blu-Ray/AVCHD"
+msgstr "Blu-Ray/AVCHD"
+
+#: /home/jonathan/openshot/openshot/export_presets/picasa.xml
+msgid "Picasa"
+msgstr "Picasa"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_xvid.xml
+msgid "MP4 (Xvid)"
+msgstr "MP4 (Xvid)"
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube_HD.xml
+msgid "YouTube-HD"
+msgstr "YouTube-HD"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_ntsc.xml
+msgid "DVD-NTSC"
+msgstr "DVD-NTSC"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_HD.xml
+msgid "Vimeo-HD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "MOV (mpeg4)"
+msgstr "MOV (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/flickr_HD.xml
+msgid "Flickr-HD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_8.png
+msgid "Fractal 8"
+msgstr "Fraktál 8"
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out_big.pgm
+msgid "Vertical blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_2.png
+msgid "Fractal 2"
+msgstr "Fraktál 2"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_3.png
+msgid "Fractal 3"
+msgstr "Fraktál 3"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_1.png
+msgid "Fractal 1"
+msgstr "Fraktál 1"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_6.png
+msgid "Fractal 6"
+msgstr "Fraktál 6"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_7.png
+msgid "Fractal 7"
+msgstr "Fraktál 7"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_4.png
+msgid "Fractal 4"
+msgstr "Fraktál 4"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_5.png
+msgid "Fractal 5"
+msgstr "Fraktál 5"
+
+#: /home/jonathan/openshot/openshot/transitions/openshot_logo.pgm
+msgid "Openshot logo"
+msgstr "Openshot logo"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_1.png
+msgid "Wipe diagonal 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_3.png
+msgid "Wipe diagonal 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_2.png
+msgid "Wipe diagonal 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_1.png
+msgid "Hatched 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_2.png
+msgid "Hatched 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_3.png
+msgid "Hatched 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/mountains.png
+msgid "Mountains"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/circle_in_to_out.svg
+msgid "Circle in to out"
+msgstr "Kruh zevnitř ven"
+
+#: /home/jonathan/openshot/openshot/transitions/clock_right_to_left.pgm
+msgid "Clock right to left"
+msgstr "Hodiny zprava doleva"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_medium.pgm
+msgid "Spiral medium"
+msgstr "Spirála střední"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_2.png
+msgid "Spiral abstract 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_left_to_right.svg
+msgid "Wipe left to right"
+msgstr "Setřít zleva doprava"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_bottom_to_top.svg
+msgid "Wipe bottom to top"
+msgstr "Setřít zespoda nahoru"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_1.png
+msgid "Spiral abstract 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_right_to_left.svg
+msgid "Wipe right to left"
+msgstr "Setřít zprava doleva"
+
+#: /home/jonathan/openshot/openshot/transitions/circle_out_to_in.svg
+msgid "Circle out to in"
+msgstr "Kruh z venku dovnitř"
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out.pgm
+msgid "Blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_in_to_out.pgm
+msgid "Rectangle in to out"
+msgstr "Obdélník zevnitř ven"
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_out_to_in.pgm
+msgid "Rectangle out to in"
+msgstr "Obdélník zvenku dovnitř"
+
+#: /home/jonathan/openshot/openshot/transitions/sand.svg
+msgid "Sand"
+msgstr "Písek"
+
+#: /home/jonathan/openshot/openshot/transitions/spots.png
+msgid "Spots"
+msgstr "Tečky"
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_sliding.png
+msgid "Blinds sliding"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/clock_left_to_right.pgm
+msgid "Clock left to right"
+msgstr "Hodiny zleva doprava"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_4.png
+msgid "Wipe diagonal 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_small.pgm
+msgid "Spiral small"
+msgstr "Spirála malá"
+
+#: /home/jonathan/openshot/openshot/transitions/sphere.png
+msgid "Sphere"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out_big.pgm
+msgid "Blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_big.pgm
+msgid "Spiral big"
+msgstr "Spirála velká"
+
+#: /home/jonathan/openshot/openshot/transitions/star_2.png
+msgid "Star 2"
+msgstr "Hvězda 2"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_top_to_bottom.svg
+msgid "Wipe top to bottom"
+msgstr "Setřít shora dolů"
+
+#: /home/jonathan/openshot/openshot/transitions/star_1.png
+msgid "Star 1"
+msgstr "Hvězda 1"
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_4.png
+msgid "Hourglass 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out.pgm
+msgid "Vertical blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_1.png
+msgid "Hourglass 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_3.png
+msgid "Hourglass 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_2.png
+msgid "Hourglass 2"
+msgstr ""

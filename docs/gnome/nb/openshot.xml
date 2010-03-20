@@ -1,0 +1,3657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="nb">
+<articleinfo>
+<title>OpenShot Video Editor Manual</title>
+<subtitle/>
+<edition/>
+</articleinfo><sect1 id="sect1_1"><title>Innledning</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/logo_badge.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>OpenShot Video Editor er et program for å lage videofilmer med Linux.  Med det kan man lett kombinere flere videoklipp, lydklipp og stillbilder i et prosjekt og så eksportere ferdig video i mange vanlige videoformater.</para>
+<para>OpenShot er et ikkelineært videoredigeringsprogram. Det betyr at en hvilken som helst filmrute kan vises når som helst, og dermed kan videoklippene legges i lag, blandes og ordnes på veldig kreative måter.  All redigering er ikke-destruktiv, som betyr at de originale videoklippene aldri endres.</para>
+<para>Du kan bruke OpenShot til å lage lysbildeshow av stillbilder, redigere hjemmevideo, lage tv-reklamer og filmer for Internett eller hva som helst annet du kan finne på.</para><sect2 id="sect2_1"><title>Oversikt over muligheter:</title>
+<orderedlist>
+<listitem>
+<para>Støtte for mange video-, lyd- og bildeformater (basert på FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Integrasjon med Gnome (støtte for dra-og-slipp)</para>
+</listitem>
+<listitem>
+<para>Mange spor</para>
+</listitem>
+<listitem>
+<para>Endre størrelse på og finjuster klipp, festing og deling</para>
+</listitem>
+<listitem>
+<para>Videooverganger med sanntids forhåndsvisning</para>
+</listitem>
+<listitem>
+<para>Kombinere bilder, bildeoverlegg og vannmerker</para>
+</listitem>
+<listitem>
+<para>Maler for tekstplakater, opprette tekstplakater</para>
+</listitem>
+<listitem>
+<para>SVG-vennlig for å lage og inkludere tekstplakater og rulletekster</para>
+</listitem>
+<listitem>
+<para>Rullende rulletekster</para>
+</listitem>
+<listitem>
+<para>Fargeklipp (med alfakanal)</para>
+</listitem>
+<listitem>
+<para>Støtte for rotoskopering / bildesekvenser</para>
+</listitem>
+<listitem>
+<para>Dra-og-slipp tidslinje</para>
+</listitem>
+<listitem>
+<para>Flytt rute for rute, J, K og L-styring</para>
+</listitem>
+<listitem>
+<para>Videokoding (basert på FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Nøkkelbildeanimasjon</para>
+</listitem>
+<listitem>
+<para>digital zoom i videoklipp</para>
+</listitem>
+<listitem>
+<para>Hastighetsendring på klipp</para>
+</listitem>
+<listitem>
+<para>Egne overgangsmasker</para>
+</listitem>
+<listitem>
+<para>Endre størrelse på klipp (bildestørrelse)</para>
+</listitem>
+<listitem>
+<para>Miksing og redigering av lyd</para>
+</listitem>
+<listitem>
+<para>Forhåndsdefinerte animasjoner og layout</para>
+</listitem>
+<listitem>
+<para>Ken Burns-effekt (lage video ved å bevege kamera over et stillbilde)</para>
+</listitem>
+<listitem>
+<para>Digitale videoeffekter, inklusiv lyshet, gamma, fargetone, gråskala, fargenøkling (blåvegg/grønnvegg) og over 20 andre videoeffekter.</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_2"><title>Skjermbilde</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_clips.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2></sect1><sect1 id="sect1_2"><title>Kom i gang</title><sect2 id="sect2_3"><title>For å åpne OpenShot Video Editor</title>
+<para>Du kan starte <application>OpenShot</application> på disse måtene:</para><sect3 id="sect3_1"><title>Programmeny</title>
+<para>Velg <guisubmenu>Lyd &amp; bilde &gt;</guisubmenu><guimenuitem>OpenShot Video Editor</guimenuitem>.</para></sect3><sect3 id="sect3_2"><title>Kommandolinje</title>
+<para>For å starte <application>OpenShot</application> fra kommandolinjen, åpne et terminalvindu og skriv følgende kommando etterfulgt av  <keycap>Return</keycap>:</para>
+<para><command>openshot</command> [filnavn]</para>
+<para>Den valgfrie [filnavn] -parameteren kan være enten en lyd- eller bildefil eller en OpenShot prosjektfil (*.osp).  Flere filer kan også spesifiseres (med mellomrom mellom hvert filnavn), og alle filer blir importert inn i en kopi av <application>OpenShot</application>.</para></sect3><sect3 id="sect3_3"><title>Åpne med</title>
+<para>For å starte <application>OpenShot</application> fra Nautilus, høyreklikk på en bilde-, video- eller lydfil og velg <guimenu>Åpne med</guimenu> &gt; <guimenuitem>OpenShot Video Editor</guimenuitem>.  Eller velg <guimenu>Åpne med</guimenu> &gt; <guimenuitem>Annet program...</guimenuitem> &gt; <command>openshot</command>.</para>
+<para/></sect3></sect2></sect1><sect1 id="sect1_3"><title>Lær deg OpenShot på 5 minutter!</title>
+<para>Å bruke OpenShot er veldig lett, og denne øvelsen tar deg gjennom det grunnleggende på under 5 minutter.  Etter denne øvelsen kan du lage et enkelt lysbildeshow med musikk.</para><sect2 id="sect2_4"><title>Trinn 1 - Importer bilder og musikk</title>
+<para>Før vi kan begynne å lage en video må vi <guibutton>importere filer</guibutton> i OpenShot.  Dra og slipp noen <emphasis>bilder</emphasis> (*.JPG, *.PNG, etc...) og en <emphasis>musikkfil</emphasis> (de fleste formater vil virke) fra skrivebordet og inn i OpenShot.  Pass på å slippe filene der hvor pilen i illustrasjonen peker.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_5"><title>Trinn 2 - Ordne bilder på tidslinjen</title>
+<para>Etter at du har importert noen filer er neste trinn å legge dem på tidslinjen og ordne dem i rekkefølge. Klikk på hvert bilde (ett av gangen) og dra dem ned på <guibutton>Spor 2</guibutton> på tidslinjen.  Dra og slipp bildene (også kalt klipp) for å ordne dem.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_6"><title>Trinn 3 - Legg til musikk på tidslinjen</title>
+<para>For å gjøre lysbildeshowet vårt mer spennende må vi ha litt musikk.  Du skla ha importert en musikkfil i trinn 1.  Klikk på musikkfilen og dra den ned på <guibutton>Spor 1</guibutton> på tidslinjen.</para></sect2><sect2 id="sect2_7"><title>Trinn 4 - Se igjennom prosjektet ditt.</title>
+<para>For å se hvordan videoen vår ser ut, klikk på <guibutton>Play-knappen</guibutton> under forhåndsvisningsvinduet.  Klikk på <guibutton>Play-knappen</guibutton> igjen for å sette videoen i pause.   Husk at hvis du må flytte om på noen klipp så bare dra og slipp for å flytte dem.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_8"><title>Trinn 5 - Eksporter videoen</title>
+<para>Når du er fornøyd med lysbildeshow-videoen er neste trinn å eksportere videoen.  Dette vil gjøre om OpenShot-prosjektet til en enkelt videofil, som burde kunne spilles på en hvilken som helst Linux mediaspiller (som Totem, VLC etc...) eller nettsteder (som YouTube, Vimeo etc...).</para>
+<para>Klikk på <guibutton>Eksporter video</guibutton>-ikonet øverst på skjermen (eller bruk menyen <guimenuitem>Fil</guimenuitem> &gt; <guimenuitem>Eksporter video...</guimenuitem>).  Velg en av de mange forhåndsdefinerte eksportalternativene og klikk <guibutton>Eksporter video </guibutton>-knappen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_9"><title>Trinn 6 - Kos deg med OpenShot!</title>
+<para>Du bør nå ha grunnleggende kunnskaper om hvordan OpenShot virker.  <emphasis>Importere, ordne, forhåndsvise og eksportere</emphasis>. Forhåpentligvis tok denne øvelsen mindre enn 5 minutter å fullføre.  Les resten av manualen for en mer detaljert foratåelse av OpenShot og alle de avanserte funksjonene.  Ha det gøy!</para></sect2></sect1><sect1 id="sect1_4"><title>Hovedvindu</title>
+<para>OpenShot Video Editor har et hovedvindu som inneholder det meste av informasjonen, knappene og menyene du trenger for å redigere videoprosjektet ditt.</para><sect2 id="sect2_10"><title>Oversikt</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Hovedverktøylinje</para>
+</entry>
+<entry>
+<para>Inneholder knapper for å åpne, lagre og eksportere videoprosjektet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Funksjonsfaner</para>
+</entry>
+<entry>
+<para>Bytt mellom prosjektfiler, overganger og effekter.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Prosjektfiler</para>
+</entry>
+<entry>
+<para>Alle lyd-, video- og bildefiler som er importert i prosjektet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Vindu for forhåndsvisning</para>
+</entry>
+<entry>
+<para>Her spilles videoen på skjermen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Verktøylinje for redigering</para>
+</entry>
+<entry>
+<para>Denne verktøylinjen inneholder knapper for redigering, justering og deling av klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Skaleringsglidebryter</para>
+</entry>
+<entry>
+<para>Denne glidebryteren justerer hvor mye du ser av tidslinjen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Avspillingshode/linjal</para>
+</entry>
+<entry>
+<para>Linjalen viser tidsskalaen og den røde linjen er avspillingshodet.  Avspillingshodet representerer hvor i videoen du er akkurat nå.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Tidslinje</para>
+</entry>
+<entry>
+<para>Tidslinjen viser videoprosjektet med hvert klipp og hver overgang.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_11"><title>Hovedverktøylinje</title>
+<para><guimenu>Hovedverktøylinjen</guimenu> inneholder knapper for raskt å åpne og lagre prosjekter, importere filer og eksportere video.  alle disse funksjonene kan også nås gjennom <guimenuitem>Fil</guimenuitem>-menyen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_toolbar.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Åpne prosjekt</para>
+</entry>
+<entry>
+<para>Åpne en OpenShot prosjektfil (*.OSP).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Lagre prosjekt</para>
+</entry>
+<entry>
+<para>Lagre det åpne prosjektet.  Hvis det ikke er opprettet noe prosjekt vil det komme opp en dialogboks for å samle mer informasjon.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Importer filer</para>
+</entry>
+<entry>
+<para>Importer en eller flere filer i det åpne OpenShot-prosjektet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Ta skjermdump</para>
+</entry>
+<entry>
+<para>Eksporter gjeldende filmrute fra forhåndsvisningsvinduet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Eksporter video</para>
+</entry>
+<entry>
+<para>Eksporter det åpne prosjektet til en videofil.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_12"><title>Funksjonsfaner</title>
+<para>Disse fanene lar deg bytte mellom tre forskjellige funksjoner: Filer brukt i prosjektet, overganger og effekter.  Innholdet i fanene kan dras og slippes på tidslinjen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_tabs.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_13"><title>Prosjektfiler</title>
+<para>Fanen Prosjektfiler inneholder alle klipp som du har importert i prosjektet.  Før du kan legge til et bilde eller en lyd- eller videofil på tidslinjen må filen importeres til fanen Prosjektfiler.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_files.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_14"><title>Vindu for forhåndsvisning</title>
+<para>Forhåndsvisningsvinduet styrer avspillingen (eller forhåndsvisningen) av videoprosjektet.  Når du klikker på knappene under vinduet styrer avspillingen og videoen vises her.  Størrelsen på dette området kan justeres ved å dra i linjene rundt.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Hopp til begynnelsen</para>
+</entry>
+<entry>
+<para>Hopp helt til begynnelsen av prosjektet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Forrige markør</para>
+</entry>
+<entry>
+<para>Hopp til forrige markør (hvis den finnes)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Spol tilbake</para>
+</entry>
+<entry>
+<para>Spol videoen tilbake fra nåværende sted.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Spill av/pause</para>
+</entry>
+<entry>
+<para>Spill av eller stopp avspillingen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Hurtigspoling forover</para>
+</entry>
+<entry>
+<para>Spol forover fra nåværende sted.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Neste markør</para>
+</entry>
+<entry>
+<para>Hopp til neste markør (hvis den finnes).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Hopp til slutten</para>
+</entry>
+<entry>
+<para>Hopp til slutten av prosjektet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_15"><title>Verktøylinje for redigering</title>
+<para>Verktøylinjen for redigering lar deg bytte mellom forskjellige redigeringsmodi for tidslinjen. Når du flytter, justerer og deler opp klipp må du forandre redigeringsmodus med denne verktøylinjen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Legg til spor</para>
+</entry>
+<entry>
+<para>Legg til et nytt spor over de andre.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Valgmodus</para>
+</entry>
+<entry>
+<para>I valgmodus kan du klikke på og flytte klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Barberbladmodus</para>
+</entry>
+<entry>
+<para>I barberbladmodus kan du dele et klipp der du klikker på det.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Endre størrelse-modus</para>
+</entry>
+<entry>
+<para>Endre størrelse-modus lar deg ta tak i endene på et klipp og dra for å endre størrelse på klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Fest til-modus</para>
+</entry>
+<entry>
+<para>I fest til-modus vil klipp feste seg til det nærmeste klippet når du slipper dem, hvis avstanden er liten nok.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Legg til markør</para>
+</entry>
+<entry>
+<para>Legg til en ny markør, som gjør at du raskt kan hoppe tilbake til dette stedet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_16"><title>Skaleringsglidebryter</title>
+<para>Skaleringsglidebryteren lar deg endre hvor mye av tidsllinjen som vises.  Zoom inn for å se nærmere på tidslinjen eller zoom ut for å få oversikt.  Du kan enten klikke på zoom-knappene på hver side eller dra i glidebryteren.  Når du drar vil tidslinjen oppdateres når du stopper.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_zoomer.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_17"><title>Tidslinje</title>
+<para>Tidslinjen viser prosjektet på en grafisk måte.  Hvert klipp vises som et gult rektangel.  Hvert spor vises som et blått rektangel.  Avspillingshodet (rød linje) viser hvor du står i prosjektet.</para>
+<para>Klikk et sted på linjalen for å gå til det stedet i tid.  Hvis du drar langs linjalen vil videoen "skrubbe", som er en rask måte å forhåndsvise prosjektet på.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_timeline.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Linjal</para>
+</entry>
+<entry>
+<para>Linjalen viser tidslinjens nåværende tidsskala.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Avspillingshode</para>
+</entry>
+<entry>
+<para>Avspillingshodet viser posisjonen til bildet som vises.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Klipp</para>
+</entry>
+<entry>
+<para>Et klipp representerer en lyd-, bilde- eller videofil.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Spor</para>
+</entry>
+<entry>
+<para>Et spor tilsvarer et lag.  Høyere spor viser video og bilder over lavere spor.  Det er ingen grense for hvor mange spor et prosjekt kan ha.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_18"><title>Spor</title>
+<para><application>OpenShot</application> bruker spor for å legge video og bilder i lag.  Det øverste sporet er øverste lag, og det nederste sporet er nederste lag.  Hvis du er kjent med lag i et bildebehandlngsprogram skulle du være godt kjent med dette konseptet.  OpenShot mikser hvert lag sammen, akkurat som et bildebehandlingsprogram.</para>
+<para>For eksempel, tenk deg et videoprosjekt med tre spor.  Et bilde av en solnedgang brukes som bakgrunn, En måne i midten og en logo øverst.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/tracks.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Øverste spor</para>
+</entry>
+<entry>
+<para>Klipp på dette sporet vill være øverst.  Logoer og vannmerker skal være på dette laget.  OpenShot-logoen er på dette sporet i illustrasjonen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Midterste spor</para>
+</entry>
+<entry>
+<para>Disse klippene er under øverste spor, men over nederste spor.  Månebildet er på dette sporet i illustrasjonen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Nederste spor</para>
+</entry>
+<entry>
+<para>Disse klippene er under alle andre spor.  Solnedgangen er på  dette sporet i illustrasjonen.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_19"><title>Styre avspilling av video</title>
+<para>Avspilling, pause og søking er viktige funksjoner i et videoredigeringsprogram.  Når du lager et videoprosjekt må du spille gjennom prosjektet mange ganger. Selv om å klikke på <guibutton>Play</guibutton>-knappen er en lett måte å gjøre dette på finnes det mange raskere måter.</para><sect3 id="sect3_4"><title>Avspillingsmetoder</title>
+<para>Det er <emphasis>7 måter </emphasis> å styre avspilling på i <application>OpenShot</application>.</para>
+<orderedlist>
+<listitem>
+<para>Klikk på <guibutton>Verktøylinje for forhåndsvisning</guibutton> (Play, spole, etc...)</para>
+</listitem>
+<listitem>
+<para>Dra glidebryteren over verktøylinjen for forhåndsvisning</para>
+</listitem>
+<listitem>
+<para>Dra <guibutton>Avspillingshodet</guibutton> på linjalen</para>
+</listitem>
+<listitem>
+<para>Klikke hvor som helst på linjalen</para>
+</listitem>
+<listitem>
+<para>Bruke tastesnarveier (J, K og L-tastene)</para>
+</listitem>
+<listitem>
+<para>Bruke piltastene (venstre, høyre, opp, ned)</para>
+</listitem>
+<listitem>
+<para>Bruke mellomromtasten (Play/pause)</para>
+</listitem>
+</orderedlist></sect3></sect2><sect2 id="sect2_20"><title>Tastesnarveier</title>
+<para>En tastesnarvei er simpelthen en tast på tastaturet som sparer deg for bryet med å bevege musen og klikke.  Det er ofte raskere å trykke en tast enn å peke og klikke.  Her er alle tastesnarveiene i <application>OpenShot</application>:</para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Tast</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>J</para>
+</entry>
+<entry>
+<para>Spill baklengs</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>K</para>
+</entry>
+<entry>
+<para>Pause/Play</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>L</para>
+</entry>
+<entry>
+<para>Spill fort forover</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Mellomrom</para>
+</entry>
+<entry>
+<para>Pause/Play</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Opp</para>
+</entry>
+<entry>
+<para>Hopp til forrige markør (hvis den finnes)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ned</para>
+</entry>
+<entry>
+<para>Hopp til neste markør (hvis den finnes)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flytt mot venstre</para>
+</entry>
+<entry>
+<para>Gå en rute bakover</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flytt mot høyre</para>
+</entry>
+<entry>
+<para>Gå en rute forover</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TAB</para>
+</entry>
+<entry>
+<para>Bytt mellom <guibutton>Endre størrelse</guibutton>- og <guibutton>Velg</guibutton>-modus</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + scrollehjul</para>
+</entry>
+<entry>
+<para>Zoom inn og ut på tidslinjen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Home</para>
+</entry>
+<entry>
+<para>Hopp til begynnelsen av tidslinjen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + End</para>
+</entry>
+<entry>
+<para>Hopp til slutten av tidslinjen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>F1</para>
+</entry>
+<entry>
+<para>Vis hjelpefilen (hvis installert)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_5"><title>Prosjekter - nytt, åpne og lagre</title>
+<para><application>OpenShot</application> trenger en <emphasis>prosjektfil</emphasis> for å lagre informasjonen som utgjør et videoprosjekt.  Informasjon som navn og plassering på prosjektet, video- og lydfiler, informasjon om tidslinjen, hvilke klipp har blitt justert og byttet rundt på osv...</para>
+<para/>
+<para>Når <application>OpenShot</application> startes opprettes et nytt prosjekt automatisk.  Du kan begynne å bruke <application>OpenShot</application> med en gang, uten å opprette et prosjekt først.  </para>
+<para>Prosjektfiler har en .OSP filutvidelse (Eksempelprosjekt.osp).  Prosjekter trenger også en /thumbnail/-mappe som inneholder alle miniatyrbildene i prosjektet.  Hvis du flytter en prosjektfil, pass på å flytte /thumbnail/-mappen også.</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Prosjektfil</para>
+</entry>
+<entry>
+<para>/home/bruker/Skrivebord/ProsjektA.osp</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Mappe for miniatyrbilder</para>
+</entry>
+<entry>
+<para>/home/bruker/Skrivebord/thumbnail/</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable><sect2 id="sect2_21"><title>Opprett et prosjekt</title>
+<para>Det er to måter å opprette et prosjekt på.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/menu_file.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect3 id="sect3_5"><title>Metode 1 - Fil-menyen</title>
+<para>Velg <guimenu>Fil</guimenu><guimenuitem>Nytt prosjekt</guimenuitem>.  Dialogboksen <guilabel>Opprett et prosjekt</guilabel> åpnes.  Skriv inn prosjektnavnet, typen og lengden på tidslinjen og klikk <guibutton>Lagre prosjekt</guibutton>.</para></sect3><sect3 id="sect3_6"><title>Metode 2 -</title>
+<para>Siden OpenShot oppretter et prosjekt automatisk når du starter programmet kan du ganske enkelt velge <guimenu>Fil &gt;</guimenu><guimenuitem>Lagre prosjekt</guimenuitem>.  Dialogboksen  <guilabel>Opprett et prosjekt</guilabel> åpnes.  Endre prosjektnavnet, prosjekttypen, lengden på tidslinjen, og klikk <guibutton>Lagre prosjekt</guibutton>.</para></sect3></sect2><sect2 id="sect2_22"><title>Dialogboksen Opprett et prosjekt</title>
+<para>Når du velger <guimenuitem>Nytt prosjekt</guimenuitem> eller <guimenuitem>Lagre prosjekt</guimenuitem> vil denne dialogboksen vises.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/projects_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Prosjektnavn</para>
+</entry>
+<entry>
+<para>Navnet på prosjektfilen din (.osp filutvidelse)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Prosjektmappe</para>
+</entry>
+<entry>
+<para>Mappen som du lagrer prosjektet ditt i .</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Prosjektlengde</para>
+</entry>
+<entry>
+<para>Den <emphasis>maksimale</emphasis> lengden på tidslinjen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Prosjekttype</para>
+</entry>
+<entry>
+<para>Dette påvirker forhåndsvisningsvinduet.  Her bestemmes størrelsen,  høyde/breddeforholdet og antall bilder pr. sekund for videofilene du ser på.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Detaljer om prosjekttypen</para>
+</entry>
+<entry>
+<para>Denne tabellen viser detaljer om prosjekttypen, som størrelse, høyde/breddeforhold og bilder pr. sekund.  Når du endrer prosjekttype i nedtrekksmenyen vil denne tabellen oppdateres.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_23"><title>Åpne et prosjekt</title>
+<para>For å åpne et prosjekt, velg <guimenu>Fil &gt;</guimenu><guimenuitem>Åpne prosjekt...</guimenuitem>. Dialogboksen <guilabel>Åpne prosjekt</guilabel> vises. Velg prosjektfilen (*.osp) du vil åpne og klikk <guibutton>Åpne prosjekt</guibutton>.</para>
+<para>Hvis du skal åpne et nylig brukt prosjekt, velg <guimenu>Fil &gt;</guimenu><guimenuitem>Nylige prosjekter...</guimenuitem>.  Dette er ofte den raskeste måten å åpne et prosjekt i <application>OpenShot</application> på.</para>
+<para>Hvis du vil starte <application>OpenShot</application> og automatisk åpne prosjektet ditt, dobbelklikk på .OSP-filen.</para></sect2></sect1><sect1 id="sect1_6"><title>Importere filer - lyd, video og stillbilder</title>
+<para>Før du kan bruke et klipp på tidslinjen må du <emphasis>importere</emphasis> klippet i prosjektet.  Det er flere forskjellige måter å gjøre dette på.  Den vanligste måten er å dra og slippe filer fra datamaskinen i <guibutton>Prosjektfiler</guibutton>-området av skjermen.</para>
+<para>Det er 4 forskjellige måter å importere klipp på.</para><sect2 id="sect2_24"><title>Metode 1 - Dra &amp; Slipp</title>
+<orderedlist>
+<listitem>
+<para>Kjør <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Dra og slipp flere filer samtidig fra Skrivebordet til <guibutton>Prosjektfiler</guibutton>-området.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_25"><title>Metode 2 - Slipp mappe</title>
+<orderedlist>
+<listitem>
+<para>Kjør <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Dra og slipp en mappe med mediafiler fra Skrivebordet til <guibutton>Prosjektfiler</guibutton>-området.</para>
+<para>
+<emphasis>* Alle lyd-, video- og bildefiler imoprteres fra denne mappen.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_26"><title>Metode 3 - Åpne med</title>
+<orderedlist>
+<listitem>
+<para>Mens du blar gjennom filer i Gnome kan du velge en eller flere filer.</para>
+</listitem>
+<listitem>
+<para>Høyreklikk på de valgte filene og velg "Åpne med annet program..."</para>
+</listitem>
+<listitem>
+<para>Velg "<application>OpenShot Video Editor</application>" (eller kommandoen <command>openshot</command>).</para>
+<para>
+<emphasis>* Til og med etter at du har begynt å jobbe i</emphasis>
+<application>OpenShot</application>
+<emphasis>med filene dine kan du gå tilbake til filsystemet, høyreklikke på flere filer og velge "OpenShot". De vil da legges til i OpenShot.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_27"><title>Metode 4 - Importer-knappen</title>
+<orderedlist>
+<listitem>
+<para>Kjør <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Klikk på "Importer filer"-knappen på verktøylinjen.</para>
+</listitem>
+<listitem>
+<para>Velg en eller flere filer og klikk "importer".</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_7"><title>Bildesekvenser</title>
+<para>En av de kraftigste funksjonene i OpenShot er muligheten til å importere bildesekvenser.  En bildesekvens er egentlig bare en mappe full av bilder med likelydende navn etterfulgt av et stigende tall.  Hver bildefil representerer en videorute.  Så for et 30 sekunder langt klipp med 25 bilder pr. sekund trenger man 750 bildefiler.  Selv om bildesekvenser kan være tunge å arbeide med (på grunn av antallet filer) kan man gjøre nesten hva som helst med dem.</para>
+<para>For å importere en bildesekvens følger du disse trinnene:</para><sect2 id="sect2_28"><title>Finn fram en bildesekvens</title>
+<para>Mange programmer kan generere en bildesekvens.  For eksempel i Blender (et 3d-animasjonsprogram) kan du lage en animert tekstsekvens og eksportere den som en serie .png-filer (med gjennomsiktighet).  Blender vil opprette en mappe på datamaskinen din som inneholder alle bildefilene.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_29"><title>Importer bildesekvensen</title>
+<para>Velg <guimenu>Fil</guimenu> &gt; <guimenuitem>Importer bildesekvens...</guimenuitem> på menyen. Dette vil starte dialogen Importer bildesekvens.  </para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Velg mappe for bildesekvensen og mønsteret for navngivingen.  Ikke alle bildesekvenser er navngitt på samme måte.  For eksempel Movie_0001.jpg er forskjellig fra Movie_1.jpg.  Når du har skrevet inn det riktige mønsteret klikker du på <guibutton>Importer bildesekvens</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_30"><title>Legg til på tidslinjen</title>
+<para>Slipp den nye bildesekvensen på tidslinjen.  Den representeres ved et enkelt klipp, akkurat som et vanlig videoklipp.</para></sect2><sect2 id="sect2_31"><title>Lag en bildesekvens</title>
+<para>Hvis du ikke allerede har en bildesekvens er det lett å lage en.  Marker en hvilken som helst <guibutton>videofil</guibutton> i <guimenuitem>Prosjektfiler</guimenuitem>. Høyreklikk på den og velg <guimenuitem>Konverter til bildesekvens</guimenuitem>.  Dette vil lage en ny mappe og eksportere hver rute som en .png bildefil.  Det vil også automatisk lage en referanse til den nye bildesekvensen i <guimenuitem>Prosjektfiler</guimenuitem>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_convert.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_32"><title>Rediger en bildesekvens</title>
+<para>Hvis du vil redigere en bildesekvens anbefaler vi at du bruker Gimp (et bildebehandlingsprogram med åpen kildekode). Det har tillegg som kan hjelpe med å redigere store bildesekvenser og kan forenkle prosessen med å redigere, lagre og åpne neste bilde i en sekvens.  Så kan du forbedre hver rute, fjerne røde øyne, legge til glødende effekter på lyssabler, ta bort snorer osv.  Det er så og si ikke noe du ikke kan gjøre med en rute for rute tilnærming, men det krever mye innsats.</para><sect3 id="sect3_7"><title>Gimp Animation Package (GAP)</title>
+<para>GAP er et tillegg til Gimp, som hjelper til med å redigere bildesekvenser.  Det kan raskt lagre et bilde og åpne det neste i en sekvens.  Det kan også bruke nøkkelbilder for å legge på effekter over mange ruter, eller til og med lage animasjoner.  Hvis du må redigere en bildesekvens bør du absolutt ta en titt på <ulink url="http://www.gimp.org/tutorials/Using_GAP/">GAP</ulink>.</para></sect3><sect3 id="sect3_8"><title>Skjermdump av Gimp Animation Package</title>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/gimp_animation_package.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect3></sect2></sect1><sect1 id="sect1_8"><title>Behandle filer og mapper</title>
+<para>Når du skal lage en video må du importere mange forskjellige filer i prosjektet, som lyd, video, bilder, tekster, overlegg, lydeffekter mm.  Dette kan fort bli for mye og gjøre listen over filer i prosjektet for lang, hvilket vil gjøre at du arbeider senere.</para>
+<para>Hvis prosjektet har for mange filer (hvilket er opp til deg å bestemme) kan du bruke mapper for å organisere filene.</para><sect2 id="sect2_33"><title>Lag en mappe</title>
+<orderedlist>
+<listitem>
+<para>Høyreklikk i <guimenuitem>Prosjektfiler</guimenuitem>-området.</para>
+</listitem>
+<listitem>
+<para>Velg <guimenuitem>Lag mappe...</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Skriv inn et navn til mappen.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_create.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_34"><title>Flytte filer til en mappe</title>
+<orderedlist>
+<listitem>
+<para>Sørg for at du har laget en mappe først.</para>
+</listitem>
+<listitem>
+<para>Høyreklikk på en eller flere filer i <guimenuitem>Prosjektfiler</guimenuitem>-området.</para>
+</listitem>
+<listitem>
+<para>Velg <guimenuitem>Flytt fil(er) til mappe</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Velg en mappe.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_move_to_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_35"><title>Fjerne en mappe</title>
+<orderedlist>
+<listitem>
+<para>Høyreklikk på en mappe.</para>
+</listitem>
+<listitem>
+<para>Velg <guimenuitem>Fjern mappe</guimenuitem>.</para>
+<para>
+<emphasis>Sørg for at du har flyttet alle filene ut av en mappe før du fjerner den.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_9"><title>Legg til filer på tidslinjen</title>
+<para>Når du har importert filer i prosjektet er neste trinn å legge dem til på tidslinjen.  For å legge til en fil fra dine <guimenuitem>Prosjektfiler</guimenuitem> på <guibutton>tidslinjen</guibutton> følger du disse trinnene:</para>
+<orderedlist>
+<listitem>
+<para>Klikk på en fil.</para>
+</listitem>
+<listitem>
+<para>Dra den over <guibutton>tidslinjen</guibutton> og slipp den.</para>
+</listitem>
+<listitem>
+<para>Klippet vil nå bli lagt til på tidslinjen.</para>
+<para>
+<emphasis>* Du kan bare legge til en fil av gangen.</emphasis>
+</para>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+<emphasis/>
+</mediaobject>
+<para/></sect1><sect1 id="sect1_10"><title>Flytt og juster klipp på tidslinjen</title>
+<para>Når du har filer (også kalt klipp) på tidslinjen må du ordne dem på spor og legge dem i riktig rekkefølge.  Du må også eventuelt ta bort begynnelsen og slutten av klippene.</para><sect2 id="sect2_36"><title>Flytte et klipp (Valgmodus)</title>
+<orderedlist>
+<listitem>
+<para>Bytt til <guibutton>valgmodus</guibutton> (dette er standardmodus).</para>
+</listitem>
+<listitem>
+<para>Klikk på et klipp.</para>
+</listitem>
+<listitem>
+<para>Dra klippet til en ny posisjon på <guibutton>tidslinjen</guibutton> og slipp det.</para>
+<para>
+<emphasis>* Hvis festing er på vil klippet feste seg til et nærliggende klipp (eller avspilingshodet, hvis det er nærme).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_37"><title>Justere et klipp (Endre størrelse-modus)</title>
+<orderedlist>
+<listitem>
+<para>Bytt til <guibutton>Endre størrelse-modus</guibutton> ved å klikke på endre størrelse-ikonet.</para>
+</listitem>
+<listitem>
+<para>Flytt muspekeren over høyre eller venstre ende av et klipp.</para>
+</listitem>
+<listitem>
+<para>Dra enden av klippet for å justere.</para>
+<para>
+<emphasis>* Når du drar enden av klippet vil forhåndsvisningen vise hvor klippet vil begynne eller slutte (basert på hvilken ende av klippet du drar i).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_38"><title>Dele et klipp (Barberbladmodus)</title>
+<orderedlist>
+<listitem>
+<para>
+<emphasis>For å dele et klipp i to, bytt til</emphasis>
+<guibutton>Barberbladmodus</guibutton>
+<emphasis>.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Muspekeren vil forandre seg til en stiplet linje og et barberbladikon.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Klikk på et klipp der du vil dele det.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_39"><title>Verktøylinje for redigering</title>
+<para>Verktøylinjen for redigering lar deg bytte mellom forskjellige redigeringsmodi for tidslinjen. Når du flytter, justerer og deler opp klipp må du forandre redigeringsmodus med denne verktøylinjen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Legg til spor</para>
+</entry>
+<entry>
+<para>Legg til et nytt spor over de andre.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Valgmodus</para>
+</entry>
+<entry>
+<para>I valgmodus kan du klikke på og flytte klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Barberbladmodus</para>
+</entry>
+<entry>
+<para>I barberbladmodus kan du dele et klipp der du klikker på det.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Endre størrelse-modus</para>
+</entry>
+<entry>
+<para>Endre størrelse-modus lar deg ta tak i endene på et klipp og dra for å endre størrelse på klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Fest til-modus</para>
+</entry>
+<entry>
+<para>I fest til-modus vil klipp feste seg til det nærmeste klippet når du slipper dem, hvis avstanden er liten nok.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Legg til markør</para>
+</entry>
+<entry>
+<para>Legg til en ny markør, som gjør at du raskt kan hoppe tilbake til dette stedet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2></sect1><sect1 id="sect1_11"><title>Separere lyd fra video</title>
+<para>OpenShot kan separere lyd og video i et klipp hvis det trengs.  Hvis du bare vil spille lyden fra et klipp eller bare vil spille videoen uten lyd, så følg disse trinnene:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/track_buttons.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_40"><title>Bare video</title>
+<para>For å bare spille videoen i et klipp, klikk på høyttalerikonet som du finner på klippet.  Dette vil dempe lyden på dette klippet.  Eller hvis du vil dempe lyden på hele sporet, klikk på høyttalerikonet på sporet.</para></sect2><sect2 id="sect2_41"><title>Bare lyd</title>
+<para>For å bare høre lyden på et klipp, klikk på øyeikonet som du finner på klippet.  Dette vil skjule bildet.  Eller hvis du vil skjule bildet på hele sporet, klikk på øyeikonet på sporet.</para></sect2></sect1><sect1 id="sect1_12"><title>Duplisere klipp</title>
+<para>En veldig nyttig funksjon i OpenShot er muligheten til å kunne duplisere klipp, overganger og masker.  For å duplisere et element, høyreklikk på elementet (som et klipp eller en overgang) og velg <guimenuitem>Dupliser</guimenuitem>.  Dette vil legge til en nøyaktig kopi av det dupliserte elementet på tidslinjen, inkludert inn- og utpunkter, effekter lagt til på klippet og animasjonsinnstillinger.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/duplicate_clip.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>En vanlig måte å bruke <guimenuitem>Dupliser</guimenuitem>-funksjonen på er å justere et klipp ned til en bestemt scene og så duplisere klippet.  Når du har to identiske klipp kan du dempe lyden på det ene og skjule bildet på det andre.  Dette er en rask måte for å separere lyd og bilde i et klipp.  Nå kan du flytte lyden eller fortsette lyden mens du gjør bildesiden kortere.  dette er ofte brukt i filmer, når to personer snakker sammen.  De fortsetter å spille lyden fra den personen som snakker mens de viser den andre personens reaksjon.</para></sect1><sect1 id="sect1_13"><title>Egenskaper for klipp</title>
+<para>Hvert klipp i OpenShot har mange egenskaper som kan manipuleres.  Denne dialogboksen ble laget fordi det ikke er mulig å vise og justere alle innstillingene på tidslinjen.  Her kan brukeren justere hver mulige innstilling og egenskap et klipp har, inklusive lengde, hastighet, lydnivå, størrelse, posisjon, høyde/breddeforhold og mange andre.</para><sect2 id="sect2_42"><title>Vise dialogboksen Egenskaper for klipp</title>
+<para>For å vise dialogboksen Egenskaper for klipp, høyreklikk på et klipp og velg <guimenuitem>Egenskaper</guimenuitem>.</para></sect2><sect2 id="sect2_43"><title>Forhåndsvis endringer</title>
+<para>For raskt å se hvordan de nye innstillingene vil se ut, klikk på <guibutton>Spill av</guibutton>-knappen eller dra <guibutton>glidebryteren</guibutton>.  Du kan se på endringene dine om og om igjen for å få dem helt riktig.  Ingen endringer lagres før du klikker på <guibutton>Bruk</guibutton>-knappen.</para></sect2><sect2 id="sect2_44"><title>Fanen Generelt</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab1.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para>Fanen Generelt har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Aktiver video</para>
+</entry>
+<entry>
+<para>Vis bilde for dette klippet</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Aktiver lyd</para>
+</entry>
+<entry>
+<para>Vis lyd for dette klippet</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_45"><title>Fanen Lengde</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab2.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box"/>Fanen Lengde gir informasjon om begynnelsen, slutten og den totale lengden av et klipp.  Ved å justere disse verdiene kan du forsinke når et klipp begynner, avslutte det tidligere, eller begge deler.  Bruk <guibutton>Spill av</guibutton>-knappen for å se på endringene.  Øv deg på å justere disse verdiene uten å bruke verktøyet Endre størrelse.</para>
+<para/>
+<para>Fanen Lengde har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Inn (sekunder)</para>
+</entry>
+<entry>
+<para>Sekundet hvor videoen skal begynne å spille (desimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ut (sekunder)</para>
+</entry>
+<entry>
+<para>Videoklippets siste sekund (desimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Lengde (sekunder)</para>
+</entry>
+<entry>
+<para>Klippets lengde beregnes ut fra inn- og utpunktene.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_46"><title>Fanen Hastighet</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab3.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box1"/>Fanen Hastighet består av en Enkel modus og en Avansert modus.  I Enkel modus kan du med forhåndsdefinerte verdier kjøre klippet i opp til 16 ganger normal hastighet eller ned til 1/16 av normal hastighet.  Du kan også endre retning og spille baklengs.  Avansert modus tillater deg å sette en nøyaktig hastighet med desimaler i stedet for de enkle forhåndsdefinerte verdiene.</para>
+<para/>
+<para>Fanen Hastighet har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Hastighet</para>
+</entry>
+<entry>
+<para>Sekundet hvor videoen skal begynne å spille (desimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Retning</para>
+</entry>
+<entry>
+<para>Videoklippets siste sekund (desimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Avansert hastighet</para>
+</entry>
+<entry>
+<para>En nøyaktig desimalverdi for et klipps hastighet.  Denne verdien endres ettersom nedtrekksmenyen Hastighet endres.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_47"><title>Fanen Layout</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Fanen Layout har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nøkkelbilde</para>
+</entry>
+<entry>
+<para>Denne nedtrekksmenyen viser hvilket nøkkelbilde du jobber på.  Hvert klipp har to nøkkelbilder, starten og slutten av klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Høyde</para>
+</entry>
+<entry>
+<para>Høyden på klippet (i prosent).  Jo høyere tall, desto høyere blir klippet.  Lavere tall gir lavere klipp.  Dette påvirker bare gjeldende nøkkelbilde, ikke hele klippet.  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Bredde</para>
+</entry>
+<entry>
+<para>Bredden på klippet (i prosent).  Jo høyere tall, desto bredere blir klippet.  Lavere tall gir smalere klipp.  Dette påvirker bare gjeldende nøkkelbilde, ikke hele klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>X</para>
+</entry>
+<entry>
+<para>Vannrett posisjon for klippets sentrum.  Høyere tall plasserer klippet lengre mot høyre.  Lavere tall plasserer klippet lengre mot venstre. Dette påvirker bare gjeldende nøkkelbilde, ikke hele klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Y</para>
+</entry>
+<entry>
+<para>Loddrett posisjon for klippets sentrum.  Høyere tall plasserer klippet lavere ned.  Lavere tall plasserer klippet høyere i bildet. Dette påvirker bare gjeldende nøkkelbilde, ikke hele klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gjennomsiktighet</para>
+</entry>
+<entry>
+<para>Klippets gjennomsiktighet.  100 = ugjennomsiktig.  0 = usynlig.  Dette påvirker bare gjeldende nøkkelbilde, ikke hele klippet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_48"><title>Fanen Lyd</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab5.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Fanen Lyd har følgende egenskaper:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Lydstyrke</para>
+</entry>
+<entry>
+<para>Klippets lydstyrke.  0 = stille, 100 = maks.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis inn</para>
+</entry>
+<entry>
+<para>Ton inn klippet fra stille til oppgitt lydstyrke.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis ut</para>
+</entry>
+<entry>
+<para>Ton ut klippet fra oppgitt lydstyrke til stille.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis overgang (sekunder)</para>
+</entry>
+<entry>
+<para>Antall sekunder den gradvise overgangen vil vare.  Jo høyere tall, desto lengre vil overgangen være.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_49"><title>Fanen Video</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab6.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>På fanen Video kan man justere størrelse, posisjon og vannrett/loddrett justering av et klipp.   Man kan også legge på inn- eller uttoning, som noen ganger er enklere enn å legge på en overgang.  Fordi toningen er en av klippets egenskaper flytter den seg med når du flytter klippet.  Så i motsetning til overganger vil en toning følge med klippet når du flytter det.</para>
+<para>Fanen Video har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Strekk til fullskjerm</para>
+</entry>
+<entry>
+<para>Strekker klippet til skjermstørrelsen (basert på prosjekttype).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Bevar høyde/breddeforhold</para>
+</entry>
+<entry>
+<para>Ikke forvreng klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vannrett justering</para>
+</entry>
+<entry>
+<para>Justering av klippet høyre/venstre.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Loddrett justering</para>
+</entry>
+<entry>
+<para>Justering av klippet topp til bunn</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis inn</para>
+</entry>
+<entry>
+<para>Ton klippet inn.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis ut</para>
+</entry>
+<entry>
+<para>Ton klippet ut.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Gradvis overgang (sekunder)</para>
+</entry>
+<entry>
+<para>Antall sekunder den gradvise overgangen vil vare.  Jo høyere tall, desto lengre vil overgangen være.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_50"><title>Fanen Effekter</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab7.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Med fanen Effekter kan man legge på og behandle effekter.  For å se på et klipp med effekter bruker du <guibutton>Spill av</guibutton>-knappen.  Hver effekt kan ha mange innstillinger, så bruk <guibutton>Spill av</guibutton>-knappen ettersom du forandrer innstillingene for å se på resultatet.</para>
+<para>Fanen Effekter har disse egenskapene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effektliste</para>
+</entry>
+<entry>
+<para>Denne boksen inneholder en liste over alle effektene som et lagt på klippet.  De prosesseres ovenfra og ned.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Legg til</para>
+</entry>
+<entry>
+<para>Legger en ny effekt til dette klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fjern</para>
+</entry>
+<entry>
+<para>Fjern den valgte effekten fra dette klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Opp</para>
+</entry>
+<entry>
+<para>Flytt den valgte effekten opp i listen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ned</para>
+</entry>
+<entry>
+<para>Flytt den valgte effekten ned i listen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effektinnstillinger</para>
+</entry>
+<entry>
+<para>Dette området vil inneholde innstillingene for den valgte effekten (hvis noen).</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_14"><title>Nøkkelbilder</title>
+<para>OpenShot kan bruke <emphasis>nøkkelbilder</emphasis> for å animere klipp.  Et nøkkelbilde er et punkt i tid som inneholder mange innstillinger, som størrelse, posisjon og gjennomsiktighet.  Det er to måter å sette nøkkelbilder på i OpenShot, manuelt eller med ferdige innstillinger.  </para><sect2 id="sect2_51"><title>Forhåndsdefinerte animasjoner</title>
+<para>Det er tilgjengelig mange forhåndsdefinerte animasjoner, som å flytte et klipp fra bunnen til toppen av skjermen eller å zoome sakte inn på et klipp.  For å legge til en forhåndsdefinert animasjon på et klipp, høyre-klikk på klippet og velg <guimenuitem>Animer</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_animate.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_52"><title>Forhåndsdefinert layout</title>
+<para>Det er tilgjengelig mange forhåndsdefinerte layouter, som å krympe et klipp og plassere det i hjørnet eller å sentrere det.  For å legge til en forhåndsdefinert layout på et klipp, høyre-klikk på klippet og velg <guimenuitem>Layout</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_layout.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_53"><title>Manuelt</title>
+<para>For å sette nøkkelbilder manuelt, høyreklikk på et klipp og velg <guimenuitem>egenskaper</guimenuitem>.  Bytt til fanen <guibutton>Layout</guibutton>, og velg hvilket nøkkelbilde du vil bruke fra nedtrekksmenyen.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Hvert klipp har to nøkkelbilder, begynnelsen av klippet og slutten.  Hvis det er noe forskjeller mellom de to nøkkelbildene vil OpenShot interpolere forskjellen for hver rute og dermed animere klippet.  Disse egenskapene påvirkes av nøkelbilder:  <emphasis>Høyde, bredde, X-posisjon, Y-posisjon, og gjennomsiktighet</emphasis>.</para>
+<para>Prøv for eksempel disse nøkkelbildene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Første nøkkelbilde:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=0</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Siste nøkkelbilde:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X =150, Y=0</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Dette vil gjøre at klippet animeres fra venstre til høyre side av skjermen.  Forskjellen i X-verdi interpoleres over alle rutene i klippet.  Jo lengre klipp, desto saktere går animasjonen.  Jo kortere klipp, jo fortere går animasjonen.</para>
+<para>Hvis du vil forander fast størrelse eller posisjon for et klipp gir du bare første og siste nøkkelbilde samme verdi:</para>
+<para>Prøv for eksempel disse nøkkelbildene:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Første nøkkelbilde:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Siste nøkkelbilde:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Dette vil flytt klippet til øvre høyre hjørne av skjermen.  Det vil ikke animeres, fordi første og siste nøkkelbilde har samme verdi.</para>
+<para>Trenger du mer enn to nøkkelbilder kan du dele klippet i mange deler og sette nøkkelbilder i begynnelsen og slutten av hver del. Dermed kan du få uendelig mange nøkkelbilder.</para></sect2></sect1><sect1 id="sect1_15"><title>Beskjæringseffekt</title>
+<para>OpenShot kan beskjære klipp ved å bruke instillingene for Layout, som du finner i dialogboksen <guibutton>Egenskaper for klipp</guibutton>.  Høyreklikk på et klipp og veldg <guimenuitem>egenskaper</guimenuitem>.  Bytt så til fanen <guibutton>Layout</guibutton>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>For å beskjære et klipp må du zoome inn på den delen av bildet du vil se.  Juster Høyde, Bredde, X og Y for å zoome.  Pass på å sette begge nøkkelbilder til samme verdi.  Bruk <guibutton>Play</guibutton>-knappen for å forhåndsvise beskjæringen.  Når du er fornøyd med beskjæringen klikker du <guibutton>Bruk</guibutton>.</para></sect1><sect1 id="sect1_16"><title>Rotasjonseffekt</title>
+<para>Hvis du trenger å rotere et klipp 90 eller 180 grader eller til og med animere rotasjonen har OpenShot en <guibutton>Roter</guibutton>-effekt som kan hjelpe.</para>
+<para>OpenShot har to typer rotasjonseffekter, fast og animert.  for å legge på en rotasjonseffekt, bytt til fanen <guibutton>Effekter</guibutton> i <guibutton>hovedvinduet</guibutton> og dra effekten <guimenuitem>Roter</guimenuitem> ned på klippet.  </para>
+<para>For å juster innstillingene, høyreklikk på klippet og velg <guimenuitem>egenskaper</guimenuitem>.  Så bytter du til fanen Effekter i egenskapsvinduet.  Da får du opp en liste over innstilinger som kan justeres.  Prøv å forandre hver innstilling og bruk <guibutton>Play</guibutton>-knappen for å forhåndsvise effekten.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_rotation.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_54"><title>Fast rotasjon</title>
+<para>En fast rotasjon kan rotere en video 90 graer, 180 grader eller et hvilket som helst antall grader.  Rotasjonen animeres ikke.  Dette er nyttig hvis du tar opp en video sideveis og må rotere den.  For å bruke en fast rotasjon justerer du bare de innstillingene som begynner med "Fast".  Pass på å stille de andre innstillingene tilbake til null.</para></sect2><sect2 id="sect2_55"><title>Animert rotasjon</title>
+<para>En animert rotasjo kan brukes til å snurre et klipp rundt i sirkler eller mange andre mønstre.  Dette kan være en fin effekt for tittelplakater, snurrende aviser eller andre kreative bruksområder.  For å bruke en animert rotasjon justerer du "Fast"-innstillingene til null og bruker bare de innstillingene som begynner med "Roter".</para></sect2></sect1><sect1 id="sect1_17"><title>Redigering av supertekster</title>
+<para>Som mange andre videoredigeringsprogrammer har OpenShot en innebygd tekstfunksjon.  Den har en del grunnleggende funksjoner for å hjelpe deg med å lage tittelplakater til videoprosjektet ditt.  Disse funksjonene finner du i OpenShots tekstsystem:</para>
+<orderedlist>
+<listitem>
+<para>Mange maler (inkludert en mal med helfylt farge)</para>
+</listitem>
+<listitem>
+<para>Enkel tekstredigering (tekstplakat, supertekst)</para>
+</listitem>
+<listitem>
+<para>Endre skrifttype og farge (inkludert alfakanal)</para>
+</listitem>
+<listitem>
+<para>Endre bakgrunnsfarge (inkludert alfakanal)</para>
+</listitem>
+<listitem>
+<para>Bruker filformatet SVG (vektorbasert)</para>
+</listitem>
+<listitem>
+<para>Legger til tekstplakater i <guimenuitem>Prosjektfiler</guimenuitem>-området</para>
+</listitem>
+<listitem>
+<para>Integrasjon med Inkscape for avanserte funksjoner</para>
+</listitem>
+</orderedlist>
+<para/>
+<para>Hvis den enkle funksjonen ikke er kraftig nok kan en hvilken som helst SVG-fil importeres og brukes som tekstplakat.  Alfakanalen (gjennomsiktighet) regnes med, noe som betyr at plakater kan legges over andre spor, og videoen vil vises i gjennomsiktige områder.</para><sect2 id="sect2_56"><title>Starte tekstverktøyet</title>
+<para>For å legge til en ny tekstplakat klikker du på <guimenu>Prosjekt</guimenu> &gt; <guimenuitem>Ny tekstplakat...</guimenuitem> i menyen.  Dette vil starte  tekstverktøyet.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_57"><title>Opprette en ny tekstplakat</title>
+<para>Når tekstverktøyet startes må du velge en mal og klikke knappen <guibutton>Lag ny tekstplakat</guibutton>.  Dette oppretter en kopi av malen og legger den til i dine <guimenuitem>Project Files</guimenuitem>.  Skriv inn filnavnet som det vil lagres på harddisken.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_58"><title>Vindu for tekstredigering</title>
+<para>Dialogen for redigering av tekst lar deg velge en mal, redigere tekst, endre farger og lage dine egne tekstplakater til videoprosjektet ditt.  Når du er ferdig med å lage en tekstplakat, klikk <guibutton>Bruk</guibutton>-knappen.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_main_screen.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Velg mal</para>
+</entry>
+<entry>
+<para>Velg en SVG-fil som mal for plakaten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Lag ny tekstplakat</para>
+</entry>
+<entry>
+<para>Klikk denne knappen for å lage din egen kopi av SVG-malen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Rediger tekst</para>
+</entry>
+<entry>
+<para>Vise tekstredigeringsvinduet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Endre skrifttype</para>
+</entry>
+<entry>
+<para>Endre størrelse og type på skriften.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Tekstfarge</para>
+</entry>
+<entry>
+<para>Endre farge på teksten og grad av gjennomsiktighet (alfa).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Bakgrunnsfarge</para>
+</entry>
+<entry>
+<para>Endre bakgrunnsfarge og grad av gjennomsiktighet (alfa).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Avansert redigering</para>
+</entry>
+<entry>
+<para>Rediger tekstplakaten i Inkscape.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Forhåndsvis plakat</para>
+</entry>
+<entry>
+<para>Forhåndsvis plakaten etter hver endring.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_59"><title>Rulletekster</title>
+<para>For å lage en rulletekst må du dele opp teksten i mange plakater.</para><sect3 id="sect3_9"><title>Lag hver plakat</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_10"><title>Plasser hver plakat på tidslinjen</title>
+<para>Legg alle tekstplakatene på tidslinjen, sett lengden på hvert klipp til 7 sekunder og legg dem annenhver gang på to spor.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_scrolling.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_11"><title>Animer hver plakat</title>
+<para>Høyreklikk på hver plakat og velg <guimenuitem>Animer</guimenuitem> &gt; <guimenuitem>Bunn til topp</guimenuitem>.  Dette vil gi en illusjon av at alle tekstene ruller fra bunn til topp i en kontinuerlig sekvens uten huller.  Pass på å overlappe plakatene som vist i illustrasjonen.</para></sect3></sect2></sect1><sect1 id="sect1_18"><title>Overganger</title>
+<para>Overganger brukes for å gå gradvis fra ett klipp til et annet.  Mange forskjellige overganger er tilgjengelige i <application>OpenShot</application>.   De kan lett dras og slippes på tidslinjen og kan tilføre mye moro til et videoprosjekt.</para><sect2 id="sect2_60"><title>Skjermbilde med overganger</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions_clock.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Fanen Overganger</para>
+</entry>
+<entry>
+<para>Dette er fanen Overganger.  Den inneholder en liste over alle overganger som er tilgjengelige i <application>OpenShot</application>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Liste over overganger</para>
+</entry>
+<entry>
+<para>Dette er listen over overganger.  Velg en overgang og dra og slipp den på tidslinjen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Endre størrelse</para>
+</entry>
+<entry>
+<para>Verktøyet Endre størrelse kan brukes til å endre størrelsen på en overgang.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Overgang på tidslinjen</para>
+</entry>
+<entry>
+<para>Når du slipper en overgang på tidslinjen kan den flyttes og endres størrelse på akkurat som andre klipp.  Overgangen fester seg mellom spor og mikser mellom de to sporene.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_61"><title>Legg til en overgang</title>
+<para>For å legge til en overgang, bytt til fanen <guibutton>Overganger</guibutton> og velg en overgang ved å klikke på den.  Dra og slipp overgangen på <guibutton>tidslinjen</guibutton>.  Den vil feste seg mellom to spor.</para></sect2><sect2 id="sect2_62"><title>Flytte en overgang</title>
+<para>For å flytte en overgang, bytt til <guibutton>Pil-verktøyet</guibutton> på <guibutton>tidslinjens verktøylinje</guibutton> og dra den til en ny posisjon.</para></sect2><sect2 id="sect2_63"><title>Endre størrelse på en overgang</title>
+<para>For å endre størrelse på en overgang, bytt til <guibutton>Endre størrelse</guibutton> on the <guibutton>tidslinjens verktøylinje</guibutton> og dra høyre eller venstre kant til en ny størrelse.</para></sect2><sect2 id="sect2_64"><title>Endre retning</title>
+<para>Fordi overganger mikser mellom to spor er det viktig å vite hvilken retning overgangen går.  På overgangen er det en pil som viser retningen, topp til bunn eller omvendt.  Normalt skal overgangen gå fra det klippet som kommer først på tidslinjen og til det neste.</para>
+<para>For å endre retning på overgangen, høyreklikk på en overgang og velg <guimenuitem>Bytt retning</guimenuitem>.</para></sect2><sect2 id="sect2_65"><title>Egenskaper for overgang</title>
+<para>Akkurat som et klipp har en overgang et egenskapsvindu.  For å vise egenskapsvinduet for en overgang eller maske, høyreklikk på objektet og velg <guimenuitem>Egenskaper</guimenuitem>.  For å lagre endringene, klikk på <guibutton>Bruk</guibutton>-knappen.</para>
+<para/>
+<para/>
+<para>
+<inlinegraphic fileref="../figures/transitions_properties.png" width="5.55inch" depth="4.1701inch"/>
+</para>
+<para/>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Type</para>
+</entry>
+<entry>
+<para>Maske eller overgang</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Retning</para>
+</entry>
+<entry>
+<para>Retningen til masken eller overgangen.  <emphasis>Opp</emphasis> gir en overgang fra det nederste klippet til det øverste.  Og <emphasis>Ned</emphasis> gir en overgang fra det øverste til det nederste.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Mykhet</para>
+</entry>
+<entry>
+<para>Overgangens mykhet.  Jo høyere alldedsto bredere wipe, og jo lavere tall desto smalere wipe.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Masketerskel</para>
+</entry>
+<entry>
+<para>Masketerskelen angir hvor mye grått som brukes i masken.  Jo høyere tall desto mer av masken brukes, jo lavere tall desto mindre av masken brukes.  Prøv deg fram for å finne den riktige terskelen for en maske.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_66"><title>Konverter til maske</title>
+<para>En maske ligner veldig på en overgang, bare at en maske er statisk.   Den endrer seg ikke gradvis fra et klipp til det neste.  Istedet blander den to spor.  En maske kan brukes til å bare vise en liten del av et klipp, til å vise en kant rundt et klipp eller til å ta bort noe fra et klipp.  For å eksperimentere med en maske kan du konvertere en overgang til en maske og se hva som skjer.</para>
+<para>For å konvertere en overgang til en maske høyreklikker du på overgangen og velger <guimenuitem>Konverter til maske</guimenuitem>.</para></sect2><sect2 id="sect2_67"><title>Opprette en ny overgang eller maske</title>
+<para>Overganger er bare gråskalabilder.  Det er lett å lage dem i et grafikkprogram som Gimp eller Inkscape.  Finn mappen <command>/openshot/transitions/</command> og se på overgangene som følger med.  For å legge til dine egne, bare kopier et nytt gråskalabilde inn i denne mappen.  Neste gang du åpner <application>OpenShot</application> vil bildet dukke opp i listen over overganger.</para></sect2><sect2 id="sect2_68"><title>Fjerne en overgang</title>
+<para>For å fjerne en overgang kan du høyreklikke på den på tidslinjen og velge <guimenuitem>fjern</guimenuitem>.</para></sect2></sect1><sect1 id="sect1_19"><title>Liste over overganger</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Persienner inn til ut stor</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Persienner inn til ut liten</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Sirkel inn til ut</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Sirkel ut til inn</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Klokke venstre til høyre</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Klokke høyre til venstre</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/openshot_logo.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>OpenShot Logo</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rektangel inn til ut</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rektangel ut til inn</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/sand.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Kryssing - dette er standardovergangen i OpenShot.  Den blander mellom to klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral stor</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_medium.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral middels</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_small.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral liten</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Loddrette persienner stor</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Loddrette persienner liten</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_bottom_to_top.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe bunn til topp</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe venstre til høyre</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe høyre til venstre</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_top_to_bottom.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe topp til bunn</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_20"><title>Effekter</title>
+<para>OpenShot har over 30 effekter til å manipulere bilde eller lyd i et klipp.  Å justere fargetone, lyshet og gamma kan gjøres med effekter.  Der er også mer eksotiske effekter, som forvrengning, bølge, gammel film, grønnvegg (også kjent som fargenøkling) og lydeffekter.</para><sect2 id="sect2_69"><title>Legge til en effekt</title>
+<para>For å legge til en effekt, bytt til fanen <guibutton>effekter</guibutton>, velg en effekt fra listen og dra den ned på et klipp på <guibutton>tidslinjen</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Fanen Effekter</para>
+</entry>
+<entry>
+<para>Denne fanen inneholder listen over effekter.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effektliste</para>
+</entry>
+<entry>
+<para>Effektlisten inneholder alle effektene som er tilgjengelige i OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Klipp</para>
+</entry>
+<entry>
+<para>Dra den valgte effekten ned på et klipp.  Bruk Egenskaper for klipp til å justere effektinnstillingene.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_70"><title>Juster effektinnstillingene</title>
+<para>For å justere innstillingene til en effekt, høyreklikk på et klipp og velg <guimenuitem>Egenskaper</guimenuitem>.  Bytt til fanen <guibutton>Effekter</guibutton> og du vil se en liste over alle effektene som har blitt lagt til dette klippet.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_settings.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>Komponent</para>
+</entry>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Effektliste</para>
+</entry>
+<entry>
+<para>Liste over effekter som hører til det valgte klippet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effektinnstillinger</para>
+</entry>
+<entry>
+<para>En liste over innstillinger for den valgte effekten.  Klikk på en effekt for å vise innstillingene.  Når du endrer innstillingene kan du bruke <guibutton>Play</guibutton>-knappen til å forhåndsvise effekten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Knapper for forhåndsvisning</para>
+</entry>
+<entry>
+<para>Bruk <guibutton>Play</guibutton>-knappen og <guibutton>glidebryteren</guibutton> til å forhåndsvise effektene før du klikker <guibutton>Bruk</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Legg til effekt</para>
+</entry>
+<entry>
+<para>Denne knappen viser vinduet Legg til effekt.  Velg en effekt å legge til og klikk <guibutton>Legg til</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Fjerne en effekt</para>
+</entry>
+<entry>
+<para>Denne kanppen fjerner den valgte effekten (hvis den finnes).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Flytt effekt</para>
+</entry>
+<entry>
+<para>Effekter legges til nederst. Bruk disse knappene til å endre rekkefølgen på effektene. Bruk <guibutton>Play-knappen</guibutton> til å forhåndsvise endringene.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<mediaobject/></sect2></sect1><sect1 id="sect1_21"><title>Effektliste</title>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/two_layer.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Svart/hvitt</guibutton> - Denne effekten konverterer videoen til bare svart og hvitt. Dette er noe annet enn gråskala, siden det bare er to farger og ikke noe grått.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/blur.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Uskarp</guibutton> – Denne effekten gjør videoen uskarp. Den kan også animeres fra uskarp til skarp eller omvendt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/brightness.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Lyshet</guibutton> – Denne effekten endrer lysheten til et klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/burningtv.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Brennende TV</guibutton> – Denne effekten animerer en flamme som brenner videoen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/charcoal.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Kull</guibutton> – Denne effekten legger på et kullfilter.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/chroma_key.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Fargenøkling</guibutton> (også kjent som grønnvegg eller blåvegg). Denne effekten tar bort en bestemt farge og gjør den gjennomsiktig.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/deinterlace.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Deinterlace</guibutton> – Ta bort like og ulike delbilder og kombinerer dem til hele bilder.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/distort.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Forvreng</guibutton> – Denne effekten legger til bølger og forvrengninger på et videoklipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/gamma.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gamma</guibutton> – Denne effekten endrer gammanivået til videoen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/glow.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Glød</guibutton> – Denne effekten legger til glød på videoen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/greyscale.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gråskala</guibutton> – Denne effekten konverterer et fargeklipp til gråtoner. Hvis du bare vil ha svart og hvitt bruker du i stedet <guibutton>Svart/hvitt</guibutton>-effekten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/hue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Fargetone</guibutton> – Endre fargetone på et klipp.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/invert.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Inverter</guibutton> – Denne effekten gir et negativ av videoen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/mirror.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Speil</guibutton> – Gir en speileffekt. Loddrett, vannrett og diagonale speil er støttet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_dust.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gammelt støv</guibutton> – Legger til støvpartikler. Legg på alle fire "gammel"-effektene for den ultimate looken av gammel video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_film.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gammel film</guibutton> – Gjør at videoen hopper opp og ned som gammel ustabil film. Legg på alle fire "gammel"-effektene for den ultimate looken av gammel video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_grain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gammelt korn</guibutton> – Legger til filmkorn. Legg på alle fire "gammel"-effektene for den ultimate looken av gammel video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gamle linjer</guibutton> – Legger til linjer. Legg på alle fire "gammel"-effektene for den ultimate looken av gammel video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/tcolor.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Overmettet</guibutton> – Denne effekten gir overmettede farger.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/pixelate.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>f<guibutton>Pikseler</guibutton> – Denne effekten gjør om bildet til små firkanter for å forvrenge og gjøre det mindre klart.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_blue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Ta bort blå</guibutton> – Denne effekten tar bort alt blått fra bildet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_green.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Ta bort grønn</guibutton> – Denne effekten tar bort alt grønt fra bildet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_red.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Ta bort rød</guibutton> – Denne effekten tar bort alt grønt fra bildet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/scan_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Scan-linjer</guibutton> – Legger til kunstige tv-linjer.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sepia.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sepia</guibutton> – Denne effekten gir et sepiastikk og får bildet til å se ut som et gammelt fotografi.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sobel.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sobel</guibutton> – Denne effekten finner konturene i bildet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/threshold.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Threshold</guibutton> – This effect will adjust which colors to show based on a threshold.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/water_rain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Water</guibutton> – Add rain drops, surfing waves, or a vortex.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/wave.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Wave</guibutton> – Ripple the screen in a wave pattern.  This can be animated to slowly wave your video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/white_balance.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>White Balance</guibutton> – Adjust what color is considered white, and then adjust all other colors to be relative to that adjustment.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Echo</guibutton> – Add an echo to the audio of the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Phaser</guibutton> – Give a futuristic sound to your clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Pitch</guibutton> – Adjust the audio pitch of a clip.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_22"><title>Eksporter video</title>
+<para>Once your have completed a project, you will want to export it to the correct format, based on your needs.  OpenShot has many predefined formats to simplify this process. There are two modes to export a video in OpenShot, Simple Mode and Advanced Mode.</para>
+<para>Both modes share a common area at the top of the screen, <guibutton>General Options</guibutton>.  Name your video file (no extension) and choose an export folder.</para><sect2 id="sect2_71"><title>Launch Export Window</title>
+<para>To launch the export window, click on the <guimenuitem>Export Video</guimenuitem> toolbar icon at the top of the main window, or choose <guimenu>File</guimenu> &gt; <guimenuitem>Export Video</guimenuitem>.</para></sect2><sect2 id="sect2_72"><title>Simple Mode</title>
+<para>OpenShot has many predefined export formats, which cover the most common export scenarios. Select a <guibutton>Project Type</guibutton>, such as DVD or Web, and then choose the <guibutton>Target</guibutton>, <guibutton>Video Profile</guibutton>, and <guibutton>Quality</guibutton>.  If you select <guibutton>All Formats</guibutton>, it will give you a list of all common formats, and let you pick the one you want.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_73"><title>Advanced Mode</title>
+<para>The advanced options should only be used by someone familiar with FFmpeg, since it is so easy to create invalid combinations of codecs, formats, and bit-rate settings.  However, if you are familiar with these settings, any FFmpeg supported format/codec/bit-rate can be used, which opens up dozens and dozens of additional formats that can be used during the export process.  You can also export your video as an image sequence, which can be useful if you intend to import this video into a program that requires image sequences, such as Blender.</para>
+<para>Also, if you first select values for the <guibutton>Simple Mode</guibutton>, and then switch to the <guibutton>Advanced Mode</guibutton>, it will preselect all of the Simple Mode settings.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_advanced.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2></sect1><sect1 id="sect1_23"><title>List of Formats &amp; Codecs</title>
+<para>Set of tables for exports based on video type categories </para>
+<informaltable frame="all">
+<tgroup cols="6"><tbody>
+<row>
+<entry>
+<para>Video Type</para>
+</entry>
+<entry>
+<para>Video Format</para>
+</entry>
+<entry>
+<para>Video Codec</para>
+</entry>
+<entry>
+<para>Lyd-kodek</para>
+</entry>
+<entry>
+<para>Suggested Project Profile</para>
+</entry>
+<entry>
+<para>Notes on Usage</para>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD-plate</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD-plate</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD-plate</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks (mainly in USA) but not necessary Modern TV's adapt rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive for use on computers</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive for use on computers</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Apple TV</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive Web Publishing</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive Web Publishing</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime iPod</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Quarter Square NTSC</para>
+</entry>
+<entry>
+<para>320x240 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV PAL DV PAL Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV NTSC DV NTSC Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def Widescreen</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC Widescreen</para>
+</entry>
+<entry>
+<para>854x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flickr High Def</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Picasa</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube Full High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 1080 25p HDV 1080 30p</para>
+</entry>
+<entry>
+<para>1920x1080 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libxvid</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>640x360 New Standard for S60 5th Edition Devices</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>MetaCafe</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>mpeg4</para>
+</entry>
+<entry>
+<para>libmp3lame</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 320x240 Flash</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_24"><title>Project Types / Profiles</title>
+<para>Every project in <application>OpenShot</application> must have a <guibutton>project type</guibutton> (also known as a <guibutton>profile</guibutton>).  A profile determines the following playback &amp; export settings for your video project: <emphasis>frame rate, height &amp; width, aspect ratio, and pixel ratio</emphasis>.</para>
+<para>Here is an example profile, for ATSC 1080i 60Hz:</para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Beskrivelse</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz </para>
+</entry>
+<entry>
+<para>Name of your profile as it will appear in OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_num</para>
+</entry>
+<entry>
+<para>30000 </para>
+</entry>
+<entry>
+<para>Numerator of the frame-rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_den</para>
+</entry>
+<entry>
+<para>1001</para>
+</entry>
+<entry>
+<para>Denominator of the frame-rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>width</para>
+</entry>
+<entry>
+<para>1920 </para>
+</entry>
+<entry>
+<para>Width of the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>height</para>
+</entry>
+<entry>
+<para>1080</para>
+</entry>
+<entry>
+<para>Height of the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>progressive</para>
+</entry>
+<entry>
+<para>0</para>
+</entry>
+<entry>
+<para>0 = Interlaced, 1 = Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_num</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Numerator of pixel  ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_den</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Denominator of pixel ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_num</para>
+</entry>
+<entry>
+<para>16</para>
+</entry>
+<entry>
+<para>Numerator of display aspect ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_den</para>
+</entry>
+<entry>
+<para>9</para>
+</entry>
+<entry>
+<para>Denominator of display aspect ratio.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>
+<application>OpenShot</application> has over 40 predefined profiles / project types available.  However, if you can not find a profile that works for your project, you can also create your own.  Locate the <command>/openshot/profiles/</command> folder.  Copy and rename an existing profile.  Edit the profile with your favorite text editor.  Next time you launch OpenShot, you will be able to choose your new profile.</para></sect1><sect1 id="sect1_25"><title>Brukervalg</title>
+<para>To configure <application>OpenShot</application>, choose <guimenu>Edit &gt;</guimenu> <guimenuitem>Preferences</guimenuitem> . The <guilabel>Preferences</guilabel> dialog can adjust the default length of images, the default theme, and the default project type / profile.  Setting these values can save you valuable time when starting a new project.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/preferences.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect1><sect1 id="sect1_26"><title>Om OpenShot</title>
+<para>
+<application>OpenShot</application> was created by Jonathan Thomas (<ulink url="mailto:Jonathan.Oomph@gmail.com">Jonathan.Oomph@gmail.com</ulink>) in August 2008 with the objective to provide a stable, free, and friendly-to-use video editor.</para><sect2 id="sect2_74"><title>OpenShot Development Team</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Jonathan Thomas</para>
+</entry>
+<entry>
+<para>Jonathan.Oomph@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Andy Finch</para>
+</entry>
+<entry>
+<para>we.rocked.in79@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Helen McCall</para>
+</entry>
+<entry>
+<para>helen.wildnfree@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Olivier Girard</para>
+</entry>
+<entry>
+<para>eolinwen@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TJ</para>
+</entry>
+<entry>
+<para>ubuntu@tjworld.net</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_75"><title>More Information</title>
+<para>To find more information about <application>OpenShot</application>, please visit the <ulink url="http://www.openshotvideo.com/">OpenShot Web page </ulink>
+<ulink url="http://www.openshotvideo.com/">(http://www.OpenShotVideo.com)</ulink>. To report a bug or make a suggestion regarding this application or this manual, go to the <ulink url="https://launchpad.net/openshot">OpenShot site on Launchpad</ulink>.  To discuss OpenShot with other users, visit our user website &amp; forum: <ulink url="http://openshotusers.com/forum/">http://OpenShotUsers.com/forum/</ulink>
+</para></sect2><sect2 id="sect2_76"><title>Copyright &amp; Trademark</title>
+<para>Copyright (C) 2009  Jonathan Thomas, Andy Finch, and TJ.  OpenShot(TM) is a registered trademark owned by Jonathan Thomas.</para></sect2><sect2 id="sect2_77"><title>License</title>
+<para>This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A copy of this license can be found at this <ulink url="http://www.gnu.org/licenses/gpl.html">link</ulink>, or in the file COPYING included with the source code of this program. </para></sect2></sect1></article>

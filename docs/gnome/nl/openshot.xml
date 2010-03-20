@@ -1,0 +1,3647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="nl">
+<articleinfo>
+<title>OpenShot Video Editor Manual</title>
+<subtitle/>
+<edition/>
+</articleinfo><sect1 id="sect1_1"><title>Inleiding</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/logo_badge.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>OpenShot is een videobewerkingsprogramma ontworpen voor de Linux desktop. Met OpenShot kunt u op een gemakkelijke manier videofragmenten, audiofragmenten en beelden met elkaar combineren in een enkel project, dat vervolgens weer als een videobestand geëxporteerd kan worden. Er is ondersteuning voor een groot aantal veel voorkomende videoformaten, zoals HD-video, DVD en formaten voor webpublicatie.</para>
+<para>OpenShot is een niet-lineaire video editor, dit betekent dat elk filmbeeldje direct te bereiken is. Hierdoor heeft u de vrijheid om de videofragmenten op elke denkbare manier te rangschikken, mengen en te monteren zonder beperkt te worden in uw creativiteit. Alle bewerkingen (snijden, inkorten, effecten toevoegen, etc.) zijn niet-destructief, wat betekent dat de originele videobestanden nooit worden gewijzigd.</para>
+<para>U kunt met OpenShot foto-diavoorstellingen maken, home  video's bewerken, televisie commercials en on-line films, of wat u maar kunt bedenken.</para><sect2 id="sect2_1"><title>Overzicht kenmerken:</title>
+<orderedlist>
+<listitem>
+<para>Ondersteuning voor vele video, audio en beeldformaten (op basis van FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Gnome integratie (drag and drop ondersteuning)</para>
+</listitem>
+<listitem>
+<para>Meerdere tracks</para>
+</listitem>
+<listitem>
+<para>Fragment herschalen, trimmen, naadloos lassen en snijden</para>
+</listitem>
+<listitem>
+<para>Video-overgangen met real-time previews</para>
+</listitem>
+<listitem>
+<para>Compositing, beeldoverlays, watermerken</para>
+</listitem>
+<listitem>
+<para>Titel sjablonen, titel creatie</para>
+</listitem>
+<listitem>
+<para>Compatibel met SVG, voor het maken en invoegen van titels en aftitelingen</para>
+</listitem>
+<listitem>
+<para>Rollende filmaftiteling</para>
+</listitem>
+<listitem>
+<para>Effen kleur fragmenten (inclusief alfa menging)</para>
+</listitem>
+<listitem>
+<para>Ondersteuning voor Rotoscoping en afbeeldingsreeksen</para>
+</listitem>
+<listitem>
+<para>´Drag and drop´ tijdbalk</para>
+</listitem>
+<listitem>
+<para>Filmbeelden versnellen / vertragen, toetsbinding: J,K en L toetsen</para>
+</listitem>
+<listitem>
+<para>Video-codering (gebaseerd op FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Key frame animatie</para>
+</listitem>
+<listitem>
+<para>Digitale zoom van videofragmenten</para>
+</listitem>
+<listitem>
+<para>Snelheidsveranderingen toepassen op fragmenten (slow motion enz.)</para>
+</listitem>
+<listitem>
+<para>Eigen luminantie- en maskerovergangen</para>
+</listitem>
+<listitem>
+<para>Herschaling van fragmenten (beeldgrootte)</para>
+</listitem>
+<listitem>
+<para>Audio mixen en bewerken</para>
+</listitem>
+<listitem>
+<para>Presets voor key frame animaties en opmaak</para>
+</listitem>
+<listitem>
+<para>Ken Burns-effect (het maken van video door panning over een afbeelding)</para>
+</listitem>
+<listitem>
+<para>Digitale video-effecten, met inbegrip van helderheid, gamma, tint, grijstinten, chroma key (blauw scherm / groen scherm) en meer dan 20 andere video-effecten</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_2"><title>Schermafdruk</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_clips.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2></sect1><sect1 id="sect1_2"><title>Aan de slag met Openshot</title><sect2 id="sect2_3"><title>OpenShot Video Editor starten</title>
+<para>U kunt <application>OpenShot</application> op verschillende manieren starten:</para><sect3 id="sect3_1"><title>Toepassingen menu</title>
+<para>Klik op <guimenu>Toepassingen</guimenu> in het hoofdmenu en kies <guisubmenu>Audio&nbsp;en&nbsp;video&nbsp;&gt;&nbsp;</guisubmenu><guimenuitem>OpenShot&nbsp;Video&nbsp;Editor</guimenuitem>.</para></sect3><sect3 id="sect3_2"><title>Opdrachtregel</title>
+<para>Om <application>OpenShot</application> te starten vanaf een opdrachtregel, open een Terminalvenster, typ de volgende opdracht en druk vervolgens op <keycap>Return</keycap>:</para>
+<para><command>openshot</command></para>
+<para>Optioneel kan een bestandsnaam achter de opdracht getypt worden. Dit kan een audio- of videobestand zijn, of een OpenShot project bestand (*.osp). Er kunnen meerdere bestanden achter elkaar opgegeven worden (met spaties tussen de bestandsnamen) en alle bestanden worden geïmporteerd in <application>OpenShot</application>.</para></sect3><sect3 id="sect3_3"><title>Openen met...</title>
+<para>Om <application>OpenShot</application> op te starten via bestandsbeheer, klik dan met de rechtermuisknop op een video-of audiobestand en kies <guimenu>Openen&nbsp;met</guimenu>&nbsp;&gt;&nbsp;<guimenuitem>OpenShot&nbsp;Video&nbsp;Editor</guimenuitem>.
+Of kies <guimenu>Openen&nbsp;met</guimenu>&nbsp;&gt;&nbsp;<guimenuitem>Met andere toepassing openen...</guimenuitem> &gt; <command>OpenShot&nbsp;Video&nbsp;Editor</command></para>
+<para/></sect3></sect2></sect1><sect1 id="sect1_3"><title>Leer OpenShot in 5 minuten!</title>
+<para>OpenShot is zeer eenvoudig te gebruiken en in deze snelcursus kunt u in 5 minuten de basishandelingen leren. Na deze oefening kunt u een eenvoudige foto-diashow met muziek maken.</para><sect2 id="sect2_4"><title>Stap 1 - Foto´s en muziek importeren</title>
+<para>Voordat we een video kunnen gaan maken, moeten we eerst <guibutton>bestanden importeren</guibutton>. Sleep vanuit bestandsbeheer of vanaf het bureaublad een paar <emphasis>foto´s of afbeeldingen</emphasis> en een <emphasis>muziekbestand</emphasis> (mp3) naar het OpenShot venster. Let erop dat u de bestanden los laat waar de pijl in de illustratie naar wijst.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_5"><title>Stap 2 - Foto's op de tijdbalk rangschikken</title>
+<para>Nadat u een aantal bestanden heeft geïmporteerd kunt u deze naar de tijdbalk slepen en in de goede volgorde zetten. Klik hiervoor op een foto en sleep deze naar <guibutton>Spoor 2</guibutton> op de tijdbalk. Doe hetzelfde voor de overige foto´s. Eenmaal op de tijdbalk zijn de foto´s fragmenten geworden met een bepaalde tijdsduur: zet de fragmenten in de volgorde zoals u zelf wil.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_6"><title>Stap 3 - Muziek toevoegen aan de tijdbalk</title>
+<para>Om onze foto-diashow interessanter te maken, kunnen we wat muziek toevoegen. In stap 1 heeft u al een muziekbestand geïmporteerd. Klik nu op het muziekbestand en sleep het naar <guibutton>Spoor 1</guibutton> op de tijdbalk.</para></sect2><sect2 id="sect2_7"><title>Stap 4 - Uw project bekijken</title>
+<para>Om te zien hoe onze video er uitziet en klinkt, klik op de knop <guibutton>Afspelen</guibutton> onder het voorbeeldvenster. Klik nogmaals op de knop <guibutton>Afspelen</guibutton> om de video te pauzeren. Wilt u nog fragmenten herschikken op de tijdbalk, kunt u ze gewoon slepen en verplaatsen waar u ze wil hebben.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_8"><title>Stap 5 - Exporteer uw video</title>
+<para>Zodra u tevreden bent met uw foto diashow, kunt u deze exporteren als video. Dit zal uw OpenShot project omzetten in één enkel videobestand dat u kunt afspelen op een mediaspeler (Totem, VLC, etc.) of op websites kunt plaatsen (YouTube, Vimeo, etc.).</para>
+<para>Klik op het <guibutton>Exporteer&nbsp;video</guibutton> pictogram in de hoofdwerkbalk (of klik in het hoofdmenu op <guimenuitem>Bestand</guimenuitem>&nbsp;&gt;&nbsp;<guimenuitem>Exporteer&nbsp;video...</guimenuitem>). Kies uit één van de vele voorinstellingen, en klik op de <guibutton>Exporteer&nbsp;video</guibutton> knop. Hieronder ziet u als voorbeeld de instellingen voor YouTube.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_9"><title>Stap 6 - Veel plezier met OpenShot!</title>
+<para>Gefeliciteerd! U heeft uw eerste OpenShot project voltooid. Na deze korte oefening heeft u deze basishandelingen uitgevoerd: <emphasis>importeren, videomontage, vooraf bekijken en exporteren</emphasis>. Misschien heeft u zelfs minder dan 5 minuten nodig gehad om deze snelcursus te voltooien. Voor een meer gedetailleerd begrip van OpenShot en haar geavanceerde functies kunt u het beste de rest van deze handleiding op uw gemak doorlezen. Veel plezier!</para></sect2></sect1><sect1 id="sect1_4"><title>Hoofdvenster</title>
+<para>Het hoofdvenster van OpenShot Video Editor bevat nagenoeg alle functies die u nodig heeft voor het bekijken, monteren en bewerken van uw videoproject.</para><sect2 id="sect2_10"><title>Overzicht</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Hoofdwerkbalk</para>
+</entry>
+<entry>
+<para>Bevat knoppen om uw video-projecten te kunnen openen, opslaan en exporteren.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Functie-tabbladen</para>
+</entry>
+<entry>
+<para>Wisselen tussen projectbestanden, overgangen en effecten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Projectbestanden</para>
+</entry>
+<entry>
+<para>Alle audio- en videobestanden en afbeeldingen die zijn ingevoerd in uw project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Voorbeeldvenster</para>
+</entry>
+<entry>
+<para>Hier wordt uw videomateriaal afgespeeld.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Montagewerkbalk</para>
+</entry>
+<entry>
+<para>Deze werkbalk bevat diverse gereedschappen voor het bewerken, inpassen en splitsen van fragmenten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Zoomregelaar</para>
+</entry>
+<entry>
+<para>Hiermee kunt u de tijdbalk in- en uitzoomen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Afspeelkop / Liniaal</para>
+</entry>
+<entry>
+<para>De liniaal geeft de tijd-schaal weer en de rode lijn is de afspeelkop. De afspeelkop geeft het actuele filmbeeld aan in een montagereeks.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Tijdbalk</para>
+</entry>
+<entry>
+<para>De tijdbalk is een grafische weergave van uw project waarop alle fragmenten en overgangen in chronologische volgorde te zien zijn.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_11"><title>Hoofdwerkbalk</title>
+<para>De <guimenu>hoofdwerkbalk</guimenu> bevat knoppen om een nieuw project aan te maken en op te slaan, mediabestanden te importeren en uw video te exporteren. Deze functies kunnen ook worden benaderd via het <guimenuitem>Bestand</guimenuitem> menu.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_toolbar.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Project openen</para>
+</entry>
+<entry>
+<para>Open een OpenShot projectbestand (*.osp).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Project opslaan</para>
+</entry>
+<entry>
+<para>Sla het huidige project op. Als er nog geen project is aangemaakt verschijnt een dialoogvenster waar u de ontbrekende gegevens kunt invullen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Importeer bestanden</para>
+</entry>
+<entry>
+<para>Importeer 1 of meer bestanden in uw huidige OpenShot project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Schermafdruk maken</para>
+</entry>
+<entry>
+<para>Maakt een afdruk van het huidige frame van het Voorbeeldvenster.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Video exporteren</para>
+</entry>
+<entry>
+<para>Exporteer het huidige project tot een videobestand.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_12"><title>Functie-tabbladen</title>
+<para>Met deze tabbladen kunt u kiezen tussen 3 verschillende functies: projectbestanden, overgangen en effecten. De items in deze tabbladen kunnen naar de tijdbalk worden gesleept .</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_tabs.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_13"><title>Projectbestanden</title>
+<para>Het <guibutton>Projectbestanden</guibutton> tabblad bevat alle bestanden die u heeft geïmporteerd in uw project. Voordat u audio- of videobestanden aan de tijdbalk kunt toevoegen, moeten deze eerst in dit tabblad geïmporteerd worden.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_files.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_14"><title>Voorbeeldvenster</title>
+<para>In het videovoorbeeld venster wordt uw videomateriaal afgespeeld en kunt u de videomontage vooraf bekijken. U kunt de video bedienen met de knoppen onder het voorbeeldvenster. Door op de handgrepen naast het venster te klikken en vervolgens te verslepen kunt u de grootte van het voorbeeldvenster aanpassen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Spring naar begin</para>
+</entry>
+<entry>
+<para>Spring naar het begin van het project op de tijdbalk.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Vorige markering</para>
+</entry>
+<entry>
+<para>Spring naar de vorige markering (indien aanwezig).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Terugspoelen</para>
+</entry>
+<entry>
+<para>Video terugspoelen vanaf de huidige afspeelpositie.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Afspelen / Pauze</para>
+</entry>
+<entry>
+<para>Afspelen of pauzeren van de video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Vooruitspoelen</para>
+</entry>
+<entry>
+<para>Video vooruitspoelen vanaf de huidige afspeelpositie.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Volgende markering</para>
+</entry>
+<entry>
+<para>Spring naar de volgende markering (indien aanwezig).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Spring naar einde</para>
+</entry>
+<entry>
+<para>Spring naar het einde van het project op de tijdbalk.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_15"><title>Montagewerkbalk</title>
+<para>De montagewerkbalk bevat verschillende gereedschappen voor het monteren van een video. Wanneer u fragmenten op de tijdbalk wilt verplaatsen, splitsen of inpassen moet u eerst het juiste gereedschap kiezen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Spoor toevoegen</para>
+</entry>
+<entry>
+<para>Een nieuw spoor toevoegen bovenop de andere.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Selectie gereedschap</para>
+</entry>
+<entry>
+<para>Met het selectie gereedschap kunt u fragmenten aanklikken en verplaatsen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Snijgereedschap</para>
+</entry>
+<entry>
+<para>Met het snijgereedschap kunt u een fragment splitsen op de plaats waar u klikt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Trim gereedschap</para>
+</entry>
+<entry>
+<para>Met het trim gereedschap kunt u op de rand van een fragment klikken en slepen om het fragment in te passen (trimmen).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Magneet gereedschap</para>
+</entry>
+<entry>
+<para>Als de magneet is ingeschakeld, worden de randen van fragmenten tot elkaar aangetrokken bij het monteren (als ze dicht genoeg bij elkaar komen) of in de buurt van de afspeelkop gesleept worden.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Markering toevoegen</para>
+</entry>
+<entry>
+<para>Een nieuwe markering toevoegen zodat u hier snel naar terug kunt springen tijdens de videomontage.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_16"><title>Zoomregelaar</title>
+<para>Met de zoom regelaar kan de tijdschaal van de tijdbalk verandert worden. Zoom in om nauwkeuriger te kunnen werken of zoom uit om het gehele project te kunnen overzien, zonder te hoeven scrollen. U kunt de zoom knoppen gebruiken (links en rechts) of de schuifknop bewegen. De tijdbalk wordt ververst als u de schuifknop even stilhoudt.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_zoomer.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_17"><title>Tijdbalk</title>
+<para>De tijdbalk maakt uw project op een grafische manier aanschouwelijk. De gele rechthoeken geven de fragmenten weer. Onder de tijdsaanduiding bevinden zich de sporen, weergegeven als blauwe rechthoeken. De afspeelkop (rode lijn) geeft de huidige afspeelpositie weer van uw project. De huidige afspeelpositie staat linksboven van de tijdbalk weergeven in de notatie <emphasis>uren:minuten:seconden:frames</emphasis>.</para>
+<para>U kunt overal op de liniaal klikken om direct naar dat tijdstip toe te springen. Als u vervolgens met de muispijl over de liniaal heen sleept ziet u de video mee bewegen in het voorbeeldvenster: dit is een snelle manier om uw project te bekijken.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_timeline.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Liniaal</para>
+</entry>
+<entry>
+<para>De liniaal geeft de totale tijdsduur weer van uw huidige project, in de gekozen tijdschaal.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Afspeelkop</para>
+</entry>
+<entry>
+<para>De afspeelkop geeft de actuele afspeelpositie weer van de montagereeks.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Fragment</para>
+</entry>
+<entry>
+<para>Een fragment is een verwijzing naar een videobestand, audiobestand of een afbeelding.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Spoor</para>
+</entry>
+<entry>
+<para>Een spoor is vergelijkbaar met een laag. De video´s en afbeeldingen in de hogere sporen worden boven die van de lagere sporen getoond. Er is geen limiet aan het aantal sporen dat een project kan bevatten.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_18"><title>Sporen</title>
+<para><application>OpenShot</application> gebruikt sporen om video´s en afbeeldingen gelaagd te kunnen monteren. Het bovenste spoor is de toplaag en het onderste spoor is de bodemlaag. Als u bekend bent met lagen in een fotobewerkingsprogramma dan zal dit concept u vermoedelijk bekend voorkomen. OpenShot zal alle lagen samenmengen, net zoals een fotobewerkingsprogramma.</para>
+<para>Stel u heeft een project met 3-sporen. Als achtergrond wilt u een afbeelding van een zonsondergang, een maan in het midden en bovenaan wilt u een logo hebben.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/tracks.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Bovenste spoor</para>
+</entry>
+<entry>
+<para>Fragmenten op dit spoor zullen bovenop liggen. Logo's en watermerken kunt u het beste op dit spoor plaatsen. In de illustratie is het Openshot logo op dit spoor geplaatst.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Midden spoor</para>
+</entry>
+<entry>
+<para>Deze fragmenten liggen tussen het bovenste en onderste spoor in. In de illustratie ligt de afbeelding van de maan op dit spoor.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Onderste spoor</para>
+</entry>
+<entry>
+<para>Deze fragmenten komen onder alle andere sporen. De zonsondergang is op dit spoor geplaatst in de illustratie.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_19"><title>Het afspelen van een video</title>
+<para>Afspelen, pauzeren en zoeken zijn belangrijke kenmerken van een video editor. Terwijl u aan een videoproject werkt zult u steeds opnieuw het project af willen spelen om het resultaat te bekijken. Hoewel klikken op de <guibutton>Afspelen</guibutton> knop een makkelijke manier is om dit te doen, zijn er snellere manieren.</para><sect3 id="sect3_4"><title>Afspeel mogelijkheden</title>
+<para>Er zijn <emphasis>7 manieren</emphasis> om een video te bedienen in <application>OpenShot</application>:</para>
+<orderedlist>
+<listitem>
+<para>Klik op de knoppen onder het <guibutton>Videovoorbeeld</guibutton> (Afspelen, vooruit zoeken enz...)</para>
+</listitem>
+<listitem>
+<para>Versleep de schuifregelaar onder het videovoorbeeld venster</para>
+</listitem>
+<listitem>
+<para>Versleep de <guibutton>Afspeelkop</guibutton> op de liniaal</para>
+</listitem>
+<listitem>
+<para>Ergens op de liniaal klikken</para>
+</listitem>
+<listitem>
+<para>Met de sneltoetsen (J,K,L toetsen)</para>
+</listitem>
+<listitem>
+<para>Met de pijltjestoetsen (links, rechts, omhoog, omlaag)</para>
+</listitem>
+<listitem>
+<para>Gebruik van de spatietoets (Afspelen / pauze)</para>
+</listitem>
+</orderedlist></sect3></sect2><sect2 id="sect2_20"><title>Sneltoetsen</title>
+<para>Een sneltoets is een toets op het keyboard met een bepaalde functie waardoor u niet de muis hoeft te bewegen en klikken. Vaak is het sneller om een toets in te drukken dan aanwijzen en klikken. Dit zijn alle sneltoetsen in <application>OpenShot</application>:</para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>toets</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>J</para>
+</entry>
+<entry>
+<para>Terugspoelen (1x, 2x, 4x, 8x, 16x,...)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>K</para>
+</entry>
+<entry>
+<para>Pauze / afspelen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>L</para>
+</entry>
+<entry>
+<para>Vooruit spoelen (1x, 2x, 4x, 8x, 16x,...)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Spatietoets</para>
+</entry>
+<entry>
+<para>Pauze / afspelen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Omhoog</para>
+</entry>
+<entry>
+<para>Spring naar vorige markering (indien aanwezig)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Omlaag</para>
+</entry>
+<entry>
+<para>Spring naar de volgende markering (indien aanwezig)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Links</para>
+</entry>
+<entry>
+<para>Eén filmbeeld terug gaan (video beeld voor beeld bekijken)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Rechts</para>
+</entry>
+<entry>
+<para>Eén filmbeeld vooruit gaan (video beeld voor beeld bekijken)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Tab</para>
+</entry>
+<entry>
+<para>Wissel tussen <guibutton>Trimgereedschap</guibutton> en <guibutton>Selectiegereedschap</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Scroll wiel</para>
+</entry>
+<entry>
+<para>Tijdbalk in- en uitzoomen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Home</para>
+</entry>
+<entry>
+<para>Spring naar het begin van de tijdbalk</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + End</para>
+</entry>
+<entry>
+<para>Spring naar het einde van de tijdbalk</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>F1</para>
+</entry>
+<entry>
+<para>Open het help bestand (mits geïnstalleerd)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_5"><title>Projecten - aanmaken, openen en opslaan</title>
+<para><application>OpenShot</application> heeft een <emphasis>projectbestand</emphasis> nodig om informatie in op te slaan van een videoproject. Informatie zoals de naam en locatie van het project, video- en audiobestanden, tijdbalk informatie, welke fragmenten zijn er ingekort, gerangschikt, etc...</para>
+<para/>
+<para>Als u <application>OpenShot</application> opstart wordt automatisch een nieuw projectbestand aangemaakt. U kunt direct met <application>OpenShot</application> gaan werken zonder eerst een project te hoeven aanmaken.  </para>
+<para>Projectbestanden hebben een .osp bestandsextensie (bijvoorbeeld: Zomervakantie.osp). Het project heeft ook een /thumbnail/ map nodig waarin alle miniatuurafbeeldingen van het project staan. Als u een projectbestand verplaatst moet u de /thumbnail/ map ook mee verplaatsen.</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Projectbestand</para>
+</entry>
+<entry>
+<para>/home/user/Bureaublad/Zomervakantie.osp</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Miniatuurmap</para>
+</entry>
+<entry>
+<para>/home/user/Bureaublad/thumbnail/</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable><sect2 id="sect2_21"><title>Project aanmaken</title>
+<para>Er zijn 2 manieren om een projectbestand te maken.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/menu_file.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect3 id="sect3_5"><title>Methode 1 - Bestandsmenu</title>
+<para>Kies in het OpenShot menu <guimenu>Bestand&nbsp;&gt;&nbsp;</guimenu><guimenuitem>Nieuw project...</guimenuitem> en het <guilabel>Project&nbsp;aanmaken</guilabel> venster verschijnt. Verander de projectnaam, projectlengte, projecttype en klik op “Project opslaan“.</para></sect3><sect3 id="sect3_6"><title>Methode 2 - Standaardproject opslaan</title>
+<para>Omdat OpenShot bij het opstarten automatisch een standaard project aanmaakt, kunt u eenvoudigweg <guimenu>Bestand&nbsp;&gt;&nbsp;</guimenu><guimenuitem>Project opslaan</guimenuitem> kiezen. Het <guilabel>Project&nbsp;aanmaken</guilabel> venster verschijnt. Verander de projectnaam, projectlengte, projecttype en klik op “Project opslaan”.</para></sect3></sect2><sect2 id="sect2_22"><title>Het “Project aanmaken“ dialoogvenster</title>
+<para>Als u klikt op <guimenuitem>Nieuw project...</guimenuitem> of <guimenuitem>Project opslaan</guimenuitem> krijgt u dit dialoogvenster te zien:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/projects_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Projectnaam</para>
+</entry>
+<entry>
+<para>Vul hier de naam van uw projectbestand in.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Projectmap</para>
+</entry>
+<entry>
+<para>Kies hier de map waar het projectbestand opgeslagen wordt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Projectlengte</para>
+</entry>
+<entry>
+<para>Vul hier de <emphasis>maximum</emphasis> lengte van de tijdbalk in.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Projecttype</para>
+</entry>
+<entry>
+<para>Kies hier het projecttype dat u wil gebruiken tijdens de videomontage. Dit bepaald de afmeting, beeldverhouding en het aantal filmbeelden per seconde van de videobestanden die in het voorbeeldvenster getoond worden.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Projecttype details</para>
+</entry>
+<entry>
+<para>Hier ziet u de details van het gekozen projecttype zoals de afmeting, beeldverhouding en het aantal filmbeelden per seconde. Als u een ander projecttype kiest veranderen de bijbehorende details.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_23"><title>Een project openen</title>
+<para>Om een project te openen kiest u  <guimenu>Bestand&nbsp;&gt;&nbsp;</guimenu><guimenuitem>Project openen...</guimenuitem> in het menu. Het <guilabel>Project&nbsp;openen</guilabel> dialoogvenster verschijnt. Selecteer uw projectbestand (*.osp) en klik op de knop <guibutton>Project&nbsp;openen</guibutton>.</para>
+<para>Wilt u een recent project openen kies dan <guimenu>Bestand&nbsp;&gt;&nbsp;</guimenu><guimenuitem>Recente&nbsp;projecten</guimenuitem>. Vaak is dit de snelste manier om een project te openen binnen <application>OpenShot</application>.</para>
+<para>Tot slot kunt u ook dubbelklikken op een .osp projectbestand in bestandsbeheer en vervolgens de opdracht <command>openshot</command> kiezen. OpenShot  start dan op en het project wordt automatisch geopend.</para></sect2></sect1><sect1 id="sect1_6"><title>Bestanden importeren - audio, video en afbeeldingen</title>
+<para>Voordat u fragmenten kunt toevoegen aan de tijdbalk moet u deze eerst <emphasis>importeren</emphasis> in uw project. Fragmenten kunnen op verschillende manieren geïmporteerd worden. De meest gebruikelijke manier is om bestanden te slepen van uw computer naar het <guibutton>Projectbestanden</guibutton> tabblad in OpenShot.</para>
+<para>Er zijn 4 manieren om een fragment te importeren.</para><sect2 id="sect2_24"><title>Methode 1 - Verslepen ("Drag &amp; drop")</title>
+<orderedlist>
+<listitem>
+<para>Start OpenShot</para>
+</listitem>
+<listitem>
+<para>Versleep meerdere bestanden tegelijk van uw computer naar het <guibutton>Projectbestanden</guibutton> tabblad.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_25"><title>Methode 2 - Versleep map</title>
+<orderedlist>
+<listitem>
+<para>Start OpenShot</para>
+</listitem>
+<listitem>
+<para>Versleep een complete map met media van uw computer naar het <guibutton>Projectbestanden</guibutton> tabblad.</para>
+<para>
+<emphasis>* Alle audio- en videobestanden en afbeeldingen binnen deze map zullen geïmporteerd worden.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_26"><title>Methode 3 - Openen met</title>
+<orderedlist>
+<listitem>
+<para>Selecteer 1 of meerdere mediabestanden in bestandsbeheer</para>
+</listitem>
+<listitem>
+<para>Klik met de rechtermuisknop op de geselecteerde bestanden en kies <guimenu>Openen&nbsp;met</guimenu>&nbsp;&gt;&nbsp;<guimenuitem>Met&nbsp;andere&nbsp;toepassing&nbsp;openen...</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Kies vervolgens <application>OpenShot Video Editor</application> (of klik op "Gebruik een aangepaste opdracht" en typ <command>openshot</command> in)</para>
+<para>
+<emphasis>* Zelfs nadat u</emphasis>
+<application>OpenShot</application>
+<emphasis>gestart heeft kunt u terug gaan naar bestandsbeheer, rechts-klikken op bestanden en  "Openen met &gt; OpenShot" kiezen. De bestanden zullen toegevoegd worden aan het al geopende OpenShot programma.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_27"><title>Methode 4 - Importeer pictogram</title>
+<orderedlist>
+<listitem>
+<para>Start OpenShot</para>
+</listitem>
+<listitem>
+<para>Klik op het "Importeer bestanden" pictogram in de hoofdwerkbalk (het plus-teken)</para>
+</listitem>
+<listitem>
+<para>Selecteer 1 of meerdere bestanden en klik op "Toevoegen"</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_7"><title>Afbeeldingsreeksen</title>
+<para>Een van de krachtigste mogelijkheden van OpenShot is dat u reeksen van afbeeldingen kunt importeren. Een afbeeldingsreeks is eigenlijk gewoon een map met opeenvolgend genummerde afbeeldingen. Elke afbeelding is een filmbeeld van het videofragment. Dus voor een fragment van bijvoorbeeld 30 seconden, met 30 filmbeelden per seconde, heeft u 900 afbeeldingen nodig. Hoewel het werken met afbeeldingsreeksen tijdrovend kan zijn (door de enorme hoeveelheid bestanden die nodig zijn), zijn de mogelijkheden eindeloos.</para>
+<para>Volg deze stappen om een afbeeldingsreeks te importeren:</para><sect2 id="sect2_28"><title>Een afbeeldingsreeks verkrijgen</title>
+<para>Veel programma's kunnen een afbeeldingsreeks maken. Een voorbeeld hiervan is Blender (een 3D-animatie pakket) waarmee u prachtige geanimeerde aftitelingen kunt maken en exporteren als een reeks .png bestanden (met  transparantie). Het resultaat is een map met alle afbeeldingen.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_29"><title>De afbeeldingsreeks importeren</title>
+<para>Ga naar <guimenu>Bestand</guimenu>&nbsp;&gt;&nbsp;<guimenuitem>Afbeeldingsreeks importeren...</guimenuitem> in het menu en het "Importeer afbeeldingsreeks" dialoogvenster verschijnt.  </para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Vul het bestandsnaampatroon in en het aantal filmbeelden per afbeelding. Kies vervolgens de locatie waar de afbeeldingsreeks zich bevind. Controleer goed of de bestandsnamen kloppen en overeen komen met het patroon. Video_0001.jpg is bijvoorbeeld niet hetzelfde als Video_1.jpg. Als u het goede bestandsnaampatroon heeft ingevuld klik dan op <guibutton>Afbeeldingsreeks importeren</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_30"><title>Aan de tijdbalk toevoegen</title>
+<para>Sleep uw nieuwe afbeeldingsreeks naar de tijdbalk. De reeks wordt hetzelfde weergegeven als een normaal videofragment.</para></sect2><sect2 id="sect2_31"><title>Een afbeeldingsreeks creëren</title>
+<para>Als u nog geen afbeeldingsreeks heeft, kunt u dit gemakkelijk zelf maken. Rechts-klik op een <guibutton>videobestand</guibutton> in het <guimenuitem>Projectbestanden </guimenuitem> deelvenster en kies <guimenuitem>Omzetten naar afbeeldingsreeks</guimenuitem>. Er wordt een nieuwe map aangemaakt op uw computer met dezelfde naam als het videobestand. Daarin is elk filmbeeldje van de video geëxporteerd als een .png afbeelding. Let op! Afhankelijk van de grootte van de video kan dit van enkele seconden tot vele minuten duren! Ook wordt automatisch een verwijzing gemaakt in het <guimenuitem>Projectbestanden</guimenuitem> deelvenster.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_convert.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_32"><title>Een afbeeldingsreeks bewerken</title>
+<para>Als u een reeks van afbeeldingen wil bewerken raden we u aan "The Gimp" te gebruiken (een open-source beeldbewerkingsprogramma). Dit programma bevat gereedschap om u te helpen met het bewerken van veel afbeeldingen en kan het proces vereenvoudigen van het bijwerken, opslaan en openen van de volgende afbeelding. U kunt dan elk filmbeeldje bijwerken, rode-ogen verwijderen, gloei-effecten aan lichtzwaarden toevoegen, draden verwijderen, etc... Alles is mogelijk met beeld voor beeld bewerking, maar het vergt veel inzet.</para><sect3 id="sect3_7"><title>Gimp Animatie Pakket (GAP)</title>
+<para>GAP is een extensie (plug-in) voor The Gimp, voor het bewerken van afbeeldingsreeksen. Met de plug-in kan snel achter elkaar een afbeelding opgeslagen worden en de volgende geladen worden. Er kunnen key-frames gebruikt worden om effecten toe te passen op een reeks afbeeldingen, of zelfs het maken van animaties behoort tot de mogelijkheden. Als u  afbeeldingsreeksen wil bewerken, moet u zeker eens kijken naar <ulink url="http://www.gimp.org/tutorials/Using_GAP/">GAP</ulink>.</para></sect3><sect3 id="sect3_8"><title>Schermafdruk van Gimp Animatie Pakket</title>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/gimp_animation_package.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect3></sect2></sect1><sect1 id="sect1_8"><title>Bestandsbeheer</title>
+<para>Bij het monteren van een video is het vaak nodig veel verschillende soorten bestanden te importeren in uw project, zoals audio, video´s, afbeeldingen, titels, overlays, geluidseffecten en meer. Dit kan al snel onoverzichtelijk worden en door de lange lijst met bestanden vindt u niet snel het juiste bestand.</para>
+<para>Als uw project veel bestanden heeft kunt u mappen gebruiken om uw bestanden te organiseren.</para><sect2 id="sect2_33"><title>Een map aanmaken</title>
+<orderedlist>
+<listitem>
+<para>Rechts-klik ergens in het <guimenuitem>Projectbestanden</guimenuitem> deelvenster.</para>
+</listitem>
+<listitem>
+<para>Kies <guimenuitem>Map aanmaken...</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Vul een mapnaam in</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_create.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_34"><title>Bestanden naar een map verplaatsen</title>
+<orderedlist>
+<listitem>
+<para>Maak eerst een map aan als u dit nog niet gedaan heeft.</para>
+</listitem>
+<listitem>
+<para>Rechts-klik op 1 of meer bestanden in het <guimenuitem>Projectbestanden</guimenuitem> tabblad.</para>
+</listitem>
+<listitem>
+<para>Kies <guimenuitem>Bestand(en) naar map verplaatsen</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Kies een map.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_move_to_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_35"><title>Een map verwijderen</title>
+<orderedlist>
+<listitem>
+<para>Rechts-klik op een map</para>
+</listitem>
+<listitem>
+<para>Kies <guimenuitem>Map verwijderen</guimenuitem>.</para>
+<para>
+<emphasis>* Verplaats eerst alle bestanden uit een map voor u een map verwijdert!</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_9"><title>Bestanden aan de tijdbalk toevoegen</title>
+<para>Nadat u bestanden geïmporteerd heeft kunt u deze aan de tijdbalk toevoegen. Ga als volgt te werk om een bestand vanuit het <guimenuitem>Projectbestanden</guimenuitem> tabblad aan de <guibutton>tijdbalk</guibutton> toe te voegen:</para>
+<orderedlist>
+<listitem>
+<para>Klik op een bestand</para>
+</listitem>
+<listitem>
+<para>Sleep dit naar de <guibutton>tijdbalk</guibutton> en laat los</para>
+</listitem>
+<listitem>
+<para>Het fragment wordt toegevoegd aan de tijdbalk</para>
+<para>
+<emphasis>* U kunt maar 1 bestand per keer toevoegen</emphasis>
+</para>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+<emphasis/>
+</mediaobject>
+<para/></sect1><sect1 id="sect1_10"><title>Fragmenten verplaatsen &amp; inkorten op de tijdbalk</title>
+<para>Nadat u bestanden aan de tijdbalk heeft toegevoegd kunnen we de fragmenten gaan herschikken en in de goede volgorde zetten. Indien nodig kan het begin en/of einde van het fragment ingekort worden (trimmen).</para><sect2 id="sect2_36"><title>Een fragment verplaatsen (Selectiegereedschap)</title>
+<orderedlist>
+<listitem>
+<para>Kies <guibutton>Selectiegereedschap</guibutton> (dit is de standaardmodus).</para>
+</listitem>
+<listitem>
+<para>Klik op een fragment.</para>
+</listitem>
+<listitem>
+<para>Sleep het fragment naar de gewenste positie op de <guibutton>tijdbalk</guibutton>, en laat los.</para>
+<para>
+<emphasis>* Als de magneet is ingeschakeld, zullen de fragmenten elkaar aantrekken als ze dicht genoeg bij elkaar komen of in de buurt van de afspeelkop komen.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_37"><title>Een fragment inpassen (Trimgereedschap)</title>
+<orderedlist>
+<listitem>
+<para>Kies <guibutton>Trimgereedschap</guibutton> door op het trim-pictogram te klikken</para>
+</listitem>
+<listitem>
+<para>Beweeg de muispijl naar de rand van het fragment totdat de muispijl verandert.</para>
+</listitem>
+<listitem>
+<para>Klik op de rand en sleep de muis om het fragment aan te passen.</para>
+<para>
+<emphasis>* Wanneer u de rand van het fragment versleept, kunt u in het voorbeeldvenster zien waar het fragment begint of eindigt (afhankelijk aan welke zijde u het fragment versleept).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_38"><title>Een fragment splitsen (Snijgereedschap)</title>
+<orderedlist>
+<listitem>
+<para>
+<emphasis>Om een fragment in in tweeën te snijden kies het</emphasis>
+<guibutton>Snijgereedschap</guibutton>
+<emphasis>.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>De muisaanwijzer verandert in een stippellijn &amp; mes.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Klik op een fragment op de plaats waar u het doormidden wil snijden.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_39"><title>Montagewerkbalk</title>
+<para>De montagewerkbalk bevat verschillende gereedschappen voor het monteren van een video. Wanneer u fragmenten op de tijdbalk wilt verplaatsen, splitsen of inpassen moet u eerst het juiste gereedschap kiezen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Spoor toevoegen</para>
+</entry>
+<entry>
+<para>Een nieuw spoor toevoegen bovenop de andere.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Selectie gereedschap</para>
+</entry>
+<entry>
+<para>Met het selectie gereedschap kunt u fragmenten aanklikken en verplaatsen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Snijgereedschap</para>
+</entry>
+<entry>
+<para>Met het snijgereedschap kunt u een fragment splitsen op de plaats waar u klikt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Trim gereedschap</para>
+</entry>
+<entry>
+<para>Met het trim gereedschap kunt u op de rand van een fragment klikken en slepen om het fragment in te passen (trimmen).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Magneet gereedschap</para>
+</entry>
+<entry>
+<para>Als de magneet is ingeschakeld, worden de randen van fragmenten tot elkaar aangetrokken bij het monteren (als ze dicht genoeg bij elkaar komen) of in de buurt van de afspeelkop gesleept worden.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Markering toevoegen</para>
+</entry>
+<entry>
+<para>Een nieuwe markering toevoegen zodat u hier snel naar terug kunt springen tijdens de videomontage.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2></sect1><sect1 id="sect1_11"><title>Audio en video van elkaar scheiden</title>
+<para>Indien nodig kan OpenShot audio en video van een fragment van elkaar scheiden. Als u alleen het geluid van een fragment wilt afspelen, of alleen beeld zonder geluid, volg dan de volgende stappen:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/track_buttons.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_40"><title>Alleen video</title>
+<para>Om alleen de video van een fragment af te spelen zonder geluid, klik dan op het luidspreker pictogram van het betreffende fragment. Dit zal het geluid van het fragment dempen. Wilt u het geluid van het gehele spoor dempen, klik dan op het luidspreker pictogram van het spoor.</para></sect2><sect2 id="sect2_41"><title>Alleen audio</title>
+<para>Om alleen de audio van een fragment af te spelen zonder beeld, klik dan op het oog-pictogram van het betreffende fragment. Dit zal het beeld van het fragment verbergen. Wilt u het beeld van het gehele spoor verbergen, klik dan op het oog-pictogram van het spoor.</para></sect2></sect1><sect1 id="sect1_12"><title>Fragmenten dupliceren</title>
+<para>Een nuttige functie in OpenShot is de mogelijkheid om fragmenten, overgangen en maskers te dupliceren. Om een item te dupliceren klik dan met de rechtermuisknop op een item (zoals een fragment of overgang) en kies <guimenuitem>Dupliceren</guimenuitem>. Dit zal een exacte kopie van het item aan de tijdbalk toevoegen, inclusief de IN en OUT punten, effecten en key-frame animatie instellingen.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/duplicate_clip.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Een veel gebruikte toepassing van de <guimenuitem>Dupliceer</guimenuitem> functie is om een fragment te trimmen tot de gewenste scene en dan te dupliceren. Van de twee identieke fragmenten kunt u van het ene fragment het geluid dempen en van de ander het beeld verbergen. Dit is een snelle manier om audio en video van een fragment te scheiden. Nu kunt u het geluid een verschuiving geven ten opzichte van het beeld, of het geluid van het fragment door laten lopen en de video inkorten. Dit wordt vaak gebruikt in filmdialogen. De stem van de eerste persoon loopt dan door terwijl de reactie van de tweede persoon gefilmd wordt.</para></sect1><sect1 id="sect1_13"><title>Fragmenteigenschappen</title>
+<para>Elk fragment in OpenShot bezit vele eigenschappen die aangepast kunnen worden. Omdat niet alle eigenschappen op de tijdbalk weergegeven en aangepast kunnen worden, is er een apart eigenschappenvenster hiervoor gemaakt. De gebruiker kan hier elke mogelijke instelling en eigenschap van een fragment aanpassen, zoals lengte, snelheid, grootte, positie, beeldverhouding en nog veel meer.</para><sect2 id="sect2_42"><title>Het fragmenteigenschappen venster openen</title>
+<para>Om het eigenschappenvenster te openen klik dan met de rechtermuisknop op een fragment en kies <guimenuitem>Eigenschappen</guimenuitem>.</para></sect2><sect2 id="sect2_43"><title>Aanpassingen bekijken</title>
+<para>Links bevindt zich een klein voorbeeldvenster om snel terug te kijken hoe de gebruikte instellingen uitpakken. Druk hiervoor op de <guibutton>Afspelen</guibutton> knop of versleep de <guibutton>Schuifknop</guibutton>. U kunt steeds opnieuw de veranderingen bekijken om de instellingen precies goed te krijgen. De aanpassingen worden pas naar de tijdbalk doorgevoerd als u op <guibutton>Toepassen</guibutton> klikt.</para></sect2><sect2 id="sect2_44"><title>Algemeen tabblad</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab1.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para>In het algemene tabblad staan de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Video activeren</para>
+</entry>
+<entry>
+<para>Video van dit fragment aan- of uitzetten</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Audio activeren</para>
+</entry>
+<entry>
+<para>Geluid van dit fragment aan- of uitzetten</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_45"><title>Lengte tabblad</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab2.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box"/>Het lengte tabblad geeft informatie over het begin, einde en totale lengte van een fragment. Door deze waarden aan te passen kunt u een fragment later laten beginnen, eerder laten stoppen of beide. Druk op de <guibutton>Afspelen</guibutton> knop om de aanpassingen te zien.</para>
+<para/>
+<para>Het lengte tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Begin (seconden)</para>
+</entry>
+<entry>
+<para>Tijdstip wanneer u het fragment wil instarten (in decimalen)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Einde (seconden)</para>
+</entry>
+<entry>
+<para>Tijdstip wanneer u het fragment wil laten eindigen (in decimalen)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Lengte (seconden)</para>
+</entry>
+<entry>
+<para>De lengte van het fragment wordt bepaald door de begin- en eindtijd.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_46"><title>Snelheid tabblad</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab3.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box1"/>Het snelheids tabblad heeft een eenvoudig instellingsgedeelte en een geavanceerd gedeelte. In het eenvoudig gedeelte kan uit vooringestelde waardes gekozen worden. U kunt de snelheid varieëren van 16x de normale snelheid tot 1/16 van de normale snelheid. U kunt ook de richting veranderen. In het geavanceerde tabblad kunt u de snelheid nauwkeurig opgeven als decimale waarde wanneer u een andere snelheid wil dan de vooringestelde opties.</para>
+<para/>
+<para>Het snelheids tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Snelheid</para>
+</entry>
+<entry>
+<para>Tijdstip wanneer u het fragment wil instarten (in decimalen)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Richting</para>
+</entry>
+<entry>
+<para>Tijdstip wanneer u het fragment wil laten eindigen (in decimalen)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Geavanceerde snelheid</para>
+</entry>
+<entry>
+<para>Een nauwkeurige decimale waarde voor de snelheid van een fragment. Deze waarde verandert ook als u een andere voorinstelling kiest.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_47"><title>Opmaak tabblad</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Het opmaak tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Keyframe</para>
+</entry>
+<entry>
+<para>Dit keuzemenu bepaalt welk keyframe u wil instellen. Een keyframe geeft het begin of einde van een verandering in eigenschappen van een fragment aan. Elk fragment heeft twee keyframes: het begin en het einde van een fragment. De eigenschappen van deze twee keyframes kunnen apart ingesteld worden.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Height</para>
+</entry>
+<entry>
+<para>De beeldhoogte van een fragment (procentueel). Hoe groter de waarde, hoe groter het begin- of eindbeeld van het fragment wordt. Hoe kleiner de waarde hoe kleiner het begin- of eindbeeld van het fragment wordt.  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Breedte</para>
+</entry>
+<entry>
+<para>De beeldbreedte van een fragment (procentueel). Hoe groter de waarde, hoe breder het begin- of eindbeeld van het fragment wordt. Hoe kleiner de waarde hoe smaller het begin- of eindbeeld van het fragment wordt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>X</para>
+</entry>
+<entry>
+<para>X-positie van het middelpunt van het fragment (procentueel). Hoe groter het getal, hoe verder naar rechts de begin- of eindpositie van het fragment zal zijn. Hoe kleiner het getal, hoe verder naar links de begin- of eindpositie van het fragment zal zijn.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Y</para>
+</entry>
+<entry>
+<para>Y-positie van het middelpunt van het fragment (procentueel). Hoe groter het getal, hoe lager de begin- of eindpositie van het fragment zal zijn. Hoe kleiner het getal, hoe hoger de begin- of eindpositie van het fragment zal zijn.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Alfa</para>
+</entry>
+<entry>
+<para>De alfawaarde (doorzichtigheid) van het fragment. Hoe kleiner de waarde hoe doorzichtiger het begin- of eindbeeld van het fragment zal zijn. Hoe groter de waarde hoe ondoorzichtiger het begin- of eindbeeld van het fragment zal zijn.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_48"><title>Audio tabblad</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab5.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Het audio tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Volume</para>
+</entry>
+<entry>
+<para>De geluidssterkte van het fragment. 0&nbsp;=&nbsp;gedempt, 100&nbsp;=&nbsp;maximaal.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Infaden</para>
+</entry>
+<entry>
+<para>Geleidelijk het geluid op laten komen, van gedempt naar volumeniveau.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Uitfaden</para>
+</entry>
+<entry>
+<para>Geleidelijk het geluid omlaag regelen, van volumeniveau naar gedempt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade (seconden)</para>
+</entry>
+<entry>
+<para>Het aantal seconden dat de geleidelijke overgang duurt. Hoe groter het getal, hoe geleidelijker de overgang zal zijn.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_49"><title>Video tabblad</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab6.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Het video tabblad is voor het instellen van de grootte, positie en uitlijning van een fragment. Ook kan hier het fade-effect ingesteld worden aan het begin of einde van een fragment. Soms is dit gemakkelijker dan een losse overgang gebruiken. Omdat het fade-effect een eigenschap van het fragment is, blijft dit aan het fragment gebonden, ook als u het fragment verplaatst op de tijdbalk. Dit in tegenstelling tot een overgang.</para>
+<para>Het video tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Beeldvullend uitrekken</para>
+</entry>
+<entry>
+<para>Fragmenten aanpassen aan de beeldresolutie (gebaseerd op het projecttype)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Beeldverhouding behouden</para>
+</entry>
+<entry>
+<para>Het fragment niet vervormen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Horizontaal uitlijnen</para>
+</entry>
+<entry>
+<para>Fragment horizontaal uitlijnen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Verticale uitlijning</para>
+</entry>
+<entry>
+<para>Fragment verticaal uitlijnen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Infaden</para>
+</entry>
+<entry>
+<para>Fragment infaden van doorzichtig naar ondoorzichtig.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Uitfaden</para>
+</entry>
+<entry>
+<para>Fragment uitfaden van ondoorzichtig naar doorzichtig.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade (seconden)</para>
+</entry>
+<entry>
+<para>Het aantal seconden dat de geleidelijke overgang duurt. Hoe groter het getal, hoe geleidelijker de overgang zal zijn.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_50"><title>Effecten tabblad</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab7.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>In het effecten tabblad kunt u meerdere effecten op een fragment toepassen en beheren. Klik op <guibutton>Afspelen</guibutton> om het effect vooraf te bekijken. Voor ieder effect zijn vele instellingen mogelijk, als u iets aanpast kunt u altijd op <guibutton>Afspelen</guibutton> drukken om het resultaat te zien.</para>
+<para>Het effecten tabblad heeft de volgende eigenschappen:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effectenlijst</para>
+</entry>
+<entry>
+<para>Hier staan alle effecten die toegepast worden op het fragment. De volgorde waarin effecten worden toegepast is van boven naar beneden.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Toevoegen</para>
+</entry>
+<entry>
+<para>Een nieuw effect aan het fragment toevoegen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Verwijderen</para>
+</entry>
+<entry>
+<para>Verwijder het geselecteerde effect uit het  fragment.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Omhoog</para>
+</entry>
+<entry>
+<para>Verplaats het effect omhoog in de lijst.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Omlaag</para>
+</entry>
+<entry>
+<para>Verplaats het effect omlaag in de lijst.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effectinstellingen</para>
+</entry>
+<entry>
+<para>Hier kunt u de instellingen aanpassen van het geselecteerde effect.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_14"><title>Keyframes</title>
+<para>In OpenShot kunt u <emphasis>Keyframes</emphasis> gebruiken om animatie toe te passen op een fragment. Een keyframe is een filmbeeld waaraan bepaalde eigenschappen verbonden zitten zoals grootte, positie en transparantie. Keyframes kunnen op twee manieren ingesteld worden in OpenShot, handmatig of met een voorinstelling.  </para><sect2 id="sect2_51"><title>Animatie voorinstellingen</title>
+<para>Er zijn vele kant en klare animaties beschikbaar, u kunt bijvoorbeeld een fragment van onder naar boven laten bewegen of langzaam inzoomen. Om een voorinstelling toe te voegen, klik dan met de rechtmuisknop op een fragment en kies <guimenuitem>Animatie</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_animate.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_52"><title>Opmaak voorinstellingen</title>
+<para>Er zijn ook kant en klare opmaakmogelijkheden beschikbaar, zo kunt u snel een fragment herschalen en het in een hoek van het beeld plaatsen. Om een vooringestelde opmaak te kiezen klik dan met de rechtmuisknop op een fragment en kies <guimenuitem>Opmaak</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_layout.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_53"><title>Handmatig</title>
+<para>Als u handmatig een keyframe wilt maken klik dan met de rechtermuisknop op een fragment en kies  <guimenuitem>Eigenschappen</guimenuitem>. Klik op het <guibutton>Opmaak</guibutton> tabblad en kies welk keyframe u wil bewerken.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Elk fragment heeft twee keyframes, het <emphasis>begin van een fragment</emphasis> en het <emphasis>einde van een fragment</emphasis>. Als er verschillen zijn tussen het begin-keyframe en het eind-keyframe, zal Openshot elk tussenliggend filmbeeldje interpoleren en zo een animatie maken. De volgende eigenschappen kunnen aan keyframes toegevoegd worden: <emphasis>hoogte, breedte, X- en Y-positie en de alphawaarde</emphasis>.</para>
+<para>Neem bijvoorbeeld deze instellingen voor begin- en eindkeyframe:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Begin keyframe:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-100, Y=0</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Eind keyframe</guibutton>
+</para>
+</entry>
+<entry>
+<para>X =100, Y=0</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Dit heeft als resultaat dat het fragment van links naar rechts over het scherm beweegt. Het verschil tussen de X-waarden wordt geïnterpoleerd over alle filmbeeldjes van het fragment. Hoe langer (in tijd) het fragment, hoe langzamer de animatie. Hoe korter het fragment, hoe sneller de animatie is.</para>
+<para>Als alleen u de afmeting of positie van een fragment wilt veranderen, zonder animatie, geef dan het begin- en eindkeyframe dezelfde waarde.</para>
+<para>Neem bijvoorbeeld deze instellingen voor begin- en eindkeyframe:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Begin keyframe:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Eind keyframe</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Dit zal het fragment naar de linker bovenhoek verplaatsen (en u <emphasis>ziet</emphasis> alleen de rechter benedenhoek van het fragment). Dit alles zonder animatie, want het begin- en eindkeyframe hebben dezelfde waarde.</para>
+<para>Als u meer dan twee keyframes nodig heeft kunt u het fragment in een aantal stukken snijden. Elk deel heeft dan weer een begin- en eindkeyframe. Zo kunt u dus in principe een oneindig aantal keyframes maken.</para></sect2></sect1><sect1 id="sect1_15"><title>Uitsnede maken</title>
+<para>OpenShot kan een uitsnede maken van een video- of beeldfragment met behulp van het opmaak tabblad in het <guibutton>Fragment eigenschappen</guibutton> dialoogvenster. Rechts-klik op een fragment, kies <guimenuitem>Eigenschappen</guimenuitem> en vervolgens het <guibutton>Opmaak</guibutton> tabblad.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Om een uitsnede te maken moet u op dat gedeelte inzoomen wat u wilt zien. Pas de hoogte, breedte, X- en Y-positie aan om in te zoomen op het gedeelte waarvan u een uitsnede wilt maken. Let op dat beide keyframes dezelfde waarden hebben. Klik op <guibutton>Afspelen</guibutton> om de uitsnede te bekijken. Als u tevreden bent met het resultaat druk dan op <guibutton>Toepassen</guibutton>.</para></sect1><sect1 id="sect1_16"><title>Rotatie</title>
+<para>Als u een fragment wil draaien, bijvoorbeeld 90 of 180 graden, of laten rondcirkelen, kunt u gebruik maken van het <guibutton>Rotatie</guibutton> effect in OpenShot.</para>
+<para>Er zijn twee soorten van rotatie beschikbaar: vaste rotatie en met animatie. Om rotatie toe te voegen klik dan op het <guibutton>Effecten</guibutton> tabblad in het <guibutton>hoofdvenster</guibutton>, en sleep het <guimenuitem>Rotatie</guimenuitem> effect naar het fragment.  </para>
+<para>Om de rotatie in te stellen, rechts-klik op het fragment en kies <guimenuitem>Eigenschappen</guimenuitem>. Ga dan naar het effecten tabblad en klik op het rotatie-effect in de lijst. Vul de gewenste waarden in voor de rotatie en druk op <guibutton>Afspelen</guibutton> om de aanpassingen vooraf te bekijken.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_rotation.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_54"><title>Vaste rotatie</title>
+<para>Een vaste rotatie roteert een fragment 90 of 180 graden, of elke andere rotatie die u wenst. Dit is bijvoorbeeld nuttig als u een video zijwaarts heeft gefilmd. Om een vaste rotatie te gebruiken verandert u alleen die waarden die beginnen met "Vaste rotatie". Let er op dat u bij de andere waarden 0 invult.</para></sect2><sect2 id="sect2_55"><title>Rotatie met animatie</title>
+<para>Rotatie met animatie kan gebruikt worden om een fragment rond te laten draaien rond zijn middelpunt of op andere manieren. Hiermee kunnen interessante effecten gemaakt worden met titels, een ronddraaiende krant of andere creative mogelijkheden. Om een rotatie met animatie te maken verandert u alleen die waarden die beginnen met "Roteren". Let er op dat u bij de andere waarden 0 invult.</para></sect2></sect1><sect1 id="sect1_17"><title>Titels maken en bewerken</title>
+<para>Om titels te maken en te bewerken heeft OpenShot een ingebouwde titel-editor. Met deze editor beschikt u over alle basisfuncties die nodig zijn om titels te maken voor uw videoproject. Dit zijn de belangrijkste kenmerken van de editor:</para>
+<orderedlist>
+<listitem>
+<para>Keuze uit vele sjablonen (inclusief een effen kleur sjabloon)</para>
+</listitem>
+<listitem>
+<para>Makkelijk tekst bewerken (titel, subtitel)</para>
+</listitem>
+<listitem>
+<para>Lettertype- en kleur aanpassen (inclusief doorzichtigheid)</para>
+</listitem>
+<listitem>
+<para>Achtergrondkleur aanpassen (inclusief doorzichtigheid)</para>
+</listitem>
+<listitem>
+<para>Gebruikt het SVG afbeeldingstype (vectorafbeelding)</para>
+</listitem>
+<listitem>
+<para>De titels worden toegevoegd aan het <guimenuitem>Projectbestanden</guimenuitem> tabblad.</para>
+</listitem>
+<listitem>
+<para>Integratie met Inkscape (geavanceerde externe editor)</para>
+</listitem>
+</orderedlist>
+<para/>
+<para>Bovendien kan ook elke SVG afbeelding gebruikt worden als een titel. Hierbij blijft het alfakanaal (doorzichtigheid) behouden, dus als u titels over andere sporen plaatst blijft de video zichtbaar door de titel heen.</para><sect2 id="sect2_56"><title>Titel-editor opstarten</title>
+<para>Om een nieuwe titel te maken, klik dan op <guimenu>Project</guimenu>&nbsp;&gt;&nbsp;<guimenuitem>Nieuwe titel...</guimenuitem> in het hoofdmenu. Dit zal de titel-editor opstarten.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_57"><title>Een nieuwe titel maken</title>
+<para>Als de titel-editor is opgestart moet u eerst een sjabloon kiezen en vervolgens op <guibutton>Nieuwe titel aanmaken</guibutton> klikken. Vul een naam in voor het titelbestand en klik op <guibutton>OK</guibutton>. Van het gekozen sjabloon wordt een kopie gemaakt en in het <guimenuitem>Projectbestanden</guimenuitem> tabblad toegevoegd.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_58"><title>Het titelbewerkingsvenster</title>
+<para>In het bewerkingsvenster van de titel-editor kunt sjablonen kiezen, tekst bewerken en kleuren aanpassen. Hiermee maakt u snel eigen titels voor een videoproject. Als u tevreden bent met het resultaat en de titel aan het project wilt toevoegen klik dan op <guibutton>Toepassen</guibutton>.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_main_screen.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Kies sjabloon</para>
+</entry>
+<entry>
+<para>Kies hier een sjabloon voor uw titel.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Titel aanmaken knop</para>
+</entry>
+<entry>
+<para>Klik op deze knop om een naam aan het titelbestand te geven.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Tekst bewerken</para>
+</entry>
+<entry>
+<para>Opent het dialoogvenster om de titeltekst aan te passen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Lettertype-eigenschappen</para>
+</entry>
+<entry>
+<para>De eigenschappen en het lettertype van de titel wijzigen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Lettertype kleur</para>
+</entry>
+<entry>
+<para>De kleur en doorzichtigheid van het lettertype wijzigen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Achtergrond kleur</para>
+</entry>
+<entry>
+<para>De kleur en doorzichtigheid van de achtergrond wijzigen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Geavanceerde editor</para>
+</entry>
+<entry>
+<para>Start de toepassing Inkscape om de titel te bewerken.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Titel voorbeeldvenster</para>
+</entry>
+<entry>
+<para>Bekijk hier uw titel na elke bewerking, kleur of lettertype wijziging.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_59"><title>Rollende aftiteling</title>
+<para>Om het effect van een rollende aftiteling te maken kunt u als volgt te werk gaan. Maak eerst alle titels die u wil gebruiken voor de aftiteling met de titel-editor of een extern programma en sla ze op als afzonderlijke SVG bestanden.</para><sect3 id="sect3_9"><title>Maak elke titelafbeelding</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_10"><title>Plaats iedere titel op de tijdbalk</title>
+<para>Sleep elke titelafbeelding naar de tijdbalk, stel de lengte van iedere afbeelding in op 7 seconden en plaats ze om en om op de tijdbalk zoals hieronder aangegeven.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_scrolling.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_11"><title>Voeg animatie toe</title>
+<para>Klik met de rechtermuisknop op elk fragment en kies <guimenuitem>Animatie</guimenuitem>&nbsp;&gt;&nbsp;<guimenuitem>Van&nbsp;onder&nbsp;naar&nbsp;boven</guimenuitem>. Dit creëert de illusie van een aftiteling die van beneden naar boven beweegt zonder onderbreking. Let erop dat de fragmenten overlappen (zoals aangegeven in de illustratie) zodat er geen gaten tussen de titels ontstaan.</para></sect3></sect2></sect1><sect1 id="sect1_18"><title>Overgangen</title>
+<para>Overgangen worden gebruikt om twee verschillende fragmenten geleidelijk in elkaar over te laten gaan. In <application>OpenShot</application> heeft u de keuze uit vele verschillende overgangen waarmee naar hartelust geëxperimenteerd kan worden. Zo kunt u het standaard overvloei effect gebruiken maar ook uitbundige figuren zoals sterren of spiralen, wat grappige resultaten kan opleveren. Om een overgang te gebruiken sleept u deze simpelweg naar de tijdbalk en plaats ze tussen twee overlappende fragmenten.</para><sect2 id="sect2_60"><title>Overgangen tabblad</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions_clock.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Overgangen tabblad</para>
+</entry>
+<entry>
+<para>In dit tabblad staan alle overgangen die beschikbaar zijn in <application>OpenShot</application>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Overgangen lijst</para>
+</entry>
+<entry>
+<para>Dit is de lijst met overgangen. Selecteer een overgang en sleep deze naar de tijdbalk.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Trimgereedschap</para>
+</entry>
+<entry>
+<para>Met het trimgereedschap kunt u de tijdsduur van een overgang wijzgingen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Een overgang op de tijdbalk</para>
+</entry>
+<entry>
+<para>Op de tijdbalk kunt u een overgang verplaatsen en langer of korter maken, net zoals een fragment. Een overgang plaatst zich automatisch tussen twee sporen en mengt de fragmenten die zich onder de overgang bevinden.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_61"><title>Een overgang toevoegen</title>
+<para>Om een overgang toe te voegen klikt u op het <guibutton>Overgangen</guibutton> tabblad, kies een overgang en sleep deze naar de <guibutton>tijdbalk</guibutton>. De overgang zal zich automatisch in het midden van twee sporen plaatsen.</para></sect2><sect2 id="sect2_62"><title>Een overgang verplaatsen</title>
+<para>Om een overgang te verplaatsen klik dan eerst op het <guibutton>Selectiegereedschap</guibutton> pictogram op de <guibutton>Montagewerkbalk </guibutton> en sleep vervolgens de overgang naar de gewenste positie.</para></sect2><sect2 id="sect2_63"><title>Lengte van een overgang wijzigen</title>
+<para>Om de lengte (tijdsduur) van een overgang te veranderen klik dan op het <guibutton>Trimgereedschap</guibutton> pictogram op de <guibutton>Montagewerkbalk</guibutton>, klik op de linker of rechter rand van de overgang en sleep met de pijl de overgang naar de gewenste lengte.</para></sect2><sect2 id="sect2_64"><title>Richting veranderen</title>
+<para>Omdat een overgang de fragmenten op twee sporen vermengt, is het belangrijk om te weten in welke richting de vermenging gebeurt. Dit is te zien aan een pijl op de overgang, die van boven naar onder of van onder naar boven wijst. In het algemeen moet de overgang in dezelfde richting wijzen als de positie van de fragmenten op de tijdbalk. Dus als bijvoorbeeld het eerste fragment op het bovenste spoor staat en het tweede op het spoor daaronder, moet de pijl op de overgang naar beneden wijzen.</para>
+<para>Om de richting van een overgang te wijzigen klik dan met de rechtermuisknop op de overgang en kies <guimenuitem>Richting&nbsp;omkeren</guimenuitem>.</para></sect2><sect2 id="sect2_65"><title>Overgang eigenschappen</title>
+<para>Net als een fragment heeft een overgang ook een eigenschappenvenster. Dit opent u door met de rechtermuisknop op een overgang of masker te klikken en <guimenuitem>Eigenschappen</guimenuitem> te kiezen. In het dialoogvenster kunnen verschillende eigenschappen van een overgang of masker gewijzigd worden. Om de wijzigingen op te slaan klikt u op <guibutton>Toepassen</guibutton>.</para>
+<para/>
+<para/>
+<para>
+<inlinegraphic fileref="../figures/transitions_properties.png" width="5.55inch" depth="4.1701inch"/>
+</para>
+<para/>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Type</para>
+</entry>
+<entry>
+<para>Masker of overgang</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Richting</para>
+</entry>
+<entry>
+<para>De richting van het overgangseffect tussen twee sporen. <emphasis>Omhoog</emphasis> wil zeggen dat het onderste fragment overgaat in het bovenste fragment met het gekozen overgangseffect. <emphasis>Omlaag</emphasis> wil zeggen dat het bovenste fragment overgaat in het onderste fragment met het gekozen overgangseffect.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Zachtheid</para>
+</entry>
+<entry>
+<para>De zachtheid van de overgang of het masker. Hoe groter de waarde, hoe breder de overgang uitvloeit (zachtere randen). Hoe kleiner de waarde, hoe smaller de uitvloeiing van de overgang (hardere randen).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Masker drempelwaarde</para>
+</entry>
+<entry>
+<para>De masker drempelwaarde bepaalt hoeveel het fragment door het masker afgedekt wordt. Hoe groter de waarde, hoe meer van het (bovenste) fragment te zien is. Hoe kleiner de waarde, hoe minder er te zien is.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_66"><title>Omzetten naar een masker</title>
+<para>Een masker is vergelijkbaar met een overgang, maar in tegenstelling tot een overgang is een masker statisch. Het laat niet twee fragmenten geleidelijk in elkaar overgaan: de fragmenten worden met elkaar gemengd in een bepaalde verhouding. Een masker kan gebruikt worden om een gedeelte van een fragment te laten zien (of te blokkeren) of om een kader rond een fragment te plaatsen. U kunt dit gemakkelijk zelf uitproberen door een overgang om te zetten naar een masker en te kijken wat voor effect het heeft.</para>
+<para>Om een overgang naar een masker om te zetten klik dan met de rechtermuisknop op een overgang (op de tijdbalk) en kies <guimenuitem>Omzetten naar een masker</guimenuitem>.</para></sect2><sect2 id="sect2_67"><title>Zelf een overgang of masker maken</title>
+<para>Overgangen zijn normale grijswaarde-afbeeldingen die met elk grafisch programma ook zelf gemaakt kunnen worden. De standaard overgangen van OpenShot staan in de map <command>/openshot/transitions/</command> op uw computer. Om uw eigen overgang toe te voegen kunt u hier een nieuwe grijswaarde-afbeelding naar toe kopiëren. De volgende keer dat u <application>OpenShot</application> start is deze automatisch aan de lijst van overgangen toegevoegd.</para></sect2><sect2 id="sect2_68"><title>Een overgang verwijderen</title>
+<para>Om een overgang van de tijdbalk te verwijderen klik dan met de rechtermuisknop op een overgang en kies <guimenuitem>Overgang verwijderen</guimenuitem>.</para></sect2></sect1><sect1 id="sect1_19"><title>Lijst van overgangen</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Lamellen, breed</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Lamellen, smal</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Cirkel, naar buiten</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Cirkel, naar binnen</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Klok, linksom</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Klok, rechtsom</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/openshot_logo.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Openshot-logo</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rechthoek, naar buiten</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rechthoek, naar binnen</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/sand.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Overvloeien - dit is de standaard overgang in OpenShot. Twee fragmenten worden geleidelijk met elkaar gemengt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiraal, groot</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_medium.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiraal, middelgroot</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_small.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiraal, klein</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Verticale lamellen, breed</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Verticale lamellen, smal</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_bottom_to_top.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Uitvegen, naar boven</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Uitvegen, naar rechts</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Uitvegen, naar links</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_top_to_bottom.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Uitvegen, naar beneden</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_20"><title>Effecten</title>
+<para>Met effecten kunt u het beeld of geluid van een fragment manipuleren. In OpenShot heeft u de beschikking over meer dan 30 verschillende effecten, zoals het aanpassen van de kleuren, helderheid of de gammawaarde. Met andere - meer exotische - effecten kunt u vervormingen toepassen, watereffecten toevoegen, een oude film nabootsen, chroma-key technieken gebruiken en experimenteren met geluidseffecten.</para><sect2 id="sect2_69"><title>Een effect toevoegen</title>
+<para>Om een effect toe te voegen klik dan op het <guibutton>Effecten</guibutton> tabblad, selecteer een effect in de lijst en sleep het effect naar een fragment op de <guibutton>tijdbalk</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Effecten tabblad</para>
+</entry>
+<entry>
+<para>Dit tabblad bevat de effecten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effectenlijst</para>
+</entry>
+<entry>
+<para>Hier staan alle effecten die beschikbaar zijn in OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Fragment</para>
+</entry>
+<entry>
+<para>Sleep het geselecteerde effect naar een fragment. U kunt de instellingen van het effect aanpassen in het eigenschappen dialoogvenster van een fragment op de tijdbalk.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_70"><title>Instellingen van een effect aanpassen</title>
+<para>Om de instellingen van een effect te wijzigen klik dan met de rechtermuisknop op een fragment en kies <guimenuitem>Eigenschappen</guimenuitem>. Klik op het <guibutton>Effecten</guibutton> tabblad en u ziet alle effecten die aan het huidige fragment zijn toegekend.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_settings.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Nr.</para>
+</entry>
+<entry>
+<para>Component</para>
+</entry>
+<entry>
+<para>Omschrijving</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Lijst van effecten</para>
+</entry>
+<entry>
+<para>Hier staan de effecten die aan het fragment zijn toegekend.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effectinstellingen</para>
+</entry>
+<entry>
+<para>Hier kunt u de instellingen wijzigen van het gekozen effect. Ieder effect heeft andere instellingen, klik op een effect om de opties te zien. Nadat u een waarde heeft gewijzigd kunt u op <guibutton>Afspelen</guibutton> klikken om het effect te bekijken.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Voorbeeldweergave bedieningsknoppen</para>
+</entry>
+<entry>
+<para>Gebruik de <guibutton>Afspeelknop</guibutton> en de <guibutton>schuifknop</guibutton> om de effecten vooraf te bekijken voor u op <guibutton>Toepassen</guibutton> klikt.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Effect toevoegen</para>
+</entry>
+<entry>
+<para>Met deze knop opent u het dialoogvenster om een effect toe te voegen. Selecteer een effect en klik op <guibutton>OK</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Effect verwijderen</para>
+</entry>
+<entry>
+<para>Hiermee verwijdert u het geselecteerde effect.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Effect volgorde</para>
+</entry>
+<entry>
+<para>Effecten worden van boven naar beneden toegepast. Gebruik deze knoppen om de volgorde van effecten te wijzigen. Klik op de <guibutton>Afspeelknop</guibutton> om de veranderingen te bekijken.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<mediaobject/></sect2></sect1><sect1 id="sect1_21"><title>Lijst van effecten</title>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/two_layer.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Zwart-wit</guibutton> - Dit effect maakt de video puur zwart-wit. Dit is anders dan grijstinten omdat de video nog maar twee kleuren bevat en geen grijs.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/blur.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Vervaging</guibutton> – Dit effect vervaagt het videobeeld, alsof het niet goed gefocust is. U kunt ook kiezen om het beeld geleidelijk van wazig naar scherp te laten verlopen, of andersom.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/brightness.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Helderheid</guibutton> – Met dit effect kunt u de helderheid van een fragment instellen of de helderheid langzaam laten toe- of afnemen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/burningtv.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Vurige TV</guibutton> – Hiermee kunt u een vuur-effect toevoegen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/charcoal.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Houtskool</guibutton> – Met dit effect lijkt de video getekend met houtskool.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/chroma_key.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Chroma Key</guibutton> Dit effect verwijdert een bepaalde kleur uit de video en maakt het transparant (ook bekend als green-screen of blue-screen).</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/deinterlace.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>De-interliniëren</guibutton> – De even en oneven velden van een video samenvoegen tot hele filmbeelden (progressieve video).</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/distort.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Vervormen</guibutton> – Dit effect voegt rimpelingen en vervormingen toe aan een video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/gamma.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gamma</guibutton> – Hiermee verandert u de gammawaarde van een video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/glow.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gloed</guibutton> – Dit effect geeft de video een zachte gloed.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/greyscale.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Grijstinten</guibutton> – Een kleurenvideo omzetten naar grijstinten. Als u puur zwart-wit beelden wil, gebruik dan het <guibutton>Zwart-wit</guibutton> effect.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/hue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Tint</guibutton> – De tint / kleur van een video aanpassen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/invert.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Inverteren</guibutton> – De video omzetten naar negatief beelden (kleuren inverteren).</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/mirror.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Spiegelen</guibutton> – De video spiegelen. U kunt kiezen uit verticaal, horizontaal of diagonaal spiegelen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_dust.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Oud en stoffig</guibutton> – Stofdeeltjes toevoegen aan de video. Gebruik alle 4 verouderingseffecten tegelijk voor de ultieme oude film look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_film.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Oude film</guibutton> – De video random op en neer laten springen en helderheidsvariaties toevoegen, geeft een schokkerig beeld. Gebruik alle 4 verouderingseffecten tegelijk voor de ultieme oude film look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_grain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Oud en korrelig</guibutton> – De video korrelig maken. Gebruik alle 4 verouderingseffecten tegelijk voor de ultieme oude film look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Oud en gekrast</guibutton> – Strepen en krassen toevoegen om slijtage na te bootsen. Gebruik alle 4 verouderingseffecten tegelijk voor de ultieme oude film look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/tcolor.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Kleurverzadiging</guibutton> – Gebruik dit effect om de kleurverzadiging aan te passen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/pixelate.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Blokkerig maken</guibutton> – Het beeld blokkerig maken (pixel-effect).</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_blue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Blauw verwijderen</guibutton> – Dit effect verwijdert de kleur blauw uit de video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_green.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Groen verwijderen</guibutton> – Dit effect verwijdert de kleur groen uit de video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_red.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Rood verwijderen</guibutton> – Dit effect verwijdert de kleur rood uit de video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/scan_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Scanlijnen</guibutton> – Scanlijn-effect toevoegen, zoals een beeldbuis TV of monitor.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sepia.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sepia</guibutton> – Dit effect geeft een bepaalde tint aan de video, zoals een oude foto.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sobel.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sobel</guibutton> – Randdetectie, dit effect detecteert de randen in uw video en laat deze oplichten.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/threshold.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Drempelwaarde</guibutton> – Dit effect beperkt het aantal kleuren, gebaseerd op een drempelwaarde.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/water_rain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Water</guibutton> – Regendruppels, draaikolken of een kielzog toevoegen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/wave.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Golven</guibutton> – Het beeld laten rimpelen in een golfpatroon. Dit effect kunt u ook langzaam laten toe- of afnemen zodat een golfbeweging ontstaat.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/white_balance.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Witbalans</guibutton> – Hiermee kunt u kiezen welke kleur als wit beschouwd moet worden, alle andere kleuren worden overeenkomstig aangepast.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Echo</guibutton> – Een echo toevoegen aan het audio- of videofragment.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Phaser</guibutton> – Het fragment een futuristisch geluidseffect geven.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Toonhoogte</guibutton> – De toonhoogte aanpassen.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_22"><title>Video exporteren</title>
+<para>Wanneer het project klaar is wilt u het waarschijnlijk op DVD zetten, onderweg kunnen bekijken of aan iedereen laten zien op het web. Hiervoor moet het project geëxporteerd worden naar het juiste formaat (videotype). Bij het exporteren worden alle fragmenten die op de tijdbalk staan samengevoegd tot één enkel videobestand. Om snel het goede formaat te kiezen heeft OpenShot een eenvoudig keuzescherm waarin de meest voorkomende toepassingen staan. Als u een ander formaat wilt kiezen of andere opties is er ook een  keuzescherm met geavanceerde opties.</para>
+<para>Beide keuzeschermen in het exporteervenster hebben een gemeenschappelijk gedeelte bovenaan het scherm, <guibutton>Algemene opties</guibutton>. Vul een naam in voor het videobestand (zonder extensie) en kies de map waar u het wilt opslaan.</para><sect2 id="sect2_71"><title>Het exporteervenster openen</title>
+<para>Om het exporteervenster te openen kunt u op het <guimenuitem>Video exporteren</guimenuitem> pictogram klikken op de hoofdwerkbalk, of kies <guimenu>Bestand</guimenu> &gt; <guimenuitem>Video exporteren...</guimenuitem> in het hoofdmenu.</para></sect2><sect2 id="sect2_72"><title>Eenvoudig keuzescherm</title>
+<para>Om snel een video te exporteren kunt u het eenvoudige keuzescherm gebruiken. Hiermee kan met enkele muisklikken een video gemaakt worden voor de meest voorkomende toepassingen. Kies eerst een <guibutton>Projecttype</guibutton>, zoals DVD of Web, en kies achtereenvolgens het <guibutton>Doel</guibutton>, <guibutton>Videoprofiel</guibutton> en de <guibutton>Kwaliteit</guibutton>. Als u <guibutton>Alle videotypes</guibutton> selecteert in het projecttype keuzemenu kunt u bij <guibutton>Doel</guibutton> en <guibutton>Videoprofiel</guibutton> uit alle formaten kiezen die beschikbaar zijn.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_73"><title>Geavanceerd keuzemenu</title>
+<para>Het geavanceerde keuzemenu kunt u het beste alleen gebruiken als u bekend bent met FFmpeg, omdat gemakkelijk ongeldige combinaties van videotypes, compressietypes en bitsnelheden gemaakt kunnen worden. Bent u echter bekend met deze instellingen, dan kan elk video/compressietype/bitsnelheid gebruikt worden wat FFmpeg ondersteund, en heeft u de keuze uit tientallen extra formaten. De video kan ook als een afbeeldingsreeks geëxporteerd worden, wat handig kan zijn als u de video wilt importeren in een programma dat afbeeldingsreeksen vereist, zoals Blender.</para>
+<para>Opmerking: als u eerst het <guibutton>Eenvoudig keuzescherm</guibutton> heeft gebruikt en vervolgens het <guibutton>Geavanceerde keuzescherm</guibutton> kiest, zijn de waardes vanuit het eenvoudige keuzescherm al ingevuld.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_advanced.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2></sect1><sect1 id="sect1_23"><title>Lijst van video- en compressietypes</title>
+<para>Tabel van exportformaten gebaseerd op videotoepassing.</para>
+<informaltable frame="all">
+<tgroup cols="6"><tbody>
+<row>
+<entry>
+<para>Videotoepassing</para>
+</entry>
+<entry>
+<para>Videotype</para>
+</entry>
+<entry>
+<para>Video compressietype</para>
+</entry>
+<entry>
+<para>Audio compressietype</para>
+</entry>
+<entry>
+<para>Projecttype suggestie</para>
+</entry>
+<entry>
+<para>Opmerkingen over het gebruik</para>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Schijven</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced, voor Blu-Ray en AVCHD schijven</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Schijven</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced, voor Blu-Ray en AVCHD schijven</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Schijven</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced, voor Blu-Ray en AVCHD schijven (hoofdzakelijk voor de USA).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive, voor gebruik op computers.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive, voor gebruik op computers.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Apple TV</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive, voor webpublicatie</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive, voor webpublicatie</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime iPod</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Quarter Square NTSC</para>
+</entry>
+<entry>
+<para>320x240 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV PAL DV PAL Widescreen</para>
+</entry>
+<entry>
+<para>Enkel voor SD film! Niet om HD naar SD te converteren</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV NTSC DV NTSC Widescreen</para>
+</entry>
+<entry>
+<para>Enkel voor SD film! Niet om HD naar SD te converteren</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def Widescreen</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC Widescreen</para>
+</entry>
+<entry>
+<para>854x480 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flickr High Def</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Picasa</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 zal geconverteerd worden naar 480x360 of 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 zal geconverteerd worden naar 480x360 of 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube Full High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 1080 25p HDV 1080 30p</para>
+</entry>
+<entry>
+<para>1920x1080 pixelverhouding 1:1, bij voorkeur gedeïnterlinieerd of progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libxvid</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>640x360 nieuwe standaard voor de S60 5th Edition toestellen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>MetaCafe</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>mpeg4</para>
+</entry>
+<entry>
+<para>libmp3lame</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 zal geconverteerd worden naar 320x240 Flash</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_24"><title>Projecttypes / profielen</title>
+<para>Voor elk project in <application>OpenShot</application> moet een <guibutton>projecttype</guibutton> aangemaakt worden (ook wel een <guibutton>profiel</guibutton> genoemd). Een profiel bevat de volgende instellingen: <emphasis>filmbeelden per seconde, hoogte &amp; breedte, beeldverhouding en pixelverhouding</emphasis>. Deze instellingen gelden zowel voor het videovoorbeeld in OpenShot als voor het exporteren van de video.</para>
+<para>Dit is een voorbeeld profiel, voor ATSC 1080i 60Hz:</para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Omschrijving</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>Naam van uw profiel zoals het verschijnt in OpenShot</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_num</para>
+</entry>
+<entry>
+<para>30000</para>
+</entry>
+<entry>
+<para>Teller om het aantal filmbeelden per seconden te berekenen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_den</para>
+</entry>
+<entry>
+<para>1001</para>
+</entry>
+<entry>
+<para>Noemer om het aantal filmbeelden per seconden te berekenen</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>width</para>
+</entry>
+<entry>
+<para>1920</para>
+</entry>
+<entry>
+<para>Breedte (in pixels) van de video</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>height</para>
+</entry>
+<entry>
+<para>1080</para>
+</entry>
+<entry>
+<para>Hoogte (in pixels) van de video</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>progressive</para>
+</entry>
+<entry>
+<para>0</para>
+</entry>
+<entry>
+<para>0 = geïnterlinieerd, 1 = progressief</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_num</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Teller van de pixelverhouding</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_den</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Noemer van de pixelverhouding</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_num</para>
+</entry>
+<entry>
+<para>16</para>
+</entry>
+<entry>
+<para>Teller van de beeldverhouding</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_den</para>
+</entry>
+<entry>
+<para>9</para>
+</entry>
+<entry>
+<para>Noemer van de beeldverhouding</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>In <application>OpenShot</application> kunt u uit meer dan 40 profielen/projecttypen kiezen. Als het juiste profiel voor uw project er toch niet bijzit, is het mogelijk om zelf een profiel aan te maken. Zoek hiervoor naar de map <command>/openshot/profiles/</command> op uw computer. Kopieer en hernoem een bestaand profiel. Bewerk het profiel met uw favoriete tekstverwerker en sla het op. De volgende keer dat u OpenShot opstart kunt u het nieuwe profiel kiezen.</para></sect1><sect1 id="sect1_25"><title>Voorkeuren</title>
+<para>Om <application>OpenShot</application> te configureren, kies dan in het hoofdmenu voor <guimenu>Bewerken &gt;</guimenu><guimenuitem>Voorkeuren</guimenuitem> . In het <guilabel>Voorkeuren</guilabel> dialoogvenster kunt u de standaard lengte van afbeeldingen op de tijdbalk instellen, het thema en standaard projecttype.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/preferences.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect1><sect1 id="sect1_26"><title>Over OpenShot</title>
+<para><application>OpenShot</application> is gecreëerd door Jonathan Thomas (<ulink url="mailto:Jonathan.Oomph@gmail.com">Jonathan.Oomph@gmail.com</ulink>) in augustus 2008, met als doel een stabiel, vrij en gebruiksvriendelijke video-editor te maken.</para><sect2 id="sect2_74"><title>OpenShot ontwikkelingsteam</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Jonathan Thomas</para>
+</entry>
+<entry>
+<para>Jonathan.Oomph@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Andy Finch</para>
+</entry>
+<entry>
+<para>we.rocked.in79@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Helen McCall</para>
+</entry>
+<entry>
+<para>helen.wildnfree@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Olivier Girard</para>
+</entry>
+<entry>
+<para>eolinwen@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TJ</para>
+</entry>
+<entry>
+<para>ubuntu@tjworld.net</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_75"><title>Meer informatie</title>
+<para>Om meer informatie omtrent <application>OpenShot</application> te vinden, bezoek de <ulink url="http://www.openshotvideo.com/">OpenShot Web page </ulink><ulink url="http://www.openshotvideo.com/">(http://www.OpenShotVideo.com)</ulink>. Om fouten en suggesties te melden omtrent dit programma of deze handleiding, ga naar <ulink url="https://launchpad.net/openshot">OpenShot site on Launchpad</ulink>.  Bezoek onze gebruikers website &amp; forum, om over OpenShot te discuteren met andere gebruikers:  <ulink url="http://openshotusers.com/forum/">http://OpenShotUsers.com/forum/</ulink></para></sect2><sect2 id="sect2_76"><title>Copyright &amp; Trademark</title>
+<para>Copyright (C) 2009  Jonathan Thomas, Andy Finch, and TJ.  OpenShot(TM) is a registered trademark owned by Jonathan Thomas.</para></sect2><sect2 id="sect2_77"><title>License</title>
+<para>This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A copy of this license can be found at this <ulink url="http://www.gnu.org/licenses/gpl.html">link</ulink>, or in the file COPYING included with the source code of this program.</para></sect2></sect1></article>

@@ -1,0 +1,3690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="en-US">
+<articleinfo>
+<title>OpenShot Video Editor Manual</title>
+<subtitle/>
+<edition/>
+</articleinfo><sect1 id="sect1_1"><title>Introduction</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/logo_badge.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>OpenShot Video Editor is a program designed to create videos on Linux.  It can easily combine multiple video clips, audio clips, and images into a single project, and then export the video into many common video formats.</para>
+<para>OpenShot is a non-linear video editor, which means any frame of video can be accessed at any time, and thus the video clips can be layered, mixed, and arranged in very creative ways.  All video clip edits (trimming, cutting, etc...) are non-destructive, meaning that the original video clips are never modified.</para>
+<para>You can use OpenShot to create photo slide shows, edit home videos, create television commercials and on-line films, or anything else you can dream up.</para><sect2 id="sect2_1"><title>Features Overview:</title>
+<orderedlist>
+<listitem>
+<para>Support for many video, audio, and image formats (based on FFmpeg) </para>
+</listitem>
+<listitem>
+<para>Gnome integration (drag and drop support) </para>
+</listitem>
+<listitem>
+<para>Multiple tracks </para>
+</listitem>
+<listitem>
+<para>Clip resizing, trimming, snapping, and cutting </para>
+</listitem>
+<listitem>
+<para>Video transitions with real-time previews </para>
+</listitem>
+<listitem>
+<para>Compositing, image overlays, watermarks </para>
+</listitem>
+<listitem>
+<para>Title templates, title creation </para>
+</listitem>
+<listitem>
+<para>SVG friendly, to create and include titles and credits </para>
+</listitem>
+<listitem>
+<para>Scrolling motion picture credits </para>
+</listitem>
+<listitem>
+<para>Solid color clips (including alpha compositing) </para>
+</listitem>
+<listitem>
+<para>Support for Rotoscoping / Image sequences </para>
+</listitem>
+<listitem>
+<para>Drag and drop timeline </para>
+</listitem>
+<listitem>
+<para>Frame stepping, key-mappings: J,K, and L keys </para>
+</listitem>
+<listitem>
+<para>Video encoding (based on FFmpeg) </para>
+</listitem>
+<listitem>
+<para>Key Frame animation </para>
+</listitem>
+<listitem>
+<para>Digital zooming of video clips </para>
+</listitem>
+<listitem>
+<para>Speed changes on clips (slow motion etc) </para>
+</listitem>
+<listitem>
+<para>Custom transition lumas and masks </para>
+</listitem>
+<listitem>
+<para>Re-sizing of clips (frame size) </para>
+</listitem>
+<listitem>
+<para>Audio mixing and editing </para>
+</listitem>
+<listitem>
+<para>Presets for key frame animations and layout </para>
+</listitem>
+<listitem>
+<para>Ken Burns effect (making video by panning over an image) </para>
+</listitem>
+<listitem>
+<para>Digital video effects, including brightness, gamma, hue, greyscale, chroma key (bluescreen / greenscreen), and over 20 other video effects</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_2"><title>Screenshot</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_clips.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2></sect1><sect1 id="sect1_2"><title>Getting Started</title><sect2 id="sect2_3"><title>To Launch OpenShot Video Editor</title>
+<para>You can start <application>OpenShot</application> in the following ways: </para><sect3 id="sect3_1"><title>Applications menu</title>
+<para>Choose <guisubmenu>Sound &amp; Video &gt;</guisubmenu> <guimenuitem>OpenShot Video Editor</guimenuitem>. </para></sect3><sect3 id="sect3_2"><title>Command Line</title>
+<para>To start <application>OpenShot</application> from a command line, launch a Terminal and type the following command, then press <keycap>Return</keycap>:</para>
+<para>
+<command>openshot</command> [filename]</para>
+<para>The optional [filename] parameter can be either an audio or video file, or an OpenShot project file (*.osp).  Multiple files can also be specified (with spaces between each filename), and all files will be imported into a single instance of <application>OpenShot</application>.</para></sect3><sect3 id="sect3_3"><title>Open With...</title>
+<para>To start <application>OpenShot</application> from Nautilus, right-click on an image, video, or audio file, and choose <guimenu>Open With</guimenu> &gt; <guimenuitem>OpenShot Video Editor</guimenuitem>.  Or choose <guimenu>Open With</guimenu> &gt; <guimenuitem>Open with Other Application</guimenuitem> &gt; <command>openshot</command>.</para>
+<para/></sect3></sect2></sect1><sect1 id="sect1_3"><title>Learn OpenShot in 5 Minutes!</title>
+<para>Using OpenShot is very easy, and this tutorial will take you through the basics in under 5 minutes.  After this tutorial, you will be able to make a simple photo slide-show with music.</para><sect2 id="sect2_4"><title>Step 1 – Import Photos &amp; Music</title>
+<para>Before we can begin making a video, we need to <guibutton>import files</guibutton> into OpenShot.  Drag and drop a few <emphasis>images</emphasis> (*.JPG, *.PNG, etc...) and a <emphasis>music file</emphasis> (most formats will work) from your Desktop to OpenShot Video Editor.  Be sure to drop the files where the arrow in the illustration is pointing to.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_5"><title>Step 2 – Arrange Photos on Timeline</title>
+<para>After you have imported some files, the next step is adding them to the timeline and arranging them. Click on each photo (one at a time), and drag them onto <guibutton>Track 2</guibutton> on the timeline.  Drag and drop the photos (also known as clips) to arrange them.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_6"><title>Step 3 – Add Music to Timeline</title>
+<para>To make our photo slide-show more interesting, we need to add some music.  You should have imported a music file in step 1.  Click on the music file, and drag it onto <guibutton>Track 1</guibutton> on the timeline.</para></sect2><sect2 id="sect2_7"><title>Step 4 – Preview your Project</title>
+<para>To preview what our video looks &amp; sounds like, click the <guibutton>Play button</guibutton> under the preview window.  Click the <guibutton>Play button</guibutton> again to pause your video.  Remember, if you need to re-arrange any clips, just drag and drop the clips to move them.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_8"><title>Step 5 – Export your Video</title>
+<para>Once you are happy with your photo slide-show video, the next step is to export your video.  This will convert your OpenShot project into a single video file, which should work on any Linux media player (such as Totem, VLC, etc...) or websites (such as YouTube, Vimeo, etc...).</para>
+<para>Click on the <guibutton>Export Video</guibutton> icon at the top of the screen (or use the <guimenuitem>File</guimenuitem> &gt; <guimenuitem>Export Video...</guimenuitem> menu).  Choose from one of the many preset export options, and click the <guibutton>Export Video button</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_9"><title>Step 6 – Enjoy OpenShot!</title>
+<para>You should now have a basic understanding of how OpenShot works.  <emphasis>Importing, Arranging, Previewing, and Exporting</emphasis>. Hopefully this tutorial took less than 5 minutes for you to complete.  Please read the rest of this manual for a more detailed understanding of OpenShot, and it's advanced features.  Enjoy!</para></sect2></sect1><sect1 id="sect1_4"><title>Main Window</title>
+<para>OpenShot Video Editor has one main window which contains most of the information, buttons, and menus needed to edit your video project.</para><sect2 id="sect2_10"><title>Overview</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Main Toolbar</para>
+</entry>
+<entry>
+<para>Contains buttons to open, save, and export your video project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Function Tabs</para>
+</entry>
+<entry>
+<para>Switch between Project Files, Transitions, and Effects.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Project Files</para>
+</entry>
+<entry>
+<para>All audio, video, and image files that have been imported into your project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Preview Window</para>
+</entry>
+<entry>
+<para>This is the area that the video will playback on the screen.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Edit Toolbar</para>
+</entry>
+<entry>
+<para>This toolbar contains toggle buttons used for editing, trimming, and splitting clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Zoom Slider</para>
+</entry>
+<entry>
+<para>This slider will adjust the time-scale of your timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Play-head / Ruler</para>
+</entry>
+<entry>
+<para>The ruler shows the time-scale, and the red line is the play-head.  The play-head represents the current playback position.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Timeline</para>
+</entry>
+<entry>
+<para>The timeline visualizes your video project, and each clip and transition in your project.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_11"><title>Main Toolbar</title>
+<para>The <guimenu>main toolbar </guimenu>contains buttons to quickly open and save your project, import files, and export your video.  All of these functions can also be accessed through the <guimenuitem>File</guimenuitem> menu.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_toolbar.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Open Project</para>
+</entry>
+<entry>
+<para>Open an OpenShot project file (*.OSP).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Save Project</para>
+</entry>
+<entry>
+<para>Save the current project.  If no project has been created, a dialog screen will open to gather more information.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Import Files</para>
+</entry>
+<entry>
+<para>Import 1 or more files into your current OpenShot project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Take Screenshot</para>
+</entry>
+<entry>
+<para>Output the current frame from the preview window.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Export Video</para>
+</entry>
+<entry>
+<para>Export the current project to a single video file.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_12"><title>Function Tabs</title>
+<para>These tabs let you switch between 3 different functions: Project Files, Transitions, and Effects.  The items in these tabs can be dragged and dropped onto the timeline.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_tabs.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_13"><title>Project Files</title>
+<para>The Project Files section contains all clips that have been imported into your project.  Before you can add an image, audio file, or video file to your project timeline, it must first be imported into your Project Files section.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_files.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_14"><title>Preview Window</title>
+<para>The Preview Window is what controls the playback (or preview) of your video project.  Clicking the buttons under the preview window controls the playback, and outputs video to this area.  The size of this area can be modified by clicking and dragging on the handles (or lines) around this section.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Skip to Beginning</para>
+</entry>
+<entry>
+<para>Skip to the very beginning of the project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Previous Marker</para>
+</entry>
+<entry>
+<para>Skip to the previous marker (if any).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Rewind</para>
+</entry>
+<entry>
+<para>Rewind the video from the current playback position.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Play / Pause</para>
+</entry>
+<entry>
+<para>Play or Pause the playback of your project.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Fast Forward</para>
+</entry>
+<entry>
+<para>Fast forward the video from the current playback position.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Next Marker</para>
+</entry>
+<entry>
+<para>Skip to the next marker (if any).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Skip to End</para>
+</entry>
+<entry>
+<para>Skip to the end of the project.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_15"><title>Edit Toolbar</title>
+<para>The Edit Toolbar lets you toggle between different edit modes for the timeline. When moving, trimming, and slicing clips, it is necessary to change the edit mode using this toolbar.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Add Track</para>
+</entry>
+<entry>
+<para>Add a new track to the top of the stack.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Select Mode</para>
+</entry>
+<entry>
+<para>Select mode allows you to click and move clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Razor Mode</para>
+</entry>
+<entry>
+<para>Razor mode allows you to split a clip where ever you click.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Resize Mode</para>
+</entry>
+<entry>
+<para>Resize mode allows you to grab the edges of a clip and drag to resize (or trim) the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Snap Mode</para>
+</entry>
+<entry>
+<para>Snap mode allows clips to snap (or jump) to the nearest clip or play-head (if any are close) when you drop them.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Add Marker</para>
+</entry>
+<entry>
+<para>Add a new marker, which allows you to quickly jump back to this exact point while previewing.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_16"><title>Zoom Slider</title>
+<para>The zoom slider allows you to change the time-scale of the timeline.  Zoom in to see the timeline more closely, or zoom out the see the entire project without scrolling.  You can either click the zoom buttons (on the left and right), or slide the zoom slider.  When dragging the slider, it will update the timeline when you pause or stop moving it.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_zoomer.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_17"><title>Timeline</title>
+<para>The timeline visualizes your project in a very graphical way.  Each clip is represented by a yellow rectangle.  Each track is represented by a a blue rectangle.  The Play-head (red line) represents the current playback (or preview) position of your project.</para>
+<para>Click anywhere on the ruler to jump to that point in time.  If you drag along the ruler, it will “scrub” the video, which is a fast, rough way to preview your project.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_timeline.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Ruler</para>
+</entry>
+<entry>
+<para>The ruler shows the current time-scale of the timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Play-Head</para>
+</entry>
+<entry>
+<para>The Play-head represents the current playback position of your preview window.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Clip</para>
+</entry>
+<entry>
+<para>A clip represents an audio, image, or video file.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Track</para>
+</entry>
+<entry>
+<para>A track is similar to a layer.  The higher tracks show video and images above the lower tracks.  There is no limit to how many tracks a project can have.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_18"><title>Tracks</title>
+<para>
+<application>OpenShot</application> uses tracks to layer videos and images.  The top most track is the top layer, and the bottom track is the bottom layer.  If you are familiar with layers in a photo editing application, then you should be quite familiar with this concept.  OpenShot will mix each layer together, just like a photo editing application.</para>
+<para>For example, imagine a 3 track video project.  A sunset image should be used as the background, a moon should be in the middle, and a logo should be on top.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/tracks.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Top Track</para>
+</entry>
+<entry>
+<para>Clips on this track will be on top.  Logos and watermarks should be on this layer.  The OpenShot logo is on this track in the illustration.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Middle Track</para>
+</entry>
+<entry>
+<para>These clips are under the top track, but above the bottom track.  The moon image is on this track in the illustration.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Bottom Track</para>
+</entry>
+<entry>
+<para>These clips are under all other tracks.  The sunset is on  this track in the illustration.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_19"><title>Controlling Playback of Video</title>
+<para>Playing, Pausing, and Seeking are very important features in a video editor.  While you are creating a video project, you will need to playback the project over and over again.  While clicking on the <guibutton>Play button</guibutton> is an easy way to accomplish this, there are many faster ways.</para><sect3 id="sect3_4"><title>Playback Methods</title>
+<para>There are <emphasis>7 ways </emphasis>to control the video playback in <application>OpenShot</application>. </para>
+<orderedlist>
+<listitem>
+<para>Click the <guibutton>Preview Toolbar</guibutton> (Play, Fast-forward, etc...)</para>
+</listitem>
+<listitem>
+<para>Dragging the Slider above the Preview Toolbar</para>
+</listitem>
+<listitem>
+<para>Dragging the <guibutton>Play-Head</guibutton> on the Ruler</para>
+</listitem>
+<listitem>
+<para>Clicking on the Ruler at any point</para>
+</listitem>
+<listitem>
+<para>Using Keyboard Shortcuts (J, K, L keys)</para>
+</listitem>
+<listitem>
+<para>Using the Arrow Buttons (Left, Right, Up, Down)</para>
+</listitem>
+<listitem>
+<para>Using the Space bar key (Play / Pause)</para>
+</listitem>
+</orderedlist></sect3></sect2><sect2 id="sect2_20"><title>Keyboard Short-Cuts</title>
+<para>A keyboard short-cut is simply a key on the keyboard that saves you the trouble of moving your mouse and clicking.  It is often faster to type a key, than to point and click.  Here are all keyboard short-cuts in <application>OpenShot</application>:</para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>key</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>J</para>
+</entry>
+<entry>
+<para>Rewind the video playback</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>K</para>
+</entry>
+<entry>
+<para>Pause / Play</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>L</para>
+</entry>
+<entry>
+<para>Fast-forward the video playback</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Space bar</para>
+</entry>
+<entry>
+<para>Pause / Play</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Up</para>
+</entry>
+<entry>
+<para>Seek to previous maker (if any)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Down</para>
+</entry>
+<entry>
+<para>Seek to next marker (if any)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Left</para>
+</entry>
+<entry>
+<para>Step backwards one frame (frame stepping)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Right</para>
+</entry>
+<entry>
+<para>Step forwards one frame (frame stepping)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TAB</para>
+</entry>
+<entry>
+<para>Switch between <guibutton>Resize</guibutton> and <guibutton>Select</guibutton> mode</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Scroll Wheel</para>
+</entry>
+<entry>
+<para>Zoom in &amp; out of the timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Home</para>
+</entry>
+<entry>
+<para>Seek to the beginning of the timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + End</para>
+</entry>
+<entry>
+<para>Seek to the end of the timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>F1</para>
+</entry>
+<entry>
+<para>Launch the help file (if installed)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_5"><title>Projects - Create, Open, and Save</title>
+<para>
+<application>OpenShot</application> needs a <emphasis>project file </emphasis>to save the information that makes up a video project.  Information such as the name and location of your project, video and audio files, timeline information, which clips have been trimmed, arranged, etc...</para>
+<para/>
+<para>When <application>OpenShot</application> is launched, it creates a new project file automatically.  You can start using <application>OpenShot</application> immediately, without first creating a project.  </para>
+<para>Project files have an .OSP file extension (ExampleProject.osp).  Also, project files need a /thumbnail/ folder, which contains all of the thumbnails in your project.  If you move a project file, be sure to move the /thumbnail/ folder also.</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Project File</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/ProjectA.osp</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Thumbnail Folder</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/thumbnail/</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable><sect2 id="sect2_21"><title>Create a Project</title>
+<para>There are 2 ways to create a project file.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/menu_file.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect3 id="sect3_5"><title>Method 1 – File Menu:</title>
+<para>Choose <guimenu>File &gt;</guimenu> <guimenuitem>New Project</guimenuitem>.  The <guilabel>New Project</guilabel> screen will open.  Change the project name, project type, length of timeline, and then click “Save Project”.</para></sect3><sect3 id="sect3_6"><title>Method 2 – Save Default:</title>
+<para>Since OpenShot creates a project by default when you launch the program, you can simply choose <guimenu>File &gt;</guimenu> <guimenuitem>Save</guimenuitem>.  The <guilabel>Save Project</guilabel> screen will open.  Change the project name, project type, length of timeline, and then click “Save Project”.</para></sect3></sect2><sect2 id="sect2_22"><title>Save Project Screen</title>
+<para>Clicking <guimenuitem>New Project</guimenuitem> or <guimenuitem>Save Project</guimenuitem> will result in this screen being shown.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/projects_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Project Name</para>
+</entry>
+<entry>
+<para>The name of your project file (.osp file extension)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Project Folder</para>
+</entry>
+<entry>
+<para>The folder location to save your project file to.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Project Length</para>
+</entry>
+<entry>
+<para>The <emphasis>maximum</emphasis> length of the timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Project Type</para>
+</entry>
+<entry>
+<para>The affects the preview window.  It determines the size,  aspect ratio, and frames per second of the video files you are previewing.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Project Type Details</para>
+</entry>
+<entry>
+<para>This table previews the project type details, such as size, aspect ratio, and frames per second.  When you change the project type dropdown, it will update this table.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_23"><title>Open a Project</title>
+<para>To open a project, choose <guimenu>File &gt;</guimenu> <guimenuitem>Open Project</guimenuitem>. The <guilabel>Open Project</guilabel> dialog is displayed. Select the project file (*.osp) that you want to open, then click <guibutton>Open Project</guibutton>. </para>
+<para>If you are opening a recent project, choose <guimenu>File &gt;</guimenu> <guimenuitem>Recent Projects</guimenuitem>.  This is often the fastest way to open a project from within <application>OpenShot</application>.</para>
+<para>If you want to launch OpenShot and have your project automatically opened, double click on the .OSP file (on your computer), and choose <command>openshot</command> as the command.</para></sect2></sect1><sect1 id="sect1_6"><title>Import Files – Audio, Video, and Images</title>
+<para>Before you can use a clip on the timeline, you must first <emphasis>import</emphasis> the clip into your project.  There are a few different ways to import a clip.  The most common way is to drag and drop files from your computer into the <guibutton>Project Files</guibutton> section of the screen.</para>
+<para>There are 4 different methods to import a clip.</para><sect2 id="sect2_24"><title>Method 1 - Drag &amp; Drop</title>
+<orderedlist>
+<listitem>
+<para>Run <application>OpenShot</application>
+</para>
+</listitem>
+<listitem>
+<para>Drag and drop multiple files at once from your Desktop to the <guibutton>Project Files</guibutton> tree. </para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_25"><title>Method 2 - Drop Folder</title>
+<orderedlist>
+<listitem>
+<para>Run <application>OpenShot</application> </para>
+</listitem>
+<listitem>
+<para>Drag and drop a folder full of media files from your Desktop to the "Project Files" tree. </para>
+<para>
+<emphasis>* All audio, video, and image files will be imported from this folder </emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_26"><title>Method 3 - Open With</title>
+<orderedlist>
+<listitem>
+<para>While browsing files in Gnome, select 1 or more media files </para>
+</listitem>
+<listitem>
+<para>Right click on the selected files, and choose "Open With Other Application..." </para>
+</listitem>
+<listitem>
+<para>Choose "<application>OpenShot Video Editor</application>" (or the <command>openshot</command> command)</para>
+<para>
+<emphasis>* Even after you start working in </emphasis>
+<application>OpenShot</application>
+<emphasis> with your files, you can still return to the file system, and right click on more files and choose "OpenShot". It will add them to the currently running instance of OpenShot. </emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_27"><title>Method 4 - Import Button</title>
+<orderedlist>
+<listitem>
+<para>Run <application>OpenShot</application> </para>
+</listitem>
+<listitem>
+<para>Click the "Import Files" toolbar button </para>
+</listitem>
+<listitem>
+<para>Select 1 or more files, and click "Import"</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_7"><title>Image Sequences</title>
+<para>One of the most powerful features in OpenShot is the ability to import sequences of images.  A sequence of images is really just a folder full of images that are named very similar, and of course named sequentially.  Each image file represents one frame of video.  So for a 30 second long clip, with 30 frames per second, you would have 900 image files.  Although image sequences can be tough to work with (because of the shear volume of files), it can do just about anything.</para>
+<para>To import an image sequence, follow these steps:</para><sect2 id="sect2_28"><title>Locate an Image Sequence</title>
+<para>Many programs can generate an image sequence.  For example, in Blender (a 3D animation package), you can create a great animated title sequence and export it as a series of named .PNG files (with transparency).  It will create a folder on your computer that contains all of the image files.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_29"><title>Import the Image Sequence</title>
+<para>Choose the <guimenu>File</guimenu> &gt; <guimenuitem>Import Image Sequence</guimenuitem> menu option, and that will launch the Image Sequence dialog.  </para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Choose the folder location of your image sequence, and the file naming pattern.  Not all image sequences are named the same way.  For example, Movie_0001.JPG is different from Movie_1.JPG.  Once you enter the correct filename pattern, click <guibutton>Import Image Sequence</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_30"><title>Add to Timeline</title>
+<para>Drop your new image sequence on the timeline.  It is represented by a single clip, just like a regular video clip.</para></sect2><sect2 id="sect2_31"><title>Create an Image Sequence</title>
+<para>If you do not already have an image sequence, it is easy to create once.  Just right-click on any <guibutton>video file</guibutton> in your <guimenuitem>Project Files</guimenuitem> and choose <guimenuitem>Convert to Image Sequence</guimenuitem>.  It will create a new folder, and export every frame as a .PNG image file.  It will also add a reference to your new image sequence in the <guimenuitem>Project Files</guimenuitem> section automatically.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_convert.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_32"><title>Edit an Image Sequence</title>
+<para>If you want to edit a sequence of images, we recommend using The Gimp (an open-source image editor).  It has plug-ins to assist in editing large sequences of images, and can simplify the process of editing, saving, and opening the next image in a sequence.  You can then touch up each frame, remove red-eye, add glowing effects to light sabers, erase wires, etc...  There is really nothing you can not do with a frame by frame editing approach, but it does take a lot of effort.</para><sect3 id="sect3_7"><title>Gimp Animation Package (GAP)</title>
+<para>GAP is a plug-in for The Gimp, which assists in editing image sequences.  It can quickly save the current image and load the next image in a sequence.  It can also use key-frames to apply effects across many frames, or even create animations.  If you need to edit an image sequence, you should definitely take a look at <ulink url="http://www.gimp.org/tutorials/Using_GAP/">GAP</ulink>.</para></sect3><sect3 id="sect3_8"><title>Screenshot of Gimp Animation Package</title>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/gimp_animation_package.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect3></sect2></sect1><sect1 id="sect1_8"><title>Manage Files &amp; Folders</title>
+<para>When making a video, you will need to import many different files into your project, including audio, videos, images, titles, overlays, sound effects, and more.  This can quickly get out of hand, and make your list of project files too long, which will slow you down looking for the right file.</para>
+<para>If your project has too many files (which is up to you to decide), you can use folders as a way to organize your files.</para><sect2 id="sect2_33"><title>Create a Folder</title>
+<orderedlist>
+<listitem>
+<para>Right click on the <guimenuitem>Project Files</guimenuitem> section.</para>
+</listitem>
+<listitem>
+<para>Choose <guimenuitem>Create Folder...</guimenuitem>
+</para>
+</listitem>
+<listitem>
+<para>Enter a name for your folder.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_create.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_34"><title>Move Files to a Folder</title>
+<orderedlist>
+<listitem>
+<para>Be sure you have created a folder first.</para>
+</listitem>
+<listitem>
+<para>Right click on 1 or more files in the <guimenuitem>Project Files</guimenuitem> section.</para>
+</listitem>
+<listitem>
+<para>Choose <guimenuitem>Move File(s) to Folder</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Choose a folder.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_move_to_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_35"><title>Remove a Folder</title>
+<orderedlist>
+<listitem>
+<para>Right click on a folder</para>
+</listitem>
+<listitem>
+<para>Choose <guimenuitem>Remove Folder</guimenuitem>.</para>
+<para>
+<emphasis>* Be sure to move all files out of a folder before removing it.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_9"><title>Add Files to Timeline</title>
+<para>Once you have imported files into your project, the next step is to add them to the timeline.  To add a file from your <guimenuitem>Project Files</guimenuitem> to the <guibutton>timeline</guibutton>, follow these steps:</para>
+<orderedlist>
+<listitem>
+<para>Click on a file.</para>
+</listitem>
+<listitem>
+<para>Drag over the <guibutton>timeline</guibutton> and drop it.</para>
+</listitem>
+<listitem>
+<para>The clip will now be added to the timeline.</para>
+<para>
+<emphasis>* You can only add 1 file at a time.</emphasis>
+</para>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+<emphasis/>
+</mediaobject>
+<para/></sect1><sect1 id="sect1_10"><title>Move &amp; Trim Clips on Timeline</title>
+<para>Once you have files (also referred to as clips) on the timeline, we need to arrange them onto tracks, and put them in the correct order.  Also, we will need to trim off the beginning and endings of the video clip (if needed).</para><sect2 id="sect2_36"><title>Move a Clip (Select Mode)</title>
+<orderedlist>
+<listitem>
+<para>Switch to <guibutton>Select Mode</guibutton> (this is the default mode)</para>
+</listitem>
+<listitem>
+<para>Click on a clip.</para>
+</listitem>
+<listitem>
+<para>Drag the clip to a new position on the <guibutton>timeline</guibutton>, and drop it.</para>
+<para>
+<emphasis>* If snapping is enabled, the clip will jump to any close-by clips (or the play-head, if it is close-by).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_37"><title>Trim a Clip (Resize Mode)</title>
+<orderedlist>
+<listitem>
+<para>Switch to <guibutton>Resize Mode</guibutton>, by clicking on the resize icon.</para>
+</listitem>
+<listitem>
+<para>Move you mouse cursor over the right or left edge of a clip.</para>
+</listitem>
+<listitem>
+<para>Drag the edge of the clip to trim the video.</para>
+<para>
+<emphasis>* As you drag the edge of the clip, the preview window will display where the clip will begin or end (based on which side of the clip you are dragging).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_38"><title>Slice a Clip (Razor Mode)</title>
+<orderedlist>
+<listitem>
+<para>
+<emphasis>To slice a clip into 2 pieces, switch to </emphasis>
+<guibutton>Razor Mode</guibutton>
+<emphasis>.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>The mouse cursor will change to a dotted line &amp; razor icon.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Click on a clip at the point you want to cut / slice it.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_39"><title>Edit Toolbar</title>
+<para>The Edit Toolbar lets you toggle between different edit modes for the timeline. When moving, trimming, and slicing clips, it is necessary to change the edit mode using this toolbar.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Add Track</para>
+</entry>
+<entry>
+<para>Add a new track to the top of the stack.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Select Mode</para>
+</entry>
+<entry>
+<para>Select mode allows you to click and move clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Razor Mode</para>
+</entry>
+<entry>
+<para>Razor mode allows you to split a clip where ever you click.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Resize Mode</para>
+</entry>
+<entry>
+<para>Resize mode allows you to grab the edges of a clip and drag to resize (or trim) the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Snap Mode</para>
+</entry>
+<entry>
+<para>Snap mode allows clips to snap (or jump) to the nearest clip or play-head (if any are close) when you drop them.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Add Marker</para>
+</entry>
+<entry>
+<para>Add a new marker, which allows you to quickly jump back to this exact point while previewing.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2></sect1><sect1 id="sect1_11"><title>Separate Audio From Video</title>
+<para>OpenShot can separate the audio and video of a clip, if needed.  If you only want to play the audio of a clip, or only play the video with no audio, then follow these steps:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/track_buttons.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_40"><title>Only the Video</title>
+<para>To only play the video of a clip, click on the speaker icon, located on the clip.  This will mute the audio for this clip.  Or if you want to mute the audio for the entire track, click the speaker icon on the track.</para></sect2><sect2 id="sect2_41"><title>Only the Audio</title>
+<para>To only hear the audio of a clip, click on the eye icon, located on the clip.  This will hide the video output.  Or if you want hide the video output for the entire track, click the eye  icon on the track.</para></sect2></sect1><sect1 id="sect1_12"><title>Duplicate Clips</title>
+<para>A very useful feature in OpenShot is the ability to duplicate clips, transitions, and masks.  To duplicate an item, right-click on the item (such as a clip or transition), and choose <guimenuitem>Duplicate</guimenuitem>.  This will add an exact copy of the duplicated item to the timeline.  Including the IN and OUT points, effects applied to the clip, and key-frame animation settings.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/duplicate_clip.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>A common use of the <guimenuitem>Duplicate</guimenuitem> feature, is to trim a video clip down to a specific scene, and then duplicate the clip.  Once you have two identical clips, you can mute the audio on one, and hide the video of the other.  The is a quick way to separate the audio and video of a clip.  Now you can offset the audio of the clip, or continue the audio of the clip, while trimming the video down.  This is often used in films, when two people are talking.  They continue to play the audio from the first person talking, while showing the reaction of the second person.</para></sect1><sect1 id="sect1_13"><title>Clip Properties</title>
+<para>Each clip in OpenShot has many properties that can be manipulated.  However, because it is not possible to display and adjust all of the settings on the timeline, this screen was created.  It lets the user adjust every possible setting and property that a clip has, including Length, Speed, Volume, Size, Position, Aspect Ratio, and many others.</para><sect2 id="sect2_42"><title>Launch the Clip Properties Screen</title>
+<para>To launch the clip properties screen, right-click on a clip and choose <guimenuitem>Properties</guimenuitem>.</para></sect2><sect2 id="sect2_43"><title>Preview Changes</title>
+<para>To quickly preview what your new settings will produce, click the <guibutton>Play button</guibutton> or drag the preview <guibutton>Slider</guibutton>.  You can preview your changes over and over again to get them just right.  No changes are saved to your timeline until you click the <guibutton>Apply</guibutton> button.</para></sect2><sect2 id="sect2_44"><title>General Tab</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab1.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para>The general tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Enable Video</para>
+</entry>
+<entry>
+<para>Output video for this clip</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Enable Audio</para>
+</entry>
+<entry>
+<para>Output audio for this clip</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_45"><title>Length Tab</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab2.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>
+<anchor id="result_box"/>The length tab provides information on the beginning, end, and total length of a clip.  By adjusting these values, you can delay when a clip starts, end the clip sooner, or both.  Use the <guibutton>Play button</guibutton> to preview your changes.  Practice by adjusting these values without using the Resize tool. </para>
+<para/>
+<para>The length tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>In (seconds)</para>
+</entry>
+<entry>
+<para>The second to start playing the video (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Out (seconds)</para>
+</entry>
+<entry>
+<para>The last second of the video clip (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Length (seconds)</para>
+</entry>
+<entry>
+<para>The length of the clip is calculated based on the IN and OUT points.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_46"><title>Speed Tab</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab3.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>
+<anchor id="result_box1"/>The speed tab speed consists of a simple mode and advanced mode.  In the simple mode, using predefined values, you can speed up the clip to 16x normal speed or slow down the clip to 1/16 normal speed.  Also, you can change the direction.  The advanced tab let's you set a high-precision speed decimal, instead of the simple predefined fractions.</para>
+<para/>
+<para>The speed tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Speed</para>
+</entry>
+<entry>
+<para>The second to start playing the video (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Direction</para>
+</entry>
+<entry>
+<para>The last second of the video clip (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Advanced Speed</para>
+</entry>
+<entry>
+<para>A high-precision decimal value for the speed of a clip.  This value changes as the speed dropdown changes.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_47"><title>Layout Tab</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>The layout tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Key Frame</para>
+</entry>
+<entry>
+<para>This dropdown determines which key frame you are working with.  Each clip has 2 key frames, the start of a clip, and the end of a clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Height</para>
+</entry>
+<entry>
+<para>The height of a clip (percent based).  The larger the number, the taller the clip will be.  The smaller the number, the shorter the clip will be.  This only affects the current key-frame, not the entire clip.  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Width</para>
+</entry>
+<entry>
+<para>The width of a clip (percent based).  The larger the number, the wider the clip will be.  The smaller the number, the narrower the clip will be.  This only affects the current key-frame, not the entire clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>X</para>
+</entry>
+<entry>
+<para>X position of the center of the clip.  The larger the number, the further to the right the clip will be.  The smaller the number, the closer to the left the clip will be. This only affects the current key-frame, not the entire clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Y</para>
+</entry>
+<entry>
+<para>Y position of the center of the clip.  The larger the number, the closer to the bottom the clip will be.  The smaller the number, the closer to the top the clip will be.  This only affects the current key-frame, not the entire clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Alpha</para>
+</entry>
+<entry>
+<para>The alpha level of the clip.  100 = opaque.  0 = invisible.  This only affects the current key-frame, not the entire clip.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_48"><title>Audio Tab</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab5.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>The audio tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Volume</para>
+</entry>
+<entry>
+<para>The volume level of this clip.  0 = mute, 100 = max.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade In</para>
+</entry>
+<entry>
+<para>Fade the clip in from mute to volume level.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade Out</para>
+</entry>
+<entry>
+<para>Fade the clip out from volume level to mute.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade (Seconds)</para>
+</entry>
+<entry>
+<para>The number of seconds the fade will last.  The bigger this number, the more gradual the fade will be.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_49"><title>Video Tab</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab6.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>The video tab can adjust the size, position, and alignment of a clip.  Also, it can apply a fade effect to the beginning and ending of a clip, which is sometimes easier than using a transition.  Because the fade is a property of the clip, it moves when you move the clip.  So, unlike transitions, fades stay with the clip when you move them.</para>
+<para>The video tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Stretch Full Screen</para>
+</entry>
+<entry>
+<para>Stretch clips to the size of the screen (based on project type).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Maintain Aspect Ratio</para>
+</entry>
+<entry>
+<para>Do not distort the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Horizontal Align</para>
+</entry>
+<entry>
+<para>Alignment of the clip left to right.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vertical Align</para>
+</entry>
+<entry>
+<para>Alignment of the clip top to bottom.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade In</para>
+</entry>
+<entry>
+<para>Fade the clip in from transparent to opaque.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade Out</para>
+</entry>
+<entry>
+<para>Fade the clip out from opaque to transparent.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fade (Seconds)</para>
+</entry>
+<entry>
+<para>The number of seconds the fade will last.  The bigger this number, the more gradual the fade will be.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_50"><title>Effects Tab</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab7.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>The effects tab can apply and manage multiple effects that are applied to a clip.  To preview your clip with effects, use the <guibutton>Play button</guibutton>.  Each effect can have many settings, so use the <guibutton>Play button</guibutton> as you change settings to see the result.</para>
+<para>The effects tab has the following properties:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effect List</para>
+</entry>
+<entry>
+<para>This box has a list of all effects applied to this clip.  Clips are processed in a top to bottom order.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Add</para>
+</entry>
+<entry>
+<para>Add a new effect to this clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Remove</para>
+</entry>
+<entry>
+<para>Remove the selected effect from the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Up</para>
+</entry>
+<entry>
+<para>Move the selected effect up in the list.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Down</para>
+</entry>
+<entry>
+<para>Move the selected effect down in the list.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Effect Settings</para>
+</entry>
+<entry>
+<para>This area will contain settings for the selected clip (if any).</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_14"><title>Key Frames</title>
+<para>OpenShot can use <emphasis>Key Frames</emphasis> to animate a clip.  A key frame is a point in time that contains many settings, such as size, position, and transparency.  There are two ways to set key-frames in OpenShot, manually or with a preset.  </para><sect2 id="sect2_51"><title>Preset Animation</title>
+<para>Many preset animations are available, such as moving a clip from bottom to top of the screen or slowly zooming up on a clip.  To add a preset animation to a clip, right-click on a clip, and choose <guimenuitem>Animate</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_animate.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_52"><title>Preset Layout</title>
+<para>Many preset layouts are available, such as resizing a clip and positioning it to the corner of the screen or centering a clip.  To add a preset layout to a clip, right-click on a clip, and choose <guimenuitem>Layout</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_layout.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_53"><title>Manually</title>
+<para>To manually create key frames, right click on a clip, and choose <guimenuitem>Properties</guimenuitem>.  Switch to the <guibutton>Layout tab</guibutton>, and choose which key frame you want to edit from the dropdown.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Each clip has 2 key frames, the start of a clip, and the end of a clip.  If there are any differences between the start and end key frames, OpenShot will interpolate the difference on a each frame, and thus animate the clip.  The following properties are effected by key-frames:  <emphasis>Height, Wight, X, Y, and Alpha</emphasis>.</para>
+<para>For example, consider these key frames:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Start Key Frame:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=0</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>End Key Frame:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X =150, Y=0</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>This would result in the clip animating from the left to the right side of the screen.  The difference in the X setting is interpolated across all frames in this clip.  The longer the clip, the slower the animation.  The shorter the clip, the faster the animation.</para>
+<para>If you want to statically change the size or position of a clip, just set the start and end key frames to the same value:</para>
+<para>For example, consider these key frames:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Start Key Frame:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>End Key Frame:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>This would offset the clip to the top right of the screen.  It would not animate, because the start and end key frames are the same value.</para>
+<para>If you need to more than 2 key frames, slice the clip into many pieces, and at the beginning and ending of each slice, you can set the key frames, thus giving you the ability to make an unlimited number of key frames.</para></sect2></sect1><sect1 id="sect1_15"><title>Crop Effect</title>
+<para>OpenShot can crop video and image clips using our Layout setting, found on the <guibutton>Clip Properties</guibutton> screen.  Right click on a clip, and choose <guimenuitem>Properties</guimenuitem>.  Then switch to the <guibutton>Layout tab</guibutton>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>To crop a clip, you need to zoom up on the part of the clip you want to see.  Adjust the Height, Width, X, and Y settings to zoom up on the area of the clip you want to crop.  Be sure to set both key frames to the same values.  Use the <guibutton>Play button</guibutton> to preview your crop.  Once you are happy with the crop, click the <guibutton>Apply</guibutton> button.</para></sect1><sect1 id="sect1_16"><title>Rotate Effect</title>
+<para>If you need to rotate a clip 90 degrees, 180 degrees, or even animate the rotation around in circles, OpenShot has a <guibutton>Rotate</guibutton> effect which can help.</para>
+<para>OpenShot has two types of rotation effects available, fixed and animated.  To apply a rotation effect, switch to the <guibutton>Effects Tab</guibutton> on the <guibutton>main window</guibutton>, and drag the <guimenuitem>Rotate</guimenuitem> effect onto your clip.  </para>
+<para>To adjust your rotation settings, right-click on the clip and choose <guimenuitem>Properties</guimenuitem>.  Then switch to the Effects tab on the properties window, and click on the Rotate effect.  This will bring up a list of rotation settings that can be adjusted.  Try changing each setting, and use the <guibutton>Play Button</guibutton> to preview the effect.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_rotation.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_54"><title>Fixed Rotation</title>
+<para>A fixed rotation can rotate a video 90 degrees, 180 degrees, or any number of degrees you need.  It does not animate the rotation.  This is useful when you record a video sideways, and need to rotate it.  To use a fixed rotation, only adjust the settings with that start with “Fixed”.  Be sure to adjust the other settings back to zero.</para></sect2><sect2 id="sect2_55"><title>Animated Rotation</title>
+<para>An animated rotation can be used to spin a clip around in circles, or many other patterns.  This can be a nice effect for titles, spinning newspapers, or other creative uses.  To use an animated rotation, adjust the “Fixed” settings to zero, and only use the settings that start with “Rotate”.</para></sect2></sect1><sect1 id="sect1_17"><title>Title Editor</title>
+<para>Like many video editors, OpenShot has a built-in title editor.  It has some basic functionality to help you create titles for your video project.  Here are the features of OpenShot's title system:</para>
+<orderedlist>
+<listitem>
+<para>Many Templates (Including a Solid Color Template)</para>
+</listitem>
+<listitem>
+<para>Easy Text Editing (title, subtitle)</para>
+</listitem>
+<listitem>
+<para>Change Font and Color (including alpha channel)</para>
+</listitem>
+<listitem>
+<para>Change the Background Color (including alpha channel)</para>
+</listitem>
+<listitem>
+<para>Uses SVG Image Format (vector based)</para>
+</listitem>
+<listitem>
+<para>Adds Titles to the <guimenuitem>Project Files</guimenuitem> Section</para>
+</listitem>
+<listitem>
+<para>Integration with Inkscape (as the advanced editor)</para>
+</listitem>
+</orderedlist>
+<para/>
+<para>However, if the basic editor is not powerful enough for you, any SVG image file can be imported and used as a title.  The alpha channel (transparency) is respected, which means titles can be overlayed on top of other tracks, and will show the video through the transparent parts.</para><sect2 id="sect2_56"><title>Launch Title Editor</title>
+<para>To add a new title, click the <guimenu>Project</guimenu> &gt; <guimenuitem>New Title...</guimenuitem> menu option.  This will launch the  Title Editor.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_57"><title>Create New Title File</title>
+<para>Once the title editor launches, you need to select a template, and click the <guibutton>Create New Title</guibutton> button.  The will make a copy of the template SVG title, and add it to your <guimenuitem>Project Files</guimenuitem>.  Enter the name of the file, as it will be saved to your hard-drive.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_58"><title>Title Editor Window</title>
+<para>The title dialog allows you to choose a template, edit text, change colors, and create your own titles for your video project.  Once you are finished editing your title, click the <guibutton>Apply</guibutton> button.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_main_screen.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Choose Template</para>
+</entry>
+<entry>
+<para>Choose a template SVG file to use as a title.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Create Title Button</para>
+</entry>
+<entry>
+<para>Click this button to create your copy of the SVG template.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Edit Text</para>
+</entry>
+<entry>
+<para>Launch the text editing window.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Change Font</para>
+</entry>
+<entry>
+<para>Change the size and family of the font.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Font Color</para>
+</entry>
+<entry>
+<para>Change the font color and alpha (transparency) level.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Background Color</para>
+</entry>
+<entry>
+<para>Change the background color and alpha (transparency) level.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Advanced Editor</para>
+</entry>
+<entry>
+<para>Edit this SVG title in Inkscape.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Title Preview</para>
+</entry>
+<entry>
+<para>Preview your title after each edit, color change, or font change.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_59"><title>Scrolling Titles / Credits</title>
+<para>To create the effect of scrolling titles, you need to cut your title sequence into many different screen-sized titles.</para><sect3 id="sect3_9"><title>Create Each Title Image</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_10"><title>Offset Each Title on the Timeline</title>
+<para>Add each title image of your scrolling credits to the timeline, set the length of each image to 7 seconds, and then offset them between two tracks.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_scrolling.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_11"><title>Animate Each Title</title>
+<para>Right-click on each title clip and choose <guimenuitem>Animate</guimenuitem> &gt; <guimenuitem>Bottom to Top</guimenuitem>.  This will create the illusion that your entire credits are scrolling from bottom to top in one continuous sequence, with no gaps.  Be sure to overlap the titles (as show in the illustration) so there are no gaps between the titles.</para></sect3></sect2></sect1><sect1 id="sect1_18"><title>Transitions</title>
+<para>Transitions are used to gradually move between 2 different clips.  Many different transitions are available in <application>OpenShot</application>.  They are easy to drag and drop onto the timeline, and can add lots of fun to a video project.</para><sect2 id="sect2_60"><title>Transition Screen</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions_clock.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Transition Tab</para>
+</entry>
+<entry>
+<para>This is the transitions tab.  It contains a list of all transitions available in <application>OpenShot</application>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Transition List</para>
+</entry>
+<entry>
+<para>This is the transition list.  Select a transition and drag and drop it onto the timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Resize Tool</para>
+</entry>
+<entry>
+<para>The resize tool can be used to resize a transition.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Transition on the Timeline</para>
+</entry>
+<entry>
+<para>Once you drop a transition on the timeline, it can be moved and resized just like any other clip.  The transition snaps between tracks, and blends between the 2 tracks.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_61"><title>Add a Transition</title>
+<para>To add a transition, switch to the <guibutton>Transition Tab</guibutton>, and select a transition by clicking on it.  Drag and drop the transition onto the <guibutton>timeline</guibutton>.  It will snap between 2 tracks.</para></sect2><sect2 id="sect2_62"><title>Move a Transition</title>
+<para>To move a transition, switch to <guibutton>Select Mode</guibutton> on the <guibutton>Timeline Toolbar</guibutton>, and drag it to a new position.</para></sect2><sect2 id="sect2_63"><title>Resize a Transition</title>
+<para>To resize a transition, switch to <guibutton>Resize Mode</guibutton> on the <guibutton>Timeline Toolbar</guibutton>, and drag the left or right edge to a new size.</para></sect2><sect2 id="sect2_64"><title>Switch the Direction</title>
+<para>Because transitions blend between 2 tracks, it is important to know which direction it is blending.  On the transition, it has an arrow that shows the direction, top to bottom, or bottom to top.  In general, the transition should go from the first clip to the next clip by timeline position.</para>
+<para>To change the direction of a transition, right-click on a transition, and choose <guimenuitem>Switch Direction</guimenuitem>.</para></sect2><sect2 id="sect2_65"><title>Transition Properties</title>
+<para>Just like a clip, a transition has a properties window.  To launch the properties window for a transition or a mask, right-click on the item, and choose <guimenuitem>Properties</guimenuitem>.  To save your changes, click on the <guibutton>Apply</guibutton> button.</para>
+<para/>
+<para/>
+<para>
+<inlinegraphic fileref="../figures/transitions_properties.png" width="5.55inch" depth="4.1701inch"/>
+</para>
+<para/>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Type</para>
+</entry>
+<entry>
+<para>Mask or Transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Direction</para>
+</entry>
+<entry>
+<para>The direction of the transition or mask.  <emphasis>Up</emphasis> blends from the bottom clip to the top clip.  And <emphasis>Down</emphasis> blends from the top clip down to the bottom clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Softness</para>
+</entry>
+<entry>
+<para>The softness of the transition.  The bigger the number, the wider the wipe, and the smaller the number to narrower the wipe.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Mask Threshold</para>
+</entry>
+<entry>
+<para>The mask threshold is the amount of gray to use for the mask.  The bigger the number, the more of the mask is used, the smaller the number, the less is used.  Experiment to find the right threshold for a mask.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_66"><title>Convert to Mask</title>
+<para>A mask is very similar to a transition, except that a mask is static.  It does not gradually change from one clip to the next.  Instead, it mixes the 2 tracks at some predetermined point.  A mask can be used to only show a small section of a clip, to show a border around a clip, to block out something from a clip.  To experiment with a mask, simply convert a transition to a mask and watch what happens.</para>
+<para>To convert a transition to a mask, right-click on the transition, and choose <guimenuitem>Convert to Mask</guimenuitem>.</para></sect2><sect2 id="sect2_67"><title>Create a New Transition / Mask</title>
+<para>Transitions are just gray-scale images.  They can be easily created in any graphics program.  Locate the <command>/openshot/transitions/</command> folder on your computer, and take a look at the default transitions.  To add your own, just copy a new gray-scale image into this folder.  The next time you launch <application>OpenShot</application>, it will show up in the list of transitions.</para></sect2><sect2 id="sect2_68"><title>Remove a Transition</title>
+<para>To remove a transition, right-click on a transition on the timeline, and choose <guimenuitem>Remove</guimenuitem>.</para></sect2></sect1><sect1 id="sect1_19"><title>List of Transitions</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Blinds In to Out Big</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Blinds In to Out Small</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Circle In to Out</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Circle Out to In</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Clock Left to Right</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Clock Right to Left</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/openshot_logo.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>OpenShot Logo</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rectangle In to Out</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rectangle Out to In</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/sand.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Dissolve – This is the default transition in OpenShot.  It smoothly blends between 2 clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral Big</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_medium.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral Medium</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_small.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral Small</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Vertical Blinds Big</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Vertical Blinds Small</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_bottom_to_top.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe Bottom to Top</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe Left to Right</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe Right to Left</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_top_to_bottom.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe Top to Bottom</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_20"><title>Effects</title>
+<para>OpenShot has over 30 effects designed to manipulate the video or audio output of a clip.  Adjusting color hue, brightness, and gamma can all be done with effects.  Also, more exotic effects, such as distort, wave, old-film, green screen (also known as Chroma Key), and audio effects.</para><sect2 id="sect2_69"><title>Add an Effect</title>
+<para>To add an effect, switch to the <guibutton>Effects tab</guibutton>, select an effect from the list, and drag the effect onto a clip on the <guibutton>timeline</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Effects Tab</para>
+</entry>
+<entry>
+<para>This tab holds the effects list.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effects List</para>
+</entry>
+<entry>
+<para>The effects list contains every effect available in OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Clip</para>
+</entry>
+<entry>
+<para>Drag the selected effect onto any clip.  Use the Clip Properties to adjust effect settings.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_70"><title>Adjust Effect Settings</title>
+<para>To adjust the settings of an effect, right-click on a clip, and choose <guimenuitem>Properties</guimenuitem>.  Switch to the <guibutton>Effects tab</guibutton>, and you will see a list of all effects that have been applied to the current clip.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_settings.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Id</para>
+</entry>
+<entry>
+<para>component</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>List of Effects</para>
+</entry>
+<entry>
+<para>List of effects that belong to the selected clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Effect Settings</para>
+</entry>
+<entry>
+<para>A list of settings for the selected effect.  Click on an effect to load this list of settings.  As you change the values of these settings, use the <guibutton>Play button</guibutton> to preview the effect.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Preview Buttons</para>
+</entry>
+<entry>
+<para>Use the <guibutton>Play button</guibutton> and <guibutton>slider</guibutton> to preview the effects before you click <guibutton>Apply</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Add Effect</para>
+</entry>
+<entry>
+<para>This button launches the Add Effect window.  Select an effect to add and click <guibutton>Add Effect</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Remove Effect</para>
+</entry>
+<entry>
+<para>This button removes the selected effect (if any).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Move Effect</para>
+</entry>
+<entry>
+<para>Effects are applied top to bottom.  Use these buttons to arrange the order of effects.  Use the <guibutton>Play button</guibutton> to preview your changes.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<mediaobject/></sect2></sect1><sect1 id="sect1_21"><title>List of Effects</title>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/two_layer.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Black and White</guibutton> - This effect converts the video to just black and white.  This is different than gray-scale, as it only has two colors, and no gray.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/blur.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Blur</guibutton> – This effect blurs the video.  It can also animate the blur from blurry to focused, or focused to blurry.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/brightness.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Brightness</guibutton> – This effect adjusts the brightness of a video clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/burningtv.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>BurningTV</guibutton> – This effect animates a fire burning your video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/charcoal.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Charcoal</guibutton> – This effect applies a charcoal filter to the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/chroma_key.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Chroma Key</guibutton> (also known as green-screen or blue-screen).  This effect removes a specific color and makes it transparent.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/deinterlace.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Deinterlace</guibutton> – Remove the odd and even fields, and combine them into a single full frame.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/distort.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Distort</guibutton> – This effect adds ripples and distortions to a video clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/gamma.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Gamma</guibutton> – This effect adjusts the gamma level of the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/glow.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Glow</guibutton> – This effect adds a glow to the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/greyscale.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Gray-scale</guibutton> – This effect converts a color video clip into shades of gray.  If you want just black and white, use the <guibutton>Black and White</guibutton> effect.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/hue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Hue</guibutton> – Adjust the hue / color of the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/invert.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Invert</guibutton> – This effect produces a negative of the video output.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/mirror.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Mirror</guibutton> – Creates a mirror effect.  Vertical, horizontal, and diagonal mirrors are supported.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_dust.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Old Dust</guibutton> – Adds dust particles to your clip.  Add all 4 “old” effects for the ultimate old video look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_film.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Old Film</guibutton> – Jumps the video up and down randomly.  Add all 4 “old” effects for the ultimate old video look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_grain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Old Grain</guibutton> – Adds some grain to the clip.  Add all 4 “old” effects for the ultimate old video look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Old Lines</guibutton> – Adds some lines to the clip.  Add all 4 “old” effects for the ultimate old video look.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/tcolor.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Oversaturate</guibutton> – This effect over-saturates the color of a video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/pixelate.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Pixelate</guibutton> – This effect turns the video into small blocks, to distort the video and make it less clear. </para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_blue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Remove Blue</guibutton> – This effect removes the color blue from the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_green.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Remove Green</guibutton> – This effect removes the color green from the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_red.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Remove Red</guibutton> – This effect removes the color red from the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/scan_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Scan-lines</guibutton> – Add artificial scan-lines, similar to a TV or some computer monitors.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sepia.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Sepia</guibutton> – This effect tints the color, and makes it look like an old photograph.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sobel.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Sobel</guibutton> – This effect finds the edges in your video clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/threshold.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Threshold</guibutton> – This effect will adjust which colors to show based on a threshold.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/water_rain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Water</guibutton> – Add rain drops, surfing waves, or a vortex.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/wave.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Wave</guibutton> – Ripple the screen in a wave pattern.  This can be animated to slowly wave your video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/white_balance.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>White Balance</guibutton> – Adjust what color is considered white, and then adjust all other colors to be relative to that adjustment.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Echo</guibutton> – Add an echo to the audio of the clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Phaser</guibutton> – Give a futuristic sound to your clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>
+<guibutton>Pitch</guibutton> – Adjust the audio pitch of a clip.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_22"><title>Export Video</title>
+<para>Once your have completed a project, you will want to export it to the correct format, based on your needs.  OpenShot has many predefined formats to simplify this process. There are two modes to export a video in OpenShot, Simple Mode and Advanced Mode.</para>
+<para>Both modes share a common area at the top of the screen, <guibutton>General Options</guibutton>.  Name your video file (no extension) and choose an export folder.</para><sect2 id="sect2_71"><title>Launch Export Window</title>
+<para>To launch the export window, click on the <guimenuitem>Export Video</guimenuitem> toolbar icon at the top of the main window, or choose <guimenu>File</guimenu> &gt; <guimenuitem>Export Video</guimenuitem>.</para></sect2><sect2 id="sect2_72"><title>Simple Mode</title>
+<para>OpenShot has many predefined export formats, which cover the most common export scenarios. Select a <guibutton>Project Type</guibutton>, such as DVD or Web, and then choose the <guibutton>Target</guibutton>, <guibutton>Video Profile</guibutton>, and <guibutton>Quality</guibutton>.  If you select <guibutton>All Formats</guibutton>, it will give you a list of all common formats, and let you pick the one you want.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_73"><title>Advanced Mode</title>
+<para>The advanced options should only be used by someone familiar with FFmpeg, since it is so easy to create invalid combinations of codecs, formats, and bit-rate settings.  However, if you are familiar with these settings, any FFmpeg supported format/codec/bit-rate can be used, which opens up dozens and dozens of additional formats that can be used during the export process.  You can also export your video as an image sequence, which can be useful if you intend to import this video into a program that requires image sequences, such as Blender.</para>
+<para>Also, if you first select values for the <guibutton>Simple Mode</guibutton>, and then switch to the <guibutton>Advanced Mode</guibutton>, it will preselect all of the Simple Mode settings.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_advanced.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2></sect1><sect1 id="sect1_23"><title>List of Formats &amp; Codecs</title>
+<para>Set of tables for exports based on video type categories </para>
+<informaltable frame="all">
+<tgroup cols="6"><tbody>
+<row>
+<entry>
+<para>Video Type</para>
+</entry>
+<entry>
+<para>Video Format</para>
+</entry>
+<entry>
+<para>Video Codec</para>
+</entry>
+<entry>
+<para>Audio Codec</para>
+</entry>
+<entry>
+<para>Suggested Project Profile</para>
+</entry>
+<entry>
+<para>Notes on Usage</para>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Disks</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Disks</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Disks</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Interlaced Use for Blu-Ray and AVCHD Disks (mainly in USA) but not necessary Modern TV's adapt rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive for use on computers</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressive for use on computers</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Apple TV</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive Web Publishing</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressive Web Publishing</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime iPod</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Quarter Square NTSC</para>
+</entry>
+<entry>
+<para>320x240 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV PAL DV PAL Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV NTSC DV NTSC Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def Widescreen</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC Widescreen</para>
+</entry>
+<entry>
+<para>854x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flickr High Def</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Picasa</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube Full High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 1080 25p HDV 1080 30p</para>
+</entry>
+<entry>
+<para>1920x1080 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libxvid</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>640x360 New Standard for S60 5th Edition Devices</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>MetaCafe</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>mpeg4</para>
+</entry>
+<entry>
+<para>libmp3lame</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 320x240 Flash</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_24"><title>Project Types / Profiles</title>
+<para>Every project in <application>OpenShot</application> must have a <guibutton>project type</guibutton> (also known as a <guibutton>profile</guibutton>).  A profile determines the following playback &amp; export settings for your video project: <emphasis>frame rate, height &amp; width, aspect ratio, and pixel ratio</emphasis>.</para>
+<para>Here is an example profile, for ATSC 1080i 60Hz:</para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>description</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz </para>
+</entry>
+<entry>
+<para>Name of your profile as it will appear in OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_num</para>
+</entry>
+<entry>
+<para>30000 </para>
+</entry>
+<entry>
+<para>Numerator of the frame-rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_den</para>
+</entry>
+<entry>
+<para>1001</para>
+</entry>
+<entry>
+<para>Denominator of the frame-rate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>width</para>
+</entry>
+<entry>
+<para>1920 </para>
+</entry>
+<entry>
+<para>Width of the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>height</para>
+</entry>
+<entry>
+<para>1080</para>
+</entry>
+<entry>
+<para>Height of the video.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>progressive</para>
+</entry>
+<entry>
+<para>0</para>
+</entry>
+<entry>
+<para>0 = Interlaced, 1 = Progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_num</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Numerator of pixel  ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_den</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Denominator of pixel ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_num</para>
+</entry>
+<entry>
+<para>16</para>
+</entry>
+<entry>
+<para>Numerator of display aspect ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_den</para>
+</entry>
+<entry>
+<para>9</para>
+</entry>
+<entry>
+<para>Denominator of display aspect ratio.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>
+<application>OpenShot</application> has over 40 predefined profiles / project types available.  However, if you can not find a profile that works for your project, you can also create your own.  Locate the <command>/openshot/profiles/</command> folder.  Copy and rename an existing profile.  Edit the profile with your favorite text editor.  Next time you launch OpenShot, you will be able to choose your new profile.</para></sect1><sect1 id="sect1_25"><title>Preferences</title>
+<para>To configure <application>OpenShot</application>, choose <guimenu>Edit &gt;</guimenu> <guimenuitem>Preferences</guimenuitem> . The <guilabel>Preferences</guilabel> dialog can adjust the default length of images, the default theme, and the default project type / profile.  Setting these values can save you valuable time when starting a new project.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/preferences.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect1><sect1 id="sect1_26"><title>About OpenShot</title>
+<para>
+<application>OpenShot</application> was created by Jonathan Thomas (<ulink url="mailto:Jonathan.Oomph@gmail.com">Jonathan.Oomph@gmail.com</ulink>) in August 2008 with the objective to provide a stable, free, and friendly-to-use video editor.</para><sect2 id="sect2_74"><title>OpenShot Development Team</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Jonathan Thomas</para>
+</entry>
+<entry>
+<para>Jonathan.Oomph@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Andy Finch</para>
+</entry>
+<entry>
+<para>we.rocked.in79@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Helen McCall</para>
+</entry>
+<entry>
+<para>helen.wildnfree@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Olivier Girard</para>
+</entry>
+<entry>
+<para>eolinwen@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TJ</para>
+</entry>
+<entry>
+<para>ubuntu@tjworld.net</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_75"><title>More Information</title>
+<para>To find more information about <application>OpenShot</application>, please visit the <ulink url="http://www.openshotvideo.com/">OpenShot Web page </ulink>
+<ulink url="http://www.openshotvideo.com/">(http://www.OpenShotVideo.com)</ulink>. To report a bug or make a suggestion regarding this application or this manual, go to the <ulink url="https://launchpad.net/openshot">OpenShot site on Launchpad</ulink>.  To discuss OpenShot with other users, visit our user website &amp; forum: <ulink url="http://openshotusers.com/forum/">http://OpenShotUsers.com/forum/</ulink>
+</para></sect2><sect2 id="sect2_76"><title>Copyright &amp; Trademark</title>
+<para>Copyright (C) 2009  Jonathan Thomas, Andy Finch, and TJ.  OpenShot(TM) is a registered trademark owned by Jonathan Thomas.</para></sect2><sect2 id="sect2_77"><title>License</title>
+<para>This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A copy of this license can be found at this <ulink url="http://www.gnu.org/licenses/gpl.html">link</ulink>, or in the file COPYING included with the source code of this program. </para></sect2></sect1></article>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Remove Red</title>
+	<description translatable="True">Remove Red</description>
+	<icon>remove_red.png</icon>
+	<category>Video</category>
+	<service>frei0r.R</service>
+
+</effect>

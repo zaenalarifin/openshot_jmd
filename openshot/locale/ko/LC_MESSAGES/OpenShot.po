@@ -1,0 +1,2615 @@
+# Korean translation for openshot
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openshot package.
+# Jihui Choi <jihui.choi@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openshot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-31 16:46+0000\n"
+"PO-Revision-Date: 2009-12-06 04:58+0000\n"
+"Last-Translator: dosgimo <Unknown>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-02-08 04:46+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:42
+msgid "OpenShot Project (*.osp)"
+msgstr "오픈샷 프로젝트 (*.osp)"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:274
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1140
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1150
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1160
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1169
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2715
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2784
+#: /home/jonathan/openshot/openshot/classes/open_project.py:95
+msgid "Error!"
+msgstr "오류!"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+msgid ""
+"There was an error opening this project file.  Please be sure you open the "
+"correct *.osp file."
+msgstr "프로젝트 파일을 여는 도중 오류가 발생하였습니다. *.osp 파일이 올바른지 확인하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:121
+#: /home/jonathan/openshot/openshot/windows/Titles.py:243
+#: /home/jonathan/openshot/openshot/windows/Titles.py:246
+#: /home/jonathan/openshot/openshot/windows/Titles.py:422
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3131
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3137
+#: /home/jonathan/openshot/openshot/windows/preferences.py:317
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+msgid "OpenShot Error"
+msgstr "오픈샷 오류"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:121
+msgid "The Title name cannot be blank, the title file has not been created."
+msgstr "제목 파일을 생성하려면 제목을 입력해야 합니다."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:169
+msgid "Please enter a name for the new Title file:"
+msgstr "새 제목 파일의 이름을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:172
+msgid "New Title"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:243
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3131
+#, python-format
+msgid "Please install %s to use this function."
+msgstr "이 기능을 사용하려면 %s를 설치해야 합니다."
+
+# is it installed? 의 의미가 불분명함.
+#: /home/jonathan/openshot/openshot/windows/Titles.py:246
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3137
+#, python-format
+msgid "There was an error opening '%s', is it installed?"
+msgstr "'%s' 열기 오류."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:422
+#: /home/jonathan/openshot/openshot/windows/preferences.py:317
+#, python-format
+msgid "Unexpected Error '%s' while writing to '%s'."
+msgstr "'%s' 파일에 저장중 알 수 없는 오류 '%s'가 발생했습니다."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:68
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:401
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:526
+msgid "Video & Audio"
+msgstr "비디오 & 오디오"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:68
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:392
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:522
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:106
+#: /home/jonathan/openshot/openshot/classes/files.py:178
+msgid "Image Sequence"
+msgstr "연속된 이미지"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:174
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "All Formats"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:176
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_libvorbis.xml
+msgid "OGG (theora/vorbis)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:220
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:230
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:254
+msgid "Low"
+msgstr "낮음"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:220
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:230
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:256
+msgid "Med"
+msgstr "중간"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:220
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:230
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:258
+msgid "High"
+msgstr "높음"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:274
+#, python-format
+msgid ""
+"%s is not a valid OpenShot profile. Profile settings will not be applied."
+msgstr "%s는 유요한 OpenShop의 프로파일이 아닙니다. 이 설정은 사용할 수 없습니다."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:360
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:69
+msgid "Yes"
+msgstr "네"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:362
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:491
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:166
+msgid "No"
+msgstr "아니오"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:457
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:461
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:465
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:469
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:473
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:477
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:481
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:485
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:489
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:493
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:497
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:501
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:505
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid "Validation Error!"
+msgstr "유효성 검증 오류!"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:457
+msgid "Please enter a valid File Name."
+msgstr "올바른 파일명을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:461
+msgid "Please select a valid Project Type."
+msgstr "유효한 프로젝트 형식을 선택하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:465
+msgid "Please select a valid Target."
+msgstr "유요한 타겟을 선택하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:469
+msgid "Please select a valid Profile."
+msgstr "유효한 프로파일을 선택하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:473
+msgid "Please select a valid Quality."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:477
+msgid "Please enter a valid Image Format."
+msgstr "올바른 이미지 형식을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:481
+msgid "Please enter a valid Video Format."
+msgstr "올바른 비디오 형식을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:485
+msgid "Please enter a valid Video Codec."
+msgstr "올바른 비디오 코덱을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:489
+msgid "Please enter a valid Bit Rate."
+msgstr "올바른 비트레이트를 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:493
+msgid "Please enter a valid Audio Codec."
+msgstr "올바른 오디오 코덱을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:497
+msgid "Please enter a valid Sample Rate."
+msgstr "올바른 샘플레이트를 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:501
+msgid "Please enter a valid Audio Channels."
+msgstr "올바른 오디오 채널을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:505
+msgid "Please enter a valid Audio Bit Rate."
+msgstr "올바른 오디오 비트레이트를 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:571
+msgid "Export Complete"
+msgstr "내보내기 완료"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:571
+#, python-format
+msgid ""
+"The video has been successfully exported to\n"
+"%s"
+msgstr ""
+"비디오를 %s(으)로 내보내기에\n"
+"성공하였습니다."
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:47
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:44
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:44
+msgid "Thumb"
+msgstr "작은 그림"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:48
+msgid "File"
+msgstr "파일"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:49
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:357
+msgid "Length"
+msgstr "길이"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:50
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:138
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:153
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:132
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:192
+msgid "Label"
+msgstr "레이블"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:59
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:573
+msgid "Choose a Video or Audio File to Begin"
+msgstr "시작할 비디오나 오디오 파일을 선택하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:45
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:45
+msgid "Name"
+msgstr "이름"
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:60
+msgid "Dissolve"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+msgid "Please enter a valid project name."
+msgstr "정확한 프로젝트명을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+msgid "Please enter a valid project type."
+msgstr "정확한 프로젝트 형식을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:44
+msgid "Current"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:45
+msgid "Action"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:276
+msgid "Session started"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:961
+msgid "Would you like to save this project?"
+msgstr "프로젝트를 저장하시겠습니까?"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1120
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1293
+msgid "This feature is still in development."
+msgstr "개발 중인 기능입니다."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1140
+msgid ""
+"Unable to open the Help Contents. Please ensure the openshot-doc package is "
+"installed."
+msgstr "도움말을 열 수 없습니다. OpenShot의 문서꾸러미가 설치되어 있는지 살펴보십시오."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1150
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1160
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1169
+msgid "Unable to open the Launchpad web page."
+msgstr "Launchpad 웹페이지를 열 수 없습니다."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1356
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1396
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1473
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1501
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1540
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:865
+msgid "Video Preview"
+msgstr "비디오 미리 보기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1358
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1398
+#, python-format
+msgid "Video Preview (%sX)"
+msgstr "비디오 미리 보기 (%sX)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1509
+msgid "Video Preview (Paused)"
+msgstr "비디오 미리 보기 (일시중지)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1651
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2039
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2052
+#: /home/jonathan/openshot/openshot/classes/sequences.py:49
+#: /home/jonathan/openshot/openshot/classes/sequences.py:50
+#, python-format
+msgid "Track %s"
+msgstr "트랙 %s"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1797
+#, python-format
+msgid "%s seconds"
+msgstr "%s 초"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2065
+msgid "Please enter a track name."
+msgstr "트랙명을 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2082
+msgid "Removed track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2090
+msgid "Moved track up"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2110
+msgid "Moved track down"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2179
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2048
+msgid "Convert to Mask"
+msgstr "마스크로 변환"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2180
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2100
+msgid "Remove Transition"
+msgstr "전환 효과 삭제"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2182
+msgid "Convert to Transition"
+msgstr "전환 효과로 변환"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2183
+msgid "Remove Mask"
+msgstr "마스크 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2236
+msgid "Changed transition type"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2259
+msgid "Removed transition"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2279
+msgid "Please enter the # of seconds to shift the transitions:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2313
+msgid "Shifted transitions"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2598
+msgid "Removed clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2618
+msgid "Please enter the # of seconds to shift the clips:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2652
+msgid "Shifted clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2715
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2784
+#, python-format
+msgid "You must select a clip which is more than %s seconds long."
+msgstr "%s 초 이상의 클립을 선택해야 합니다."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2754
+msgid "Sliced and shuffled clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2831
+msgid "Sliced and cut clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2870
+msgid "Preview File"
+msgstr "미리 보기 파일"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2897
+msgid "Convert To Image Sequence"
+msgstr "연소된 이미지로 변환"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2903
+msgid "Thumbnail view"
+msgstr "작은 그림 보기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2909
+msgid "Move File(s) to Folder"
+msgstr "파일을 폴더로 이동하기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2928
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2929
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2976
+msgid "Remove from Folder"
+msgstr "폴더에서 삭제"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2937
+msgid "Detail view"
+msgstr "자세히 보기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2946
+msgid "Edit Title"
+msgstr "제목 편집하기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2952
+msgid "Remove File(s)"
+msgstr "파일 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2961
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:10
+msgid "File Properties"
+msgstr "파일 속성"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:83
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:156
+msgid "Transition"
+msgstr "전환 효과"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:77
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:132
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:150
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:181
+msgid "Mask"
+msgstr "마스크"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:115
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:185
+msgid "Up"
+msgstr "위로"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:120
+msgid "Down"
+msgstr "아래로"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:60
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:501
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:574
+msgid "Normal Speed"
+msgstr "보통 속도"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:643
+msgid "Forward"
+msgstr "앞으로"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:637
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:773
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Reverse"
+msgstr "뒤로"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:476
+msgid "Start of Clip"
+msgstr "첫번째 클립"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+msgid "End of Clip"
+msgstr "마지막 클립"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:854
+msgid "Modified clip properties"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:54
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:223
+msgid "General"
+msgstr "일반"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:261
+msgid "OpenShot Warning"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:261
+msgid "Invalid or empty preferences file found, loaded default values"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "Error"
+msgstr "오류"
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "There was an error importing the selected files"
+msgstr "선택한 파일을 불러오는 중 오류가 발생하였습니다."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#, python-format
+msgid ""
+"Please enter a valid file name.  The file name must have a %d (or %04d) "
+"where the number section of the file name is supposed to be.  For example:  "
+"MyFile_%d.png."
+msgstr ""
+"정확한 파일명을 입력하십시오. 파일명에는 파일 번호(%d 또는 %04d)가 포함되어 있어야 합니다. 예: MyFile_%d.png"
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+msgid "Please enter an integer in the Frames per Image textbox."
+msgstr "이미지당 프레임 수를 입력하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid ""
+"At least 2 images must match the file name pattern in the selected folder."
+msgstr "선택한 폴더에 패턴과 일치하는 이미지가 최소 2개 이상 존재해야 합니다."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:178
+msgid "A profile with this name already exists. Please use another name."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:188
+msgid "Please enter a profile name."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:193
+msgid "Please enter a valid size."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:259
+msgid "Do you want to save this profile?."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:274
+#, python-format
+msgid "Are you sure you want to delete the profile %s?"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:298
+#, python-format
+msgid "The profile %s cannot be deleted."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:333
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:345
+msgid "The profile has been successfully imported."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:335
+#, python-format
+msgid "There was an error extracting the file %s"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:347
+#, python-format
+msgid "There was an error copying the file %s"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+#, python-format
+msgid "The folder %s already exists in this project."
+msgstr "%s 폴더는 이미 존재합니다."
+
+#: /home/jonathan/openshot/openshot/classes/files.py:116
+msgid "Added folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:163
+msgid "Added file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:244
+msgid "Removed file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:333
+msgid "Moved to folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:342
+msgid "Removed from folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/restore_state.py:86
+#: /home/jonathan/openshot/openshot/classes/open_project.py:89
+msgid "The following file(s) no longer exist."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/transition.py:431
+msgid "Moved transition"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/open_project.py:95
+msgid ""
+"There was an error opening this project file.  Please be sure you are "
+"selecting a valid .OSP project file."
+msgstr "프로젝트 파일을 여는 도중 오류가 발생하였습니다. 올바른 .OSP 프로젝트 파일인지 확인하십시오."
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:111
+msgid "Added effect"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:123
+msgid "Removed effect"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1689
+msgid "Sliced clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1820
+msgid "moved clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1837
+msgid "Resized clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1917
+msgid "Changed visibility of clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1948
+msgid "Changed audio of clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/project.py:68
+msgid "Default Project"
+msgstr "기본 프로젝트"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:84
+msgid "Default Sequence 1"
+msgstr "기본 연속 이미지 1"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:291
+msgid "Opened project"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:63
+msgid "usage: %prog [options] inputfile.osp"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:68
+msgid "destination file-name"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:75
+msgid "export folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:83
+msgid "export as image sequence"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:91
+msgid "export as video or audio file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:98
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:105
+msgid "set video codec"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:112
+msgid "set video bitrate in format 'number kb/s' or 'number Mb/s'"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:119
+msgid "set audio codec"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:126
+msgid "set audio sample rate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:133
+msgid "set number of audio channels"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:140
+msgid "set video bitrate in format 'number kb/s'"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:146
+msgid "Error: "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:152
+msgid "Warning: "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:160
+msgid "Please specify an input project-file!"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:164
+msgid "Too many arguments!"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:216
+msgid "rendering options:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:217
+msgid "container type:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:218
+msgid "video codec:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:219
+msgid "video bitrate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:220
+msgid "audio codec:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:221
+msgid "audio sample rate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:222
+msgid "channels:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:223
+msgid "audio bitrate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:240
+msgid "generating XML file for rendering"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:276
+msgid "Starting rendering to "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:315
+msgid "program interrupted by user"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:322
+msgid "project file correctly rendered"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/track.py:264
+msgid "Changed visibility of track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/track.py:293
+msgid "Changed audio of track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:78
+msgid "Added marker"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:136
+msgid "Added Track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:143
+msgid "Renamed track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:8
+msgid "Add Effect"
+msgstr "효과 추가"
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:27
+msgid "Effect:"
+msgstr "효과:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:131
+msgid "Font Properties"
+msgstr "글꼴 속성"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:74
+msgid "Style:"
+msgstr "스타일:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:154
+msgid "<b>Preview</b>"
+msgstr "<b>미리 보기</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1137
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:527
+msgid "Export Video"
+msgstr "비디오 내보내기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:41
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:105
+msgid "File Name:"
+msgstr "파일명:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:51
+msgid "MyMovie"
+msgstr "내 동영상"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:69
+msgid "Export Folder"
+msgstr "내보내기 폴더"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:96
+msgid "<b>General Options</b>"
+msgstr "<b>일반 옵션</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:116
+msgid "<b>Select a Profile to start:</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:129
+msgid "Profile:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:157
+msgid "<b>Select from the following options:</b>"
+msgstr "<b>다음 옵션 중에서 선택하십시오:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:173
+msgid "Target:"
+msgstr "대상:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:206
+msgid "Video Profile:"
+msgstr "비디오 프로파일:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:239
+msgid "Quality:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:272
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:441
+msgid "Simple"
+msgstr "간단히"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:295
+msgid "Export To:"
+msgstr "내보내기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:316
+msgid "<b>Advanced Options</b>"
+msgstr "<b>고급 옵션</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:377
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:443
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:214
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:282
+msgid "0"
+msgstr "0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:387
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:272
+msgid "Height:"
+msgstr "높이:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:397
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:266
+msgid "Width:"
+msgstr "너비:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:403
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:256
+msgid "Aspect Ratio:"
+msgstr "고정 비율:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:413
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:246
+msgid "Frame Rate:"
+msgstr "프레임 레이트:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:423
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:236
+msgid "Pixel Ratio:"
+msgstr "픽셀 비율:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:433
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:226
+msgid "Progressive:"
+msgstr "프로그레시브:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:455
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:479
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:178
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:202
+msgid "0:0"
+msgstr "0:0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:467
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:190
+msgid "0.00"
+msgstr "0.00"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:515
+msgid "<b>Profile</b>  (height, width, fps, aspect ratio)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:543
+msgid "Image Format:"
+msgstr "이미지 형식:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:574
+msgid "png"
+msgstr "png"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:589
+msgid "<b>Image Sequence Settings</b>"
+msgstr "<b>연속된 이미지에 관한 설정</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:618
+msgid "Video Format:"
+msgstr "비디오 형식:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:714
+msgid "mp4"
+msgstr "mp4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:731
+msgid "Video Codec:"
+msgstr "비디오 코덱:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:790
+msgid "mpeg4"
+msgstr "mpeg4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:811
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1024
+msgid "Bit Rate / Quality:"
+msgstr "비트레이트 / 화질:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:821
+msgid ""
+"128 kb/s - Low Quality\n"
+"384 kb/s - Video Conferencing\n"
+"1.25 Mb/s – VCD Quality\n"
+"5.00 Mb/s – DVD Quality\n"
+"15.00 Mb/s – HDTV quality\n"
+"40 Mb/s - Blu-ray quality"
+msgstr ""
+"128 kb/s - 저화질\n"
+"384 kb/s - 화상 회의 화질\n"
+"1.25 Mb/s – VCD 화질\n"
+"5.00 Mb/s – DVD 화질\n"
+"15.00 Mb/s – HDTV 화질\n"
+"40 Mb/s - 블루레이 화질"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:831
+msgid "15.00 Mb/s – HDTV quality"
+msgstr "15.00 Mb/s – HDTV 화질"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:849
+msgid "<b>Video Settings</b>"
+msgstr "<b>비디오 설정</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:878
+msgid "Audio Codec:"
+msgstr "오디오 코덱:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:934
+msgid "mp2"
+msgstr "mp2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:951
+msgid "Sample Rate:"
+msgstr "샘플레이트:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:988
+msgid "# of Channels:"
+msgstr "# 채널:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1003
+msgid "2"
+msgstr "2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1034
+msgid ""
+"32 kb/s - Poor quality\n"
+"64 kb/s - Fair quality\n"
+"96 kb/s - FM quality\n"
+"128 kb/s - Good quality\n"
+"192 kb/s- Better quality\n"
+"256 kb/s- Near CD quality"
+msgstr ""
+"32 kb/s - 저음질\n"
+"64 kb/s - 무난한 음질\n"
+"96 kb/s - FM 음질\n"
+"128 kb/s - 좋은 음질\n"
+"192 kb/s- 고음질\n"
+"256 kb/s- CD 음질"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1044
+msgid "256 kb/s- Near CD quality"
+msgstr "256 kb/s- CD 음질"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1062
+msgid "<b>Audio Settings</b>"
+msgstr "<b>오디오 설정</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1086
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:489
+msgid "Advanced"
+msgstr "고급"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:1123
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:188
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:332
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:33
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1566
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:122
+msgid "Cancel"
+msgstr "취소"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:6
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:222
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:53
+msgid "Imported Image Length:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:60
+msgid "Timeline length, in seconds, for all imported images. "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:93
+msgid "Default Theme:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:121
+msgid "Default Profile:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:131
+msgid "Theme example"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:162
+msgid "Project File Type:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:186
+msgid "<b>General</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:8
+msgid "About OpenShot"
+msgstr "오픈샷 정보"
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:32
+msgid "Project Website (LaunchPad)"
+msgstr "프로젝트 웹사이트 (LaunchPad)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:10
+msgid "Transition / Mask Properties"
+msgstr "전환 효과 / 마스크 속성"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:31
+msgid "Name:"
+msgstr "이름:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:41
+msgid "None"
+msgstr "없음"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:66
+msgid "Type:"
+msgstr "유형:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:95
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:412
+msgid "Direction:"
+msgstr "방향:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:123
+msgid "Softness:"
+msgstr "부드러운 정도:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:152
+msgid "Mask Threshold:"
+msgstr "마스크 임계값:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:198
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1576
+msgid "Apply"
+msgstr "적용"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:23
+msgid "_File"
+msgstr "파일(_F)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:31
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:412
+msgid "New Project..."
+msgstr "새 프로젝트..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:44
+msgid "Open Project..."
+msgstr "프로젝트 열기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:58
+msgid "Recent Projects"
+msgstr "최근 프로젝트"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:71
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:496
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1254
+msgid "Import Files..."
+msgstr "파일 가져오기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:85
+msgid "Import Image Sequence..."
+msgstr "연속된 이미지 가져오기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:104
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:342
+msgid "Save Project"
+msgstr "프로젝트 저장하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:117
+msgid "Save Project As..."
+msgstr "다른 이름으로 저장하기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:135
+msgid "Export Video..."
+msgstr "비디오 내보내기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:167
+msgid "_Edit"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:175
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:461
+msgid "Undo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:189
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:474
+msgid "Redo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:208
+msgid "Profiles"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:240
+msgid "_Project"
+msgstr "프로젝트(_P)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:248
+msgid "New Title..."
+msgstr "새 제목..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:261
+msgid "New Sequence..."
+msgstr "새 연속된 이미지..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:279
+msgid "_View"
+msgstr "보기(_V)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:287
+msgid "Toolbar"
+msgstr "도구모음"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:296
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:703
+msgid "History"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:309
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:317
+msgid "_Contents"
+msgstr "내용(_C)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:336
+msgid "_Report a Bug..."
+msgstr "버그 보고...(_R)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:350
+msgid "_Ask a Question..."
+msgstr "질문하기...(_A)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:364
+msgid "_Translate this Application..."
+msgstr "번역하기...(_T)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:425
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:11
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:43
+msgid "Open Project"
+msgstr "프로젝트 열기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:439
+msgid "Save"
+msgstr "저장하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:515
+msgid "Take Snapshot"
+msgstr "스냅샷 찍기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:577
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:670
+msgid "Project Files"
+msgstr "프로젝트 파일"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:609
+msgid "Transitions"
+msgstr "전환 효과"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:641
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1538
+msgid "Effects"
+msgstr "효과"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:764
+msgid "Seek to Beginning"
+msgstr "시작부분까지 찾기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:775
+msgid "Previous Marker"
+msgstr "이전 표식"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:786
+msgid "Seek Backward"
+msgstr "뒤로 찾기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:797
+msgid "Play"
+msgstr "재생"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:808
+msgid "Seek Forward"
+msgstr "앞으로 찾기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:819
+msgid "Next Marker"
+msgstr "다음 표식"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:830
+msgid "Seek to Ending"
+msgstr "끝까지 찾기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:903
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:904
+msgid "Add Track"
+msgstr "트랙 추가하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:923
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:924
+msgid "Arrow Tool"
+msgstr "화살표 도구"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:935
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:936
+msgid "Razor Tool"
+msgstr "레이저 도구"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:946
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:947
+msgid "Resize Tool"
+msgstr "크기 조절 도구"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:957
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:958
+msgid "Snapping Tool"
+msgstr "스냅핑 도구"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:978
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:979
+msgid "Add Marker"
+msgstr "표식 추가"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1003
+msgid "Zoom In"
+msgstr "확대"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1023
+msgid "Slide to Zoom"
+msgstr "슬라이드 확대"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1037
+msgid "Number of seconds between each line on the timeline"
+msgstr "타임라인의 각 라인 사이의 시간(초)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1038
+msgid "15 seconds"
+msgstr "15초"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1050
+msgid "Zoom Out"
+msgstr "축소"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1221
+msgid "Timeline - Sequence 1"
+msgstr "타임라인 - 연속된 이미지 1"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1270
+msgid "Create Folder..."
+msgstr "폴더 생성하기..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1291
+msgid "Folder Name"
+msgstr "폴더명"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1309
+msgid "Folder Name:"
+msgstr "폴더명:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1379
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1380
+msgid "Add Track Above"
+msgstr "위쪽에 트랙 추가"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1394
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1395
+msgid "Add Track Below"
+msgstr "아래쪽에 트랙 추가"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1414
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1415
+msgid "Move Track Up"
+msgstr "트랙을 위로 이동"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1429
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1430
+msgid "Move Track Down"
+msgstr "트랙을 아래로 이동"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1449
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1450
+msgid "Rename Track"
+msgstr "트랙 이름 바꾸기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1469
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1470
+msgid "Remove Track"
+msgstr "트랙 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1487
+msgid "Make a copy of this clip"
+msgstr "클립 복사본 만들기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1488
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2015
+msgid "Duplicate"
+msgstr "복제하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1507
+msgid "Animate this clip"
+msgstr "클립을 애니메이션으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1508
+msgid "Animate"
+msgstr "애니메이션"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1522
+msgid "Position and resize this clip"
+msgstr "클립의 위치 및 크기 조절"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1523
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:767
+msgid "Layout"
+msgstr "레이아웃"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1537
+msgid "Shift Clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1556
+msgid "Slice this clip into many small clips, and then shuffle them."
+msgstr "작은 클립으로 잘라낸뒤 뒤섞기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1557
+msgid "Slice and Shuffle"
+msgstr "잘라낸 후 뒤섞기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1571
+msgid "Slice this clip into many small clips, cutting each alternating clip."
+msgstr "작은 클립으로 잘라낸 후, 하나 걸러 하나씩 클립 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1572
+msgid "Slice and Cut"
+msgstr "잘라낸 뒤 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1586
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2081
+msgid "Properties"
+msgstr "속성"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1605
+msgid "Remove Clip"
+msgstr "클립 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1623
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1624
+msgid "Remove Marker"
+msgstr "표식 제거하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1637
+msgid "No Animation"
+msgstr "애니메이션 없음"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1657
+msgid "Zoom In (100% to 150%)"
+msgstr "확대 (100% 에서 150%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1672
+msgid "Zoom In (50% to 100%)"
+msgstr "확대 (50% 에서 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1687
+msgid "Zoom Out (100% to 50%)"
+msgstr "축소 (100% 에서 50%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1702
+msgid "Zoom Out (150% to 100%)"
+msgstr "축소 (150% 에서 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1722
+msgid "Center to Top"
+msgstr "가운데에서 위쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1737
+msgid "Center to Left"
+msgstr "가운데에서 왼쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1752
+msgid "Center To Right"
+msgstr "가운데에서 오른쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1767
+msgid "Center to Bottom"
+msgstr "가운데에서 아래쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1787
+msgid "Top to Center"
+msgstr "위에서 가운데로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1802
+msgid "Left to Center"
+msgstr "왼쪽에서 가운데로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1817
+msgid "Right to Center"
+msgstr "오른쪽에서 가운데로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1832
+msgid "Bottom to Center"
+msgstr "아래쪽에서 가운데로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1852
+msgid "Top to Bottom"
+msgstr "위에서 아래로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1867
+msgid "Left to Right"
+msgstr "왼쪽에서 오른쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1882
+msgid "Right to Left"
+msgstr "오른쪽에서 왼쪽으로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1897
+msgid "Bottom to Top"
+msgstr "아래서 위로"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1916
+msgid "Reset Layout"
+msgstr "레이아웃 재설정"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1936
+msgid "1/4 Size - Center"
+msgstr "1/4 크기 - 가운데"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1951
+msgid "1/4 Size - Top Left"
+msgstr "1/4 크기 - 왼쪽 상단"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1966
+msgid "1/4 Size - Top Right"
+msgstr "1/4 크기 - 오른쪽 상단"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1981
+msgid "1/4 Size - Bottom Left"
+msgstr "1/4 크기 - 왼쪽 하단"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1996
+msgid "1/4 Size - Bottom Right"
+msgstr "1/4 크기 - 오른쪽 하단"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2014
+msgid "Make a copy of this transition"
+msgstr "전환 효과의 복사본 만들기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2034
+msgid "Switch Direction"
+msgstr "방향 전환"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2062
+msgid "Shift Transitions"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:8
+msgid "Create a Project"
+msgstr "프로젝트 생성하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:47
+msgid "Project Name:"
+msgstr "프로젝트명:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:74
+msgid "Project Folder:"
+msgstr "프로젝트 폴더:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:84
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:99
+msgid "Select A Folder"
+msgstr "폴더 선택하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:102
+msgid ""
+"Project Length:\n"
+"   (in minutes)"
+msgstr ""
+"프로젝트 길이:\n"
+"   (분)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:131
+msgid "Project Profile:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:305
+msgid ""
+"Use this screen to name your new video project, select the folder location "
+"of your new project, and select the type of project.  "
+msgstr "새 비디오 프로젝트의 이름으로 이 화면을 사용합니다. 새 프로젝트가 저장될 위치와 프로젝트 유형을 선택하십시오.  "
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:10
+msgid "Title Editor"
+msgstr "제목 편집기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:56
+msgid "<b>Start here:</b>"
+msgstr "<b>여기서 시작:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:83
+msgid "Create a new title using the selected template."
+msgstr "선택한 서식을 이용하여 제목 생성하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:84
+msgid "Create new Title"
+msgstr "새 제목 생성하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:98
+msgid "<b>Editing Tools:</b>"
+msgstr "<b>편집 도구:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:113
+msgid "Set the title text."
+msgstr "제목 설정"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:114
+msgid "Edit text"
+msgstr "텍스트 편집하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:130
+msgid "Change the Font properties."
+msgstr "글꼴 속성을 변경하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:148
+msgid "Choose Font Color."
+msgstr "글꼴 색상을 변경하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:167
+msgid "Choose Background Color."
+msgstr "배경 색상을 변경하십시오."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:186
+msgid "Edit the title in an external editor."
+msgstr "외부 편집기로 제목 편집하기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:187
+msgid "Use Advanced editor"
+msgstr "고급 편집기 사용"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:275
+msgid "Enter title text"
+msgstr "제목 입력"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:34
+msgid "<b>File Name:</b>"
+msgstr "<b>파일명:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:117
+msgid "<b>File Length:</b>"
+msgstr "<b>파일 길이:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:143
+msgid "<b>Video Size:</b>"
+msgstr "<b>비디오 크기:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:169
+msgid "<b>Bit Rate:</b>"
+msgstr "<b>비트레이트:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:183
+msgid "<b>File Type:</b>"
+msgstr "<b>파일 유형:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:233
+msgid "<b>Label:</b>"
+msgstr "<b>레이블:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:8
+msgid "Profiles Manager"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:23
+msgid "Profile"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:86
+msgid "Profile Name"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:121
+msgid "Size"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:129
+msgid "Aspect Ratio"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:195
+msgid "x"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:216
+msgid "Progressive"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:232
+msgid "Default profile"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:295
+msgid "Frame Rate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:307
+msgid "Pixel Ratio"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:386
+msgid "<b>Profile Properties</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:450
+msgid "Import"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:8
+msgid "Clip Properties"
+msgstr "클립 속성"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:32
+msgid "Preview"
+msgstr "미리보기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:115
+msgid "N/A"
+msgstr "사용불가"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:147
+msgid "Enable Video:"
+msgstr "사용 가능한 비디오:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:180
+msgid "Enable Audio:"
+msgstr "사용 가능한 오디오:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:240
+msgid "<b>In</b> (seconds):"
+msgstr "<b>In</b> (초):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:274
+msgid "<b>Out</b> (seconds):"
+msgstr "<b>Out</b> (초):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:309
+msgid "<b>Length</b> (seconds):"
+msgstr "<b>길이</b> (초):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:383
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:464
+msgid "Speed:"
+msgstr "속도:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:526
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Speed"
+msgstr "속도"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:554
+msgid "Key Frame:"
+msgstr "키 프레임:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:596
+msgid "Height (%):"
+msgstr "높이 (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:630
+msgid "Width (%):"
+msgstr "너비 (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:664
+msgid "X (%):"
+msgstr "X (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:698
+msgid "Y (%):"
+msgstr "Y (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:732
+msgid "Alpha:"
+msgstr "알파:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:785
+msgid "Volume:"
+msgstr "볼륨:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:845
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1121
+msgid "Fade In:"
+msgstr "페이드인:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:878
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1154
+msgid "Fade Out:"
+msgstr "페이드아웃:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:911
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1187
+msgid "<b>Fade</b> (seconds):"
+msgstr "<b>페이드</b> (초):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:952
+msgid "Audio"
+msgstr "오디오"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:970
+msgid "Stretch Full Screen:"
+msgstr "전체 화면으로 늘이기:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1002
+msgid "Maintain Aspect Ratio:"
+msgstr "고정된 비율 사용:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1045
+msgid "Horizontal Align:"
+msgstr "수평으로 정렬:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1078
+msgid "Vertical Align:"
+msgstr "수직으로 정렬:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1223
+msgid "Video"
+msgstr "비디오"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1334
+msgid ""
+"<b>Effect Settings</b>\n"
+"Click on an effect to view its settings"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:7
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:132
+msgid "Import Image Sequence"
+msgstr "연속된 이미지 가져오기"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:18
+msgid ""
+"Use this screen to import a sequence of numbered images as a video clip.\n"
+"Be sure all pictures are in the same folder, and are sequencially numbered.  "
+"\n"
+"Use a %d for filenames starting with a number. If the filename is \n"
+"padded (i.e. 00001.png, 00002.png, use %05d).\n"
+"\n"
+"For example:\n"
+"/MyImageFolder/Image_1.png\n"
+"/MyImageFolder/Image_2.png\n"
+"\n"
+"or\n"
+"\n"
+"/MyImageFolder/Image_00001.png\n"
+"/MyImageFolder/Image_00002.png\n"
+"\n"
+msgstr ""
+"비디오 클립처럼 비슷한 번호가 매겨진 연속된 이미지를 가져옵니다.\n"
+"모든 그림이 동일한 폴더에 있는지 확인하고, 순서대로 번호가 매겨졌는지 확인합니다.\n"
+"파일명의 번호는 %d 형식이어야 합니다. 예를 들어\n"
+"/MyImageFolder/Image_1.png\n"
+"/MyImageFolder/Image_2.png\n"
+"\n"
+"이거나\n"
+"\n"
+"/MyImageFolder/Image_00001.png\n"
+"/MyImageFolder/Image_00002.png\n"
+"\n"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:46
+msgid "Frames per Image:"
+msgstr "이미지당 프레임 수:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:56
+msgid "Image Folder:"
+msgstr "이미지 폴더:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:66
+msgid "File Name Pattern:"
+msgstr "파일명 패턴:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:73
+msgid "myfile_%d.png"
+msgstr "myfile_%d.png"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Old Dust"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Phaser"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/nervous.xml
+msgid "Nervous"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Burning TV"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Param"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lredscale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Chroma Key"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Blur"
+msgstr "흐리게"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "diffspace"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Old Lines"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Rain"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Surfer"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Neutral Color"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Glow"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Z"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Amount"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Amplitude"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Variance"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/two_layer.xml
+msgid "Black and White"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Down"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Width"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "Edgeglow"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Echo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Up"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Swirl"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lthresh"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Foreground"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "triplevel"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Scale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "End"
+msgstr "끝"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Oversaturate Color"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/invert.xml
+msgid "Invert"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "White Balance"
+msgstr "화이트 밸런스"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Old Film"
+msgstr "오래된 사진효과"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Charcoal"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Noise"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lupscale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Brightness"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Red/Green Axis"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Water"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Key"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "Cartoon"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "X Offset"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Smooth"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/remove_red.xml
+msgid "Remove Red"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sobel.xml
+msgid "Sobel"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Mirror"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "Nosync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Decay"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Old Grain"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Start"
+msgstr "시작"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Count"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Start Value"
+msgstr "시작값"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "X Scatter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Method"
+msgstr "방법"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Contrast"
+msgstr "명암"
+
+#: /home/jonathan/openshot/openshot/effects/hue.xml
+msgid "Hue"
+msgstr "색조"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Every"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/scan_lines.xml
+msgid "Scan Lines"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Distort"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Every"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Lighter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Delta"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Diameter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Y Offset"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Randomize Swirl"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Y Scatter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "Sepia"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Number"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Frequency"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "v"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Pixelate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Delay"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Mix"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "HSync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/greyscale.xml
+msgid "Greyscale"
+msgstr "그레이스케일"
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain In"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Z"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/saturation.xml
+msgid "Saturation"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/remove_green.xml
+msgid "Remove Green"
+msgstr "녹색 제거"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Wave"
+msgstr "물결"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Green Tint"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain Out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Deinterlace"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Physics"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/gamma.xml
+msgid "Gamma"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Darker"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/remove_blue.xml
+msgid "Remove Blue"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Blue/Yellow"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "u"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "End Value"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Pitch"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Threshold"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Web"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD-PAL"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_flac.xml
+msgid "OGG (theora/flac)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Xbox 360"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_x264.xml
+msgid "MP4 (h.264)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_x264.xml
+msgid "MOV (h.264)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/metacafe.xml
+msgid "Metacafe"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo.xml
+msgid "Vimeo-SD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "AVCHD Disks"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Vimeo-SD Widescreen"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_flv_x264.xml
+msgid "FLV (h.264)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mp4.xml
+msgid "AVI (mpeg4)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_mpeg4.xml
+msgid "MP4 (mpeg4)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/apple_tv.xml
+msgid "Apple TV"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mpeg_mpeg2.xml
+msgid "MPEG (mpeg2)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/nokia_nHD.xml
+msgid "Nokia nHD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_x264.xml
+msgid "AVI (h.264)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube.xml
+msgid "YouTube"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mpeg2.xml
+msgid "AVI (mpeg2)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Device"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "Blu-Ray/AVCHD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_3gp_x264.xml
+msgid "3GP (h.264)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/picasa.xml
+msgid "Picasa"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_xvid.xml
+msgid "MP4 (Xvid)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/ipod.xml
+msgid "iPod"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_ntsc.xml
+msgid "DVD-NTSC"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_HD.xml
+msgid "Vimeo-HD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "MOV (mpeg4)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube_HD.xml
+msgid "YouTube-HD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/export_presets/flickr_HD.xml
+msgid "Flickr-HD"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_8.png
+msgid "Fractal 8"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out_big.pgm
+msgid "Vertical blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_2.png
+msgid "Fractal 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_3.png
+msgid "Fractal 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_1.png
+msgid "Fractal 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_6.png
+msgid "Fractal 6"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_7.png
+msgid "Fractal 7"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_4.png
+msgid "Fractal 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_5.png
+msgid "Fractal 5"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/openshot_logo.pgm
+msgid "Openshot logo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_1.png
+msgid "Wipe diagonal 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_3.png
+msgid "Wipe diagonal 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_2.png
+msgid "Wipe diagonal 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_1.png
+msgid "Hatched 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_2.png
+msgid "Hatched 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_3.png
+msgid "Hatched 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/mountains.png
+msgid "Mountains"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/circle_in_to_out.svg
+msgid "Circle in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/clock_right_to_left.pgm
+msgid "Clock right to left"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_medium.pgm
+msgid "Spiral medium"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_2.png
+msgid "Spiral abstract 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_left_to_right.svg
+msgid "Wipe left to right"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_bottom_to_top.svg
+msgid "Wipe bottom to top"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_1.png
+msgid "Spiral abstract 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_right_to_left.svg
+msgid "Wipe right to left"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/circle_out_to_in.svg
+msgid "Circle out to in"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out.pgm
+msgid "Blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_in_to_out.pgm
+msgid "Rectangle in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_out_to_in.pgm
+msgid "Rectangle out to in"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/sand.svg
+msgid "Sand"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spots.png
+msgid "Spots"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_sliding.png
+msgid "Blinds sliding"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/clock_left_to_right.pgm
+msgid "Clock left to right"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_4.png
+msgid "Wipe diagonal 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_small.pgm
+msgid "Spiral small"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/sphere.png
+msgid "Sphere"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out_big.pgm
+msgid "Blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_big.pgm
+msgid "Spiral big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/star_2.png
+msgid "Star 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_top_to_bottom.svg
+msgid "Wipe top to bottom"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/star_1.png
+msgid "Star 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_4.png
+msgid "Hourglass 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out.pgm
+msgid "Vertical blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_1.png
+msgid "Hourglass 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_3.png
+msgid "Hourglass 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_2.png
+msgid "Hourglass 2"
+msgstr ""
+
+#~ msgid "<i>Only enter the name, not a file extension.</i>"
+#~ msgstr "<i>파일 확장자를 제외한 이름만 입력하십시오.</i>"
+
+#~ msgid "Track 2"
+#~ msgstr "트랙 2"
+
+#~ msgid "Track 1"
+#~ msgstr "트랙 1"
+
+#~ msgid "Selection:"
+#~ msgstr "선택:"
+
+#~ msgid "Entire Timeline"
+#~ msgstr "전체 타임라인"
+
+#~ msgid "<b>Project Type</b>  (height, width, fps, aspect ratio)"
+#~ msgstr "<b>프로젝트 형식</b>  (높이, 너비, fps, 고정 비율)"
+
+#~ msgid "Export Video:"
+#~ msgstr "비디오 내보내기:"
+
+#~ msgid "Project"
+#~ msgstr "프로젝트"
+
+#~ msgid "Import Files"
+#~ msgstr "파일 가져오기"
+
+#~ msgid "VIdeo Preview"
+#~ msgstr "비디오 미리보기"
+
+#~ msgid "Project Type:"
+#~ msgstr "프로젝트 유형:"

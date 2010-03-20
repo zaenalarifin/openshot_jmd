@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Black and White</title>
+	<description translatable="True">Two Layer Description</description>
+	<icon>two_layer.png</icon>
+	<category>Video</category>
+	<service>frei0r.twolay0r</service>
+
+</effect>
+

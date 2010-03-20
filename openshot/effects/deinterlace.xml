@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Deinterlace</title>
+	<description translatable="True">Deinterlace Description</description>
+	<icon>deinterlace.png</icon>
+	<category>Video</category>
+	<service>deinterlace</service>
+	
+	<param name="method" type="dropdown" title="Method" description="">
+		<values>
+			<value name="Linear blend" num=" "/>
+			<value name="Bob" num="bob"/>
+			<value name="Weave" num="weave"/> 
+			<value name="Greedy" num="greedy"/> 
+			<value name="One Field" num="onefield"/>  
+		</values>
+		<default> </default>
+	</param>
+
+</effect>

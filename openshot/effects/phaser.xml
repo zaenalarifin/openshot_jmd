@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Phaser</title>
+	<description translatable="True">Phaser Description</description>
+	<icon>audio.png</icon>
+	<category>Audio</category>
+	<service>sox:phaser</service>
+	
+	<param name="gain-in" type="spinner" title="Gain In" description="">
+		<min>0.0</min>
+		<max>1.0</max>
+		<default>0.6</default>
+	</param>
+	
+	<param name="gain-out" type="spinner" title="Gain Out" description="">
+		<min>0.0</min>
+		<max>1.0</max>
+		<default>0.66</default>
+	</param>
+	
+	<param name="delay" type="spinner" title="Delay" description="">
+		<min>0.0</min>
+		<max>5.0</max>
+		<default>3.0</default>
+	</param>
+	
+	<param name="decay" type="spinner" title="Decay" description="">
+		<min>0.0</min>
+		<max>1.0</max>
+		<default>0.6</default>
+	</param>
+	
+	<param name="speed" type="spinner" title="Speed" description="">
+		<min>0.0</min>
+		<max>2.0</max>
+		<default>2.0</default>
+	</param>
+	
+	<param name="param" type="dropdown" title="Param" description="">
+		<values>
+			<value name="-t" num="-t"/>
+			<value name="-s" num="-s"/> 
+		</values>
+		<default>-s</default>
+	</param>
+
+</effect>

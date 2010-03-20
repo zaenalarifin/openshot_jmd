@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Old Lines</title>
+	<description translatable="True">Old Lines Description</description>
+	<icon>old_lines.png</icon>
+	<category>Video</category>
+	<service>lines</service>
+	
+	<param name="width" type="spinner" title="Width" description="">
+		<min>0.0</min>
+		<max>20.0</max>
+		<default>2.0</default>
+	</param>
+	
+	<param name="num" type="spinner" title="Number" description="">
+		<min>0.0</min>
+		<max>20.0</max>
+		<default>5.0</default>
+	</param>
+	
+	<param name="darker" type="spinner" title="Darker" description="">
+		<min>0.0</min>
+		<max>100.0</max>
+		<default>40.0</default>
+	</param>
+	
+	<param name="lighter" type="spinner" title="Lighter" description="">
+		<min>0.0</min>
+		<max>100.0</max>
+		<default>40.0</default>
+	</param>
+
+</effect>

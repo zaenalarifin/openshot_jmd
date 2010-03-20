@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Scan Lines</title>
+	<description translatable="True">Scan Lines Description</description>
+	<icon>scan_lines.png</icon>
+	<category>Video</category>
+	<service>frei0r.scanline0r</service>
+
+</effect>

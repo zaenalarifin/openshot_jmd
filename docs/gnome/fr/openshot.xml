@@ -1,0 +1,3650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="fr">
+<articleinfo>
+<title>OpenShot Video Editor Manual</title>
+<subtitle/>
+<edition/>
+</articleinfo><sect1 id="sect1_1"><title>Introduction</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/logo_badge.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Openshot Video Editor est un programme conçu pour créer des vidéos sur Linux. On peut facilement combiner de multiples clips vidéo, clips audio, et des images dans un simple projet, puis l'exporter dans les principaux formats vidéos.</para>
+<para>OpenShot est un Éditeur vidéo non-linéaire, ce qui signifie que chaque image de la vidéo est accessible à n'importe quel moment, et que les clips vidéo peuvent être agencés, mélangés et modifiés, permettant une très grande créativité.  Toutes les opérations d'éditions des clips  vidéos (couper, supprimer, etc...) sont non-destructifs, ce qui signifie que le fichier original de la vidéo n'est jamais modifiée.</para>
+<para>Vous pouvez utiliser OpenShot pour créer des diaporamas photo, éditer des vidéos personnelles, créer des publicités télévisées et des films, ou n'importe quoi d'autre auquel vous rêvez !</para><sect2 id="sect2_1"><title>Fonctionnalités détaillées</title>
+<orderedlist>
+<listitem>
+<para>Support en entrée d' un nombre important de formats vidéo, audio et de séquences d'images (basés sur  FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Intégration parfaite avec l'environnement gnome  (support du glisser-déposer)</para>
+</listitem>
+<listitem>
+<para>Timeline multi-pistes</para>
+</listitem>
+<listitem>
+<para>Redimensionnement, découpe, déplacement, et couper des clips</para>
+</listitem>
+<listitem>
+<para>Transitions vidéo avec prévisualisation en temps réel</para>
+</listitem>
+<listitem>
+<para>Composition, superposition d'images, filigranes</para>
+</listitem>
+<listitem>
+<para>Modèles de titres, création de titres</para>
+</listitem>
+<listitem>
+<para>Format SVG, pour créer et inclure des titres et des génériques</para>
+</listitem>
+<listitem>
+<para>Défilement du générique</para>
+</listitem>
+<listitem>
+<para>Modèles de fond coloré (incluant le canal alpha)</para>
+</listitem>
+<listitem>
+<para>Support pour le Rotoscoping/ les séquences d'images</para>
+</listitem>
+<listitem>
+<para>Glisser et déposer sur la timeline</para>
+</listitem>
+<listitem>
+<para>Gestion des frames pour la lecture à l'aide de raccourcis claviers: J, K et  L</para>
+</listitem>
+<listitem>
+<para>Encodage vidéo (basé sur FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Gestion des images clés</para>
+</listitem>
+<listitem>
+<para>Agrandissement digital des clips vidéos</para>
+</listitem>
+<listitem>
+<para>Vitesses variables sur les clips (mouvements lents, etc)</para>
+</listitem>
+<listitem>
+<para>Transitions lumas et masques personnalisés</para>
+</listitem>
+<listitem>
+<para>Redimensionnemt des clips (taille des frames)</para>
+</listitem>
+<listitem>
+<para>Edition et mixage audio</para>
+</listitem>
+<listitem>
+<para>Modèles pré-determinés pour les animations et les agencements des images clés</para>
+</listitem>
+<listitem>
+<para>Effet Ken Burns (appliquer un zoom ou un mouvement panoramique sur une image)</para>
+</listitem>
+<listitem>
+<para>Effets vidéos digitaux, incluant la luminosité, gamma, les teintes, les images carrés grises, incrustation en chrominance (fond bleu/ fond vert), et plus de 20 autres effets vidéos</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_2"><title>Capture d'écran</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_clips.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2></sect1><sect1 id="sect1_2"><title>Pour commencer</title><sect2 id="sect2_3"><title>Pour lancer OpenShot Video Editor</title>
+<para>Vous pouvez démarrer <application>OpenShot</application> des manières suivantes:</para><sect3 id="sect3_1"><title>Menu Applications</title>
+<para>Choisissez <guisubmenu>Son &amp; Vidéo &gt;</guisubmenu><guimenuitem>OpenShot Video Editor</guimenuitem>.</para></sect3><sect3 id="sect3_2"><title>Ligne de commandes</title>
+<para>Pour démarrer <application>OpenShot</application>  en ligne de commande, ouvrez un Terminal et tapez la ligne de commande suivante puis  <keycap>Validez</keycap>:</para>
+<para><command>openshot</command> [filename]</para>
+<para>L'option  [nomdufichier] peut être soit un fichier audio ou vidéo, ou un projet OpenShot  (*.osp).   De multiples fichiers peuvent être aussi spécifiés (avec des espaces entre chaque nom de fichier) et tous les fichiers seront importés dans une seule session d' <application>OpenShot</application>.</para></sect3><sect3 id="sect3_3"><title>Ouvrir avec...</title>
+<para>Pour démarrer <application>OpenShot</application> à partir de Nautilus, clic droit sur une image, une vidéo, ou un fichier audio, et choisissez <guimenu>Ouvrir avec </guimenu>&gt; <guimenuitem> OpenShot Video Editor</guimenuitem>.   Ou choisissez <guimenu>Ouvrir avec </guimenu>&gt; <guimenuitem> Ouvrir avec une autre Application </guimenuitem> &gt; <command>openshot</command>.</para>
+<para/></sect3></sect2></sect1><sect1 id="sect1_3"><title>Apprendre OpenShot en 5 minutes !</title>
+<para>Utiliser OpenShot est très facile, et ce tutoriel vous expliquera l'essentiel en 5 minutes.  Après ce tutoriel, vous serez capable de faire un simple diaporama photos avec de la musique.</para><sect2 id="sect2_4"><title>Etape 1 - Importer Photos &amp; Musique</title>
+<para>Avant de commencer à faire une vidéo, nous devons <guibutton>importer des fichiers</guibutton> dans  OpenShot.   Glissez et déposez quelques <emphasis>images</emphasis> (*.JPG, *.PNG, etc...) et un <emphasis>fichier  musical</emphasis> (la plupart des formats fonctionneront) de votre Bureau à OpenShot Video Editor.   Déposez les fichiers de la même manière que le montre l'illustration ci-dessous.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_5"><title>Etape 2 – Disposez les photos sur la Timeline</title>
+<para>Après que vous ayez importé des fichiers, la prochaine étape est de les ajouter à la timeline et de les disposer correctement. Cliquez sur chaque photo (une à chaque fois ), et glissez les sur la <guibutton>Piste 2</guibutton> de la  timeline.   Glissez et déposez les photos (aussi connu en tant que clips) pour les arranger correctement.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_6"><title>Etape 3 – Ajout de la Musique sur la Timeline</title>
+<para>Pour rendre votre diaporama photo plus intéressant, vous devez ajouter de la musique.  Vous avez du importer un fichier musical à l'étape 1.  Cliquez sur le fichier audio, et glissez le sur la <guibutton>Piste 1</guibutton> de la timeline.</para></sect2><sect2 id="sect2_7"><title>Etape 4 – Previsualisez  votre Projet</title>
+<para>Pour previsualiser ce que donnera votre vidéo, cliquez sur le <guibutton>bouton Lecture</guibutton> sous la fenêtre de prévisualisation.  Cliquez encore sur le <guibutton>bouton Lecture</guibutton> pour mettre en pause votre vidéo.   Souvenez-vous, que si vous devez remodifier n'importe quel clip, vous devez juste le déplacer par un simple glisser-déposer.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_8"><title>Etape 5 – Exporter votre Vidéo</title>
+<para>Une fois que vous êtes content du réslutat final de votre diaporama photovidéo, l'étape suivante est l'exportation de votre vidéo.  Celle-ci transformera votre projet OpenShot en un simple fichier vidéo, lequel fonctionnera sur n'importe quel lecteur vidéo sur Linux (tel que Totem, VLC, etc...) ou de sites en lignes (tel que YouTube, Vimeo, etc...).</para>
+<para>Cliquez sur l'icône <guibutton>Exporter la Vidéo</guibutton>en haut de l'écran (ou utilisez le menu guimenuitem&gt;Fichier</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_9"><title>Etape 6 – Apprécier  OpenShot!</title>
+<para>Vous avez maintenant une connaissance basique du fonctionnement d' OpenShot.   Importer, Préparer, Previsualiser, et Exporter. Avec un peu de chance ce tutoriel vous a pris moins de 5 minutes.  S'il vous plait, lisez le reste de ce tutoriel afin d'avoir plus de détails sur la compréhension d' OpenShot, et de ces fonctionnalités avancés.   Appréciez !</para></sect2></sect1><sect1 id="sect1_4"><title>Fenêtre Principale</title>
+<para>OpenShot Video Editor dispose d'une seule fenêtre principal laquelle contient la plupart des  informations, boutons, et menus que vous avez besoin pour éditer votre projet vidéo.</para><sect2 id="sect2_10"><title>Vue d'ensemble</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Barre d'outils principale</para>
+</entry>
+<entry>
+<para>Contient des boutons pour ouvrir, sauvegarder, et exporter votre projet vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Espace à onglets</para>
+</entry>
+<entry>
+<para>Basculer entre les fichiers projets, les transitions, et les effets.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Fichiers du projet</para>
+</entry>
+<entry>
+<para>Tous les fichiers audios, vidéo, et images qui ont été importés dans votre projet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Fenêtre de prévisualisation</para>
+</entry>
+<entry>
+<para>Ceci est l'endroit où la vidéo s'affichera à l'écran.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Configurer la barre principale</para>
+</entry>
+<entry>
+<para>Cette barre d'outils contient les boutons utilisés pour éditer, enlever, et découper les clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Barre d'agrandissement</para>
+</entry>
+<entry>
+<para>Ce curseur ajustera la taille de votre timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Tête de lecture/Règle</para>
+</entry>
+<entry>
+<para>La règle montre l'échelle du temps, et la ligne rouge est la tête de lecture.  La ligne de lecture représente la position actuelle de lecture.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Timeline</para>
+</entry>
+<entry>
+<para>La timeline visualise votre projet vidéo, et chaque clip et transition de votre projet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_11"><title>Barre d'outils principale</title>
+<para>La <guimenu>barre d'outils principale </guimenu> contient des boutons permettant d'ouvrir et sauvegarder rapidemment votre projet, D'importer des fichiers, et d'exporter votre vidéo.   Toutes ces fonctions peuvent aussi être accessibles via le menu <guimenuitem>Fichier</guimenuitem>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_toolbar.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Ouvrir un projet</para>
+</entry>
+<entry>
+<para>Ouvrir un fichier projet OpenShot (*.OSP).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Enregistrer le projet…</para>
+</entry>
+<entry>
+<para>Sauvegarder le projet actuel.  Si aucun projet n'a été crée, une boite de dialogue s'ouvrira pour rassembler plus d'informations.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Importer des fichiers</para>
+</entry>
+<entry>
+<para>Importer un ou plusieurs fichiers dans votre projet OpenShot actuel.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Faire une capture d'écran</para>
+</entry>
+<entry>
+<para>Ouvrir l'image en cours dans la fenêtre de prévisualisation</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Exporter la vidéo</para>
+</entry>
+<entry>
+<para>Exporter le projet actuel dans un simple fichier vidéo.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_12"><title>Espace à onglets</title>
+<para>Ces onglets permettent de basculer entre 3  fonctions différentes : Les fichiers du Projet, les Transitions, et les Effets.   Les éléments appartenant à ces onglets peuvent être glissés et déposés sur la timeline.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_tabs.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_13"><title>Fichiers du projet</title>
+<para>La section des Fichiers du Projet contient tous les clips qui ont été importés dans le projet.   Avant de pouvoir ajouter une image, un fichier audio, ou vidéo à votre montage sur la timeline, il doit d'abord être importé dans la section des Fichiers du projet.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_files.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_14"><title>Fenêtre de prévisualisation</title>
+<para>La fenêtre de prévisualisation est l'endroit où vous contrôlez la lecture (ou prévisualiser) de votre projet vidéo .   En cliquant sur les boutons se situant sous la fenêtre de prévisualisation, on contrôle l'affichage et les fonctions de la vidéo à cet endroit.  La taille de cette zone peut-être modifiée en cliquant et en faisant glisser les deux flèches autour de cette section.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Retour au début</para>
+</entry>
+<entry>
+<para>Aller au tout début du projet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Repère précédent</para>
+</entry>
+<entry>
+<para>Sauter au marqueur précédant (si possible).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Revenir au début</para>
+</entry>
+<entry>
+<para>Rembobinner la vidéo à partir de la position actuelle de la  lecture.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Lecture / Pause</para>
+</entry>
+<entry>
+<para>Joue ou met en pause la lecture de votre projet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Avance rapide</para>
+</entry>
+<entry>
+<para>Avance rapide de la vidéo à partir de la position actuelle de la lecture.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Repère suivant</para>
+</entry>
+<entry>
+<para>Sauter au repère suivant (s' il existe).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Aller à la fin</para>
+</entry>
+<entry>
+<para>Aller directement à la fin du projet.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_15"><title>Configurer la barre principale</title>
+<para>La barre d'outils d'édition vous permet de basculer entre différents modes d'édition de la timeline. Lorsque vous déplacez, coupez , et dissociez les clips, il est nécessaire de changer le mode d'édition en utilisant la barre d'outils.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Ajouter une piste</para>
+</entry>
+<entry>
+<para>Ajouter une nouvelle piste au dessus des précédentes .</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Sélectionner le Mode</para>
+</entry>
+<entry>
+<para>Sélectionner le mode vous permet de cliquer sur les clips et de les déplacer.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Mode découpe</para>
+</entry>
+<entry>
+<para>Le  mode découpe vous permet de couper le clip en deux à l'endroit sélectionné.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Mode redimensionner</para>
+</entry>
+<entry>
+<para>Le mode redimensionnement vous permet de redimensionner un clip en tirant sur les bords de ce clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Mode instantané</para>
+</entry>
+<entry>
+<para>Le mode instantané permet de passer (ou de sauter) au clip le plus proche ou à la tête de lecture (si le cas échéant ) quand vous les déposer.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Ajouter un repère</para>
+</entry>
+<entry>
+<para>Ajoute un nouveau repère, qui vous permet de sauter rapidement à ce point lors de la prévisualisation.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_16"><title>Barre d'agrandissement</title>
+<para>Le curseur de la barre d'agrandissement vous permet de changer l'échelle d'affichage de la timeline.   Zoomer montre une timeline plus rétrécie tandis que dézoomer montre une vue entière du projet sans défilement.   Vous pouvez soit cliquer sur les boutons de zoom (à gauche et à droite) ou bien faire glisser le curseur.   Lors de cette opération, cela mettra à jour la timeline lors d'une pause ou lorsque vous arrêtez de déplacer le curseur.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_zoomer.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_17"><title>Timeline</title>
+<para>La timeline affiche graphiquement votre projet .   Chaque clip est représenté par un  rectangle jaune.   Chaque piste est représentée par un rectangle bleu.   La tête de lecture (la ligne rouge) représente la lecture actuelle (ou la prévisualisation) à un endroit dans votre projet.</para>
+<para>Cliquez n'importe où sur la règle pour sauter à ce point directement.    Si vous le glissez le long de la règle, cela “lira” la vidéo, lequel est un moyen rapide, approximatif de prévisualiser  votre projet.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_timeline.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Règle</para>
+</entry>
+<entry>
+<para>La régle montre l'échelle de temps en cours sur la timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Tête de lecture</para>
+</entry>
+<entry>
+<para>La tête de lecture  représente la position actuelle de la lecture lors de la prévisualisation de votre vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Clip</para>
+</entry>
+<entry>
+<para>Un clip represente un fichier  audio, image, ou vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Piste</para>
+</entry>
+<entry>
+<para>Une piste est similaire à un empilage (agencement).   La piste la plus haute montre les images et vidéos  au dessus de la piste inférieur.   Il n'y a aucune limite sur le nombre de pistes que le projet peut avoir.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_18"><title>Pistes</title>
+<para><application>OpenShot</application> utilise les pistes pour agencer les vidéos et les images.  La plus haute piste est le plus haut du calque, et la plus basse piste est le calque le plus bas.  Si vous êtes familiers avec les calques dans une application photographique, alors vous deviendrez assez familier avec ce concept.  OpenShot mixera chaque calque ensemble, juste comme une application photographique.</para>
+<para>Par exemple, imaginez un projet vidéo avec trois pistes.  Un couché de soleil devrait être utilisé en tant qu'arrière plan, une lune sera au milieu, et un logo sera en haut.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/tracks.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>La piste du haut</para>
+</entry>
+<entry>
+<para>Les clips sur cette piste seront en haut.  Les logos et les filigranes seront sur ce claque.  Le logo OpenShot est sur cette piste dans l'illustration</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>La piste du milieu</para>
+</entry>
+<entry>
+<para>Ces clips sont au dessous de la piste la plus haute, mais au dessus de la piste la plus basse.  L'image de la lune est sur cette piste dans l'illustration.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>La piste d'en bas</para>
+</entry>
+<entry>
+<para>Ces clips sont en dessous des autres.  Le couché de soleil est sur  cette piste dans l'illustration.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_19"><title>Contrôle de la lecture de la vidéo</title>
+<para>Lire, Mettre en pause, et Recherche sont des fonctionnalités très importantes dans un éditeur vidéo.   Quand vous créez un projet vidéo, vous aurez besoin de lire le projet souvent.   Bien que cliquer sur le<guibutton>bouton lecture</guibutton> est un moyen facile de le faire, il en existe d'autres plus rapides.</para><sect3 id="sect3_4"><title>Les méthodes de lecture</title>
+<para>Il existe  <emphasis>7</emphasis> manières de contrôler la lecture d'une vidéo dans <application>OpenShot</application>.</para>
+<orderedlist>
+<listitem>
+<para>Cliquer sur la <guibutton>barre de prévisualisation</guibutton>  (Lecture, Avance rapide, etc...)</para>
+</listitem>
+<listitem>
+<para>En glissant le curseur au dessus de la barre d'outils de prévisualisation</para>
+</listitem>
+<listitem>
+<para>En glissant la  <guibutton>tête de lecture</guibutton> sur la règle</para>
+</listitem>
+<listitem>
+<para>En cliquant à n'importe quel endroit sur la régle</para>
+</listitem>
+<listitem>
+<para>En utilisant les raccourcis claviers (touches J, K, L )</para>
+</listitem>
+<listitem>
+<para>En utilisant les fleches de déplacements (Gauche, Droite, En haut, En bas)</para>
+</listitem>
+<listitem>
+<para>En utilisant la barre d'espace  (Lecture / Pause)</para>
+</listitem>
+</orderedlist></sect3></sect2><sect2 id="sect2_20"><title>Les raccoucis claviers</title>
+<para>Un raccourcis clavier est une simple touche sur le clavier, qui vous évite de déplacer votre souris et de cliquer sur une zone de l'écran.   C'est souvent plus rapide de taper une touche que de se déplacer et de cliquer.   Ici sont listés tous les raccourcis utilisés dans OpenShot :</para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>touche</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>J</para>
+</entry>
+<entry>
+<para>Rembobiner la lecture de la vidéo</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>K</para>
+</entry>
+<entry>
+<para>Pause / Lecture</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>L</para>
+</entry>
+<entry>
+<para>Avance rapide de la lecture de la vidéo</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Espace</para>
+</entry>
+<entry>
+<para>Pause / Lecture</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page haut</para>
+</entry>
+<entry>
+<para>Marqueur précédant (si possible)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page bas</para>
+</entry>
+<entry>
+<para>Aller au repère suivant (si possible)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page Gauche</para>
+</entry>
+<entry>
+<para>Reculer d'une image (recul image par image )</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page droite</para>
+</entry>
+<entry>
+<para>Avancer d'une image (avance image par image)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TAB</para>
+</entry>
+<entry>
+<para>Basculer entre les modes <guibutton>Redimensionner</guibutton> et <guibutton>Sélectionner</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Molette de la souris</para>
+</entry>
+<entry>
+<para>Zoomer et dézoomer sur la timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Début</para>
+</entry>
+<entry>
+<para>Aller au début de la timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Fin</para>
+</entry>
+<entry>
+<para>Aller à la fin de la timeline</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>F1</para>
+</entry>
+<entry>
+<para>Affiche l'aide (si elle est installée)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_5"><title>Projets - Créer, Ouvrir, et Sauvegarder</title>
+<para><application>OpenShot</application> a besoin d'un  <emphasis>fichier projet </emphasis>pour  sauvegarder les informations qui composeront le projet vidéo.   Ces informations sont le nom et le dossier de destination du projet, les fichiers vidéo et audio, les  informations de la timeline, les   clips qui ont été coupés, arrangés, etc...</para>
+<para/>
+<para>Quand <application>OpenShot</application> est lancé, il  crée automatiquement un nouveau fichier projet.   Vous pouvez démarrer <application>OpenShot</application> immédiatement, sans avoir au préalable créé un projet.  </para>
+<para>Les fichiers Projets ont une extension .OSP  (ProjetExemple.osp).   Aussi, les fichiers projets ont besoin d'un dossier  /thumbnail/ , lequel contient toutes les miniatures de votre projet.   Si vous déplacez un fichier projet, assurez-vous de déplacer le dossier  /thumbnail/ également.</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Projet fichier</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/ProjectA.osp</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Dossier des miniatures</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/ProjectA.osp</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable><sect2 id="sect2_21"><title>Créer un projet</title>
+<para>Il y a 2 manières de créer un fichier projet.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/menu_file.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect3 id="sect3_5"><title>Méthode 1 – Fichier Menu :</title>
+<para>Choisissez<guimenu>Fichier &gt;</guimenu><guimenuitem> Nouveau  Projet</guimenuitem>.  La boite de dialogue  <guilabel>Nouveau Projet</guilabel> s'ouvrira.   Renseignez le nom du projet, le type du projet, sa durée, puis cliquez sur “Sauvegarder le Projet”.</para></sect3><sect3 id="sect3_6"><title>Méthode 2 – Sauvegarder :</title>
+<para>Étant donné qu'OpenShot crée un  projet par défaut quand  vous lancez le programme, vous pouvez simplement choisir <guimenu>Fichier &gt;</guimenu><guimenuitem>Sauvegarder</guimenuitem>.   La boite de dialogue <guilabel>Sauvegarder un Projet</guilabel> s'ouvrira.   Renseignez le nom du projet, le type de projet, sa durée puis cliquez sur “Sauvegarder le  Projet”.</para></sect3></sect2><sect2 id="sect2_22"><title>La boite de dialogue Sauvegarder le Projet</title>
+<para>Le fait de cliquer sur  <guimenuitem>Nouveau Projet</guimenuitem> ou <guimenuitem>Sauvegarder Projet</guimenuitem> affichera la boite de dialogue suivante :</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/projects_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Nom du projet</para>
+</entry>
+<entry>
+<para>Le nom de votre fichier projet (extension de fichier .osp)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Dossier du Projet</para>
+</entry>
+<entry>
+<para>Le dossier de destination de la sauvegarde du fichier projet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Durée du Projet</para>
+</entry>
+<entry>
+<para>La <emphasis>durée</emphasis> maximum de la  timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Type du Projet</para>
+</entry>
+<entry>
+<para>Les caractéristiques de la fenêtre de prévisualisation.   Cela détermine la taille,  le ratio largeur/hauteur, et le nombre d'images par secondes des fichiers que vous visualiserez.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Détails concernant le type du projet</para>
+</entry>
+<entry>
+<para>Ce tableau montre les détails du type de projet, tel que sa taille, le ratio largeur/hauteur, et le nombre d'images par secondes.  Lorsque  vous modifiez la liste déroulante, cela mettra à jour ce tableau.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_23"><title>Ouvrir un Projet</title>
+<para>Pour ouvrir un projet, choisissez <guimenu>Fichier &gt;</guimenu><guimenuitem> Ouvrir un  Projet</guimenuitem>. La boite de dialogue <guilabel>Ouvrir un Projet</guilabel> est affichée. Sélectionner le fichier projet (*.osp) que vous voulez ouvrir, puis cliquez <guibutton>Ouvrir un Projet </guibutton>.</para>
+<para>Si vous ouvrez un projet récent, choisissez <guimenu>Fichier &gt;</guimenu>  </para>
+<para>Si vous voulez lancer  OpenShot et que vous voulez avoir votre projet automatiquement ouvert, simple clic sur le fichier .OSP  (dans l'explorateur), et choisissez <command>openshot comme commande pour ouvrir le fichier.</command></para></sect2></sect1><sect1 id="sect1_6"><title>Importer des  Fichiers – Audio, Vidéo, et Images</title>
+<para>Avant d'utiliser un clip sur la timeline, vous devez en premier <emphasis>importer</emphasis>  le clip dans votre projet.   Il y a différents moyens d' importer un clip.   Le moyen le plus courant est de glisser et déposer les fichiers de votre explorateur à  la section  <guibutton>Fichiers du projet</guibutton> .</para>
+<para>Il existe 4 méthodes différentes pour importer un clip.</para><sect2 id="sect2_24"><title>Methode 1 – Glisser &amp;  Déposer</title>
+<orderedlist>
+<listitem>
+<para>Démarrer <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Glisser et déposer de multiples fichiers en une seule fois à partir de l'explorateur à la section <guibutton>Fichiers du Projet</guibutton> .</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_25"><title>Methode 2 – Déposer un dossier</title>
+<orderedlist>
+<listitem>
+<para>Démarrer <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Glisser et déposer un dossier entier de fichiers média de votre explorateur de fichier à la section des  "Fichiers du Projet" .</para>
+<para>
+<emphasis>*Tout fichier audio, vidéo, et image se trouvant dans ce dossier sera importé</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_26"><title>Methode 3 – Ouvrir avec</title>
+<orderedlist>
+<listitem>
+<para>Dans l'explorateur de fichiers de Gnome, selectionner 1 ou plusieurs fichiers medias</para>
+</listitem>
+<listitem>
+<para>Clic droit sur les fichiers sélectionnés, et choisissez "Ouvrir avec une autre  Application..."</para>
+</listitem>
+<listitem>
+<para>Choisissez "<application>OpenShot Video Editor</application>" (ou la commande <command>openshot</command> )</para>
+<para>
+<emphasis>* Même après avoir commencé à travailler dans</emphasis>
+<application>OpenShot</application>
+<emphasis>avec vos fichiers, vous pouvez encore retourner dans le système de fichiers, et clic droit sur des fichiers supplémentaires puis choisissez "OpenShot". Ceci les ajoutera à la session actuellement ouverte d' OpenShot.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_27"><title>Methode 4 – Avec le bouton Importer des fichiers</title>
+<orderedlist>
+<listitem>
+<para>Démarrer <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Cliquez sur l'icone de la barre d'outils "Importer des Fichiers"</para>
+</listitem>
+<listitem>
+<para>Selectionnez 1 ou plusieurs fichiers, et  cliquez sur  "Importer"</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_7"><title>Les Séquences d'images</title>
+<para>Une des fonctions les plus puissante d' OpenShot est la possibilité d' importer  des  séquences d' images.   Une séquence d' images est simplement un dossier contenant que des images dont le nom est similaire et évidement sont intitulés de manière séquentielles.   Chaque fichier image représente une image de la vidéo.   Aussi pour 30 secondes d'un clip, avec 30 images par secondes, vous obtenez un  dossier de 900 images.   Bien que les séquences d'images puissent être difficiles à travailler (à cause du volume même des fichiers), on peut faire à peu près n'importe quoi.</para>
+<para>Pour importer une séquence d'images, suivez les étapes suivantes:</para><sect2 id="sect2_28"><title>Localiser une Séquence d'images</title>
+<para>Beaucoup de programmes peuvent générer une séquence d'images.   Par  exemple, dans Blender (un logiciel d'animation 3D), vous pouvez créer une belle séquence concernant un titre animé et l'exporter dans une serie de fichier à l'extension .PNG  (avec la transparence).   Cela aura pour effet de créer un dossier sur votre ordinateur qui contiendra toutes les images de ce fichier.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_29"><title>Importer une Séquence d'images</title>
+<para>Choisissez dans le menu <guimenu>Fichier</guimenu> &gt; <guimenuitem>
+ Importer une Séquence d'images</guimenuitem>  , qui lancera la boite de dialogue de Séquence d'images.  </para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Choisissez l'emplacement de destination du dossier de la séquence d'image, et numéroté en séquences.   Toutes les séquences d'images ne sont pas nommées de la même manière.  Par exemple, Movie_0001.JPG est différent de Movie_1.JPG.   Une fois que vous avez choisit un nom correct pour le dossier, cliquer sur  Importer une Séquence d'image.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_30"><title>Ajout à la Timeline</title>
+<para>Glisser votre nouvelle séquence d'image sur la timeline.   Celle-ci est représentée par un simple clip, de la même manière qu'un clip vidéo.</para></sect2><sect2 id="sect2_31"><title>Créer une Séquence d'images</title>
+<para>Si vous n'avez pas de séquence d'images déjà prête, il est facile d'en créer une.   Juste un clic-droit sur n'importe quel  <guibutton>fichier vidéo</guibutton>  dans votre section   <guimenuitem>Fichiers du Projet</guimenuitem>  et choisissez <guimenuitem>Convertir en une Séquence d'image</guimenuitem>.   Celle-ci créera une  nouveau dossier, et exportera chaque image en tant que fichier image à l'extension .PNG.   Ceci ajoutera aussi une référence à votre nouvelle séquence d'images dans la section  <guimenuitem>Fichiers du Projet</guimenuitem> automatiquement.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_convert.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_32"><title>Editer une Séquence d'images</title>
+<para>Si vous voulez éditer une séquence d' images, nous vous recommandons d'utiliser   The Gimp (un éditeur d'images open-source).  Il dispose d'un plugin destiné à l'édition de séquences d' images, et peut vous simplifier le processus d'édition, de sauvegarde, et d' ouverture de l'image suivante dans une séquence.  Vous pouvez alors retoucher chaque image, retoucher les  yeux rouges, ajouter des effets rayonnant à des sabres lumineux, supprimer des fils, etc...  Vous pouvez faire tout ce qui est imaginable en éditant une à une chaque image, mais ceci demande beaucoup d'efforts.</para><sect3 id="sect3_7"><title>Gimp Animation Package (GAP)</title>
+<para>GAP est un plugin pour The Gimp, lequel lui offre la possibilité d'éditer les séquences d'images.   On peut rapidement sauver l'image actuelle et charger la prochaine image d'une séquence.   On peut aussi utiliser les images clés pour appliquer des effets sur de nombreuses frames, ou même créer des animations.   Si vous avez besoin d'éditer une séquence d'images , vous devriez vraiment regarder  <ulink url="http://www.gimp.org/tutorials/Using_GAP/">GAP</ulink>.</para></sect3><sect3 id="sect3_8"><title>Capture d'écran de Gimp Animation Package</title>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/gimp_animation_package.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect3></sect2></sect1><sect1 id="sect1_8"><title>Gérer les Fichiers &amp; et les Dossiers</title>
+<para>Quand on crée une vidéo, vous aurez besoin d'importer de nombreux et divers fichiers vidéos dans votre projet, y compris audio, vidéos, images, titres, superpositons, effets son, et plus encore.   Ceci peut rapidement échapper à tout contrôle, et faire de votre liste de dossiers de projets trop longue, ce qui vous ralentira lors de la recherche du bon fichier.</para>
+<para>Si votre projet comprend trop de fichiers (c'est vous qui décider), vous pouvez utiliser des dossiers de manière à organiser vos fichiers.</para><sect2 id="sect2_33"><title>Créez un répertoire</title>
+<orderedlist>
+<listitem>
+<para>Clic droit sur la section</para>
+</listitem>
+<listitem>
+<para>Choisissez <guimenuitem>Créer un Dossier...</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Entrer un nom pour votre dossier.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_create.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_34"><title>Déplacer des fichiers vers un dossier</title>
+<orderedlist>
+<listitem>
+<para>Assurez-vous d'avoir créer le dossier en premier.</para>
+</listitem>
+<listitem>
+<para>Clic droit sur 1 ou plusieurs fichiers dans la section <guimenuitem>Fichiers du Projet</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Choisissez <guimenuitem>Déplacer le(s) fichier(s) ver le dossier</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Choisissez un dossier.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_move_to_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_35"><title>Supprimer un dossier</title>
+<orderedlist>
+<listitem>
+<para>Click droit sur un dossier</para>
+</listitem>
+<listitem>
+<para>Choisissez <guimenuitem>Supprimer un Dossier</guimenuitem>.</para>
+<para>
+<emphasis>* Assurez-vous d'avoir déplacer tous les fichiers d'un dossier avant de le supprimer.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_9"><title>Ajouter des Fichiers à la Timeline</title>
+<para>Une fois que vous avez importer tous les fichiers dans votre projet, la prochaine étape est de les ajouter à la timeline.   Pour ajouter un fichier de la section <guimenuitem>Fichiers du projet</guimenuitem> à la  timeline, suivez ces étapes:</para>
+<orderedlist>
+<listitem>
+<para>Clic sur un fichier.</para>
+</listitem>
+<listitem>
+<para>Glissez-le vers la  <guibutton>timeline</guibutton> et déposez le.</para>
+</listitem>
+<listitem>
+<para>Le clip sera maitenant ajouté à la timeline.</para>
+<para>
+<emphasis>* Vous ne pouvez ajouter seulement qu'un fichier à la fois.</emphasis>
+</para>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+<emphasis/>
+</mediaobject>
+<para/></sect1><sect1 id="sect1_10"><title>Déplacer &amp;  Modifier les Clips sur la Timeline</title>
+<para>Une fois que vous avez vos fichiers (appelés aussi clips) sur la timeline, nous avons besoins de les disposer sur les pistes, et de les mettre dans un ordre correct.   Aussi, nous allons devoir enlever le début et la fin du clip vidéo (si nécessaire).</para><sect2 id="sect2_36"><title>Déplacer un Clip (Mode Selectionner)</title>
+<orderedlist>
+<listitem>
+<para>Basculer au  <guibutton>Mode Selectionner</guibutton> (c'est le mode par défaut)</para>
+</listitem>
+<listitem>
+<para>Cliquer sur un clip.</para>
+</listitem>
+<listitem>
+<para>Glissez le clip au nouvel endroit sur la  <guibutton>timeline</guibutton>, et déposez le.</para>
+<para>
+<emphasis>Si l'attraction est activée, le clip sautera vers chacune des attaches du  clips (ou la tête de lecture, si elle est proche).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_37"><title>Modifier un  Clip (Mode Redimensionner)</title>
+<orderedlist>
+<listitem>
+<para>Basculer au <guibutton>Mode Redimensionnement Mode</guibutton>, en cliquant sur l'icône de redimensionnement.</para>
+</listitem>
+<listitem>
+<para>Déplacez votre curseur sur le bord droit ou gauche d'un clip.</para>
+</listitem>
+<listitem>
+<para>Déplacez le bord du clip pour rogner la vidéo.</para>
+<para>
+<emphasis>Quand vous glissez un bord du clip, la fenêtre de prévisualisation affichera l'endroit où le clip commencera ou finira (selon le coté que vous avez glissez).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_38"><title>Découper un Clip (Mode Découper)</title>
+<orderedlist>
+<listitem>
+<para>
+<emphasis>Pour découper un clip en 2 parties, basculez au  mode Découper.</emphasis>
+<guibutton>Mode découpe</guibutton>
+<emphasis>,</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Le curseur de la souris se transformera en une ligne en pointillée &amp; une lame de rasoir.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Cliquez sur un  clip à l'endroit que vous voulez couper/le trancher.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_39"><title>Configurer la barre principale</title>
+<para>La barre d'outils d'édition vous permet de basculer entre différents modes d'édition de la timeline. Lorsque vous déplacez, coupez , et dissociez les clips, il est nécessaire de changer le mode d'édition en utilisant la barre d'outils.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Ajouter une piste</para>
+</entry>
+<entry>
+<para>Ajouter une nouvelle piste au dessus des précédentes .</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Sélectionner le Mode</para>
+</entry>
+<entry>
+<para>Sélectionner le mode vous permet de cliquer sur les clips et de les déplacer.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Mode découpe</para>
+</entry>
+<entry>
+<para>Le  mode découpe vous permet de couper le clip en deux à l'endroit sélectionné.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Mode redimensionner</para>
+</entry>
+<entry>
+<para>Le mode redimensionnement vous permet de redimensionner un clip en tirant sur les bords de ce clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Mode instantané</para>
+</entry>
+<entry>
+<para>Le mode instantané permet de passer (ou de sauter) au clip le plus proche ou à la tête de lecture (si le cas échéant ) quand vous les déposer.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Ajouter un repère</para>
+</entry>
+<entry>
+<para>Ajoute un nouveau repère, qui vous permet de sauter rapidement à ce point lors de la prévisualisation.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2></sect1><sect1 id="sect1_11"><title>Séparer l'Audio de la Vidéo</title>
+<para>OpenShot peut séparer l'audio de la vidéo dans un clip, si besoin.  Si vous voulez seulement jouer l'audio d'un clip, ou seulement jouer la vidéo mais sans audio, alors suivez ces étapes:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/track_buttons.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_40"><title>Seulement la Vidéo</title>
+<para>Pour seulement jouer la vidéo d'un clip, cliquez sur l'icône en forme d'écouteur, se trouvant sur le clip.  Ceci coupera l' audio de ce clip/  ou si vous voulez couper l' audio pour toute la piste, cliquez sur l'icône en forme d'écouteur sur la piste.</para></sect2><sect2 id="sect2_41"><title>Seulement l'Audio</title>
+<para>Pour seulement entendre l' audio d'un clip, cliquez sur l'icone en forme d'œil, se trouvant sur le clip.  Ceci cachera l'affichage de la vidéo.  Ou si vous voulez cacher l'affichage de la vidéo de toute la piste, cliquez sur l'icône  en forme d' œil sur la piste.</para></sect2></sect1><sect1 id="sect1_12"><title>Dupliquer les Clips</title>
+<para>Une fonctionnalité très intéressante dans OpenShot est la possibilité de dupliquer les clips, les transitions, et les masques.  Pour dupliquer un article, clic droit sur l'article (tel qu'un clip ou une transition), et choisissez <guimenuitem>Dupliquer</guimenuitem>.  Ceci ajoutera une copie identique à l'article dupliqué sur la timeline.  Il inclue les points d'entrée et de sorties, les effets appliqués au clip, et les paramètres des animations des images clés.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/duplicate_clip.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Un usage courant de la fonction <guimenuitem>Dupliquer</guimenuitem>, est de modifier une scène spécifique dans un clip vidéo, et ensuite de dupliquer le clip.  Une fois que vous avez deux clips identiques, vous pouvez couper l' audio d'un, et cacher la vidéo de l'autre.  Ceci est une manière rapide de séparer l' audio de la vidéo d'un clip.  Maintenant, vous pouvez couper l' audio du clip, ou continuer l' audio du clip, tandis que vous modifiez la vidéo.  Ceci est souvent utilisé dans les films, quand deux personnes parlent.  Ils continuent de jouer l' audio où la première personne parle, tandis que s'affiche la réaction de la seconde personne.</para></sect1><sect1 id="sect1_13"><title>Propriétés du clip</title>
+<para>Chaque clip dans OpenShot a beaucoup de propriétés qui peuvent être manipulées.  Cependant, parce qu'il n' est pas possible d'afficher et d'ajuster tous les paramètres sur la timeline, cette boite de dialogue a été crée.  Elle permet à l'utilisateur d'ajuster le plus finement possible les paramètres et propriétés de chaque clip, ce qui inclue la Durée, la Vitesse, le Volume, la Taille, la Position, l'Aspect ratio, et beaucoup d'autres.</para><sect2 id="sect2_42"><title>Afficher les Propriétés du clip</title>
+<para>Pour afficher les propriétés du clip, clic droit sur un clip et choisissez <guimenuitem>Propriétés</guimenuitem>.</para></sect2><sect2 id="sect2_43"><title>Prévisualiser les modifications</title>
+<para>Pour rapidement visualisez ce que les nouveaux changements produiront, cliquez sur le <guibutton>bouton Lecture</guibutton> ou glissez le <guibutton>Curseur</guibutton>.  Vous pouvez visualiser vous changements encore et encore jusqu'à obtenir l'effet désiré.  Aucun changement n'est appliqué dans votre timeline jusqu'à ce que vous cliquez sur le bouton <guibutton>Appliquer</guibutton>.</para></sect2><sect2 id="sect2_44"><title>Onglet Général</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab1.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para>L'onglet général a les propriétés suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Activer la vidéo</para>
+</entry>
+<entry>
+<para>Sortie vidéo de ce clip</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Activer l'audio</para>
+</entry>
+<entry>
+<para>Sortie audio pour ce clip</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_45"><title>Onglet Durée</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab2.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box"/>L'onglet Durée fournit les informations sur le commencement, la fin, et la durée totale du clip.  En ajustant ces valeurs, vous pouvez retarder quand un clip démarre, finit, ou les deux ensembles.  Utilisez le <guibutton>bouton Lecture</guibutton> pour visualisez les changements.   Exercez-vous en ajustant ces valeurs sans  utiliser l'outil Découpe.</para>
+<para/>
+<para>L'onglet durée a les propriétès suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Début (secondes)</para>
+</entry>
+<entry>
+<para>La première seconde du clip vidéo (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fin (secondes)</para>
+</entry>
+<entry>
+<para>La dernière seconde du clip vidéo (décimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Durée (secondes)</para>
+</entry>
+<entry>
+<para>La durée du clip est calculée sur les points d'entrés et de sorties.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_46"><title>L'onglet Vitesse</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab3.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box1"/>L'onglet vitesse consiste en un mode simple et un mode avancé.  Dans le mode simple, en utilisant des valeurs prédéfinies, on peut augmenter la vitesse du clip jusqu'à 16x la vitesse normale ou la diminuer jusqu'à 1/16 de la vitesse normale.  Aussi, vous pouvez changer la direction.  L'onglet avancé permet d'obtenir une vitesse de haute précision  décimale, alors que le simple onglet a des fractions prédéfinies.</para>
+<para/>
+<para>L'onglet de vitesse a les propriétès suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vitesse</para>
+</entry>
+<entry>
+<para>La première seconde du clip vidéo (decimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Direction</para>
+</entry>
+<entry>
+<para>La dernière seconde du clip vidéo (décimal)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vitesse avancée</para>
+</entry>
+<entry>
+<para>Une haute précision en valeur décimal pour la vitesse d'un clip.  Cette valeur change quand la vitesse de la liste déroulante change.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_47"><title>L'onglet Agencement</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>L'onglet agencement a les propriétès suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Image clé</para>
+</entry>
+<entry>
+<para>Cette liste déroulante détermine avec laquelle des images clés vous allez travailler avec.  Chaque clip a 2 images clés, une au début de la séquence, et une à la fin du clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Hauteur</para>
+</entry>
+<entry>
+<para>La hauteur d'un clip (exprimé en pourcentage).  Plus le chiffre sera élevé, plus haut sera le clip.   Plus le chiffre sera faible, plus petit sera le clip.  Ceci affecte seulement l'image clé actuelle, pas le clip en entier.  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Largeur</para>
+</entry>
+<entry>
+<para>La largeur du clip (basé en pourcentage).  Plus le chiffre sera élevé, plus large sera le clip. Plus le chiffre sera petit, plus étroit sera le clip.  Ceci affecte seulement l'image clé actuelle, pas le clip en entier.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>X</para>
+</entry>
+<entry>
+<para>Position X du centre du clip. Plus le chiffre sera élevé, plus le clip sera à droite.  Plus le chiffre sera petit,  plus le clip sera à gauche.   Ceci affecte seulement l'image clé actuelle, pas le clip en entier.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Y</para>
+</entry>
+<entry>
+<para>Position Y du centre du clip.  Plus le chiffre sera élevé, plus bas  sera le clip.  Plus le chiffre sera petit, plus le clip sera en haut.  Ceci affecte seulement l'image clé actuelle, pas le clip en entier.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Alpha</para>
+</entry>
+<entry>
+<para>Le niveau du canal Alpha du clip.  100 = opaque.  0 = invisible.  Ceci affecte seulement l'image clé actuelle, pas le clip en entier.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_48"><title>L'onglet Audio</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab5.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>L'onglet audio a les propriétès suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Volume</para>
+</entry>
+<entry>
+<para>Le niveau du volume du clip.  0 = muet, 100 = max.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu à l'ouverture</para>
+</entry>
+<entry>
+<para>Fondu à l'ouverture du clip en ayant un volume muet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu à la fermeture</para>
+</entry>
+<entry>
+<para>Fondu à la fermeture en ayant un volume muet.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu (Secondes)</para>
+</entry>
+<entry>
+<para>Le nombre de secondes que le fondu va durer.   Plus grand sera le chiffre, plus le fondu sera graduel.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_49"><title>L'onglet Vidéo</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab6.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>L'onglet vidéo peut ajuster la taille, la position, et l'alignement du clip.  Aussi, on peut appliquer un effet fondu au début et à la fin d'un clip, lequel est quelques fois plus facile à utiliser qu'une transition.  Parce que le fondu est une propriété du clip, il bouge quand vous bougez le clip.  Alors, que contrairement aux transitions, les fondus restent avec le clip quand vous les bouger ensemble.</para>
+<para>L'onglet vidéo a les propriétès suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Etirer en plein écran</para>
+</entry>
+<entry>
+<para>Étirer les clips à la taille de l'écran (basé sur le type de projet).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Maintenir l'aspect ratio</para>
+</entry>
+<entry>
+<para>Ne pas tordre le clip</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Alignement horizontal</para>
+</entry>
+<entry>
+<para>Alignement du clip de gauche à droite</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Alignement Vertical</para>
+</entry>
+<entry>
+<para>Alignement du clip de haut en bas.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu à l'ouverture</para>
+</entry>
+<entry>
+<para>Fondu du clip de transparent à opaque.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu à la fermeture</para>
+</entry>
+<entry>
+<para>Fondu du clip d'opaque à transparent.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Fondu (Secondes)</para>
+</entry>
+<entry>
+<para>Le nombre de secondes que le fondu va durer.   Plus grand sera le chiffre, plus le fondu sera graduel.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_50"><title>L'onglet Effets</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab7.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>L'onglet effet peut appliquer et gérer de multiples effets qui sont appliqués à un clip.  Pour visualisez votre clip avec les effets, utilisez le <guibutton>bouton Lecture</guibutton>.  Chaque effet peut avoir plusieurs paramètres, aussi utilisez le <guibutton>bouton Lecture</guibutton> afin de voir le résultat des changements appliqués.</para>
+<para>L'onglet effets a les proprietes suivantes:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Liste des Effets</para>
+</entry>
+<entry>
+<para>Cette boite de dialogue a une liste de tous les effets appliqués à ce clip.  Les clips sont traités dans un ordre de haut en bas.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ajouter</para>
+</entry>
+<entry>
+<para>Ajouter un nouvel effet au clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Enlever</para>
+</entry>
+<entry>
+<para>Enlever l'effet selectionné au clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page haut</para>
+</entry>
+<entry>
+<para>Monter l'effet selectionné dans la liste.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Page bas</para>
+</entry>
+<entry>
+<para>Descendre l'effet selectionné dans la liste.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Paramètres des effets</para>
+</entry>
+<entry>
+<para>Cette zone contiendra les paramètres pour le clip sélectionné (le cas échéant)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_14"><title>Les Images clés</title>
+<para>OpenShot peut utiliser <emphasis>Les images clés</emphasis> pour animer un clip.  Une image clé est un point à un moment donné qui contient de nombreux paramètres, tel que la taille, la position, et la transparence.  Il y a  deux  manières de déterminer les images-clés dans OpenShot, manuellement ou avec un pré-réglage.  </para><sect2 id="sect2_51"><title>Animation pré-configurée</title>
+<para>Beaucoup d'animations pré-configurés sont disponibles, tel que déplacer un clip de bas en haut de l'écran ou d'agrandissement lent sur un clip.  Pour ajouter une animation pré-configurée à un clip, clic droit sur un clip, et choisissez <guimenuitem>Animer</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_animate.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_52"><title>Agencements Pré-configurés</title>
+<para>Beaucoup d'agencements pré-configurés sont disponibles, tel que redimensionner un clip et le positionner dans le coin de l'écran or le centrer.  Pour ajouter un agencement pré-configuré à un clip, clic droit sur un clip, et choisissez <guimenuitem>Agencement</guimenuitem>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_layout.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_53"><title>Manuellement</title>
+<para>Pour créer manuellement des images clé, clic droit sur un clip, et choisissez <guimenuitem>Propriétés</guimenuitem>.  Basculer  à l'<guibutton>Onglet Agencement</guibutton>, et choisissez laquelle image clé que vous voulez éditer du menu déroulant.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Chaque clip a 2 images clés, au début d'un clip, et la fin de ce clip.  S'ils y a des différences entre le début et la fin des images clés, OpenShot interpolera les différences de chaque frame, et donc animera le clip  .  Les propriétés suivantes seront modifiées par les images-clés:   <emphasis>Hauteur, Largeur, X, Y, et canal Alpha</emphasis>.</para>
+<para>Par exemple, considérer ces images clés:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Démarrer l'image clé</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=0</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Fin de l'image clé:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X =150, Y =0</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Ceci se traduira dans une animation du clip de la gauche vers la  droite de l'écran.  La différence dans les paramètres X est interpolée à travers toutes les frames de ce clip.  Plus le clip est long, plus l'animation est courte.  Plus le clip est court, plus l'animation est rapide.</para>
+<para>Si vous souhaitez changer de façon statique la taille ou la position d'un clip, il suffit de définir le début et la fin des images clés à la même valeur.</para>
+<para>Par exemple, considérer ces images clés:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Démarrer l'image clé</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Fin de l'image clé:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Ceci éteindra le clip en haut à droite de l'écran.   Il ne s'animera pas, parce que le début et la fin des images clés ont les mêmes valeurs.</para>
+<para>Si vous avez besoin de plus de 2 images clés, découper ce clip en plusieurs petites pièces, et au début et à la fin de chaque pièce, vous pouvez déterminer les images clés, ceci vous donne la possibilité de disposer d'un nombre illimité d'images clés.</para></sect2></sect1><sect1 id="sect1_15"><title>Effet de découpe</title>
+<para>OpenShot peut découper des clips vidéos et images en utilisant les paramètres d'agencement, cherchez sur l'écran <guibutton>Propriétés du clip</guibutton>.  Ensuite basculer à l' <guibutton>onglet Agencement</guibutton>.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Pour découper un clip, vous avez besoin de zoomer sur la partie du clip que vous voulez voir.  Régler la Hauteur, la Largeur, X, et Y pour zoomer sur la zone du clip que vous voulez rogner Assurez vous que toutes les images clés ont les mêmes valeurs.  Utilisez le <guibutton>bouton Lecture</guibutton> pour visualiser votre coupe.  Une fois que vous êtes content de votre découpage, cliquez sur <guibutton>Appliquer</guibutton>.</para></sect1><sect1 id="sect1_16"><title>L'effet Rotation</title>
+<para>Si vous avez besoin de faire tourner un clip à 90 degré,180 degré, ou même d'animer une rotation autour de cercles, OpenShot a un effet <guibutton>Rotation</guibutton> qui peut vous aidez.</para>
+<para>OpenShot a deux sortes d'effets de rotations disponibles, fixe et animé.  Pour appliquer un effet rotation, basculer de l'<guibutton>onglet effet</guibutton> à la <guibutton>Fenetre principale</guibutton>, et glisser l'effet<guimenuitem>Rotation</guimenuitem> dans votre clip.  </para>
+<para>Pour ajuster les paramètres de votre rotation, clic droit sur le clip et choisissez <guimenuitem>Propriétés</guimenuitem>.  Ensuite basculer vers l'onglet Effets de la fenêtre Propriété, et cliquer sur l'effet Rotation.  Ceci fera apparaitre la liste des paramètres de rotation qui peuvent être modifiés.  Essayez de changer chaque paramètre, et utilisez le <guibutton>bouton Lecture</guibutton> pour visualiser l'effet.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_rotation.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_54"><title>Rotation Fixe</title>
+<para>Une rotation fixe peut faire tourner une vidéo de 90 degré, 180 degré, ou de n'importe quel autre nombre de degré dont vous avez besoin.  Ceci n'anime pas la rotation.  Ceci est utile quand vous enregistrer une vidéo de côté , et que vous avez besoin de la faire pivoter.   Pour utiliser une rotation fixe, régler seulement les paramètres le debut avec "fixé".  Assurez-vous de régler les autres paramètres sur zéro.</para></sect2><sect2 id="sect2_55"><title>Rotation Animée</title>
+<para>Une rotation animé peut-être utilisée pour faire tourner un clip en rond, ou de nombreux autres modèles.  Cela peut-être un bel effets pour les titres, la filature des journaux, ou d'autres utilisations créatives.  Pour utiliser une rotation animée, régler les paramètres "fixé" à zéro, et seulement utiliser les  paramètres  qui commencent par "Tourner".</para></sect2></sect1><sect1 id="sect1_17"><title>Éditeur de titre</title>
+<para>Comme la plupart des éditeurs vidéo, OpenShot a un créateur de titres intégré.  Il dispose de fonctions basiques qui vous aident à créer des titres pour votre projet vidéo.  Ici sont les fonctionnalités du système de titres d'Openshot:</para>
+<orderedlist>
+<listitem>
+<para>De nombreux modèles (y compris un modèle  d'un fond coloré)</para>
+</listitem>
+<listitem>
+<para>Edition facile du Texte (titre, sous-titres)</para>
+</listitem>
+<listitem>
+<para>Changer la police et sa couleur (en incluant le canal Alpha)</para>
+</listitem>
+<listitem>
+<para>Changer la couleur d'arrière plan (en gardant le canal Alpha)</para>
+</listitem>
+<listitem>
+<para>Utilisation du format SVG ( base vectoriel)</para>
+</listitem>
+<listitem>
+<para>Ajout des titres à la section <guimenuitem>Fichiers du Projet</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Intégration avec Inkscape (en tant qu'éditeur de titres avancé)</para>
+</listitem>
+</orderedlist>
+<para/>
+<para>Toutefois, si l'éditeur basique de texte n'est pas assez puissant pour vous, n'importe quel fichier image de type SVG peut être importer et utiliser comme titre.  Le canal Alpha (la transparence) est respectée, ce qui signifie que les titres peuvent être superposées au dessus des autres pistes, et affichera la vidéo à travers les parties transparentes.</para><sect2 id="sect2_56"><title>Lance l'Editeur de titres</title>
+<para>Pour ajouter un nouveau titre, cliquer sur le menu <guimenu>Projet</guimenu> &gt; puis l'option <guimenuitem>Nouveau titre...</guimenuitem>  Ceci a pour effet de lancer  l'éditeur de titres.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_57"><title>Créer un nouveau titre</title>
+<para>Une fois l'éditeur de titres lancé, vous devez sélectionner un modèle, et cliquer sur le bouton <guibutton>Créer un nouveau titre</guibutton>.  Cela créera une copie de modèle SVG du titre en question, et l'ajoutera à votre <guimenuitem>Fichiers du projet</guimenuitem>.  Entrer le nom du fichier, et il sera ainsi sauvé sur votre disque dur.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_58"><title>Fenêtre de l'éditeur de titres</title>
+<para>La boite de dialogue  vous permet de sélectionner un modèle, d'éditer du texte, de modifier les couleurs, et de créer vos propes titres pour votre projet vidéo.  Une fois que vous avez fini d'éditer votre titre, cliquer sur le bouton <guibutton>Appliquer</guibutton>.</para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_main_screen.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Choisissez un modèle</para>
+</entry>
+<entry>
+<para>Choisissez un modèle de fichier SVG pour utiliser comme titre.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Bouton de création de titres</para>
+</entry>
+<entry>
+<para>Cliquer sur ce bouton pour créer votre propre copie du modélè SVG.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Editer le texte</para>
+</entry>
+<entry>
+<para>Lance la fenêtre d'édition du texte.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Modifier la police</para>
+</entry>
+<entry>
+<para>Modifier la taille et le type de police.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Modifier la couleur</para>
+</entry>
+<entry>
+<para>Modifier la couleur et le canal alpha (transparence).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>La couleur d'arrière plan</para>
+</entry>
+<entry>
+<para>Modifier la couleur d'arrière plan et le canal alpha (transparence).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Editeur avancé</para>
+</entry>
+<entry>
+<para>Editer ce titre SVG dans Inkscape.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Prévisualisez le titre</para>
+</entry>
+<entry>
+<para>Prévisualiez votre titres après chaque édition, changement de couleur, ou changement de polices.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_59"><title>Defillement des Titres / Crédits</title>
+<para>Pour créer des effets de défilements sur vos titres , vous avez besoin de couper votre séquence de titres en plein de petites morceaux.</para><sect3 id="sect3_9"><title>Créer un titre pour chaque image</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_10"><title>Fixer chaque titre sur la timeline</title>
+<para>Ajoutez chaque image titre de vos crédits à défiler à la timeline, définissez la durée de chaque image à 7 secondes, puis décaler les entre les deux pistes.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_scrolling.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_11"><title>Animer chaque titre</title>
+<para>Clic droit sur chaque clip et choisissez <guimenuitem>Animer</guimenuitem> &gt; <guimenuitem>Du bas vers le haut</guimenuitem>.  Ceci créera l'illusion que l'ensemble de vos crédits défilent de bas en haut dans une séquence continue sans trou.  Assurez-vous  de chevauchez les titres (comme le montre l'illustration) pour qu'il n'y ait pas d'écart entre les titres.</para></sect3></sect2></sect1><sect1 id="sect1_18"><title>Transitions</title>
+<para>Les transitions sont utilisées graduellement entre 2 clips différents.  Beaucoup de transitions différentes sont disponibles dans <application>OpenShot</application>.  On peut facilement les glisser et les déposer sur la timeline, et peuvent ajouter beaucoup de plaisir à votre projet vidéo.</para><sect2 id="sect2_60"><title>Ecran des transitions</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions_clock.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Onglet Transition</para>
+</entry>
+<entry>
+<para>Ceci est l'onglet Transition.  Il contient la liste de toutes les transitions disponibles dans <application>OpenShot</application>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Liste des Transitions</para>
+</entry>
+<entry>
+<para>Ceci est la liste des transitions.  Sélectionnez une transition et glisser et déposer là sur la timeline.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Outil de redimentionnement</para>
+</entry>
+<entry>
+<para>L'outil de redimensionnement peut être utilisé pour redimensionner une transition.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Les Transitions sur la timeline</para>
+</entry>
+<entry>
+<para>Une fois que vous avez déposer une transition sur la timeline, elle peut-être déplacée et redimensionnée comme un autre clip.  La transition s'enclenchera entre les pistes, et se mélangera entre les 2 pistes.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_61"><title>Ajouter une transition</title>
+<para>Pour ajouter une transition, basculer à l'onglet <guibutton>Onglet des Transitions</guibutton>, et sélectionner une transition en cliquant dessus.  Glisser et déposer là sur la <guibutton>Timeline</guibutton>.  Cela la positionnera entre les 2 pistes.</para></sect2><sect2 id="sect2_62"><title>Déplacer une transition</title>
+<para>Pour déplacer une transition, basculer au <guibutton>Mode sélection</guibutton> sur la <guibutton>barre d'outils de la timeline</guibutton>, et glisser la à sa nouvelle position.</para></sect2><sect2 id="sect2_63"><title>Redimensionner une transition</title>
+<para>Pour redimensionner  une transition, basculer au <guibutton>Mode redimensionner</guibutton> sur la <guibutton>barre d'outils de la timeline</guibutton>, et glisser le bord gauche ou le bord droit vers une nouvelle taille.</para></sect2><sect2 id="sect2_64"><title>Changer la direction</title>
+<para>Parce que les transitions se placent entre 2 pistes, il est important de savoir dans quelle direction elle s'applique.   Sur la transition, il y a une flèche qui montre la direction, de haut en bas, ou de bas en haut.  En général, la transition devrait partir du premier clip jusqu'à la position du prochain sur la timeline.</para>
+<para>Pour changer le sens d'une transition, clic droit sur une transition, et choisissez <guimenuitem>Changer de direction</guimenuitem>.</para></sect2><sect2 id="sect2_65"><title>Propriétés des transitions</title>
+<para>Juste comme un clip, une transition a une fenêtre de propriétés.  Pour afficher la fenêtre de propriétés d'une transition ou d'un masque, clic droit sur celle-ci, et choisissez <guimenuitem>Propriétés</guimenuitem>.  Pour sauvegarder vos changements, cliquez sur le bouton <guibutton>Appliquer</guibutton>.</para>
+<para/>
+<para/>
+<para>
+<inlinegraphic fileref="../figures/transitions_properties.png" width="5.55inch" depth="4.1701inch"/>
+</para>
+<para/>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Type</para>
+</entry>
+<entry>
+<para>Masques ou Transitons</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Direction</para>
+</entry>
+<entry>
+<para>La direction d'une transition ou d'un masque.  <emphasis>Haut</emphasis> mélange de bas en haut du clip.  Et <emphasis>Bas</emphasis> mélange de haut en bas du clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>La profondeur</para>
+</entry>
+<entry>
+<para>La profondeur d'une transition.  Plus le nombre augmente, plus la largeur de l'essuyage est grande, et  plus le nombre est petit plus l'essuyage est etroit.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Le seuil du masque</para>
+</entry>
+<entry>
+<para>Le seuil du masque est le montant de gris à utiliser pour le masque.  Plus le chiffre est élevé, plus le du masque est élevé, plus le chiffre est petit, moins il est utilisé.  Expérimenté pour trouver le bon seuil pour un masque.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_66"><title>Convertir en masque</title>
+<para>Un masque est similaire à une transition, excepté qu'un masque est statique.  Cela ne change pas progressivement d'un clip à l'autre.  A la place, on mixte les deux pistes à un point pré-déterminer.  Un masque peut-être utilisé pour montrer une petite section d'un clip, d'afficher un bord autour d'un clip, de bloquer quelque chose à partir d'un clip.  Pour expérimenter avec un masque, convertissez simplement une transition en masque  et regardez ce qui ce passe.</para>
+<para>Pour convertir une transition en un masque, clic droit sur une transition, et choisissez <guimenuitem>Convertir en Masque</guimenuitem>.</para></sect2><sect2 id="sect2_67"><title>Créer une nouvelle Transition/Masque</title>
+<para>Les Transitions sont justes de images grises.  Elles peuvent être facilement créer dans n'importe quel programme graphique.  Chercher le dossier <command>/openshot/transitions/</command> sur votre ordinateur, et jeter un œil sur les transitions déjà présentes.  Pour ajouter les vôtres, copier juste une image grise dans ce dossier.  Au prochain lancement d' <application>OpenShot</application>, elle s'affichera dans la liste des transitions.</para></sect2><sect2 id="sect2_68"><title>Supprimer une transition</title>
+<para>Pour supprimer une transition, clic droit sur une transition sur la timeline, et choisissez <guimenuitem>Supprimer cette transition</guimenuitem>.</para></sect2></sect1><sect1 id="sect1_19"><title>Liste des Transitions</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Blinds In to Out Big - applique de grosses lignes horizontales comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Blinds In to Out Small - applique de petites lignes horizontales comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Circle in to out  - applique un cercle qui va du centre à l'exterieur comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Circle out to in  -  applique un cercle qui va de l'exterieur au centre comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Clock left to right  -  applique un balayage dans le sens inverse des aiguilles d'une montre comme transition pour faire apparaitre l'image</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Clock right to left  -  applique un balayage dans le sens des aiguilles d'une montre comme transition pour faire apparaitre l'image</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/openshot_logo.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Openshot logo  -  fait apparaitre le logo OpenShot</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rectangle in to out  -  applique un rectangle qui va de l'intérieur à l'exterieur comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Rectangle out to in  -  applique un rectangle qui va de l'exterieur au centre comme transition</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/sand.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Dissolve - C'est la transition par défaut dans OpenShot.  Elle applique une distorsion entre 23 clips.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral big  -  applique une grande spirale qui découvre l'image</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_medium.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral medium  -  applique une spirale moyenne qui découvre l'image</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_small.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Spiral small -  applique une petite spirale qui découvre l'image</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Vertical blinds in to out big  -  applique de grosses lignes verticales qui découvrent l'image de l'intérieur vers l'extérieur</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Vertical blinds in to out  -  applique des fines lignes verticales qui découvrent l'image de l'interieur vers l'exterieur</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_bottom_to_top.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe bottom to top  -  applique une transition découvrant l'image de bas en haut</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe left to right  -  applique une transition découvrant l'image de gauche à droite</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe right to left  -  applique une transition découvrant l'image de droite à gauche</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_top_to_bottom.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Wipe top to bottom  -  applique une transition découvrant l'image de  haut en bas</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_20"><title>Les Effets</title>
+<para>OpenShot dispose de plus de 30 effets conçus pour manipuler la vidéo ou l'audio d'un clip.  Ajuster la teinte des couleurs, la luminosité, et la correction gamma peuvent être réalisé avec ces effets.  Aussi, des effets plus exotiques sont réalisables, tel qu'une distorsion, une vague, un vieux film, un fond vert (aussi connu comme étant l'effet Chroma Key), et des effets audios.</para><sect2 id="sect2_69"><title>Ajouter un effet</title>
+<para>Pour Ajouter un effet, basculer à l' onglet <guibutton>Effets</guibutton>, sélectionner un effet de cette liste, et glisser cet effet dans le clip sur la <guibutton>timeline</guibutton>.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>L'onglet Effets</para>
+</entry>
+<entry>
+<para>Cet onglet contient la liste des effets</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>La liste des Effets</para>
+</entry>
+<entry>
+<para>La liste des effets contient chaque effets disponible dans OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Clip</para>
+</entry>
+<entry>
+<para>Glisser l'effet sélectionné sur le clip.  Utilisez la Propriété du clip pour ajuster les paramètres les effets.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_70"><title>Ajuster les paramêtres des effets</title>
+<para>Pour ajuster les paramètres d'un effet, clic droit sur un clip, et choisissez <guimenuitem>Propriétés</guimenuitem>.  Basculer à l'onglet <guibutton>Effets</guibutton>, et vous verrez s'afficher une liste de tous les effets que vous avez appliqué sur le clip actuel.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_settings.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>N°</para>
+</entry>
+<entry>
+<para>composant</para>
+</entry>
+<entry>
+<para>description</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>La liste des Effets</para>
+</entry>
+<entry>
+<para>La liste des effets appartenant au clip sélectionné.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Paramètres des effets</para>
+</entry>
+<entry>
+<para>Une liste des paramètres de l'effet sélectionné.  Cliquez sur un effet à charger dans la liste des paramètres.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Boutons de prévisualisation</para>
+</entry>
+<entry>
+<para>Utilisez le boouton <guibutton>Lecture</guibutton> et <guibutton>curseur</guibutton> pour prévisualiser le résultat avant de cliquer sur <guibutton>Appliquer</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Ajouter l'effet</para>
+</entry>
+<entry>
+<para>Ce bouton affiche la fenêtre d'ajout de l'effet.  Selectionner un effet à ajouter et cliquer sur <guibutton>Ajouter un effet</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Supprimer l'effet</para>
+</entry>
+<entry>
+<para>Ce bouton supprime l'effet sélectionné (le cas échéant).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Déplacer l'effet</para>
+</entry>
+<entry>
+<para>Les effets sont appliqués de haut en bas.  Utilisez ces boutons pour modifier l'ordre des effets.  Utilisez le bouton <guibutton>Lecture</guibutton> pour visualiser vos changements.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<mediaobject/></sect2></sect1><sect1 id="sect1_21"><title>La liste des Effets</title>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/two_layer.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Black and White</guibutton> -  Cet effet transforme le clip en noir et blanc.  Il est différent d'un carré gris, car il n'a que deux couleurs, et n'est pas gris.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/blur.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Blur</guibutton> -   applique un effet trouble au clip.  Il peut aussi animer le flou jusqu'à la mise au point, ou de la mise au point jusqu'au flou.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/brightness.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Brightness</guibutton>   -  Cet effet ajuste la luminosité à un clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/burningtv.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>BurningTV</guibutton>  -  Cet effet anime un feu brulant à votre vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/charcoal.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Charcoal</guibutton> - Cet effet applique un filtre charcoal à la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/chroma_key.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Chroma Key</guibutton> (aussi connu en tant que fond vert ou fond bleu).  Cet effet enlève une couleur spécifique et l'a rend transparente.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/deinterlace.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Deinterlace</guibutton> – Supprime les champs pairs et impaires, et les combine dans une seule frame entière.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/distort.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Distort</guibutton> – Cet effet ajoute des et des distorsions à un clip vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/gamma.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Gamma</guibutton> –Cet effet ajuste le niveau gamma d'une vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/glow.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Glow</guibutton> – Cet effet ajoute un effet lumineux à cette vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/greyscale.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Glow</guibutton> –  Cet effet convertit un clip vidéo couleur en différentes nuances de gris.  Si vous voulez juste du noir et du blanc, utilisez l'effet <guibutton>Black and White</guibutton>.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/hue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Hue</guibutton> – Ajuste la teinte / couleur du clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/invert.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Invert</guibutton> –  Cet effet produit une inversion des couleurs de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/mirror.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Mirror</guibutton> –  Crée un effet miroir.  Les miroirs Verticaux, horizontaux, et diagonaux sont pris en charges.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_dust.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Old Dust</guibutton> – Ajoute des vieilles particules à votre clip.  Ajouter ensemble les 4 "vieux" effets pour obtenir une vidéo qui semble très vieille.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_film.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Old Film</guibutton> – Sauts de la vidéo et de manière aléatoire.   Ajouter ensemble les 4 "vieux" effets pour obtenir une vidéo qui semble très vieille.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_grain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Old Grain</guibutton> – Ajoute des grains au clip.  Ajouter ensemble les 4 "vieux" effets pour obtenir une vidéo qui semble très vieille.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Old Lines</guibutton> – Ajoute des lignes au clip.  Ajouter ensemble les 4 "vieux" effets pour obtenir une vidéo qui semble très vieille.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/tcolor.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Oversaturate</guibutton> – Cet effet renforce les couleurs de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/pixelate.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Pixelate</guibutton> –  Cet effet transforme la vidéo en petits blocs, déforme la vidéo et la rends moins claire.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_blue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Remove Blue</guibutton> – Cet effet enlève la couleur bleu de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_green.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Remove Green</guibutton> –  Cet effet enlève la couleur verte de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_red.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Remove Red</guibutton> –  Cet effet enlève la couleur rouge de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/scan_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Scan-lines</guibutton> –  Ajoute des lignes horizontales artificielles, similaire à la TV ou à certains moniteurs d'ordinateurs.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sepia.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sepia</guibutton> – Cet effet teinte la couleur, et ressemble à une vieille photographie.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sobel.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Sobel</guibutton> – Cet effet trouvent les bords dans votre clip vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/threshold.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Threshold</guibutton> –  Cet effet ajustera  les couleurs à montrer basées sur un seuil.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/water_rain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Water</guibutton> – Ajoute des gouttes de pluies, des vagues déroulantes, ou un vortex.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/wave.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Copy text   	
+<guibutton>Wave</guibutton> –  Ondule l'écran dans un mouvement de vague.  Ceci peut animé doucement une vague à votre vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/white_balance.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>White Balance</guibutton> –  Ajuste la couleur blanche, et aussi ajuste toutes les autres couleurs suite à cet ajustement.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Echo</guibutton> – Ajoute un écho à l' audio du clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Phaser</guibutton> – Donne un son futuriste à votre clip.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Pitch</guibutton> – Ajuste le ton audio du clip.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_22"><title>Exporter la vidéo</title>
+<para>Une fois que vous avez complété votre projet, vous voulez l'exporter dans un format correct, correspondant à vos besoin.  OpenShot dispose de beaucoup de formats pré-définies afin de simplifier ce processus. Il y a deux modes pour exporter une vidéo dans OpenShot, le mode simple et le mode avancé.</para>
+<para>Les deux modes ont une zone commune en haut de l'écran, <guibutton>Options Générale</guibutton>.  Le nom de votre fichier vidéo (sans extension) et choisissez le dossier d'exportation.</para><sect2 id="sect2_71"><title>Affiche la fenêtre d'exportation</title>
+<para>Pour afficher la fenêtre d'exportation, cliquez sur l'icône de la barre d'outils <guimenuitem>Exporter la Vidéo</guimenuitem> en haut de la fenêtre principale, ou choisissez <guimenu>Fichier</guimenu> &gt; <guimenuitem>Exporter la Vidéo</guimenuitem>.</para></sect2><sect2 id="sect2_72"><title>Le mode simple</title>
+<para>OpenShot dispose de beaucoup de formats d'exportation pré-définis, lesquels couvrent la plupart des scénarios courant. Selectionnez un <guibutton>Type de Projet</guibutton>, tel qu'un DVD ou le Web, et ensuite choisissez la <guibutton>Cible</guibutton>, <guibutton>Profil Vidéo</guibutton>, et la <guibutton>Qualité</guibutton>.  Vous sélectionnez <guibutton>Tous les Formats</guibutton>, cela vous donnera la liste de tous les formats courants, et vous choisirez celui que vous voulez.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_73"><title>Le mode avancé</title>
+<para>Les options avancées seront seulement utilisées par les personnes familières avec FFmpeg, depuis qu'il est si facile de créer de combinaisons valides de codec, de format, et de réglage des bitrates.  Toutefois, si vous êtes familiers avec ces réglages, n'importe quel format/codec/bitrate supporté par FFmpeg peut-être utilisé, ce qui ouvre des dizaines et des dizaines de combinaisons  qui peuvent être utiliser lors du processus d'exportation.</para>
+<para>Aussi, si vous sélectionnez les premières valeurs pour le <guibutton>Mode Simple</guibutton>, puis basculez en <guibutton>Mode Avancé</guibutton>, cela présélectionnera  tous les paramètre du mode simple.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_advanced.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2></sect1><sect1 id="sect1_23"><title>La liste des Formats &amp; Codecs</title>
+<para>Les tableaux d'exportation des formats selon le type de catégories vidéos</para>
+<informaltable frame="all">
+<tgroup cols="6"><tbody>
+<row>
+<entry>
+<para>Type Vidéo</para>
+</entry>
+<entry>
+<para>Format Vidéo</para>
+</entry>
+<entry>
+<para>Codec vidéo</para>
+</entry>
+<entry>
+<para>Codec audio</para>
+</entry>
+<entry>
+<para>Profil projet suggeré</para>
+</entry>
+<entry>
+<para>Notes sur Usage</para>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Disque AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 entrelacé utilisé pour les Blu-Ray et Disques AVCHD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Disque AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 entrelacé utilisé pour les Blu-Ray et Disques AVCHD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Disque AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Entrelacé utiliser pour les disques Blu-Ray et AVCHD (principalement aux USA) mais pas nécessairement adapté aux bitrates des TV Modernes</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressif à utiliser sur ordinateurs</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Progressif à utiliser sur ordinateurs</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Apple TV</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressif Pour Publication Web</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Progressif Pour Publication Web</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime iPod</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Quarter Square NTSC</para>
+</entry>
+<entry>
+<para>320x240 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV PAL DV PAL Widescreen</para>
+</entry>
+<entry>
+<para>Seulement pour les films natifs en SD! Pas de reconversion en HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV NTSC DV NTSC Widescreen</para>
+</entry>
+<entry>
+<para>Seulement pour les films natifs en SD! Pas de reconversion en HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Haute Definition</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixels carrés ont besoin d'être dé-entrelacés ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Definition Standard</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 square pixels doivent être dés-entrelacé ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Definition Standard Widescreen</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC Widescreen</para>
+</entry>
+<entry>
+<para>854x480 square pixels doivent être  dés-entrelacé ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flickr Haute Définition</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixels carrés ont besoin d'être dé-entrelacés ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Picassa</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 sera converti en Flash 480x360 ou en 320x240</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 sera converti en Flash 480x360 ou en 320x240</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Youtube Haute Définition</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 pixels carrés ont besoin d'être dé-entrelacés ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube Full Haute Définition</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 1080 25p HDV 1080 30p</para>
+</entry>
+<entry>
+<para>1920x1080 square pixels doivent être  dés-entrelacé ou en progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libxvid</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>640x360 Nouveau Standard pour les  S60 5th Edition Périphériques</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>MetaCafe</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>mpeg4</para>
+</entry>
+<entry>
+<para>libmp3lame</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 sera converti en Flash 320x240</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_24"><title>Types de Projet / Profiles</title>
+<para>Chaque projet dans <application>OpenShot</application> doit avoir un <guibutton>type de projet</guibutton> (connu aussi en tant que  <guibutton>profil</guibutton>).  Un profil détermine la lecture  &amp; les formats d'exportation suivants pour votre  projet vidéo: <emphasis>framerate, hauteur &amp; largeur, l' aspect ratio, et le taux de pixels</emphasis>.</para>
+<para>Ici est un exemple de profil, pour  ATSC 1080i 60Hz:</para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>description</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>Nom de votre profil tel qu'il apparaitra dans OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_num</para>
+</entry>
+<entry>
+<para>30000</para>
+</entry>
+<entry>
+<para>Nombre de framerate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>frame_rate_den</para>
+</entry>
+<entry>
+<para>1001</para>
+</entry>
+<entry>
+<para>Dénominateur de framerate.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>largeur</para>
+</entry>
+<entry>
+<para>1920</para>
+</entry>
+<entry>
+<para>Largeur de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>hauteur</para>
+</entry>
+<entry>
+<para>1080</para>
+</entry>
+<entry>
+<para>Hauteur de la vidéo.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>progressif</para>
+</entry>
+<entry>
+<para>0</para>
+</entry>
+<entry>
+<para>0 = Entrelacé, 1 = Progressif</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_num</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Numérateur du taux de  pixel  .</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>sample_aspect_den</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Dénominateur du taux de pixel.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_num</para>
+</entry>
+<entry>
+<para>16</para>
+</entry>
+<entry>
+<para>Numérateur d'affichage de l'aspect ratio.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>display_aspect_den</para>
+</entry>
+<entry>
+<para>9</para>
+</entry>
+<entry>
+<para>Dénominateur de f'affichage de l'aspect ratio.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para><application>OpenShot</application> dispose de plus de 40 profils / type de projets prédéfinis disponibles.   Toutefois, si vous ne trouvez pas un profil qui fonctionne pour votre projet, vous pouvez créer le votre.  Cherchez le dossier <command>/openshot/profiles/</command>.  Copier et renommer un profil existant.  Éditer le profil avec votre éditeur de texte favori.  La prochaine fois que vous démarrer  OpenShot, vous aurez la possibilité de choisir votre nouveau profil.</para></sect1><sect1 id="sect1_25"><title>Préférences</title>
+<para>Pour configurer <application>OpenShot</application>, choisissez <guimenu>Éditer &gt;</guimenu><guimenuitem>Préférences</guimenuitem> . La boite de dialogue des  <guilabel>Preferences</guilabel> permet d'ajuster la durée de l'image importée, le thème par défaut, et le type de projet / profile par défaut.  Les réglages de ces valeurs peuvent vous faire gagner un temps précieux lors du démarrage d'un nouveau projet.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/preferences.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect1><sect1 id="sect1_26"><title>À propos d'OpenShot</title>
+<para><application>OpenShot</application> a été créer par Jonathan Thomas (<ulink url="mailto:Jonathan.Oomph@gmail.com">Jonathan.Oomph@gmail.com</ulink>) en Aout 2008 avec pour objectif de fournir un stable, libre, et  conviviale éditeur vidéo.</para><sect2 id="sect2_74"><title>OpenShot Equipe de développement</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Jonathan Thomas</para>
+</entry>
+<entry>
+<para>Jonathan.Oomph@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Andy Finch</para>
+</entry>
+<entry>
+<para>we.rocked.in79@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Helen McCall</para>
+</entry>
+<entry>
+<para>helen.wildnfree@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Olivier Girard</para>
+</entry>
+<entry>
+<para>eolinwen@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TJ</para>
+</entry>
+<entry>
+<para>ubuntu@tjworld.net</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_75"><title>Plus d'informations</title>
+<para>Pour trouver plus d' informations sur <application>OpenShot</application>,  s'il-vous-plait visiter le <ulink url="http://www.openshotvideo.com/">OpenShot Web page </ulink><ulink url="http://www.openshotvideo.com/">(http://www.OpenShotVideo.com)</ulink>. Pour rapporter un bug ou faire une suggestion en utilisant cette application ou
+      ce manuel, aller sur le <ulink url="https://launchpad.net/openshot">OpenShot site sur Launchpad</ulink>.  Pour discuter d' OpenShot avec d'autres utilisateurs, visiter le site des utilisateurs  &amp; son forum: <ulink url="http://openshotusers.com/forum/">http://OpenShotUsers.com/forum/</ulink></para></sect2><sect2 id="sect2_76"><title>Copyright &amp; Trademark</title>
+<para>Copyright (C) 2009  Jonathan Thomas, Andy Finch, and TJ.  OpenShot(TM) est une marque déposée détenue par Jonathan Thomas.</para></sect2><sect2 id="sect2_77"><title>Licence</title>
+<para>Ce programme est distribué sous les termes de  la GNU License Générale Publique telle qu'elle est publiée par la Free Software
+      Foundation; au minimum la version 2 de la Licence, ou (selon votre choix) la dernière version en date. Une copie de cette licence peut-être trouvée à cette adresse, ou dans le fichier COPYING inclue avec le code source de ce programme.</para></sect2></sect1></article>

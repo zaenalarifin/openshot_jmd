@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Blur</title>
+	<description translatable="True">Blur Description</description>
+	<icon>blur.png</icon>
+	<category>Video</category>
+	<service>boxblur</service>
+	
+	<param name="start" type="spinner" title="Start" description="">
+		<min>0.0</min>
+		<max>200.0</max>
+		<default>50.0</default>
+	</param>
+
+	<param name="end" type="spinner" title="End" description="">
+		<min>0.0</min>
+		<max>200.0</max>
+		<default>50.0</default>
+	</param>
+
+</effect>

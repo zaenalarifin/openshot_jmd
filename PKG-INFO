@@ -1,0 +1,40 @@
+Metadata-Version: 1.0
+Name: openshot
+Version: 1.1.1
+Summary: Create and edit videos and movies
+Home-page: http://www.openshotvideo.com/
+Author: Jonathan Thomas
+Author-email: jonathan.oomph@gmail.com
+License: GNU GPL v.3
+Description: Create and edit videos and movies
+        OpenShot Video Editor is a free, open-source, non-linear video editor.  It
+        can create and edit videos and movies using many popular video, audio, and
+        image formats.  Create videos for YouTube, Flickr, Vimeo, Metacafe, iPod,
+        Xbox, and many more common formats!
+        .
+        Features include:
+        * Multiple tracks (layers)
+        * Compositing, image overlays, and watermarks
+        * Support for image sequences (rotoscoping)
+        * Key-frame animation
+        * Video and audio effects (chroma-key)
+        * Transitions (lumas and masks)
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Dutch
+Classifier: Natural Language :: French
+Classifier: Natural Language :: German
+Classifier: Natural Language :: Italian
+Classifier: Natural Language :: Portuguese
+Classifier: Natural Language :: Spanish
+Classifier: Natural Language :: Swedish

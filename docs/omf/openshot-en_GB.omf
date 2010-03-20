@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<omf>
+  <resource>
+    <creator>Jonathan Thomas (jonathan.oomph@gmail.com)</creator>
+    <creator>Andy Finch (we.rocked.in79@googlemail.com)</creator>
+    <creator>Helen McCall (helen.wildnfree@googlemail.com)</creator>
+    <creator>Olivier Girard (eolinwen@gmail.com)</creator>
+    <maintainer>Jonathan Thomas (jonathan.oomph@gmail.com)</maintainer>
+    <title>OpenShot Help Manual</title>
+    <date>2010-02-21</date>
+    <version identifier="1.1.0~alpha2" date="2010-02-21" description="OpenShot Help Manual"/>
+    <subject category="GNOME|Applications|Sound and Video"/>
+    <description>OpenShot is a non-linear video editor for Gnome.</description>
+    <type>manual</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="file://usr/share/gnome/help/openshot/en_GB/openshot.xml"/>
+    <language code="C"/>
+    <relation seriesid="00d69c65-0cad-d0a0-692a-ba7ed79c5aa670"/>
+    <rights type="GNU GPL" license.version="3" holder="Helen McCall, Jonathan Thomas, Olivier Girard"/>
+  </resource>
+</omf>

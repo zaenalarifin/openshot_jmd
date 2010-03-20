@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Remove Green</title>
+	<description translatable="True">Remove Green</description>
+	<icon>remove_green.png</icon>
+	<category>Video</category>
+	<service>frei0r.G</service>
+
+</effect>

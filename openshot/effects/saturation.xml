@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Saturation</title>
+	<description translatable="True">Saturation Description</description>
+	<icon>saturate.png</icon>
+	<category>Video</category>
+	<service>frei0r.saturat0r</service>
+	
+	<param name="Saturation" type="spinner" title="Saturation" description="">
+		<min>0.0</min>
+		<max>1.0</max>
+		<default>0.5</default>
+	</param>
+
+</effect>
+

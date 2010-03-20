@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Sepia</title>
+	<description translatable="True">Sepia Description</description>
+	<icon>sepia.png</icon>
+	<category>Video</category>
+	<service>sepia</service>
+	
+	<param name="u" type="spinner" title="u" description="">
+		<min>0.0</min>
+		<max>200.0</max>
+		<default>75</default>
+	</param>
+	
+	<param name="v" type="spinner" title="v" description="">
+		<min>0.0</min>
+		<max>200.0</max>
+		<default>150</default>
+	</param>
+
+</effect>

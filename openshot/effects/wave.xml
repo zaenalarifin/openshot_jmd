@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE openshot-effect>
+<effect>
+	<title translatable="True">Wave</title>
+	<description translatable="True">Wave Description</description>
+	<icon>wave.png</icon>
+	<category>Video</category>
+	<service>wave</service>
+	
+	<param name="start" type="spinner" title="Start" description="">
+		<min>0.0</min>
+		<max>30.0</max>
+		<default>15.0</default>
+	</param>
+
+	<param name="end" type="spinner" title="End" description="">
+		<min>0.0</min>
+		<max>30.0</max>
+		<default>15.0</default>
+	</param>
+
+	<param name="speed" type="spinner" title="Speed" description="">
+		<min>0.0</min>
+		<max>40.0</max>
+		<default>20.0</default>
+	</param>
+	
+	<param name="deformX" type="dropdown" title="Deform X" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>1.0</default>
+	</param>
+	
+	<param name="deformY" type="dropdown" title="Deform Y" description="">
+		<values>
+			<value name="Yes" num="1.0"/>
+			<value name="No" num="0.0"/> 
+		</values>
+		<default>1.0</default>
+	</param>
+
+</effect>
+

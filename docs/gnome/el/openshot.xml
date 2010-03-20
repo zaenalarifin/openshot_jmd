@@ -1,0 +1,3646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<article lang="el">
+<articleinfo>
+<title>OpenShot Video Editor Manual</title>
+<subtitle/>
+<edition/>
+</articleinfo><sect1 id="sect1_1"><title>Εισαγωγή</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/logo_badge.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>O OpenShot Video Editor είναι ένα πρόγραμμα που αποσκοπεί στη δημιουργία βίντεο στο Linux.  Mπορεί να συνδυάσει εύκολα πολλά κομμάτια βίντεο, ήχου και εικόνων σε ένα ενιαίο σχέδιο, και στη συνέχεια να τα εξαγάγει σε πολλές κοινές μορφές βίντεο.</para>
+<para>Το OpenShot είναι ένας μη-γραμμικός επεξεργαστής βίντεο, πράγμα που σημαίνει ότι μπορείτε να έχετε πρόσβαση σε κάθε καρέ του βίντεο ανά πάσα στιγμή, έτσι αυτό σας επιτρέπει την επεξεργασία, την μίξη και την διευθέτηση με πολύ δημιουργικούς τρόπους.   Όλη η επεξεργασία (ψαλίδισμα, κοπή, κ.λπ. ..) είναι μη καταστροφική, πράγμα που σημαίνει ότι τα πρωτότυπα αρχεία  βίντεο δεν τροποποιούνται.</para>
+<para>Μπορείτε να χρησιμοποιήσετε το OpenShot για τη δημιουργία παρουσιάσεων φωτογραφιών, επεξεργασία βίντεο, τη δημιουργία τηλεοπτικών και on-line ταινιών, ή οτιδήποτε άλλο μπορείτε να φανταστείτε.</para><sect2 id="sect2_1"><title>Επισκόπηση Χαρακτηριστικών</title>
+<orderedlist>
+<listitem>
+<para>Υποστήριξη πολλών διαφορετικών κωδικοποιήσεων βίντεο, ήχου, και εικόνας (με βάση το FFmpeg)</para>
+</listitem>
+<listitem>
+<para>ΕνσωμάτωσηGnome (υποστηρίζει drag and drop )</para>
+</listitem>
+<listitem>
+<para>Πολλαπλές διαδρομές</para>
+</listitem>
+<listitem>
+<para>Αλλαγή μεγέθους, ψαλίδισμα, διαχωρισμός, και κοπή</para>
+</listitem>
+<listitem>
+<para>Μεταβάσεις βίντεο με προεπισκόπηση σε πραγματικό χρόνο</para>
+</listitem>
+<listitem>
+<para>Συνθεση, επικαλύψεις εικόνων, υδατογραφήματα</para>
+</listitem>
+<listitem>
+<para>Πίνακες τίτλων, δημιουργία τίτλων</para>
+</listitem>
+<listitem>
+<para>Φιλικό στο SVG, για την δημιουργία τίτλων και συντελεστών</para>
+</listitem>
+<listitem>
+<para>Κύλιση κινούμενης είκόνας συντελεστών</para>
+</listitem>
+<listitem>
+<para>Βίντεο συμπαγούς χρώματος (συμπεριλαμβανόμενου του alpha compositing)</para>
+</listitem>
+<listitem>
+<para>Υποστήριξη γυροσκοπικής ακολουθίας εικόνων</para>
+</listitem>
+<listitem>
+<para>Λωρίδα χρόνου με λειτουργία σύρσιμου απόθεσης (drag and drop)</para>
+</listitem>
+<listitem>
+<para>Βηματοειδές καδράρισμα, χαρτογράφηση-κλειδιών: J,K και L κλειδιά</para>
+</listitem>
+<listitem>
+<para>Κωδικοποίηση βίντεο (βασισμένη στο FFmpeg)</para>
+</listitem>
+<listitem>
+<para>Προοδευτική κίνηση κάδρου</para>
+</listitem>
+<listitem>
+<para>Ψηφιακή αυξομείωση βίντεο</para>
+</listitem>
+<listitem>
+<para>Αλλαγή ταχύτητας κομματιών (αργή κίνηση κ.λπ)</para>
+</listitem>
+<listitem>
+<para>Διαμορφωμένες μεταβάσεις φωτεινότητες και μάσκες</para>
+</listitem>
+<listitem>
+<para>Αλλαγή-μεγέθους κομματιών (μέγεθος κάδρου)</para>
+</listitem>
+<listitem>
+<para>Μιξάρισμα και επεξεργασία ήχου</para>
+</listitem>
+<listitem>
+<para>Προεπιλογές για την προοδευτική κίνηση και εμφάνιση του κάδρου</para>
+</listitem>
+<listitem>
+<para>Εφέ του Ken Burns (δημιουργία βίντεο εφαρμόζοντας επάνω μία εικόνα)</para>
+</listitem>
+<listitem>
+<para>Ψηφιακά εφέ, περιλανβανόμενων φωτεινότητα, γάμμα, κορεσμό, ασπρόμαυρο, χρωματικό (μπλέ οθόνη / πράσινη οθόνη), και πάνω απο 20 ακόμα εφέ</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_2"><title>Στιγμιότυπο οθόνης</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_clips.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2></sect1><sect1 id="sect1_2"><title>Ξεκινώντας</title><sect2 id="sect2_3"><title>Για να βρείτε τον OpenShot Video Editor</title>
+<para>Μπορείτε να ξεκινήσετε τον <application>OpenShot</application> με τους εξής τρόπους</para><sect3 id="sect3_1"><title>Εφαρμογές</title>
+<para>Επιλέξτε <guisubmenu>Ήχος &amp; Βίντεο &gt;</guisubmenu><guimenuitem>OpenShot Video Editor</guimenuitem>.</para></sect3><sect3 id="sect3_2"><title>Γραμμή Εντολών</title>
+<para>Για να ξεκινήσετε τον <application> OpenShot application&gt;  keycap&gt;:</application></para>
+<para><command>openshot</command> [όνομα_αρχείου]</para>
+<para>Η προαιρετική παράμετρος [όνομα_αρχείου]  μπορεί να είναι είτε ένα αρχείο ήχου ή βίντεο, ή ένα αρχείο έργου OpenShot (*. osp).   Πολλαπλά αρχεία μπορούν επίσης να προσδιοριστούν (με διάστημα μεταξύ κάθε αρχείου), και όλα τα αρχεία θα πρέπει να εισαχθούν σε μία μόνο περίσταση του <application>OpenShotapplication&gt;.</application></para></sect3><sect3 id="sect3_3"><title>Άνοιγμα Με...</title>
+<para>Για να ξεκινήσετε τον <application>OpenShotapplication&gt; guimenu&gt;&gt; OpenShot Video Editorguimenuitem&gt;. guimenu&gt;&gt; guimenuitem&gt;&gt;  openshot .</application></para>
+<para/></sect3></sect2></sect1><sect1 id="sect1_3"><title>Μάθετε το OpenShot σε 5 λεπτά</title>
+<para>Η χρήση του OpenShot είναι πολύ εύκολη, αυτό το σεμινάριο θα σας ξεναγήσει στα βασικά στοιχεία σε κάτω από 5 λεπτά.   Μετά από αυτό το σεμινάριο, θα είστε σε θέση να κάνετε ένα απλό slide-show με φωτογραφίες και μουσική.</para><sect2 id="sect2_4"><title>Βήμα 1 - Εισάγετε Φωτογραφίες  </title>
+<para>Πριν ξεκινήσουμε να φτιάξουμε ένα βίντεο, πρέπει να κάνουμε <guibutton>εισαγωγή αρχείωνguibutton&gt; emphasis&gt; (*. JPG, *. PNG,  emphasis&gt; (</guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_5"><title>Βήμα 2 - Τακτοποίηση Φωτογραφιών στην λωρίδα χρόνου</title>
+<para>Αφού εισάγετε ορισμένα αρχεία, το επόμενο βήμα είναι να προστεθούν στο χρονοδιάγραμμα και να τα προετοιμασετε. Κάντε κλικ σε κάθε φωτογραφία (μία κάθε φορά), και σύρετέ στο <guibutton> Track 2 guibutton&gt; </guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_6"><title>Βήμα 3 - Εισάγετε μουσική στην λωρίδα χρόνου</title>
+<para>Για να κάνετε προβολή φωτογραφιών να δείχνει περισσότερο ενδιαφέρουσα, θα πρέπει να προσθέσετε λίγη μουσική.   Θα πρέπει να έχει εισαχθεί ένα αρχείο μουσικής στο βήμα 1.   Κάντε κλικ στο αρχείο μουσικής, και σύρετέ το στο <guibutton> Track 1 guibutton&gt; </guibutton></para></sect2><sect2 id="sect2_7"><title>Βήμα 4 - Προεπισκόπηση</title>
+<para>Για να κάνετε προεπισκόπηση βίντεο και πως ακούγεται, κάντε κλικ στο κουμπί <guibutton>Αναπαραγωγήguibutton&gt; guibutton&gt; </guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect2><sect2 id="sect2_8"><title>Βήμα 5 - Εξαγωγή βίντεο</title>
+<para>Μόλις είστε ευχαριστημένοι με την εργασία σας, το επόμενο βήμα είναι να εξάγετε το βίντεο σας.   Το OpenShot θα μετατρέψει  το έργο σας σε ένα ενιαίο αρχείο βίντεο, το οποίο πρέπει να λειτουργεί σε κάθε αναπαραγωγέα (όπως το Totem, VLC, κ.λπ. ..) ή δικτυακούς τόπους (όπως το YouTube, Vimeo, κ.λπ. ..).</para>
+<para>Κάντε κλικ στο εικονίδιο <guibutton> Εξαγωγή βίντεο guibutton&gt;  guimenuitem&gt;&gt; guimenuitem&gt; guibutton&gt;.</guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_9"><title>Βήμα 6 - Απολαύστε to OpenShot!</title>
+<para>Πρέπει έως τώρα να έχετε κατανόησει τον βασικό τρόπο λειτουργίας του OpenShot.   <emphasis> Εισαγωγή, Διευθέτηση, Προεπισκόπηση, και Εξαγωγή emphasis&gt;. </emphasis></para></sect2></sect1><sect1 id="sect1_4"><title>Κύριο Παράθυρο</title>
+<para>Το OpenShot Video Editor έχει ένα κύριο παράθυρο το οποίο περιέχει περισσότερες από τις πληροφορίες, κουμπιά, και τα μενού για να επεξεργαστείτε το έργο σας.</para><sect2 id="sect2_10"><title>Επισκόπηση</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Κύρια γραμμή εργαλείων</para>
+</entry>
+<entry>
+<para>Περιέχει κουμπιά για να ανοίξετε, να αποθηκεύσετε και να εξαγάγετε το έργο σας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Λειτουργία Εναλλαγής (Tabs)</para>
+</entry>
+<entry>
+<para>Εναλλαγή μεταξύ αρχείων έργου, μεταβάσεων, και εφέ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Αρχεία έργου</para>
+</entry>
+<entry>
+<para>Όλα τα αρχεία ήχου, βίντεο και εικόνων που έχουν εισαχθεί στο έργο σας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Παράθυρο προεπισκόπησης</para>
+</entry>
+<entry>
+<para>Αυτή είναι η περιοχή που το βίντεο θα αναπαραγχθεί στην οθόνη.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Γραμμή εργαλείων επεξεργασίας</para>
+</entry>
+<entry>
+<para>Αυτή η γραμμή εργαλείων περιλαμβάνει κουμπιά εναλλαγής που χρησιμοποιούνται για την επεξεργασία, την αποκοπή, και τον διαχωρισμό.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Κύλιση εστίασης</para>
+</entry>
+<entry>
+<para>Αυτή η μπάρα θα προσαρμόσει το χρονοδιάγραμμα της γραμμής εργασίας σας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Αρχή-αναπαραγωγής / Χάρακας</para>
+</entry>
+<entry>
+<para>Ο χάρακας δείχνει το χρονοδιάγραμμα, και η κόκκινη γραμμή είναι η αρχή-αναπαραγωγής.   Η Αρχή-αναπαραγωγής αντιπροσωπεύει την τρέχουσα θέση αναπαραγωγής.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Λωρίδα Χρόνου</para>
+</entry>
+<entry>
+<para>Η Λωρίδα Χρόνου αντικατοπτρίζει το έργο σας, και κάθε κλιπ και μετάβαση στο έργο σας.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_11"><title>Κύρια γραμμή εργαλείων</title>
+<para>Η <guimenu> κύρια γραμμή εργαλείων guimenu&gt; guimenuitem&gt; </guimenu></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_toolbar.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Άνοιγμα έργου</para>
+</entry>
+<entry>
+<para>Ανοίξτε ένα αρχείο του OpenShot (*.OSP).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Αποθήκευση έργου</para>
+</entry>
+<entry>
+<para>Αποθηκεύστε το τρέχον σχέδιο.   Εάν δεν έχει δημιουργηθεί ένα σχέδιο,  θα ανοίξει ένα παράθυρο διαλόγου για να συγκεντρώθούν περισσότερες πληροφορίες.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Εισαγωγή αρχείων</para>
+</entry>
+<entry>
+<para>Εισαγωγή ενός ή περισσότερων αρχείων στο τρέχον σχέδιο OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Λήψη στιγμιότυπου</para>
+</entry>
+<entry>
+<para>Εξαγωγή του τωρινού πλαίσιου από το παράθυρο προεπισκόπησης.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Εξαγωγή βίντεο</para>
+</entry>
+<entry>
+<para>Εξαγωγή του τρέχοντος έργου σε ένα ενιαίο αρχείο βίντεο.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_12"><title>Λειτουργία Εναλλαγής (Tabs)</title>
+<para>Αυτές οι καρτέλες σας επιτρέπουν να κάνετε εναλλαγή μεταξύ τριών διαφορετικών λειτουργίων: Αρχεία έργου, μεταβάσεις, και εφέ.   Τα αντικείμενα αυτά στις καρτέλες μπορεί να συρθούν και να αφεθούν μέσα στη λωρίδα χρόνου.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_tabs.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_13"><title>Αρχεία έργου</title>
+<para>Το τμήμα Αρχεία  Έργου περιέχει όλα τα κλίπ που έχουν εισαχθεί στο έργο σας.   Για να μπορέσετε να προσθέσετε μια εικόνα, αρχείου ήχου ή βίντεο αρχείο στο χρονοδιάγραμμα του έργου σας, πρέπει πρώτα να εισαχθεί στο τμήμα Αρχείων έργου.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_files.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_14"><title>Παράθυρο προεπισκόπησης</title>
+<para>Το Παράθυρο προεπισκόπησης είναι αυτό που ελέγχει την αναπαραγωγή (ή preview) του βίντεο του έργου σας.   Πατώντας τα κουμπιά κάτω από το παράθυρο προεπισκόπησης ελέγχει την αναπαραγωγή, και τις έξοδους βίντεο σε αυτό τον τομέα.   Το μέγεθος του εν λόγω τομέα μπορεί να τροποποιηθεί κάνοντας κλικ και σύροντας τις λαβές (ή γραμμές) γύρω από αυτό το τμήμα.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_preview.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Μετάβαση στην Αρχή</para>
+</entry>
+<entry>
+<para>Μετάβαση στην αρχή του έργου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Προηγούμενη επισήμανση</para>
+</entry>
+<entry>
+<para>Μετάβαση σε προηγούμενο σημείο (αν υπάρχει).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Μετακίνηση στην αρχή</para>
+</entry>
+<entry>
+<para>Μετακίνηση του βίντεο πίσω  από την τρέχουσα θέση αναπαραγωγής.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Αναπαραγωγή / Παύση</para>
+</entry>
+<entry>
+<para>Αναπαράγει ή παύει την αναπαραγωγή του έργου σας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Γρήγορη Αναπαραγωγή</para>
+</entry>
+<entry>
+<para>Γρήγορη Αναπαραγωγή απο την τωρινή θέση.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Επόμενη επισήμανση</para>
+</entry>
+<entry>
+<para>Μετάβαση στον επόμενο σημειοδείκτη (αν υπάρχει).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Μετάβαση στο τέλος</para>
+</entry>
+<entry>
+<para>Μετάβαση στο τέλος του έργου.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_15"><title>Γραμμή εργαλείων επεξεργασίας</title>
+<para>Η γραμμή εργαλείων επεξεργασίας  σας επιτρέπει να επιλέξετε μεταξύ διαφόρων τρόπων για να επεξεργαστείτε το χρονοδιάγραμμα. Κατά την κίνηση, κόψιμο, τον τεμαχισμό κλιπ, είναι αναγκαίο να αλλάξει η κατάσταση επεξεργασίας που χρησιμοποιεί αυτή η γραμμή εργαλείων.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Προσθήκη κομματιού</para>
+</entry>
+<entry>
+<para>Προσθέστε ένα νέο κομμάτι στην κορυφή της στοίβας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Λειτουργία Επιλογής</para>
+</entry>
+<entry>
+<para>Η λειτουργεία επιλογής σας επιτρέπει να επιλέξετε και να μετακινήσετε τα κλίπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Λειτουργία Ξυραφιού</para>
+</entry>
+<entry>
+<para>Η λειτουργία ξυραφιού σας επιτρέπει να χωρίσετε το κομμάτι (κλίπ) όπου εσείς επιλέξετε.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Λειτουργία αλλαγής μεγέθους</para>
+</entry>
+<entry>
+<para>Η Λειτουργία αλλαγής μεγέθους σας επιτρέπει να πιάσετε τις άκρες του κομματιού και σύροντας να του αλλάξετε (η περικόψετε) το μέγεθος.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Λειτουργία αρπαγής</para>
+</entry>
+<entry>
+<para>Η Λειτουργία αρπαγής επιτρέπει στα κομμάτια που σύρετε-αποθέτετε στο έργο να τοποθετούνται αμέσως μετά τα υπάρχοντα του έργου η σε προεπιλεγμένα σημεία (αν υπάρχουν).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Προσθήκη επισήμανσης</para>
+</entry>
+<entry>
+<para>Προσθέστε ένα νέο σημειοδείκτη, ο οποίος θα σας επιτρέψει να επιστρέψετε στο ακριβές σημείο κατά την προεπισκόπηση.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_16"><title>Κύλιση εστίασης</title>
+<para>Το ρυθμιστικό ζουμ σάς επιτρέπει να αλλάξετε τη χρονική κλίμακα του χρόνου.   Κάντε μεγέθυνση για να δείτε το χρονοδιάγραμμα πιο στενά, ή σμίκρυνση για να δείτε ολόκληρο το σχέδιο δεν κινείται.   Μπορείτε να πατήσετε τα κουμπιά ζουμ (αριστερά και δεξιά), ή σύρετε το ρυθμιστικό ζουμ.   Όταν σύρετε το ρυθμιστικό, θα ενημερώσει το χρονοδιάγραμμα, αφού διακόψετε ή να σταματήσει να κινείται.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_zoomer.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_17"><title>Λωρίδα Χρόνου</title>
+<para>Η Λωρίδα χρόνου αντικατοπτρίζει το έργο σας με έναν πολύ γραφικό τρόπο.   Κάθε κλιπ αντιπροσωπεύεται από ένα κίτρινο τετράγωνο.   Κάθε κομμάτι εκπροσωπείται από μπλέ παραλληλόγραμμο.   Η κόκκινη γραμμή αντιπροσωπεύει την τρέχουσα θέση αναπαραγωγής (ή προεπισκόπησης) του έργου σας.</para>
+<para>Κάντε κλικ σε οποιοδήποτε σημείο του χάρακα για να μεταβείτε στη συγκεκριμένη χρονική στιγμή.   Εάν σύρετε κατά μήκος του χάρακα, θα μπορέσετε να κάνετε προεπισκόπηση του έργου σας με ένα γρήγορο και τραχύ τρόπο.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_timeline.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Χάρακας</para>
+</entry>
+<entry>
+<para>Οχάρακας δείχνει την τρέχουσα χρονική κλίμακα της λωρίδας χρόνου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Κεφαλή αναπαραγωγής</para>
+</entry>
+<entry>
+<para>Η κεφαλή αναπαραγωγής αντιπροσωπεύει την τρέχουσα θέση αναπαραγωγή στο παράθυρο προεπισκόπησης σας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Κλιπ</para>
+</entry>
+<entry>
+<para>Ένα Κλιπ αντιπροσωπεύει ένα αρχείο  ήχου, εικόνας, ή βίντεο .</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Κομμάτι</para>
+</entry>
+<entry>
+<para>Ένα κομμάτι είναι παρόμοιο με ένα στρώμα.   Τα κομμάτια που βρίσκονται ψηλότερα επικαλύπτουν τα κομμάτια που βρίσκονται χαμηλότερα (ήχου, βίντεο, η εικόνας).   Δεν υπάρχει όριο στον αριθμό των κομματιών που ένα έργο μπορεί να έχει.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_18"><title>Κομμάτια</title>
+<para>Ο <application>OpenShotapplication&gt; </application></para>
+<para>Για παράδειγμα, φανταστείτε ένα έργο 3 βίντεο κομματιών.   Μια εικόνα από ηλιοβασίλεμα  θα πρέπει να χρησιμοποιηθεί ως φόντο, ένα φεγγάρι θα πρέπει να είναι στη μέση, και ένα λογότυπο πρέπει να είναι στην κορυφή.</para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/tracks.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Κορυφαίο κομμάτι</para>
+</entry>
+<entry>
+<para>Τα Κλιπ σε αυτό το κομμάτι θα είναι στην κορυφή.   λογότυπα και υδατογράφημα θα πρέπει να είναι σε αυτό το στρώμα.   Το λογότυπο OpenShot είναι σε αυτό το κομμάτι στην εικόνα.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Μεσαίο κομμάτι</para>
+</entry>
+<entry>
+<para>Αυτά τα κλιπ είναι κάτω απο το κορυφαίο κομμάτι, αλλά πάνω από το κατώτερο κομμάτι.   Η εικόνα του φεγγάριου είναι σε αυτό το κομμάτι της εικόνας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Κατώτερο κομμάτι</para>
+</entry>
+<entry>
+<para>Αυτά τα κλιπ είναι κάτω απο όλα τα άλλα κομμάτια.   Το ηλιοβασίλεμα είναι σε   αυτό το κομμάτι της εικόνας.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_19"><title>Έλεγχος αναπαραγωγής βίντεο</title>
+<para>Η αναπαραγωγή, η παύση και η αναζήτηση είναι πολύ σημαντικά χαρακτηριστικά σε ένα πρόγραμμα επεξεργασίας βίντεο.   Όταν δημιουργείτε ένα έργο βίντεο, θα χρειαστεί να το αναπαράξετε ξανά και ξανά.   Καθώς κάνετε κλικ στο κουμπί  <guibutton>Αναπαραγωγήguibutton&gt; </guibutton></para><sect3 id="sect3_4"><title>Μέθοδοι Αναπαραγωγής</title>
+<para>Υπάρχουν <emphasis>7 τρόποι </emphasis>για να ελέγξετε την αναπαραγωγή στο <application>OpenShot</application>.</para>
+<orderedlist>
+<listitem>
+<para>Κάνετε κλικ στο <guibutton>Προεπισκόπηση γραμμής εργαλείωνguibutton&gt; (</guibutton></para>
+</listitem>
+<listitem>
+<para>Σύροντας το ρυθμιστικό πάνω από την προεπισκόπηση της γραμμής εργαλείων</para>
+</listitem>
+<listitem>
+<para>Σύροντας την <guibutton>Κεφαλή-Αναπαραγωγής</guibutton> πάνω στον χάρακα</para>
+</listitem>
+<listitem>
+<para>Κάνοντας κλίκ σε οποιοδήποτε σημείο του χάρακα</para>
+</listitem>
+<listitem>
+<para>Χρησημοποιώντας τις συντομεύσεις πληκτρολογίου (κλειδιά J, K, L)</para>
+</listitem>
+<listitem>
+<para>Χρησιμοποιώντας τα κουμπιά βελών (Αριστερά, δεξιά, Πάνω, Κάτω)</para>
+</listitem>
+<listitem>
+<para>Χρησιμοποιώντας το κλειδί του πλήκτρου Διαστήματος (Αναπαραγωγή / Παύση)</para>
+</listitem>
+</orderedlist></sect3></sect2><sect2 id="sect2_20"><title>Συντομεύσεις Πληκτρολογίου</title>
+<para>Μία συντόμευση πληκτρολόγιου  είναι απλά ένα πλήκτρο στο πληκτρολόγιο που σας γλιτώνει από τον κόπο της μετακίνησης του ποντικιού.   Είναι πολλές φορές πιο γρήγορο να πληκτρολογήσετε ένα κλειδί, από τα πολλαπλά κλικ.   Εδώ είναι όλες  οι συντομεύσεις πληκτρολογίου του <application>OpenShotapplication&gt;:</application></para>
+<para/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>κλειδί</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>J</para>
+</entry>
+<entry>
+<para>Μετακινήστε πρός τα πίσω την αναπαραγωγή βίντεο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>K</para>
+</entry>
+<entry>
+<para>Παύση / Αναπαραγωγή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>L</para>
+</entry>
+<entry>
+<para>Γρήγορη κίνηση εμπρός της αναπαραγωγής βίντεο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Πλήκτρο διαστήματος</para>
+</entry>
+<entry>
+<para>Παύση / Αναπαραγωγή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Πάνω</para>
+</entry>
+<entry>
+<para>Έρευνα για προηγούμενη κατασκευή (άν υπάρχει)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Κάτω</para>
+</entry>
+<entry>
+<para>Έρευνα για επόμενη κατασκευή (άν υπάρχει)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αριστερά</para>
+</entry>
+<entry>
+<para>Μετακινηθείτε πίσω κατά ένα κάδρο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Δεξιά</para>
+</entry>
+<entry>
+<para>Μετακινηθείτε εμπρός κατά ένα κάδρο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Στηλοθέτης</para>
+</entry>
+<entry>
+<para>Αλλάξτε κατάσταση μεταξύ <guibutton>Αναδιάταξη-μεγέθους</guibutton> και <guibutton>Επιλογή</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Ροδέλα κύλισης</para>
+</entry>
+<entry>
+<para>Εστιάστε μέσα  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + Home</para>
+</entry>
+<entry>
+<para>Αναζήτηση στην αρχή της λωρίδας χρόνου</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ctrl + End</para>
+</entry>
+<entry>
+<para>Αναζήτηση στο τέλος της λωρίδας χρόνου</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>F1</para>
+</entry>
+<entry>
+<para>Εκκίνηση του αρχείου βοήθειας (αν είναι εγκαταστημένο)</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_5"><title>Έργα - Δημιουργήστε, Ανοίξτε, και Αποθηκεύστε</title>
+<para>Το <application>OpenShotapplication&gt; emphasis&gt; </application></para>
+<para/>
+<para>Όταν ξεκινάει το <application>OpenShotapplication&gt;, OpenShotapplication&gt; </application></para>
+<para>Τα αρχεία έργου έχουν επέκταση .OSP (ExampleProject.osp).   Επίσης, τα αρχεία του έργου χρειάζονται έναν φάκελο / σμικρύνσεων /, που περιέχει όλα τα εικονίδια του έργου σας.   Εάν μετακινήσετε ένα αρχείο έργου, φροντίστε να μετακινήσετε και το φάκελο /σμικρύνσεων/ .</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Φάκελος Έργου</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/ProjectA.osp</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Φάκελος Σμικρύνσεων</para>
+</entry>
+<entry>
+<para>/home/user/Desktop/thumbnail/</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable><sect2 id="sect2_21"><title>Δημιουργία έργου</title>
+<para>Υπάρχουν 2 τρόποι δημιουργίας ενός αρχείου έργου</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/menu_file.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect3 id="sect3_5"><title>Μέθοδος 1 - Κατάλογος Φακέλων:</title>
+<para>Επιλέξτε <guimenu>Αρχείο guimenu&gt; guimenuitem&gt;. guilabel&gt;  . </guimenu></para></sect3><sect3 id="sect3_6"><title>Μέθοδος 2 - Αποθήκευση προεπιλογής:</title>
+<para>Δεδομένου ότι το OpenShot δημιουργεί ένα έργο από προεπιλογή όταν ξεκινήσει το πρόγραμμα, μπορείτε απλά να επιλέξετε <guimenu>Αρχείο &gt;guimenu&gt; guimenuitem&gt;. guilabel&gt;  . </guimenu></para></sect3></sect2><sect2 id="sect2_22"><title>Αποθήκευση Οθόνης Έργου</title>
+<para>Κάνοντας κλικ στο <guimenuitem>Νέο Έργοguimenuitem&gt; guimenuitem&gt; </guimenuitem></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/projects_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Όνομα Έργου</para>
+</entry>
+<entry>
+<para>Το όνομα του φακέλου του έργου σας (.osp επέκταση αρχείου)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Φάκελος έργου</para>
+</entry>
+<entry>
+<para>Η τοποθεσία η οποία θα αποθηκεύσετε το έργο.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Μήκος Έργου</para>
+</entry>
+<entry>
+<para>Το <emphasis>μέγιστο</emphasis> του μήκους της λωρίδας χρόνου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Τύπος Έργου</para>
+</entry>
+<entry>
+<para>Το παράθυρο προεπισκόπησης επηρεάζει καθορίζοντας .   το μέγεθος,   αναλογία, και καρέ ανά δευτερόλεπτο των αρχείων βίντεο που είναι σε προεπισκόπηση.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Λεπτομέρειες Τύπου του Έργου</para>
+</entry>
+<entry>
+<para>Αυτός ο πίνακας προεπισκοπεί  τις λεπτομέρειες του τύπου του έργου, όπως το μέγεθος, αναλογία, και καρέ ανά δευτερόλεπτο.   Όταν αλλάξετε το αναπτυσσόμενο τύπο του έργου, θα ενημερωθεί αυτός ο πίνακας.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_23"><title>Ανοίξτε ένα Έργο</title>
+<para>Για να ανοίξετε ένα έργο, επιλέξτε <guimenu>Αρχείο &gt;guimenu&gt; guimenuitem&gt;. guilabel&gt; . guibutton&gt;.</guimenu></para>
+<para>Εάν ανοίγετε ένα πρόσφατο έργο, επιλέξτε <guimenu>Αρχείο &gt;guimenu&gt;  guimenuitem&gt;. OpenShotapplication&gt;.</guimenu></para>
+<para>Αν θέλετε να ξεκινήσετε τον OpenShot και το έργο σας να ανοίξει αυτόματα, κάντε διπλό κλικ στο αρχείο .osp (στον υπολογιστή σας), και επιλέξτε <command>openshot</command></para></sect2></sect1><sect1 id="sect1_6"><title>Εισαγάγετε αρχεία - ήχου, βίντεο και εικόνας</title>
+<para>Για να μπορέσετε να χρησιμοποιήσετε ένα κλιπ στη λωρίδα χρόνου, θα πρέπει πρώτα να κάνετε <emphasis>εισαγωγήςemphasis&gt; guibutton&gt;.</emphasis></para>
+<para>Υπάρχουν 4 διαφορετικές μέθοδοι για να εισαγάγετε ένα κλιπ.</para><sect2 id="sect2_24"><title>Μέθοδος 1η - Σύρετε  </title>
+<orderedlist>
+<listitem>
+<para>Εκκινήστε τον <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Σύρετε  guibutton&gt;.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/files_drag_and_drop.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_25"><title>Μέθοδος 2η - Αποθέστε φάκελο αρχείων</title>
+<orderedlist>
+<listitem>
+<para>Εκκινήστε τον <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Σύρετε  </para>
+<para>
+<emphasis>* Όλα τα αρχεία ήχου, βίντεο και εικόνων θα εισαχθούν απο αυτόν τον φάκελο</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_26"><title>Μέθοδος 3η - Άνοιγμα μέ</title>
+<orderedlist>
+<listitem>
+<para>Κατά την περιήγηση στα αρχεία του Gnome, επιλέξτε 1 ή περισσότερα αρχεία πολυμέσων</para>
+</listitem>
+<listitem>
+<para>Κάντε δεξί κλικ στο επιλεγμένο αρχείο, και επιλέξτε "Άνοιγμα με άλλη εφαρμογή ..."</para>
+</listitem>
+<listitem>
+<para>Επιλέξτε "<application>OpenShot Video Editorapplication&gt;" (openshotcommand&gt;)</application></para>
+<para>
+<emphasis>* Ακόμη και μετά την αρχή της εργασίας στο</emphasis>
+<application>OpenShot</application>
+<emphasis>με τα αρχεία σας, μπορείτε να επιστρέψετε στο σύστημα αρχείων, και κάνοντας δεξί κλικ σε περισσότερα αρχεία και επιλέξτε "OpenShot". Θα προστεθούν εκείνη τη στιγμή στον OpenShot.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_27"><title>Μέθοδος 4η - Κουμπί Εισαγωγής</title>
+<orderedlist>
+<listitem>
+<para>Εκκινήστε τον <application>OpenShot</application></para>
+</listitem>
+<listitem>
+<para>Κάντε κλικ στο κουμπί της γραμμής εργαλείων "Εισαγωγή αρχείων"</para>
+</listitem>
+<listitem>
+<para>Επιλέξτε 1 ή περισσότερα αρχεία, και πατήστε "Εισαγωγή"</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_7"><title>Ακολουθία Εικόνων</title>
+<para>Ένα από τα πιο ισχυρά χαρακτηριστικά στο OpenShot είναι η δυνατότητα εισαγωγής ακολουθίας εικόνων.   Η ακολουθία των εικόνων είναι στην πραγματικότητα ένας φάκελος γεμάτος με παρόμοια, και φυσικά με  διαδοχική ονομασία αρχεία.   Κάθε αρχείο εικόνας αντιπροσωπεύει ένα καρέ του βίντεο.   Έτσι, για ένα κλίπ μήκους 30 δευτερολέπτων, με 30 καρέ ανά δευτερόλεπτο, θα είχατε 900 αρχεία εικόνας.   Αν και οι ακολουθίες εικόνας μπορεί να είναι δύσκολες στην επεξεργασία (λόγω του όγκου των αρχείων), μπορείτε να κάνετε σχεδόν τα πάντα.</para>
+<para>Για να εισαγάγετε μιά ακολουθία εικόνων, ακολουθήστε τα παρακάτω βήματα:</para><sect2 id="sect2_28"><title>Εντοπίστε μιά ακολουθία εικόνων</title>
+<para>Πολλά προγράμματα μπορούν να δημιουργήσουν μία ακολουθία εικόνων.   Για παράδειγμα, το Blender (ένα πακέτο 3D animation), μπορείτε να δημιουργήσετε μια μεγάλη σειρά κινουμένων σχεδίων τίτλου και να τα εξάγετε με την σειρά του ονόματός τους ως .PNG αρχεία (με διαφάνεια).   Αυτό θα δημιουργήσει ένα φάκελο στον υπολογιστή σας, που περιέχει όλα τα αρχεία εικόνας.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_29"><title>Εισαγωγής της ακολουθίας εικόνων</title>
+<para>Επιλέξτε <guimenu>Αρχείοguimenu&gt;&gt;guimenuitem&gt; </guimenu></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Επιλέξτε τη θέση του φακέλου της ακολουθίας εικόνων, και το πρότυπο αρχείο ονομάτων.   Οι ακολουθίες εικόνων δεν ονομάζονται όλες με τον ίδιο τρόπο.   Για παράδειγμα το, Movie_0001.JPG είναι διαφορετικό από το Movie_1.JPG.   Μόλις εισάγετε το σωστό όνομα μοτίβου του αρχείου, κάντε κλικ <guibutton>Εισαγωγή Ακολουθίας εικόνωνguibutton&gt;.</guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/import_image_seq.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_30"><title>Προσθήκη στη λωρίδα χρόνου</title>
+<para>Αποθέστε  νέα ακολουθία εικόνων σας στη λωρίδα χρόνου.   Θα εκπροσωπείται από ένα μόνο κλιπ, ακριβώς όπως ένα κανονικό βίντεο κλιπ.</para></sect2><sect2 id="sect2_31"><title>Δημιουργείστε μία Ακολουθία Εικόνων</title>
+<para>Αν δεν έχετε ήδη μια ακολουθία εικόνων, είναι εύκολο να δημιουργήσετε μία.   Απλά κάντε δεξί κλικ σε οποιοδήποτε <guibutton>αρχείο βίντεοguibutton&gt; guimenuitem&gt; guimenuitem&gt;. </guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/image_seq_convert.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_32"><title>Επεξεργασία μιας Ακολουθίας εικόνων</title>
+<para>Αν θέλετε να επεξεργαστείτε μια ακολουθία εικόνων, προτείνουμε να χρησιμοποιήσετε το Gimp (ανοικτού λογισμικού πρόγραμμα επεξεργασίας εικόνας).   Έχει πρόσθετα που θα σας βοηθήσουν στην επεξεργασία μεγάλων ακολουθιών εικόνων, απλοποιόντας τη διαδικασία του μοντάζ, την αποθήκευση, και το άνοιγμα της επόμενης εικόνας σε μια αλληλουχία.   Στη συνέχεια μπορείτε να επεμβαίνετε στο κάθε καρέ, αφαιρώντας τα κόκκινα μάτια, προσθέτοντας φωτεινότητα, διαγράφωντας σύρματα, κλπ. ..   Δεν υπάρχει πραγματικά τίποτα που δεν μπορείτε να κάνετε με μά προσέγγιση επεξεργασίας καρέ καρέ, αλλά πρέπει να καταβάλετε πολλή προσπάθεια.</para><sect3 id="sect3_7"><title>Πακέτο κινούμενων εικόνων του Gimp (GAP)</title>
+<para>Το GAP είναι ένα πρόσθετο για το Gimp, το οποίο βοηθά στην επεξεργασία ακολουθίας εικόνων.   Μπορεί να αποθηκεύσει γρήγορα την τρέχουσα εικόνα και να φορτώσει την επόμενη εικόνα σε μια αλληλουχία.   Μπορεί επίσης να χρησιμοποιεί κλειδιά-πλαίσια για την εφαρμογή εφέ σε πολλά καρέ, ή ακόμη και τη δημιουργία κινούμενων εικόνων.   Εάν χρειάζεται να επεξεργαστείτε μια ακολουθία εικόνων, θα πρέπει να ρίξετε σίγουρα μια ματιά στο <ulink url="http://www.gimp.org/tutorials/Using_GAP/"> GAP ulink&gt;.</ulink></para></sect3><sect3 id="sect3_8"><title>Εικόνα οθόνης του GAP</title>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/gimp_animation_package.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect3></sect2></sect1><sect1 id="sect1_8"><title>Διαχειριστήτε Αρχεία  </title>
+<para>Όταν δημιουργείται ένα βίντεο, θα πρέπει να εισάγετε πολλά διαφορετικά αρχεία στο έργο σας, συμπεριλαμβανομένων ήχου, βίντεο, εικόνες, τίτλους, επικαλύψεις, ηχητικά εφέ, και περισσότερα.   Αυτό μπορεί γρήγορα να ξεφύγει από τον έλεγχο, και να κάνει τη λίστα των αρχείων του έργου πάρα πολύ μεγάλη, παράγοντας  ο οποίος θα σας καθυστερήσει  ψάχνοντας για το σωστό αρχείο.</para>
+<para>Εάν το σχέδιό σας έχει πάρα πολλά αρχεία (κάτι που είναι στο χέρι σας να αποφασίσετε), μπορείτε να χρησιμοποιήσετε φακέλους ως ένα τρόπο για να οργανώσετε τα αρχεία σας.</para><sect2 id="sect2_33"><title>Δημιουργείστε ένα Φάκελο</title>
+<orderedlist>
+<listitem>
+<para>Κάντε δεξί κλικ στο <guimenuitem>Αρχεία Έργου</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Επιλέξτε <guimenuitem>Δημιουργία Φακέλου...</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Εισάγετε ένα όνομα για τον φακελό σας.</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_create.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_34"><title>Μετακίνηση Αρχείων σε Φάκελο</title>
+<orderedlist>
+<listitem>
+<para>Σιγουρευτείτε ότι έχετε δημιουργήσει μία λίστα φακέλου.</para>
+</listitem>
+<listitem>
+<para>Κάντε δεξί κλικ σε 1 ή περισσότερα αρχεία του τομέα <guimenuitem>Αρχεία Έργου</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Επιλέξτε <guimenuitem>Μετακίνηση Αρχείου(ων) σε Φάκελο</guimenuitem>.</para>
+</listitem>
+<listitem>
+<para>Επιλέξτε ένα φάκελο</para>
+<para/>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/folders_move_to_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2><sect2 id="sect2_35"><title>Αφαιρέστε ένα φάκελο</title>
+<orderedlist>
+<listitem>
+<para>Κάντε δεξί κλικ σε ένα φάκελο</para>
+</listitem>
+<listitem>
+<para>Επιλέξτε <guimenuitem>Αφαίρεση Φακέλου</guimenuitem>.</para>
+<para>
+<emphasis>* Βεβαιωθήτε ότι μετακινήσατε όλα τα αρχεία από ένα φάκελο πριν τον απομακρύνετε.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2></sect1><sect1 id="sect1_9"><title>Προσθήκη αρχείων στην λωρίδα χρόνου</title>
+<para>Μόλις έχετε τα αρχεία στο έργο σας, το επόμενο βήμα είναι να τα προσθέσετε στη λωρίδα χρόνου.   Για να προσθέσετε ένα αρχείο από τα <guimenuitem>Αρχεία Έργουguimenuitem&gt; guibutton&gt;, </guimenuitem></para>
+<orderedlist>
+<listitem>
+<para>Κάντε κλίκ σε ένα αρχείο.</para>
+</listitem>
+<listitem>
+<para>Σύρετε το πάνω απο την <guibutton>Λωρίδα Χρόνου</guibutton> και αποθέστε το.</para>
+</listitem>
+<listitem>
+<para>Το κλίπ θα προστεθεί τώρα στην Λωρίδα Χρόνου.</para>
+<para>
+<emphasis>Μπορείτε να προσθέτετε μόνο ένα αρχείο κάθε φορά.</emphasis>
+</para>
+</listitem>
+</orderedlist>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/timeline_drop.png"/>
+<caption/>
+</imageobject>
+<emphasis/>
+</mediaobject>
+<para/></sect1><sect1 id="sect1_10"><title>Μετακινήστε  </title>
+<para>Μόλις έχετε τα αρχεία (που αναφέρονται επίσης ως κλιπ) στην Λωρίδα Χρόνου, θα πρέπει να τα οργανώσετε ως κομμάτια, και να τα τοποθετήσετε στη σωστή σειρά.   Επίσης, θα χρειαστεί να ψαλιδίσετε τις αρχές και τατελειώματα του βίντεο κλιπ (αν χρειάζεται).</para><sect2 id="sect2_36"><title>Μετακίνηση Κλίπ (Κατάσταση Επιλογής)</title>
+<orderedlist>
+<listitem>
+<para>Αλλαγή σε <guibutton>Κατάσταση Επιλογήςguibutton&gt; (</guibutton></para>
+</listitem>
+<listitem>
+<para>Κάνετε κλίκ σε ένα κλίπ</para>
+</listitem>
+<listitem>
+<para>Σύρετε το κλίπ σε νέα θέση στη <guibutton>Λωρίδα Χρόνου</guibutton>, και αποθέστε το.</para>
+<para>
+<emphasis>* Αν είναι ενεργοποιήμένη η αυτόματή αρπαγή το κλίπ θα κολλήσει στο αμέσως κοντινότερο (η στην κοντινότερη κεφαλή αναπαραγωγής).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_37"><title>Περικοπή ενός κλίπ (Κατάσταση Αλλαγής μεγέθους)</title>
+<orderedlist>
+<listitem>
+<para>Αλλαγή σε <guibutton>Κατάσταση Αλλαγής Μεγέθουςguibutton&gt;, </guibutton></para>
+</listitem>
+<listitem>
+<para>Μετακίνηση του κέρσορα του ποντικιού σας πάνω από τη δεξιά ή αριστερή πλευρά του κλιπ.</para>
+</listitem>
+<listitem>
+<para>Σύρετε το άκρο του κλιπ για να περικόψετε το βίντεο.</para>
+<para>
+<emphasis>* Καθώς σύρετε το άκρο του κλιπ, το παράθυρο προεπισκόπησης θα εμφανιστεί όταν το κλιπ θα ξεκινήσει ή θα τερματίσει (βάση του ποια πλευρά του κλιπ σύρετε).</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_38"><title>Τεμαχίστε ένα κλίπ (Κτάσταση Ξυραφιού)</title>
+<orderedlist>
+<listitem>
+<para>
+<emphasis>Για να τεμαχίσετε ένα κλιπ σε 2 κομμάτια, μεταβείτε σε</emphasis>
+<guibutton>Λειτουργία Ξυραφιού</guibutton>
+<emphasis>.</emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Ο δείκτης του ποντικιού θα αλλάξει σε μια διακεκομμένη γραμμή  </emphasis>
+</para>
+</listitem>
+<listitem>
+<para>
+<emphasis>Κάντε κλικ σε ένα clip στο σημείο που θέλετε να το κόψετε / τεμαχίσετε.</emphasis>
+</para>
+</listitem>
+</orderedlist></sect2><sect2 id="sect2_39"><title>Γραμμή εργαλείων επεξεργασίας</title>
+<para>Η γραμμή εργαλείων επεξεργασίας  σας επιτρέπει να επιλέξετε μεταξύ διαφόρων τρόπων για να επεξεργαστείτε το χρονοδιάγραμμα. Κατά την κίνηση, κόψιμο, τον τεμαχισμό κλιπ, είναι αναγκαίο να αλλάξει η κατάσταση επεξεργασίας που χρησιμοποιεί αυτή η γραμμή εργαλείων.</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/main_window_edit_toolbars.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Προσθήκη κομματιού</para>
+</entry>
+<entry>
+<para>Προσθέστε ένα νέο κομμάτι στην κορυφή της στοίβας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Λειτουργία Επιλογής</para>
+</entry>
+<entry>
+<para>Η λειτουργεία επιλογής σας επιτρέπει να επιλέξετε και να μετακινήσετε τα κλίπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Λειτουργία Ξυραφιού</para>
+</entry>
+<entry>
+<para>Η λειτουργία ξυραφιού σας επιτρέπει να χωρίσετε το κομμάτι (κλίπ) όπου εσείς επιλέξετε.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Λειτουργία αλλαγής μεγέθους</para>
+</entry>
+<entry>
+<para>Η Λειτουργία αλλαγής μεγέθους σας επιτρέπει να πιάσετε τις άκρες του κομματιού και σύροντας να του αλλάξετε (η περικόψετε) το μέγεθος.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Λειτουργία αρπαγής</para>
+</entry>
+<entry>
+<para>Η Λειτουργία αρπαγής επιτρέπει στα κομμάτια που σύρετε-αποθέτετε στο έργο να τοποθετούνται αμέσως μετά τα υπάρχοντα του έργου η σε προεπιλεγμένα σημεία (αν υπάρχουν).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Προσθήκη επισήμανσης</para>
+</entry>
+<entry>
+<para>Προσθέστε ένα νέο σημειοδείκτη, ο οποίος θα σας επιτρέψει να επιστρέψετε στο ακριβές σημείο κατά την προεπισκόπηση.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2></sect1><sect1 id="sect1_11"><title>Διαχωρίστε τον ήχο απο το βίντεο</title>
+<para>Το OpenShot μπορεί να διαχωρίσει τον ήχο και το βίντεο ενός κλιπ, αν χρειαστεί.   Εάν θέλετε να παίξετε μόνο τον ήχο του κλιπ, ή μόνο το βίντεο χωρίς ήχο, τότε ακολουθήστε τα παρακάτω βήματα:</para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/track_buttons.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_40"><title>Μόνο το βίντεο</title>
+<para>Για να παίξετε μόνο το βίντεο ενός κλιπ, κάντε κλικ στο εικονίδιο του ηχείου, που βρίσκεται στο κλιπ.   Αυτό θα σιγάση τον ήχο  αυτού του κλιπ.   Ή, αν θέλετε να σίγαση τον ήχου για το σύνολο της λωρίδας χρόνου, κάντε κλικ στο εικονίδιο του ηχείου  του κομματιού.</para></sect2><sect2 id="sect2_41"><title>Μόνο τον ήχο</title>
+<para>Για να ακούσετε μόνο τον ήχο του κλιπ, κάντε κλικ στο εικονίδιο του ματιού, που βρίσκεται στο κλιπ.   Αυτό θα κρύψει την εξόδο του βίντεο .   Ή, αν θέλετε να αποκρύψετε την εξόδο του βίντεο  για το σύνολο της λωρίδας χρόνου, κάντε κλικ στο εικονίδιο ματιού    στο κομμάτι.</para></sect2></sect1><sect1 id="sect1_12"><title>Κλωνοποίηση κλίπ</title>
+<para>Ένα πολύ χρήσιμο χαρακτηριστικό του OpenShot είναι η ικανότητα να κλωνοποιεί κλιπ, μεταβάσεις, και μάσκες.   Για την κλωνοποίηση ενός στοιχείου, κάντε δεξί κλικ πάνω στο αντικείμενο (όπως ένα κλιπ ή μετάβαση), και επιλέξτε <guimenuitem>Διπλότυποguimenuitem&gt;. </guimenuitem></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/duplicate_clip.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Μια κοινή χρήση του <guimenuitem>Διπλότυπουguimenuitem&gt;, </guimenuitem></para></sect1><sect1 id="sect1_13"><title>Ιδιότητες κλιπ</title>
+<para>Κάθε κλιπ στο OpenShot έχει πολλές ιδιότητες που μπορούν να διαμορφωθούν.   Ωστόσο, επειδή δεν είναι δυνατόν να εμφανίζονται όλες στη λωρίδα χρόνου, δημιουργήθηκε αυτή η οθόνη .   Επιτρέπει στο χρήστη να προσαρμόσει κάθε δυνατή ρύθμιση που περιέχει ένα κλιπ, συμπεριλαμβανομένου του μήκους, ταχύτητας, της έντασης, μέγεθος, θέση, αναλογία, και πολλά άλλα.</para><sect2 id="sect2_42"><title>Ξεκίνημα της Οθόνης Ιδιοτήτων του κλίπ</title>
+<para>Για να ξεκινήσετε την οθόνη ιδιοτήτων του κλίπ, κάντε δεξί κλικ σε ένα κλιπ και επιλέξετε <guimenuitem>Ιδιότητεςguimenuitem&gt;.</guimenuitem></para></sect2><sect2 id="sect2_43"><title>Προεπισκόπηση αλλαγών</title>
+<para>Για γρήγορη προεπισκόπηση του τι θα παράξουν οι νέες ρυθμίσεις , κάντε κλικ στο κουμπί <guibutton>Αναπαραγωγήguibutton&gt; guibutton&gt;. guibutton&gt;.</guibutton></para></sect2><sect2 id="sect2_44"><title>Γενική Καρτέλα</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab1.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<para>Η γενική καρτέλα έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ενεργοποίηση Βίντεο</para>
+</entry>
+<entry>
+<para>Έξοδος βίντεο για αυτό κλιπ</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ενεργοποίηση Ήχου</para>
+</entry>
+<entry>
+<para>Έξοδος ήχου για αυτό το κλιπ</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_45"><title>Καρτέλα Μήκους</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab2.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box"/>Η καρτέλα μήκους παρέχει πληροφορίες σχετικά με την αρχή, το τέλος, και το συνολικό μήκος του κλιπ.  Με την αναπροσαρμογή των τιμών αυτών, μπορείτε να καθυστερήσετε το χρόνο τον οποίο ένα κλιπ αρχίζει,  το τέλος του κλιπ νωρίτερα, ή και τα δύο.   Χρησιμοποιήστε το κουμπί  <guibutton>Αναπαραγωγήguibutton&gt; </guibutton></para>
+<para/>
+<para>Η καρτέλα μήκους έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Είσοδος (δευτερόλεπτα)</para>
+</entry>
+<entry>
+<para>Η δευτερόλεπτο για να ξεκινήσει η αναπαραγωγή του βίντεο (δεκαδικό)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Έξοδος (δευτερόλεπτα)</para>
+</entry>
+<entry>
+<para>Τα τελευταία δευτερόλεπτα του βίντεο κλιπ (δεκαδικό)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Μήκος (δευτερόλεπτα)</para>
+</entry>
+<entry>
+<para>Το μήκος του κλιπ υπολογίζεται με βάση τα σημεία εισόδου εξόδου.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_46"><title>Καρτέλα Ταχύτητας</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab3.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para><anchor id="result_box1"/> Η καρτέλα ταχύτητας αποτελείται από δύο λειτουργίες μια απλή  και μία σύνθετη.   Στην κατάσταση απλής λειτουργίας, χρησιμοποιώντας προκαθορισμένες τιμές, μπορείτε να επιταχύνετε το κλιπ σε 16x κανονική ταχύτητα ή να το επιβραδύνετε σε 1 / 16 κανονική ταχύτητα.   Επίσης, μπορείτε να αλλάξετε την κατεύθυνση.   Η καρτέλα σύνθετων λειτουργιών σας επιτρέπει να ορίσετε μια υψηλής πιστότητας  ταχύτητα με ακρίβεια δεκαδικού, αντί της απλής με προκαθορισμένα κλάσματα.</para>
+<para/>
+<para>Η καρτέλα ταχύτητας έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ταχύτητα</para>
+</entry>
+<entry>
+<para>Η δευτερόλεπτο για να ξεκινήσει η αναπαραγωγή του βίντεο (δεκαδικό)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Κατεύθυνση</para>
+</entry>
+<entry>
+<para>Τα τελευταία δευτερόλεπτα του βίντεο κλιπ (δεκαδικό)</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Σύνθετη Ταχύτητα</para>
+</entry>
+<entry>
+<para>Μία υψηλής ακρίβειας δεκαδική τιμή για την ταχύτητα του κλιπ.   Αυτή η τιμή αλλάζει ανάλογα με την πορεία μείωσης της ταχύτητας.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_47"><title>Καρτέλα Διάταξης</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Η καρτέλα Διάταξης έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Πλαίσιο</para>
+</entry>
+<entry>
+<para>Αυτό το αναπτυσσόμενο καθορίζει το πλαίσιο με το οποίο εργάζεστε.   Κάθε κλιπ έχει 2 βασικά πλαίσια, την έναρξη ενός κλιπ, και το τέλος του κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ύψος</para>
+</entry>
+<entry>
+<para>Το ύψος του κλιπ (επί τοις εκατό).   Όσο μεγαλύτερος είναι ο αριθμός, τόσο ψηλότερο θα είναι το κλιπ.   Όσο μικρότερος είναι ο αριθμός, τόσο μικρότερο θα είναι το κλιπ.   Αυτό επηρεάζει μόνο το τρέχον κλειδί-πλαίσιο και όχι το σύνολο του κλιπ.  </para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Πλάτος</para>
+</entry>
+<entry>
+<para>Το πλάτος του κλιπ (επί τοις εκατό).   Όσο μεγαλύτερος είναι ο αριθμός, τόσο μεγαλύτερο θα είναι το εύρος του κλιπ.   Όσο μικρότερος είναι ο αριθμός, τόσο πιο περιορισμένο θα είναι.   Αυτό επηρεάζει μόνο το τρέχον κλειδί-πλαίσιο, και όχι το σύνολο του κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>X</para>
+</entry>
+<entry>
+<para>Η θέση  του Χ  στο κέντρο του κλιπ.   Όσο μεγαλύτερος είναι ο αριθμός, τόσο περισσότερο πρός στα δεξιά του κλιπ θα είναι.   Όσο μικρότερος είναι ο αριθμός, τόσο πιο κοντά στα αριστερά του κλιπ θα είναι. Αυτό επηρεάζει μόνο το τρέχον κλειδί-πλαίσιο, και όχι το σύνολο του κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Y</para>
+</entry>
+<entry>
+<para>Η θέση του Υ στο κέντρο του κλιπ.   Όσο μεγαλύτερος είναι ο αριθμός, τόσο πιο κοντά στο κάτω μέρος του κλιπ θα είναι.   Όσο μικρότερος είναι ο αριθμός, τόσο πιο κοντά στην κορυφή του κλιπ θα είναι.   Αυτό επηρεάζει μόνο το τρέχον κλειδί-πλαίσιο, και όχι το σύνολο του κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Διαφάνεια (Alpha)</para>
+</entry>
+<entry>
+<para>Το επίπεδο διαφάνειας (alpha) του κλιπ.   100 = αδιαφανές.   = 0 αόρατο.   Αυτό επηρεάζει μόνο το τρέχον κλειδί-πλαίσιο, και όχι το σύνολο του κλιπ.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_48"><title>Καρτέλα Ήχου</title>
+<mediaobject/>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab5.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Η καρτέλα ήχου έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ένταση</para>
+</entry>
+<entry>
+<para>Το επίπεδο της έντασης του κλιπ.   = 0 σίγαση, 100 = ανώτατο.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση προς τα μέσα</para>
+</entry>
+<entry>
+<para>Αποκλιμάκωση του κλιπ από σίγαση μέχρι το επίπεδο της έντασης του ήχου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση προς τα έξω</para>
+</entry>
+<entry>
+<para>Αποκλιμάκωση πρός τα έξω του κλιπ από το επίπεδο έντασης για να σιγήσει.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση (δευτερόλεπτα)</para>
+</entry>
+<entry>
+<para>Ο αριθμός των δευτερολέπτων της αποκλιμάκωσης.   Όσο μεγαλύτερος είναι ο αριθμός αυτός, τόσο πιο προοδευτική θα είναι η αποκλιμάκωση.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_49"><title>Καρτέλα Βίντεο</title>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab6.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Η καρτέλα του βίντεο μπορεί να προσαρμόσει το μέγεθος, τη θέση και την ευθυγράμμιση του κλιπ.   Επίσης, μπορεί να εφαρμόσει ένα αποτέλεσμα για να αποκλιμάκωση απο την αρχή έως το τέλος του κλιπ, το οποίο μερικές φορές είναι ευκολότερο από το να χρησιμοποιήσετε ένα μεταβατικό στάδιο.   Επειδή η αποκλιμάκωση είναι ιδιότητα του κλιπ, κινείται όταν μετακινήσετε το κλιπ.   Έτσι, σε αντίθεση με τις μεταβάσεις, η αποκλιμάκωση μένει  στο κλιπ όταν το μετακινήσετε.</para>
+<para>Η καρτέλα βίντεο έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Τέντωμα πλήρους οθόνης</para>
+</entry>
+<entry>
+<para>Τεντώστε το κλιπ στο μέγεθος της οθόνης (με βάση το είδος του έργου).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Διατήρηση της σχέσης αναλογίας</para>
+</entry>
+<entry>
+<para>Να μην παραμορφώνεται το κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Οριζόντια Στοίχιση</para>
+</entry>
+<entry>
+<para>Ευθυγράμμιση του κλιπ απο αριστερά προς τα δεξιά.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Κάθετη Στοίχιση</para>
+</entry>
+<entry>
+<para>Ευθυγράμμιση του κλιπ απο πάνω προς τα κάτω.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση προς τα μέσα</para>
+</entry>
+<entry>
+<para>Εξασθένιση του κλιπ πρός τα μέσα από διαφανές σε αδιαφανές.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση προς τα έξω</para>
+</entry>
+<entry>
+<para>Εξασθένιση του κλιπ πρός τα έξω από αδιαφανές σε διαφανές.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αποκλιμάκωση (δευτερόλεπτα)</para>
+</entry>
+<entry>
+<para>Ο αριθμός των δευτερολέπτων της αποκλιμάκωσης.   Όσο μεγαλύτερος είναι ο αριθμός αυτός, τόσο πιο προοδευτική θα είναι η αποκλιμάκωση.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_50"><title>Καρτέλα Εφέ</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab7.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<para>Η καρτέλα των εφέ μπορεί να εφαρμόσει και να διαχειριστεί πολλαπλά εφέ σε ένα κλιπ.   Για να δείτε σε προεπισκόπηση το κλιπ με τα εφέ, χρησιμοποιήστε το κουμπί <guibutton>Αναπαραγωγήguibutton&gt;. guibutton&gt; </guibutton></para>
+<para>Η Καρτέλα Εφέ έχει τις εξής ιδιότητες:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Λίστα Εφέ</para>
+</entry>
+<entry>
+<para>Αυτό το κουτί έχει μια λίστα με όλες τα εφέ που εφαρμόζονται σε αυτό το κλιπ.   Η μεταποίησή τους γίνεται με σειρά απο πάνω προς τα κάτω.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Προσθήκη</para>
+</entry>
+<entry>
+<para>Προσθέστε ένα νέο εφέσε αυτό το κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Αφαίρεση</para>
+</entry>
+<entry>
+<para>Αφαιρέστε το επιλεγμένο εφέ από το κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Πάνω</para>
+</entry>
+<entry>
+<para>Μετακίνηση του επιλεγμένου εφέ στην κορυφή της λίστας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Κάτω</para>
+</entry>
+<entry>
+<para>Μετακίνηση του επιλεγμένου εφέ στον πάτο της λίστας.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Ρυθμίσεις Εφέ</para>
+</entry>
+<entry>
+<para>Αυτή η περιοχή θα περιλαμβάνει ρυθμίσεις για το επιλεγμένο κλιπ (αν υπάρχουν).</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2></sect1><sect1 id="sect1_14"><title>Καρέ Κλειδιά</title>
+<para>Το OpenShot  χρησιμοποιεί <emphasis>Καρέ Κλειδιάemphasis&gt; </emphasis></para><sect2 id="sect2_51"><title>Προεπιλεγμένο εφέ κίνησης</title>
+<para>Πολλά προκαθορισμένα εφέ κίνησης είναι διαθέσιμα, όπως η μετακίνηση ενός κλιπ από κάτω προς το πάνω μέρος της οθόνης ή  αργό ζούμ σε ένα κλιπ.   Για να προσθέσετε ένα προκαθορισμένο εφέ κίνησης σε ένα κλιπ, κάντε δεξί κλικ σε ένα κλιπ, και επιλέξτε <guimenuitem>Animateguimenuitem&gt;.</guimenuitem></para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_animate.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_52"><title>Προεπιλεγμένη εμφάνιση</title>
+<para>Υπάρχουν πολλές προκαθορισμένες διατάξεις διαθέσιμες, όπως η αλλαγή μεγέθους ένος κλιπ και η τοποθέτηση του στην γωνία της οθόνης ή το κεντράρισμα ενός κλιπ.   Για να προσθέσετε μια προκαθορισμένη διάταξη σε ένα κλιπ, κάντε δεξί κλικ σε ένα κλιπ, και επιλέξτε <guimenuitem>Διάταξηguimenuitem&gt;.</guimenuitem></para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/keyframe_layout.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_53"><title>Χειροκίνητα</title>
+<para>Για να δημιουργήσετε χειροκίνητα κλειδία καρέ, κάντε δεξί κλικ σε ένα κλιπ, και επιλέξτε <guimenuitem>Ιδιότητεςguimenuitem&gt;. guibutton&gt;, </guimenuitem></para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Κάθε κλιπ έχει 2 κλειδιά καρέ, την έναρξη ενός κλιπ, και το τέλος του κλιπ.   Αν υπάρχουν διαφορές μεταξύ του αρχικού και του τελικού κλειδιού πλαίσιου, το OpenShot θα παρεμβάλλει τη διαφορά σε κάθε πλαίσιο, αλλάζοντας έτσι την κίνηση του κλιπ.   Οι ακόλουθες ιδιότητες επιρεάζονται από τα κλειδιά καρέ:   <emphasis> Ύψος, Πλάτος, Χ, Υ, και η Alpha emphasis&gt;.</emphasis></para>
+<para>Για παράδειγμα, σκεφτείτε αυτά τα κλειδιά καρέ:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Αρχικό κλειδί καρέ:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=0</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Τελικό κλειδί καρέ:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X =150, Y=0</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Αυτό θα έχει ως αποτέλεσμα την κίνηση του κλιπ από την αριστερή προς την δεξιά πλευρά της οθόνης.   Η διαφορά με τον καθορισμό του Χ παρεμβάλετε σε όλα τα καρέ σε αυτό το κλιπ.   Όσο μεγαλύτερο είναι το κλίπ τόσο αργότερη είναι η κίνηση.   Όσο μικρότερο είναι το κλίπ τόσο γρηγορότερη είναι η κίνηση.</para>
+<para>Εάν θέλετε να αλλάξετε στατικά το μέγεθος ή τη θέση του κλιπ, απλά ορίστε την ίδια τιμή για το αρχικό και το τελικό κλειδι καρέ:</para>
+<para>Για παράδειγμα, σκεφτείτε αυτά τα κλειδιά καρέ:</para>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>
+<guibutton>Αρχικό κλειδί καρέ:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>
+<guibutton>Τελικό κλειδί καρέ:</guibutton>
+</para>
+</entry>
+<entry>
+<para>X=-50, Y=-50</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Αυτό θα τοποθετήσει το κλιπ στην επάνω δεξιά γωνία της οθόνης.   Δεν θα δημιουργήσει  κίνηση, διότι η αρχή και το τέλος των κλειδιών καρέ έχουν την ίδια τιμή.</para>
+<para>Εάν χρειάζεστε περισσότερα απο δύο κλειδιά καρέ τεμαχίστε το κλιπ σε πολλά κομμάτια, δίνοντας τις τιμές στην αρχή και στο τέλος κάθε κομματιού, μπορείτε  να ρυθμίσετε τα κλειδιά καρέ, έτσι ώστε να έχετε τη δυνατότητα πρόσβασης σε απεριόριστο αριθμό κλειδιών καρέ.</para></sect2></sect1><sect1 id="sect1_15"><title>Εφέ Περικοπής</title>
+<para>Το OpenShot μπορεί περικόψει βίντεο κλιπ και εικόνες χρησιμοποιόντας τις προεπιλογές που βρίσκονται στις <guibutton>Ιδιότητες</guibutton>.   κάνετε δεξί κλικ σε ένα κλιπ, και επιλέξτε <guimenuitem>Ιδιότητεςguimenuitem&gt;.  guibutton&gt;.</guimenuitem></para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/clip_properties_tab4.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para>Για την περικοπή ενός κλιπ, θα πρέπει να κάνετε ζουμ επάνω από την πλευρά του κλιπ που θέλετε να δείτε.   Ρυθμίστε το ύψος, πλάτος, X, Y και κάνετε ζουμ μέχρι την περιοχή του κλιπ που θέλετε να περικοπεί.   Βεβαιωθήτε ότι ορίσατε δύο κλειδιά καρέ με τις ίδιες τιμές.   Χρησιμοποιήστε το κουμπί  <guibutton>Αναπαραγωγήguibutton&gt; guibutton&gt; .</guibutton></para></sect1><sect1 id="sect1_16"><title>Εφέ Περιστροφής</title>
+<para>Αν χρειαστεί να περιστρέψετε ένα κλιπ 90 μοίρες, 180 μοίρες, ή ακόμη και την κίνηση περιστροφής γύρω σε κύκλους, το OpenShot έχει το εφέ <guibutton>Περιστροφήguibutton&gt; </guibutton></para>
+<para>Το OpenShot έχει δύο τύπους περιστροφής διαθέσιμους, σταθερών και κινουμένων σχεδίων.   Για να εφαρμόσετε ένα εφέ εναλλαγής, μεταβείτε στην καρτέλα <guibutton>Εφέguibutton&gt;  guibutton&gt;, guimenuitem&gt; </guibutton></para>
+<para>Για να προσαρμόσετε τις ρυθμίσεις περιστροφής, κάντε δεξί κλικ στο κλιπ και επιλέξτε <guimenuitem>Ιδιότητεςguimenuitem&gt;. guibutton&gt; </guimenuitem></para>
+<para/>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_rotation.png"/>
+<caption/>
+</imageobject>
+</mediaobject><sect2 id="sect2_54"><title>Προδιαμορφωμένη Περιστροφή</title>
+<para>Με την προδιαμορφωμένη περιστροφή μπορεί να περιστρέψετε ένα βίντεο 90 μοίρες, 180 μοίρες, ή οποιοδήποτε αριθμό μοιρών που χρειάζεστε.   Δεν δημιουργεί κίνηση περιστροφής.   Αυτό είναι χρήσιμο όταν κάνετε εγγραφή βίντεο πλάγια, και πρέπει να το περιστρέψετε.   Για να χρησιμοποιήσετε μια σταθερή περιστροφή, μόνο προσαρμόσετε τις ρυθμίσεις που αρχίζουν με "Προδιαμόρφωση".   Φροντίστε να αλλάξετε τις άλλες ρυθμίσεις  στο μηδέν.</para></sect2><sect2 id="sect2_55"><title>Περιστροφή με Κίνηση</title>
+<para>Μια κινούμενη περιστροφή μπορεί να χρησιμοποιηθεί για την περιστροφή ένος κλιπ σε κύκλους, και πολλά άλλα σχέδια.   Αυτό μπορεί να είναι ένα ωραίο αποτέλεσμα για τους τίτλους,  εφημερίδων, ή άλλες δημιουργικές χρήσεις.   Για να χρησιμοποιήσετε μια κινούμενη περιστροφής, προσαρμόστε την "Προδιαμόρφωση"  στο μηδέν, και χρησιμοποιήστε μόνο τις ρυθμίσεις που αρχίζουν με "Περιστροφή".</para></sect2></sect1><sect1 id="sect1_17"><title>Επεξεργασία τίτλων</title>
+<para>Όπως πολλοί επεξεργαστές βίντεο, το OpenShot διαθέτει ενσωματωμένο επεξεργαστή τίτλων.   Έχει κάποιες βασικές λειτουργίες για να σας βοηθήσει να δημιουργήσετε βίντεο τίτλους για το έργο σας.   Εδώ είναι τα χαρακτηριστικά του συστήματος τίτλων του  OpenShot:</para>
+<orderedlist>
+<listitem>
+<para>Πολλά Πρότυπα (συμπεριλαμβανομένου του Πρότυπου Συμπαγούς Χρώματος)</para>
+</listitem>
+<listitem>
+<para>Εύκολη Επιμέλεια κειμένων (τίτλος, υπότιτλος)</para>
+</listitem>
+<listitem>
+<para>Αλλαγή γραμματοσειράς και χρώματος (συμπεριλαμβανομένου του καναλιού άλφα )</para>
+</listitem>
+<listitem>
+<para>Αλλάξτε το Χρώμα φόντου (συμπεριλαμβανομένου του καναλιού άλφα)</para>
+</listitem>
+<listitem>
+<para>Χρησιμοποιεί εικόνες SVG διαμόρφωσης (με βάση vector)</para>
+</listitem>
+<listitem>
+<para>Προσθέτει τίτλους στο τμήμα <guimenuitem>Αρχεία Έργουguimenuitem&gt;</guimenuitem></para>
+</listitem>
+<listitem>
+<para>Συνεργασία με το Inkscape (σαν τον προηγμένο επεξεργαστή)</para>
+</listitem>
+</orderedlist>
+<para/>
+<para>Ωστόσο, εάν το βασικό πρόγραμμα επεξεργασίας δεν είναι αρκετά ισχυρό για σας, κάθε SVG αρχείο εικόνας μπορεί να εισαχθεί και να χρησιμοποιηθεί ως τίτλος.   Το κανάλι άλφα (διαφάνειας) είναι σεβαστό, που σημαίνει ότι οι τίτλοι μπορούν να ενσωματωθούν πάνω από άλλα κομμάτια, και θα δείτε τα βίντεο μέσω των διαφανών τμημάτων.</para><sect2 id="sect2_56"><title>Εκκίνηση Επεξεργαστή Τίτλων</title>
+<para>Για να προσθέσετε ένα νέο τίτλο, κάντε κλικ στο <guimenu>Έργοguimenu&gt;&gt; guimenuitem&gt; </guimenu></para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_menu.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_57"><title>Δημιουργία νέου αρχείου Τίτλων</title>
+<para>Μόλις το πρόγραμμα επεξεργασίας τίτλων ξεκινήσει, θα πρέπει να επιλέξετε ένα πρότυπο, κάντε κλικ στο κουμπί <guibutton>Δημιουργία νέου τίτλουguibutton&gt; . guimenuitem&gt;. </guibutton></para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_new.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_58"><title>Παράθυρο Επεξεργαστή Τίτλων</title>
+<para>Ο διαλόγος τίτλων σας επιτρέπει να επιλέξετε ένα πρότυπο, επεξεργασία κειμένου, αλλαγή χρωμάτων, και να δημιουργήσετε τους δικού σας τίτλους  για το έργο σας.   Μόλις ολοκληρώσετε την επεξεργασία των τίτλων σας, κάντε κλικ στο κουμπί  <guibutton>Εφαρμογήguibutton&gt;.</guibutton></para>
+<mediaobject/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_main_screen.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Επιλέξτε Πρότυπο</para>
+</entry>
+<entry>
+<para>Επιλέξτε ένα πρότυπο αρχείο SVG για να το χρησημοποιήσετε σαν τίτλο.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Δημιουργία Κουμπιού Τίτλου</para>
+</entry>
+<entry>
+<para>Κάντε κλικ στο κουμπί για να δημιουργήσετε το δικό σας αντίγραφο του προτύπου SVG.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Επεξεργασία Κειμένου</para>
+</entry>
+<entry>
+<para>Εκκίνηση του παραθύρου επεξεργασίας κειμένου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Αλλαγή Γραμματοσειράς</para>
+</entry>
+<entry>
+<para>Αλλάξτε το μέγεθος και την οικογένεια της γραμματοσειράς.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Χρώμα Γραμματοσειράς</para>
+</entry>
+<entry>
+<para>Αλλάξετε το χρώμα της γραμματοσειράς και το άλφα επίπεδο (διαφάνεια).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Χρώμα Παρασκηνίου</para>
+</entry>
+<entry>
+<para>Αλλάξτε το Χρώμα Παρασκηνίου και το άλφα επίπεδο (διαφάνεια).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>7</para>
+</entry>
+<entry>
+<para>Εξελιχμένος Επεξεργαστής</para>
+</entry>
+<entry>
+<para>Επεξεργασία αυτού του τίτλου SVG με Inkscape.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>8</para>
+</entry>
+<entry>
+<para>Προεπισκόπηση Τίτλων</para>
+</entry>
+<entry>
+<para>Προεπισκόπηση των τίτλων σας μετά από κάθε επεξεργασία, αλλαγή χρώματος, ή αλλαγή γραμματοσειράς.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_59"><title>Κυλιόμενοι Τίτλοι /Συντελεστές</title>
+<para>Για να δημιουργήσετε το εφέ κύλιώμενων τίτλων, θα πρέπει να κοπεί η ακολουθία τίτλων σας σε πολλά διαφορετικά κομμάτια μεγέθους οθόνης.</para><sect3 id="sect3_9"><title>Δημιουργία εικόνας Κάθε τίτλου</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_folder.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_10"><title>Αντιστάθμιση κάθε τίτλου στην λωρίδα χρόνου</title>
+<para>Προσθήκη εικόνας κάθε κυλιώμενου τίτλου συντελεστών στη λωρίδα χρόνου, ορίστε το μήκος της κάθε εικόνας σε 7 δευτερόλεπτα, και στη συνέχεια να αντισταθμίστε τα ανάμεσα σε δύο κομμάτια.</para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/titles_scrolling.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/></sect3><sect3 id="sect3_11"><title>Κίνηση Τίτλων</title>
+<para>Κάντε δεξί κλικ σε κάθε κλιπ τίτλου για να επιλέξετε <guimenuitem>Κίνησηguimenuitem&gt;&gt; guimenuitem&gt;. </guimenuitem></para></sect3></sect2></sect1><sect1 id="sect1_18"><title>Μεταβάσεις</title>
+<para>Oι μεταβάσεις  χρησιμοποιούνται για να μετακινηθείτε σταδιακά μεταξύ 2 διαφορετικών κλιπ.   Πολλές διαφορετικές μεταβάσεις είναι διαθέσιμες στο <application>OpenShotapplication&gt;. </application></para><sect2 id="sect2_60"><title>Οθόνη Μεταβάσεων</title>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions_clock.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Καρτέλα Μεταβάσεων</para>
+</entry>
+<entry>
+<para>Αυτή είναι η καρτέλα μεταβάσεων.   Περιέχει έναν κατάλογο όλων των διαθέσιμων μεταβάσεων  του <application>OpenShotapplication&gt;.</application></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Λίστα Μεταβάσεων</para>
+</entry>
+<entry>
+<para>Αυτή είναι η λίστα μεταβάσεων.   Επιλέξτε μιά μετάβαση σύρετε την και αποθέστε την μέσα στην λωρίδα χρόνου.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Εργαλείο αλλαγής μεγέθους</para>
+</entry>
+<entry>
+<para>Το εργαλείο αλλαγής μεγέθους μπορεί να χρησιμοποιηθεί για να αλλάξετε το μέγεθος μιάς μετάβαση.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Μετάβαση στην Λωρίδα χρόνου</para>
+</entry>
+<entry>
+<para>Μόλις αποθέσετε μια μετάβαση στη λωρίδα χρόνου, μπορείτε να την μετακινήσετε και να αλλάξετε το μέγεθός της όπως και σε κάθε άλλο κλιπ.   Η μετάβαση κολλάει μεταξύ των κομματιών, και διασφαλίζει το εφέ αλλαγής μεταξύ τους.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_61"><title>Προσθήκη Μετάβασης</title>
+<para>Για να προσθέσετε μια μετάβαση, μεταβείτε στην καρτέλα <guibutton>Μετάβασειςguibutton&gt;, guibutton&gt;. </guibutton></para></sect2><sect2 id="sect2_62"><title>Μετακίνηση μιας Μετάβασης</title>
+<para>Για να μετακινήσετε μια μετάβαση, μεταβείτε σε <guibutton>Κατάσταση Επιλογήςguibutton&gt; guibutton&gt;, </guibutton></para></sect2><sect2 id="sect2_63"><title>Αλλαγή μεγέθους Μετάβασης</title>
+<para>Για να αλλάξετε το μέγεθος μιας μετάβασης, μεταβείτε σε <guibutton>Αλλαγή Μεγέθουςguibutton&gt; guibutton&gt;, </guibutton></para></sect2><sect2 id="sect2_64"><title>Αλλαγή Κατεύθηνσης</title>
+<para>Επειδή οι μεταβάσεις αναμιγνύουν 2 κομμάτια, είναι σημαντικό να γνωρίζουμε σε ποια κατεύθυνση γίνετε η ανάμειξη.   Επάνω στη μετάβαση, έχει ένα βέλος που δείχνει την κατεύθυνση, πάνω προς τα κάτω, ή κάτω προς τα πάνω.   Σε γενικές γραμμές, η μετάβαση θα πρέπει να κατευθήνεται από το πρώτο κλιπ για το επόμενο κλιπ της Λωρίδας Χρόνου.</para>
+<para>Για να αλλάξετε την κατεύθυνση της μετάβασης, κάντε δεξί κλικ σε μια μετάβαση, και επιλέξτε <guimenuitem>Κατεύθηνσηguimenuitem&gt;.</guimenuitem></para></sect2><sect2 id="sect2_65"><title>Ιδιότητες Μετάβασης</title>
+<para>Ακριβώς όπως ένα κλιπ, η μετάβαση έχει ένα παράθυρο με ιδιότητες.   Για να ξεκινήσει το παράθυρο ιδιοτήτων για τη μετάβαση ή μιάς μάσκας, κάντε δεξί κλικ πάνω στο αντικείμενο, και επιλέξτε <guimenuitem>Ιδιότητεςguimenuitem&gt;. guibutton&gt; .</guimenuitem></para>
+<para/>
+<para/>
+<para>
+<inlinegraphic fileref="../figures/transitions_properties.png" width="5.55inch" depth="4.1701inch"/>
+</para>
+<para/>
+<para/>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Είδος</para>
+</entry>
+<entry>
+<para>Μάσκα ή Μετάβαση</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Κατεύθυνση</para>
+</entry>
+<entry>
+<para>Η κατεύθυνση της μετάβασης ή της μάσκας.   <emphasis>Επάνωemphasis&gt; emphasis&gt; </emphasis></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Απαλότητα</para>
+</entry>
+<entry>
+<para>Η απαλότητα της μετάβασης.   Όσο μεγαλύτερος είναι ο αριθμός, τόσο ευρύτερη η επικάλυψη και όσο μικρότερος είναι ο αριθμός  τόσο στενότερη η επικάλυψη.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Όριο Μάσκας</para>
+</entry>
+<entry>
+<para>Το κατώτατο όριο μάσκας είναι το ποσό του γκρι που θα χρησιμοποιηθεί για την μάσκα.   Όσο μεγαλύτερος είναι ο αριθμός, τόσο περισσότερο από τη μάσκα χρησιμοποιείται, όσο μικρότερος είναι ο αριθμός, τόσο λιγότερο χρησιμοποιείται.   πειραματιστείτε για να βρείτε το σωστό όριο για μια μάσκα.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable></sect2><sect2 id="sect2_66"><title>Μετατροπή σε μάσκα</title>
+<para>Μια μάσκα είναι πολύ παρόμοια με μια μετάβαση, εκτός από το ότι μια μάσκα είναι στατική.   Δεν βαθμιαία αλλαγή από το ένα κλιπ στο επόμενο.   Αντ 'αυτού, αναμιγνύει τα 2 κομμάτια σε κάποιο προκαθορισμένο σημείο.   Μια μάσκα μπορεί να χρησιμοποιηθεί για να δείξει μόνο ένα μικρό τμήμα ενός κλιπ, για να δείξει ένα περίγραμμα γύρω από ένα κλιπ, η για να αποκλείσουμε  κάτι από ένα κλιπ.   Για να πειραματιστούμε με μια μάσκα, μετατρέπουμε απλά μια μετάβαση σε μάσκα και παρακολουθούμε τι συμβαίνει.</para>
+<para>Για να μετατρέψετε μια μετάβαση σε μια μάσκα, κάντε δεξί κλικ για τη μετάβαση, και να επιλέξετε <guimenuitem>Μετατροπή σε Μάσκαguimenuitem&gt;.</guimenuitem></para></sect2><sect2 id="sect2_67"><title>Δημιουργία Νέα Μετάβαση  / Μάσκα</title>
+<para>Οι μεταβάσεις είναι μόνο εικόνες της κλίμακας του γκρι.   Μπορούν να δημιουργηθούν εύκολα σε οποιοδήποτε πρόγραμμα γραφικών.   Εντοπίστε τις στο φάκελο <command>/ openshot / μεταβάσεις /OpenShotapplication&gt;, </command></para></sect2><sect2 id="sect2_68"><title>Κατάργηση Μετάβασης</title>
+<para>Για να αφαιρέσετε μια μετάβαση, κάντε δεξί κλικ στη μετάβαση στη λωρίδα χρόνου, και επιλέξετε <guimenuitem>Κατάργησηguimenuitem&gt;.</guimenuitem></para></sect2></sect1><sect1 id="sect1_19"><title>Λίστα Μεταβάσεων</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Περσίδες μέσα πρός έξω Μεγάλες</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Περσίδες μέσα πρός έξω Μικρές</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Κυκλικό μέσα προς έξω</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/circle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Κυκλικό έξω προς μέσα</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Ρολόι αριστερά προς δεξιά</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/clock_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Ρολόι δεξιά προς αριστερα</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/openshot_logo.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Λογότυπο του OpenShot</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Ορθογώνιο μέσα προς έξω</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/rectangle_out_to_in.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Ορθογώνιο έξω προς μέσα</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/sand.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Διάλυση - Αυτή είναι η  προεπιλεγμένη μετάβαση του OpenShot.   Είναι ομαλή ανάμιξη μεταξύ 2 κλιπς.</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Ελικοειδές Μεγάλο</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_medium.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Έλικοειδής μεσαία</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/spiral_small.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Έλικοειδής μικρή</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out_big.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Οριζόντιες Περσίδες μεγάλες</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/vertical_blinds_in_to_out.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Οριζόντιες Περσίδες μικρές</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_bottom_to_top.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Σβήσιμο κάτω προς πάνω</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_left_to_right.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Σβήσιμο αριστερά προς δεξιά</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_right_to_left.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Σβήσιμο δεξιά προς αριστερά</para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/transitions/wipe_top_to_bottom.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para>Σβήσιμο πάνω προς τα κάτω</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_20"><title>Εφέ</title>
+<para>Το OpenShot έχει πάνω από 30 εφέ  που αποσκοπούν να χειραγωγήσουν το βίντεο ή την έξοδο ήχου του κλιπ.   Προσαρμογή απόχρωσης χρώματος, φωτεινότητα και γάμμα, μπορεί να γίνει με τα εφέ.   Επίσης, πιο εξωτικά εφέ, όπως η στρέβλωση, κύμα, παλιά-ταινία, πράσινη οθόνη (επίσης γνωστή ως Chroma Key), και εφέ ήχου.</para><sect2 id="sect2_69"><title>Προσθήκη Εφέ</title>
+<para>Για να προσθέσετε ένα εφέ, μεταβείτε στην καρτέλα <guibutton> Εφέguibutton&gt;, guibutton&gt;.</guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_window.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<para/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Καρτέλα Εφέ</para>
+</entry>
+<entry>
+<para>Αυτή η καρτέλα έχει τη λίστα των Εφέ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Λίστα Εφέ</para>
+</entry>
+<entry>
+<para>Η Λίστα περιέχει όλα τα Εφέ που είναι  διαθέσιμα στο OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Κλιπ</para>
+</entry>
+<entry>
+<para>Σύρετε το επιλεγμένο Εφέ επάνω σε οποιοδήποτε κλιπ.   Χρησιμοποιήστε τις Ιδιότητες για να προσαρμόσετε τις ρυθμίσεις του Εφέ.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_70"><title>Προσαρμογή Ρυθμίσεων Εφέ</title>
+<para>Για να προσαρμόσετε τις ρυθμίσεις ενός Εφέ, κάντε δεξί κλικ σε ένα κλιπ, και επιλέξτε <guimenuitem>Ιδιότητεςguimenuitem&gt;. guibutton&gt;, </guimenuitem></para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects_settings.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>Ταυτότητα (ID)</para>
+</entry>
+<entry>
+<para>συστατικό</para>
+</entry>
+<entry>
+<para>περιγραφή</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Λίστα Εφέ</para>
+</entry>
+<entry>
+<para>Λίστα των εφέ που ανήκουν στο επιλεγμένο κλιπ.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>2</para>
+</entry>
+<entry>
+<para>Ρυθμίσεις Εφέ</para>
+</entry>
+<entry>
+<para>Η Λίστα των ρυθμίσεων για το επιλεγμένο εφέ.   Κάντε κλικ σε έναεφέ για να φορτώσετε αυτό τον κατάλογο των ρυθμίσεων.   Καθώς αλλάζετε τις τιμές από αυτές τις ρυθμίσεις, χρησιμοποιήστε το κουμπί <guibutton>Αναπαραγωγήguibutton&gt; </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>3</para>
+</entry>
+<entry>
+<para>Κουμπιά Προεπισκόπησης</para>
+</entry>
+<entry>
+<para>Χρησιμοποιήστε το κουμπί <guibutton>Αναπαραγωγήguibutton&gt; guibutton&gt; guibutton&gt;.</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>4</para>
+</entry>
+<entry>
+<para>Προσθήκη εφέ</para>
+</entry>
+<entry>
+<para>Αυτό το κουμπί ξεκινά το παράθυρο Προσθήκη Εφέ.   Επιλέξτε ένα εφέ για να προσθέσετε και κάντε κλικ στο <guibutton>Προσθήκη Εφέguibutton&gt;.</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<para>5</para>
+</entry>
+<entry>
+<para>Κατάργηση Εφέ</para>
+</entry>
+<entry>
+<para>Αυτό το κουμπί καταργεί τα επιλεγμένα Εφέ (αν υπάρχουν).</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>6</para>
+</entry>
+<entry>
+<para>Μετακίνηση Εφέ</para>
+</entry>
+<entry>
+<para>Τα Εφέ εφαρμόζονται πάνω προς τα κάτω.   Χρησιμοποιήστε αυτά τα κουμπιά για να οργανώσετε τη σειρά των αποτελεσμάτων.   Χρησιμοποιήστε το κουμπί <guibutton>Αναπαραγωγήguibutton&gt; </guibutton></para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<mediaobject/></sect2></sect1><sect1 id="sect1_21"><title>Λίστα Εφέ</title>
+<mediaobject/>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/two_layer.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Μαύρο και Άσπροguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/blur.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Θόλωμαguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/brightness.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Φωτεινότηταguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/burningtv.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>ΦλεγόμενηTVguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/charcoal.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Κάρβουνοguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/chroma_key.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Χρωματικό Κλειδίguibutton&gt; (</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/deinterlace.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Απόπλεξηguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/distort.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Στρέβλωσηguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/gamma.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Γάμμαguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/glow.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Λάμψηguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/greyscale.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Κλίμακα Γκριguibutton&gt; - guibutton&gt;.</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/hue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Απόχρωσηguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/invert.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Αντιστροφήguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/mirror.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Καθρεπτισμόςguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_dust.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Παλαιότηταguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_film.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Παλαιομένη Ταινίαguibutton&gt; -</guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_grain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Παλαιά Σκουριάguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/old_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Παλαιές Γραμμέςguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/tcolor.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Υπερκορεσμόςguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/pixelate.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Κερματισμόςguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_blue.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Αφαίρεση του Μπλεguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_green.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Αφαίρεση του Πράσινουguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/remove_red.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Αφαίρεση του Κόκκινουguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/scan_lines.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Γραμμές Σάρωσηςguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sepia.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Σέπιαguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/sobel.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Σομπέλguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/threshold.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Όριοguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/water_rain.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Νερόguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/wave.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Κύμαguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/white_balance.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Ισορροπία λευκούguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Ηχώguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Παραμόρφωσηguibutton&gt; - </guibutton></para>
+</entry>
+</row>
+<row>
+<entry>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/effects/audio.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+</entry>
+<entry>
+<para><guibutton>Στροφόμετρο</guibutton> – Ρυθμίστε την ταχύτητα  ήχου του κλιπ.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_22"><title>Εξαγωγή βίντεο</title>
+<para>Μόλις ολοκληρώσετε ένα έργο, θα θέλετε να το εξάγετε στην σωστή μορφή, με βάση τις ανάγκες σας.   Το OpenShot έχει πολλά προκαθορισμένα σχήματα για να απλοποιήσει τη διαδικασία αυτή. Υπάρχουν δύο λειτουργείες για την εξαγωγή ένος βίντεο στο OpenShot, Απλή και Προηγμένη λειτουργία.</para>
+<para>Και οι δύο μοιράζονται έναν κοινό χώρο στο επάνω μέρος της οθόνης, <guibutton>Γενικές Επιλογέςguibutton&gt;. </guibutton></para><sect2 id="sect2_71"><title>Εκκίνηση Παράθυρου Εξαγωγής</title>
+<para>Για να ξεκινήσει το παράθυρο εξαγωγής, κάντε κλικ στο εικονίδιο<guimenuitem>Εξαγωγή βίντεοguimenuitem&gt; guimenu&gt;&gt; guimenuitem&gt;.</guimenuitem></para></sect2><sect2 id="sect2_72"><title>Απλή Λειτουργία</title>
+<para>Το OpenShot έχει πολλές προκαθορισμένες μορφές εξαγωγής, οι οποίες καλύπτουν τα πιο κοινά σενάρια εξαγωγής. Επιλέξτε ένα <guibutton>Τύπο Έργουguibutton&gt;, guibutton&gt;, guibutton&gt;, guibutton&gt; . guibutton&gt;, </guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_simple.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect2><sect2 id="sect2_73"><title>Προχωρημένη Λειτουργία</title>
+<para>Οι προηγμένες επιλογές θα πρέπει να χρησιμοποιούνται μόνο από κάποιον που γνωρίζει το FFmpeg, δεδομένου ότι είναι τόσο εύκολο να δημιουργηθούν άκυροι συνδυασμοί κωδικοποιητών, μορφών και ρυθμίσεων ταχύτητας.   Ωστόσο, εάν είστε εξοικειωμένοι με αυτές τις ρυθμίσεις, οποιαδήποτε υποστηριζόμενη μορφή FFmpeg μπορεί να χρησιμοποιηθεί, η οποία ανοίγει δεκάδες πρόσθετες μορφές που μπορεί να χρησιμοποιηθoύν κατά τη διαδικασία εξαγωγής.   Μπορείτε επίσης να εξαγάγετε το βίντεό σας ως μία ακολουθία εικόνας, το οποίο μπορεί να είναι χρήσιμο αν σκοπεύετε να εισαγάγετε αυτό το βίντεο σε ένα πρόγραμμα που απαιτεί ακολουθίες εικόνων, όπως το Blender.</para>
+<para>Επίσης, αν έχετε πρώτα επιλέξει τιμές για την <guibutton>Απλή Λειτουργία guibutton&gt;, guibutton&gt;, </guibutton></para>
+<para/>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/export_advanced.png"/>
+<caption/>
+</imageobject>
+</mediaobject>
+<mediaobject/></sect2></sect1><sect1 id="sect1_23"><title>Λίστα Τύπων  </title>
+<para>Σειρά πινάκων για τις εξαγωγές που βασίζονται σε κατηγορίες βίντεο τύπων</para>
+<informaltable frame="all">
+<tgroup cols="6"><tbody>
+<row>
+<entry>
+<para>Τύπος βίντεο</para>
+</entry>
+<entry>
+<para>Μορφή Βίντεο</para>
+</entry>
+<entry>
+<para>Κωδικοποιητής βίντεο</para>
+</entry>
+<entry>
+<para>Κωδικοποιητής ήχου</para>
+</entry>
+<entry>
+<para>Προτεινόμενο Προφίλ Έργου</para>
+</entry>
+<entry>
+<para>Σημειώσεις σε Χρήση</para>
+</entry>
+</row>
+<row>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Δίσκοι AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Αποπλεγμένο για χρήση με Blu-Ray και AVCHD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Δίσκοι AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080i 50Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Αποπλεγμένο για χρήση με Blu-Ray και AVCHD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Δίσκοι AVCHD</para>
+</entry>
+<entry>
+<para>MPEG-TS</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Αποπλεγμένο για χρήση με Blu-Ray και AVCHD Disks (κυρίως στις Ηνωμένες Πολιτίες) αλλά δεν είναι απαραίτητο.  Συντελεστής προσαρμογής σύγχρονων τηλεοράσεων.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Βαθμιαίο για χρήση σε υπολογιστές</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>AVCHD Full HD</para>
+</entry>
+<entry>
+<para>MKV</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 Βαθμιαίο για χρήση σε υπολογιστές</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Βαθμιαίο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Full HD</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 1080p 25Hz</para>
+</entry>
+<entry>
+<para>1920x1080 AVCHD Quicktime 7 Βαθμιαίο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Apple TV</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Βαθμιαίο για WEB</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>ATSC 720p 30Hz</para>
+</entry>
+<entry>
+<para>1280x720 29.97Hz AVCHD Quicktime 7 Βαθμιαίο για WEB</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime Web</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>QuickTime iPod</para>
+</entry>
+<entry>
+<para>ipod</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Quarter Square NTSC</para>
+</entry>
+<entry>
+<para>320x240 29.97Hz AVCHD Quicktime 7</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV PAL DV PAL Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>DVD</para>
+</entry>
+<entry>
+<para>vob</para>
+</entry>
+<entry>
+<para>MPEG-2</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>DV NTSC DV NTSC Widescreen</para>
+</entry>
+<entry>
+<para>For native SD movies only! Not for down-converting HD</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Xbox 360</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>DV NTSC Widescreen HDV 720 30p HDV 720 60p</para>
+</entry>
+<entry>
+<para/>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Vimeo Std Def Widescreen</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Square NTSC Widescreen</para>
+</entry>
+<entry>
+<para>854x480 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Flickr High Def</para>
+</entry>
+<entry>
+<para>mov</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>ac3</para>
+</entry>
+<entry>
+<para>HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Picasa</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube</para>
+</entry>
+<entry>
+<para>mpeg</para>
+</entry>
+<entry>
+<para>mpeg2video</para>
+</entry>
+<entry>
+<para>mp2</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 480x360 or 320x240 Flash</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 720 25p HDV 720 30p</para>
+</entry>
+<entry>
+<para>1280x720 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>YouTube Full High Def</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libx264</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>HDV 1080 25p HDV 1080 30p</para>
+</entry>
+<entry>
+<para>1920x1080 square pixels needs to be de-interlaced or progressive</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>libxvid</para>
+</entry>
+<entry>
+<para>libfaac</para>
+</entry>
+<entry>
+<para>Nokia nHD</para>
+</entry>
+<entry>
+<para>640x360 New Standard for S60 5th Edition Devices</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>MetaCafe</para>
+</entry>
+<entry>
+<para>mp4</para>
+</entry>
+<entry>
+<para>mpeg4</para>
+</entry>
+<entry>
+<para>libmp3lame</para>
+</entry>
+<entry>
+<para>Square NTSC</para>
+</entry>
+<entry>
+<para>640x480 will be converted to 320x240 Flash</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect1><sect1 id="sect1_24"><title>Τύποι Έργων / Προφίλ</title>
+<para>Κάθε έργο στο <application>OpenShotapplication&gt; guibutton&gt; (guibutton&gt;).  emphasis&gt;.</application></para>
+<para>Εδώ είναι ένα παράδειγμα προφίλ, για 1080i 60Hz ATSC:</para>
+<informaltable frame="all">
+<tgroup cols="3"><tbody>
+<row>
+<entry>
+<para>περιγραφή</para>
+</entry>
+<entry>
+<para>ATSC 1080i 60Hz</para>
+</entry>
+<entry>
+<para>Όνομα του προφίλ σας όπως θα εμφανίζεται στο OpenShot.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>καρέ_ρυθμός_αριθ</para>
+</entry>
+<entry>
+<para>30000</para>
+</entry>
+<entry>
+<para>Απαριθμητής του ρυθμού-καρέ</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>καρέ_ρυθμός_παρ</para>
+</entry>
+<entry>
+<para>1001</para>
+</entry>
+<entry>
+<para>Παρονομαστής του ρυθμού-καρέ</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>πλάτος</para>
+</entry>
+<entry>
+<para>1920</para>
+</entry>
+<entry>
+<para>Πλάτος του βίντεο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>ύψος</para>
+</entry>
+<entry>
+<para>1080</para>
+</entry>
+<entry>
+<para>Υψος του βίντεο.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>βαθμιαίο</para>
+</entry>
+<entry>
+<para>0</para>
+</entry>
+<entry>
+<para>0 = Αποπλεγμένο, 1 = Βαθμιαίο</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>δείγμα_όψη_αριθ</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Αριθμητής των εικονοστοιχείων   αναλογία.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>δείγμα_όψη_παρ</para>
+</entry>
+<entry>
+<para>1</para>
+</entry>
+<entry>
+<para>Παρονομαστής του δείκτη εικονοστοιχείων.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>οθόνη_όψη_αριθ</para>
+</entry>
+<entry>
+<para>16</para>
+</entry>
+<entry>
+<para>Αριθμητής  αναλογίας διαστάσεων οθόνης.</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>οθόνη_αναλογία_απαρ</para>
+</entry>
+<entry>
+<para>9</para>
+</entry>
+<entry>
+<para>Παρονομαστής αναλογίας διαστάσεων οθόνης.</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/>
+<para>Το <application>OpenShotapplication&gt; / openshot / profiles /</application></para></sect1><sect1 id="sect1_25"><title>Προτιμήσεις</title>
+<para>Για να ρυθμίσετε το <application>OpenShotapplication&gt;, guimenu&gt; guimenuitem&gt;. guilabel&gt; </application></para>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../figures/preferences.png"/>
+<caption/>
+</imageobject>
+</mediaobject></sect1><sect1 id="sect1_26"><title>Περί του OpenShot</title>
+<para>Το <application>OpenShotapplication&gt; Jonathan.Oomph @ gmail.comulink&gt;) </application></para><sect2 id="sect2_74"><title>Ομάδα Ανάπτυξης του OpenShot</title>
+<informaltable frame="all">
+<tgroup cols="2"><tbody>
+<row>
+<entry>
+<para>Jonathan Thomas</para>
+</entry>
+<entry>
+<para>Jonathan.Oomph@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Andy Finch</para>
+</entry>
+<entry>
+<para>we.rocked.in79@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Helen McCall</para>
+</entry>
+<entry>
+<para>helen.wildnfree@googlemail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Olivier Girard</para>
+</entry>
+<entry>
+<para>eolinwen@gmail.com</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>TJ</para>
+</entry>
+<entry>
+<para>ubuntu@tjworld.net</para>
+</entry>
+</row></tbody></tgroup>
+</informaltable>
+<para/></sect2><sect2 id="sect2_75"><title>Περισσότερες πληροφορίες</title>
+<para>Για να βρείτε περισσότερες πληροφορίες σχετικά με το <application>OpenShotapplication&gt;,  ulink&gt; (http://www.OpenShotVideo.com)ulink&gt;. OpenShot ulink&gt;. http://OpenShotUsers.com/forum/ulink&gt;</application></para></sect2><sect2 id="sect2_76"><title>Copyright &amp; Trademark</title>
+<para>Copyright (C) 2009  Jonathan Thomas, Andy Finch, and TJ.  OpenShot(TM) is a registered trademark owned by Jonathan Thomas.</para></sect2><sect2 id="sect2_77"><title>Άδεια Χρήσης</title>
+<para>Το πρόγραμμα αυτό διανέμεται σύμφωνα με τους όρους της GNU General Public License όπως δημοσιεύεται από το Free Software Foundation? Είτε της έκδοσης 3 της Άδειας, ή (κατά την επιλογή σας)  οποιαδήποτε μεταγενέστερη έκδοση. Ένα αντίγραφο αυτής της άδειας μπορεί να βρεθεί σε αυτό το <ulink url="http://www.gnu.org/licenses/gpl.html"> σύνδεσμο ulink&gt;, </ulink></para></sect2></sect1></article>

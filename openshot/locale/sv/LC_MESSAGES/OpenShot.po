@@ -1,0 +1,2705 @@
+# Swedish translation for openshot
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the openshot package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: openshot\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-02-15 01:21+0000\n"
+"PO-Revision-Date: 2010-02-16 11:44+0000\n"
+"Last-Translator: Treecko <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-02-17 05:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:42
+msgid "OpenShot Project (*.osp)"
+msgstr "OpenShot-projekt (*.osp)"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:299
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1156
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1166
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1176
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1185
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3010
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3079
+#: /home/jonathan/openshot/openshot/classes/open_project.py:97
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:120
+msgid "Error!"
+msgstr "Fel!"
+
+#: /home/jonathan/openshot/openshot/windows/OpenProject.py:92
+msgid ""
+"There was an error opening this project file.  Please be sure you open the "
+"correct *.osp file."
+msgstr ""
+"Det uppstod ett fel vid öppnandet. Kontrollera att du försöker öppna rätt "
+"*.osp-fil."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:147
+#: /home/jonathan/openshot/openshot/windows/Titles.py:269
+#: /home/jonathan/openshot/openshot/windows/Titles.py:272
+#: /home/jonathan/openshot/openshot/windows/Titles.py:449
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3433
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3448
+#: /home/jonathan/openshot/openshot/windows/preferences.py:387
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+msgid "OpenShot Error"
+msgstr "OpenShot-fel"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:147
+msgid "The Title name cannot be blank, the title file has not been created."
+msgstr "Titelnamnet får inte vara tomt. Titelfilen har inte skapats."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:195
+msgid "Please enter a name for the new Title file:"
+msgstr "Ange ett namn för den nya titelfilen:"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:198
+msgid "New Title"
+msgstr "Ny titel"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:269
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3433
+#, python-format
+msgid "Please install %s to use this function."
+msgstr "Installera %s för att använda denna funktion."
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:272
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3448
+#, python-format
+msgid "There was an error opening '%s', is it installed?"
+msgstr "Ett fel uppstod vid öppnandet av \"%s\". Är den installerad?"
+
+#: /home/jonathan/openshot/openshot/windows/Titles.py:449
+#: /home/jonathan/openshot/openshot/windows/preferences.py:387
+#, python-format
+msgid "Unexpected Error '%s' while writing to '%s'."
+msgstr "Oväntat fel \"%s\" vid skrivning till \"%s\"."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:70
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:439
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:564
+msgid "Video & Audio"
+msgstr "Video och ljud"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:70
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:430
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:560
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:106
+#: /home/jonathan/openshot/openshot/classes/files.py:178
+msgid "Image Sequence"
+msgstr "Bildsekvens"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:199
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "All Formats"
+msgstr "Alla format"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:201
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_libvorbis.xml
+msgid "OGG (theora/vorbis)"
+msgstr "OGG (theora/vorbis)"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:245
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:255
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:279
+msgid "Low"
+msgstr "Låg"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:245
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:255
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:281
+msgid "Med"
+msgstr "Med"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:245
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:255
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:283
+msgid "High"
+msgstr "Hög"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:299
+#, python-format
+msgid ""
+"%s is not a valid OpenShot profile. Profile settings will not be applied."
+msgstr ""
+"%s är inte en giltig OpenShot-profil. Inställningarna kommer inte att gälla."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:351
+msgid "Openshot Error"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:351
+msgid "The following formats/codecs are missing from your system:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:398
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:69
+msgid "Yes"
+msgstr "Ja"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:400
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:491
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:166
+msgid "No"
+msgstr "Nej"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:495
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:499
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:503
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:507
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:511
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:515
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:519
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:523
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:527
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:531
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:535
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:539
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:543
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid "Validation Error!"
+msgstr "Valideringsfel!"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:495
+msgid "Please enter a valid File Name."
+msgstr "Ange ett giltigt filnamn."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:499
+msgid "Please select a valid Project Type."
+msgstr "Välj en giltig projekttyp."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:503
+msgid "Please select a valid Target."
+msgstr "Välj ett giltigt mål."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:507
+msgid "Please select a valid Profile."
+msgstr "Välj en giltig profil."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:511
+msgid "Please select a valid Quality."
+msgstr "Välj en giltig kvalitet."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:515
+msgid "Please enter a valid Image Format."
+msgstr "Ange ett giltigt bildformat."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:519
+msgid "Please enter a valid Video Format."
+msgstr "Ange ett giltigt videoformat."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:523
+msgid "Please enter a valid Video Codec."
+msgstr "Ange en giltig videokodek."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:527
+msgid "Please enter a valid Bit Rate."
+msgstr "Ange en giltig bitfrekvens."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:531
+msgid "Please enter a valid Audio Codec."
+msgstr "Ange en giltig ljudkodek."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:535
+msgid "Please enter a valid Sample Rate."
+msgstr "Ange en giltig samplingsfrekvens."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:539
+msgid "Please enter a valid Audio Channels."
+msgstr "Ange ett giltigt värde för ljudkanaler."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:543
+msgid "Please enter a valid Audio Bit Rate."
+msgstr "Ange en giltig ljud-bitfrekvens."
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:581
+msgid "Confirm Overwrite"
+msgstr "Bekräfta överskrivning"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:581
+#, python-format
+msgid ""
+"There is already a video file named %s.%s in the selected export folder. "
+"Would you like to overwrite it?"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:624
+msgid "Export Complete"
+msgstr "Exporteringen är färdig"
+
+#: /home/jonathan/openshot/openshot/windows/ExportVideo.py:624
+#, python-format
+msgid ""
+"The video has been successfully exported to\n"
+"%s"
+msgstr ""
+"Videon har exporterats till\n"
+"%s"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:47
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:44
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:44
+msgid "Thumb"
+msgstr "Miniatyrbild"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:48
+msgid "File"
+msgstr "Fil"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:49
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:357
+msgid "Length"
+msgstr "Längd"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:50
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:138
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:153
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:132
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:203
+msgid "Label"
+msgstr "Etikett"
+
+#: /home/jonathan/openshot/openshot/windows/TreeFiles.py:59
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:594
+msgid "Choose a Video or Audio File to Begin"
+msgstr "Välj en video- eller ljudfil för att börja"
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:45
+#: /home/jonathan/openshot/openshot/windows/TreeEffects.py:45
+msgid "Name"
+msgstr "Namn"
+
+#: /home/jonathan/openshot/openshot/windows/TreeTransitions.py:60
+msgid "Dissolve"
+msgstr "Lös upp"
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:162
+msgid "Please enter a valid project name."
+msgstr "Ange ett giltigt projektnamn."
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:166
+msgid "Please enter a valid project type."
+msgstr "Ange en giltig projekttyp."
+
+#: /home/jonathan/openshot/openshot/windows/NewProject.py:182
+msgid "New project"
+msgstr "Nytt projekt"
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:44
+msgid "Current"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/TreeHistory.py:45
+msgid "Action"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:286
+msgid "Session started"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:982
+msgid "Would you like to save this project?"
+msgstr "Vill du spara detta projekt?"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1136
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1309
+msgid "This feature is still in development."
+msgstr "Denna funktion är fortfarande under utveckling."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1156
+msgid ""
+"Unable to open the Help Contents. Please ensure the openshot-doc package is "
+"installed."
+msgstr ""
+"Kan inte öppna hjälpen. Kontrollera att openshot-doc paketet är installerat."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1166
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1176
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1185
+msgid "Unable to open the Launchpad web page."
+msgstr "Kan inte öppna Launchpad's webbsida."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1372
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1412
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1489
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1517
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1556
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:851
+msgid "Video Preview"
+msgstr "Förhandsgranskning av video"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1374
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1414
+#, python-format
+msgid "Video Preview (%sX)"
+msgstr "Förhandsgranska video (%sX)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1525
+msgid "Video Preview (Paused)"
+msgstr "Förhandsgranska video (Pausad)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1718
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2106
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2119
+#: /home/jonathan/openshot/openshot/classes/sequences.py:50
+#: /home/jonathan/openshot/openshot/classes/sequences.py:51
+#, python-format
+msgid "Track %s"
+msgstr "Spår %s"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:1864
+#, python-format
+msgid "%s seconds"
+msgstr "%s sekunder"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2132
+msgid "Please enter a track name."
+msgstr "Namnge spåret."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2149
+msgid "Removed track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2157
+msgid "Moved track up"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2177
+msgid "Moved track down"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2246
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2198
+msgid "Convert to Mask"
+msgstr "Konvertera till mask"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2247
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2250
+msgid "Remove Transition"
+msgstr "Ta bort övergång"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2249
+msgid "Convert to Transition"
+msgstr "Konvertera till övergång"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2250
+msgid "Remove Mask"
+msgstr "Ta bort mask"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2303
+msgid "Changed transition type"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2326
+msgid "Removed transition"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2346
+msgid "Please enter the # of seconds to shift the transitions:"
+msgstr "Ange # sekunder att flytta övergångar:"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2380
+msgid "Shifted transitions"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2830
+msgid "Edited title"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2855
+msgid "Removed clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2875
+msgid "Please enter the # of seconds to shift the clips:"
+msgstr "Skriv # antal sekunder för växlandet av klipp"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:2909
+msgid "Shifted clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3010
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3079
+#, python-format
+msgid "You must select a clip which is more than %s seconds long."
+msgstr "Du måste välja ett klipp som är längre än %s sekunder."
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3049
+msgid "Sliced and shuffled clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3126
+msgid "Sliced and cut clips"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3165
+msgid "Preview File"
+msgstr "Förhandsgranska fil"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3192
+msgid "Convert To Image Sequence"
+msgstr "Konvertera till bildsekvens"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3198
+msgid "Thumbnail view"
+msgstr "Miniatyrbildsvy"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3204
+msgid "Move File(s) to Folder"
+msgstr "Flytta fil(er) till mapp"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3223
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3224
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3276
+msgid "Remove from Folder"
+msgstr "Ta bort från mapp"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3232
+msgid "Detail view"
+msgstr "Detaljerad vy"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3241
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1544
+msgid "Edit Title (Simple)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3246
+msgid "Edit Title (Inkscape)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3252
+msgid "Remove File(s)"
+msgstr "Ta bort fil(er)"
+
+#: /home/jonathan/openshot/openshot/windows/MainGTK.py:3261
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:10
+msgid "File Properties"
+msgstr "Filegenskaper"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:83
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:156
+msgid "Transition"
+msgstr "Övergång"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:36
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:77
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:132
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:150
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:181
+msgid "Mask"
+msgstr "Mask"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:115
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:185
+msgid "Up"
+msgstr "Uppåt"
+
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:43
+#: /home/jonathan/openshot/openshot/windows/TransitionProperties.py:120
+msgid "Down"
+msgstr "Nedåt"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:60
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:508
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:581
+msgid "Normal Speed"
+msgstr "Normal hastighet"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:650
+msgid "Forward"
+msgstr "Framåt"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:67
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:644
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:780
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Reverse"
+msgstr "Bakåt"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:483
+msgid "Start of Clip"
+msgstr "Början av klipp"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:74
+msgid "End of Clip"
+msgstr "Slutet av klipp"
+
+#: /home/jonathan/openshot/openshot/windows/ClipProperties.py:861
+msgid "Modified clip properties"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:54
+#: /home/jonathan/openshot/openshot/windows/preferences.py:201
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:223
+msgid "General"
+msgstr "Allmänt"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:58
+#: /home/jonathan/openshot/openshot/windows/preferences.py:205
+msgid "AV Formats"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:62
+#: /home/jonathan/openshot/openshot/windows/preferences.py:207
+msgid "Profiles"
+msgstr "Profiler"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:93
+msgid "Video Codecs"
+msgstr "Videokodekar"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:97
+msgid "Audio Codecs"
+msgstr "Ljudkodekar"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:101
+msgid "Formats"
+msgstr "Format"
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:331
+msgid "OpenShot Warning"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/preferences.py:331
+msgid "Invalid or empty preferences file found, loaded default values"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "Error"
+msgstr "Fel"
+
+#: /home/jonathan/openshot/openshot/windows/AddFiles.py:72
+msgid "There was an error importing the selected files"
+msgstr "Det uppstod ett fel vid import av markerade filer"
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:53
+#, python-format
+msgid ""
+"Please enter a valid file name.  The file name must have a %d (or %04d) "
+"where the number section of the file name is supposed to be.  For example:  "
+"MyFile_%d.png."
+msgstr ""
+"Ange ett giltigt filnamn.  Filnamnet måste innehålla en %d (eller %04d) där "
+"sifferdelen av filnamnet är tänkt att vara.  Till exempel:  Minfil_%d.png."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:57
+msgid "Please enter an integer in the Frames per Image textbox."
+msgstr "Ange ett heltal i textrutan Bildrutor per bild."
+
+#: /home/jonathan/openshot/openshot/windows/ImportImageSeq.py:94
+msgid ""
+"At least 2 images must match the file name pattern in the selected folder."
+msgstr "Minst två bilder måste matcha filnamnsmönstret i den valda mappen."
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:178
+msgid "A profile with this name already exists. Please use another name."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:188
+msgid "Please enter a profile name."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:193
+msgid "Please enter a valid size."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:259
+msgid "Do you want to save this profile?."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:274
+#, python-format
+msgid "Are you sure you want to delete the profile %s?"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:298
+#, python-format
+msgid "The profile %s cannot be deleted."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:333
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:345
+msgid "The profile has been successfully imported."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:335
+#, python-format
+msgid "There was an error extracting the file %s"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/Profiles.py:347
+#, python-format
+msgid "There was an error copying the file %s"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:108
+#, python-format
+msgid "The folder %s already exists in this project."
+msgstr "Mappen %s finns redan i detta projekt."
+
+#: /home/jonathan/openshot/openshot/classes/files.py:116
+msgid "Added folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:163
+msgid "Added file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:244
+msgid "Removed file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:333
+msgid "Moved to folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/files.py:342
+msgid "Removed from folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/restore_state.py:86
+#: /home/jonathan/openshot/openshot/classes/open_project.py:91
+msgid "The following file(s) no longer exist."
+msgstr "Följande fil(er) finns inte längre."
+
+#: /home/jonathan/openshot/openshot/classes/transition.py:431
+msgid "Moved transition"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/open_project.py:97
+msgid ""
+"There was an error opening this project file.  Please be sure you are "
+"selecting a valid .OSP project file."
+msgstr ""
+"Det uppstod ett fel vid öppning av denna projektfil. Försäkra dig om att du "
+"väljer en giltig .OSP-projektfil."
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:104
+msgid "Added effect"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1684
+msgid "Sliced clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1815
+msgid "Moved clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1832
+msgid "Resized clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1912
+msgid "Changed visibility of clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/clip.py:1943
+msgid "Changed audio of clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/project.py:68
+msgid "Default Project"
+msgstr "Standardprojekt"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:84
+msgid "Default Sequence 1"
+msgstr "Standardsekvens 1"
+
+#: /home/jonathan/openshot/openshot/classes/project.py:291
+msgid "Opened project"
+msgstr "Öppnade projekt"
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:63
+msgid "usage: %prog [options] inputfile.osp"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:68
+msgid "destination file-name"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:75
+msgid "export folder"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:83
+msgid "export as image sequence"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:91
+msgid "export as video or audio file"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:98
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:105
+msgid "set video codec"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:112
+msgid "set video bitrate in format 'number kb/s' or 'number Mb/s'"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:119
+msgid "set audio codec"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:126
+msgid "set audio sample rate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:133
+msgid "set number of audio channels"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:140
+msgid "set video bitrate in format 'number kb/s'"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:146
+msgid "Error: "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:152
+msgid "Warning: "
+msgstr "Varning: "
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:160
+msgid "Please specify an input project-file!"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:164
+msgid "Too many arguments!"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:216
+msgid "rendering options:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:217
+msgid "container type:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:218
+msgid "video codec:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:219
+msgid "video bitrate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:220
+msgid "audio codec:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:221
+msgid "audio sample rate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:222
+msgid "channels:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:223
+msgid "audio bitrate:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:240
+msgid "generating XML file for rendering"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:276
+msgid "Starting rendering to "
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:315
+msgid "program interrupted by user"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/cli_render.py:322
+msgid "project file correctly rendered"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:119
+#: /home/jonathan/openshot/openshot/classes/av_formats.py:120
+msgid ""
+"No formats or codecs were found.  Please check the OpenShot preferences and "
+"configure the 'melt' command name."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/track.py:264
+msgid "Changed visibility of track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/track.py:293
+msgid "Changed audio of track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:79
+msgid "Added marker"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:137
+msgid "Added Track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/classes/sequences.py:144
+msgid "Renamed track"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:8
+msgid "Add Effect"
+msgstr "Lägg till effekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/AddEffect.glade:27
+msgid "Effect:"
+msgstr "Effekt:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:131
+msgid "Font Properties"
+msgstr "Typsnittsegenskaper"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:74
+msgid "Style:"
+msgstr "Stil:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/fontselector.glade:154
+msgid "<b>Preview</b>"
+msgstr "<b>Förhandsgranska</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:9
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:954
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:513
+msgid "Export Video"
+msgstr "Exportera video"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:41
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:105
+msgid "File Name:"
+msgstr "Filnamn:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:51
+msgid "MyMovie"
+msgstr "Minfilm"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:69
+msgid "Export Folder"
+msgstr "Exportera till mapp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:96
+msgid "<b>General Options</b>"
+msgstr "<b>Allmänna alternativ</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:116
+msgid "<b>Select a Profile to start:</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:129
+msgid "Profile:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:157
+msgid "<b>Select from the following options:</b>"
+msgstr "<b>Välj bland följande alternativ::</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:173
+msgid "Target:"
+msgstr "Mål:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:206
+msgid "Video Profile:"
+msgstr "Videoprofil:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:239
+msgid "Quality:"
+msgstr "Kvalitet:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:272
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:441
+msgid "Simple"
+msgstr "Grundläggande"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:295
+msgid "Export To:"
+msgstr "Exportera till:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:316
+msgid "<b>Advanced Options</b>"
+msgstr "<b>Avancerade alternativ</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:377
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:443
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:214
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:282
+msgid "0"
+msgstr "0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:387
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:272
+msgid "Height:"
+msgstr "Höjd:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:397
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:266
+msgid "Width:"
+msgstr "Bredd:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:403
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:256
+msgid "Aspect Ratio:"
+msgstr "Bildförhållande:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:413
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:246
+msgid "Frame Rate:"
+msgstr "Bildhastighet:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:423
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:236
+msgid "Pixel Ratio:"
+msgstr "Bildpunktsfrekvens:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:433
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:226
+msgid "Progressive:"
+msgstr "Progressiv:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:455
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:479
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:178
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:202
+msgid "0:0"
+msgstr "0:0"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:467
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:190
+msgid "0.00"
+msgstr "0.00"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:515
+msgid "<b>Profile</b>  (height, width, fps, aspect ratio)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:543
+msgid "Image Format:"
+msgstr "Bildformat:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:557
+msgid "png"
+msgstr "png"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:572
+msgid "<b>Image Sequence Settings</b>"
+msgstr "<b>Inställningar för bildsekvens</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:601
+msgid "Video Format:"
+msgstr "Videoformat:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:616
+msgid "mp4"
+msgstr "mp4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:633
+msgid "Video Codec:"
+msgstr "Videokodek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:648
+msgid "mpeg4"
+msgstr "mpeg4"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:669
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:841
+msgid "Bit Rate / Quality:"
+msgstr "Bitfrekvens / Kvalitet:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:679
+msgid ""
+"128 kb/s - Low Quality\n"
+"384 kb/s - Video Conferencing\n"
+"1.25 Mb/s – VCD Quality\n"
+"5.00 Mb/s – DVD Quality\n"
+"15.00 Mb/s – HDTV quality\n"
+"40 Mb/s - Blu-ray quality"
+msgstr ""
+"128 kb/s - Låg kvalitet\n"
+"384 kb/s - Videokonferens\n"
+"1.25 Mb/s – VCD-kvalitet\n"
+"5.00 Mb/s – DVD-kvalitet\n"
+"15.00 Mb/s – HDTV-kvalitet\n"
+"40 Mb/s - Blu-ray-kvalitet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:689
+msgid "15.00 Mb/s – HDTV quality"
+msgstr "15.00 Mb/s – HDTV-kvalitet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:707
+msgid "<b>Video Settings</b>"
+msgstr "<b>Videoinställningar</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:736
+msgid "Audio Codec:"
+msgstr "Ljudkodek:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:751
+msgid "mp2"
+msgstr "mp2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:768
+msgid "Sample Rate:"
+msgstr "Samplingsfrekvens:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:805
+msgid "# of Channels:"
+msgstr "Antal kanaler:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:820
+msgid "2"
+msgstr "2"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:851
+msgid ""
+"32 kb/s - Poor quality\n"
+"64 kb/s - Fair quality\n"
+"96 kb/s - FM quality\n"
+"128 kb/s - Good quality\n"
+"192 kb/s- Better quality\n"
+"256 kb/s- Near CD quality"
+msgstr ""
+"32 kb/s - Dålig kvalitet\n"
+"64 kb/s - Lagom kvalitet\n"
+"96 kb/s - Radiokvalitet\n"
+"128 kb/s - Bra kvalitet\n"
+"192 kb/s- Bättre kvalitet\n"
+"256 kb/s- Nära CD-kvalitet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:861
+msgid "256 kb/s- Near CD quality"
+msgstr "256 kb/s- Nära CD-kvalitet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:879
+msgid "<b>Audio Settings</b>"
+msgstr "<b>Ljudinställningar</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:903
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:489
+msgid "Advanced"
+msgstr "Avancerad"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ExportVideo.glade:940
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:188
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:332
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:33
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1566
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:122
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:6
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:208
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:52
+msgid "Imported Image Length:"
+msgstr "Importerad bild-längd:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:59
+msgid "Timeline length, in seconds, for all imported images. "
+msgstr "Tidslinje längd i sekunder, för alla importerade bilder. "
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:73
+msgid "Max number of steps to keep in history."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:90
+msgid "Max History Steps:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:102
+msgid "Melt Command Name:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:113
+msgid ""
+"The is the command name for the melt program, which is the MLT command line."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:147
+msgid "Default Theme:"
+msgstr "Standardtema:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:175
+msgid "Default Profile:"
+msgstr "Standardprofil:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:185
+msgid "Theme example"
+msgstr "Exempel-tema"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:218
+msgid "Project File Type:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:244
+msgid "<b>General</b>"
+msgstr "<b>Allmänt</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:337
+msgid "Reload Codecs"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:341
+msgid "Reload if you have installed extra codecs since starting Openshot."
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:364
+msgid "<b>Installed Codecs/Formats</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Preferences.glade:388
+msgid "Manage Profiles"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:8
+msgid "About OpenShot"
+msgstr "Om OpenShot"
+
+#: /home/jonathan/openshot/openshot/windows/glade/About.glade:32
+msgid "Project Website (LaunchPad)"
+msgstr "Projektets webbplats (LaunchPad)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:10
+msgid "Transition / Mask Properties"
+msgstr "Egenskaper för övergång / mask"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:31
+msgid "Name:"
+msgstr "Namn:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:41
+msgid "None"
+msgstr "Ingen"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:66
+msgid "Type:"
+msgstr "Typ:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:95
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:412
+msgid "Direction:"
+msgstr "Riktning:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:123
+msgid "Softness:"
+msgstr "Mjukhet:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:152
+msgid "Mask Threshold:"
+msgstr "Tröskelvärde för mask:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/TransitionProperties.glade:198
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1576
+msgid "Apply"
+msgstr "Tillämpa"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:23
+msgid "_File"
+msgstr "_Arkiv"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:31
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:398
+msgid "New Project..."
+msgstr "Nytt projekt..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:44
+msgid "Open Project..."
+msgstr "Öppna projekt..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:58
+msgid "Recent Projects"
+msgstr "Tidigare projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:71
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:482
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1240
+msgid "Import Files..."
+msgstr "Importera filer..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:85
+msgid "Import Image Sequence..."
+msgstr "Importera bildsekvens..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:104
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:342
+msgid "Save Project"
+msgstr "Spara projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:117
+msgid "Save Project As..."
+msgstr "Spara projekt som..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:135
+msgid "Export Video..."
+msgstr "Exportera video..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:167
+msgid "_Edit"
+msgstr "_Redigera"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:175
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:447
+msgid "Undo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:189
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:460
+msgid "Redo"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:226
+msgid "_Project"
+msgstr "_Projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:234
+msgid "New Title..."
+msgstr "Ny titel..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:247
+msgid "New Sequence..."
+msgstr "Ny sekvens..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:265
+msgid "_View"
+msgstr "_Visa"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:273
+msgid "Toolbar"
+msgstr "Verktygsrad"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:282
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:689
+msgid "History"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:295
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:303
+msgid "_Contents"
+msgstr "_Innehåll"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:322
+msgid "_Report a Bug..."
+msgstr "_Rapportera ett fel..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:336
+msgid "_Ask a Question..."
+msgstr "_Ställ en fråga..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:350
+msgid "_Translate this Application..."
+msgstr "_Översätt programmet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:411
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:11
+#: /home/jonathan/openshot/openshot/windows/glade/OpenProject.glade:43
+msgid "Open Project"
+msgstr "Öppna projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:425
+msgid "Save"
+msgstr "Spara"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:501
+msgid "Take Snapshot"
+msgstr "Ta skärmbild"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:563
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:656
+msgid "Project Files"
+msgstr "Projektfiler"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:595
+msgid "Transitions"
+msgstr "Övergångar"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:627
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1538
+msgid "Effects"
+msgstr "Effekter"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:750
+msgid "Seek to Beginning"
+msgstr "Spola till början"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:761
+msgid "Previous Marker"
+msgstr "Föregående markering"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:772
+msgid "Seek Backward"
+msgstr "Spola bakåt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:783
+msgid "Play"
+msgstr "Spela upp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:794
+msgid "Seek Forward"
+msgstr "Spola framåt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:805
+msgid "Next Marker"
+msgstr "Nästa markering"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:816
+msgid "Seek to Ending"
+msgstr "Spola till slutet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:889
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:890
+msgid "Add Track"
+msgstr "Lägg till spår"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:909
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:910
+msgid "Arrow Tool"
+msgstr "Pilverktyg"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:921
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:922
+msgid "Razor Tool"
+msgstr "Delningsverktyg"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:932
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:933
+msgid "Resize Tool"
+msgstr "Ändra storlek"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:943
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:944
+msgid "Snapping Tool"
+msgstr "Fästverktyg"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:964
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:965
+msgid "Add Marker"
+msgstr "Lägg till markering"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:989
+msgid "Zoom In"
+msgstr "Zooma in"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1009
+msgid "Slide to Zoom"
+msgstr "Dra för att zooma"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1023
+msgid "Number of seconds between each line on the timeline"
+msgstr "Antal sekunder mellan varje linje i tidslinjen"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1024
+msgid "15 seconds"
+msgstr "15 sekunder"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1036
+msgid "Zoom Out"
+msgstr "Zooma ut"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1207
+msgid "Timeline - Sequence 1"
+msgstr "Tidslinje - Sekvens 1"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1256
+msgid "Create Folder..."
+msgstr "Skapa mapp..."
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1277
+msgid "Folder Name"
+msgstr "Mappnamn"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1295
+msgid "Folder Name:"
+msgstr "Mappnamn:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1365
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1366
+msgid "Add Track Above"
+msgstr "Lägg till spår ovanför"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1380
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1381
+msgid "Add Track Below"
+msgstr "Lägg till spår nedanför"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1400
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1401
+msgid "Move Track Up"
+msgstr "Flytta spår uppåt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1415
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1416
+msgid "Move Track Down"
+msgstr "Flytta spår nedåt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1435
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1436
+msgid "Rename Track"
+msgstr "Byt namn på spår"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1455
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1456
+msgid "Remove Track"
+msgstr "Ta bort spår"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1473
+msgid "Make a copy of this clip"
+msgstr "Gör en kopia av detta klipp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1474
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2165
+msgid "Duplicate"
+msgstr "Duplicera"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1493
+msgid "Fade this clip"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1494
+msgid "Fade"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1508
+msgid "Animate this clip"
+msgstr "Animera detta klipp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1509
+msgid "Animate"
+msgstr "Animera"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1523
+msgid "Position and resize this clip"
+msgstr "Positionera och storleksändra detta klipp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1524
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:767
+msgid "Layout"
+msgstr "Layout"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1560
+msgid "Shift Clips"
+msgstr "Övergångsklipp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1575
+msgid "Remove Clip"
+msgstr "Ta bort klipp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1596
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2231
+msgid "Properties"
+msgstr "Egenskaper"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1617
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1618
+msgid "Remove Marker"
+msgstr "Ta bort markering"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1632
+msgid "No Fade"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1652
+msgid "Fade In (Fast)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1667
+msgid "Fade Out (Fast)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1682
+msgid "Fade In and Out (Fast)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1702
+msgid "Fade In (Slow)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1717
+msgid "Fade Out (Slow)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1732
+msgid "Fade In and Out (Slow)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1752
+msgid "No Animation"
+msgstr "Ingen animation"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1772
+msgid "Zoom In (100% to 150%)"
+msgstr "Zooma in (100% till 150%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1787
+msgid "Zoom In (50% to 100%)"
+msgstr "Zooma in (50% till 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1802
+msgid "Zoom Out (100% to 50%)"
+msgstr "Zooma ut (100% till 50%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1817
+msgid "Zoom Out (150% to 100%)"
+msgstr "Zooma ut (150% till 100%)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1837
+msgid "Center to Top"
+msgstr "Mitten till överkant"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1852
+msgid "Center to Left"
+msgstr "Mitten till vänster"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1867
+msgid "Center To Right"
+msgstr "Mitten till höger"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1882
+msgid "Center to Bottom"
+msgstr "Mitten till nederkant"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1902
+msgid "Top to Center"
+msgstr "Överkant till mitten"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1917
+msgid "Left to Center"
+msgstr "Vänster till mitten"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1932
+msgid "Right to Center"
+msgstr "Höger till mitten"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1947
+msgid "Bottom to Center"
+msgstr "Nederkant till mitten"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1967
+msgid "Top to Bottom"
+msgstr "Överkant till nederkant"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1982
+msgid "Left to Right"
+msgstr "Vänster till höger"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:1997
+msgid "Right to Left"
+msgstr "Höger till vänster"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2012
+msgid "Bottom to Top"
+msgstr "Nederkant till överkant"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2031
+msgid "Reset Layout"
+msgstr "Återställ layout"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2051
+msgid "1/4 Size - Center"
+msgstr "1/4-storlek - Mitten"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2066
+msgid "1/4 Size - Top Left"
+msgstr "1/4-storlek - Övre vänster"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2081
+msgid "1/4 Size - Top Right"
+msgstr "1/4-storlek - Övre höger"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2096
+msgid "1/4 Size - Bottom Left"
+msgstr "1/4-storlek - Nedre vänster"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2111
+msgid "1/4 Size - Bottom Right"
+msgstr "1/4-storlek - Nedre höger"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2131
+msgid "Show All (Maintain Ratio)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2146
+msgid "Show All (Distort)"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2164
+msgid "Make a copy of this transition"
+msgstr "Gör en kopia av denna övergång"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2184
+msgid "Switch Direction"
+msgstr "Byt riktning"
+
+#: /home/jonathan/openshot/openshot/windows/glade/Main.glade:2212
+msgid "Shift Transitions"
+msgstr "Övergång"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:8
+msgid "Create a Project"
+msgstr "Skapa ett projekt"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:47
+msgid "Project Name:"
+msgstr "Projektnamn:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:74
+msgid "Project Folder:"
+msgstr "Projektmapp:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:84
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:99
+msgid "Select A Folder"
+msgstr "Välj en mapp"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:102
+msgid ""
+"Project Length:\n"
+"   (in minutes)"
+msgstr ""
+"Projektlängd:\n"
+"   (i minuter)"
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:131
+msgid "Project Profile:"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/NewProject.glade:305
+msgid ""
+"Use this screen to name your new video project, select the folder location "
+"of your new project, and select the type of project.  "
+msgstr ""
+"Använd denna skärm för att namnge ditt nya videoprojekt, välj plats för "
+"mappen för ditt nya projekt samt välja projektets typ.  "
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:10
+msgid "Title Editor"
+msgstr "Titelredigerare"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:56
+msgid "<b>Start here:</b>"
+msgstr "<b>Starta här:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:83
+msgid "Create a new title using the selected template."
+msgstr "Skapa en ny titel med den valda mallen."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:84
+msgid "Create new Title"
+msgstr "Skapa ny titel"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:98
+msgid "<b>Editing Tools:</b>"
+msgstr "<b>Redigeringsverktyg:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:113
+msgid "Set the title text."
+msgstr "Ange titeltexten."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:114
+msgid "Edit text"
+msgstr "Redigera text"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:130
+msgid "Change the Font properties."
+msgstr "Ändra typsnittsegenskaperna."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:148
+msgid "Choose Font Color."
+msgstr "Välj typsnittsfärg."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:167
+msgid "Choose Background Color."
+msgstr "Välj bakgrundsfärg."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:186
+msgid "Edit the title in an external editor."
+msgstr "Redigera titeln i en extern redigerare."
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:187
+msgid "Use Advanced editor"
+msgstr "Använd avancerad redigerare"
+
+#: /home/jonathan/openshot/openshot/windows/glade/titles.glade:275
+msgid "Enter title text"
+msgstr "Ange titeltext"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:34
+msgid "<b>File Name:</b>"
+msgstr "<b>Filnamn:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:117
+msgid "<b>File Length:</b>"
+msgstr "<b>Fillängd:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:143
+msgid "<b>Video Size:</b>"
+msgstr "<b>Videostorlek:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:169
+msgid "<b>Bit Rate:</b>"
+msgstr "<b>Bitfrekvens:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:183
+msgid "<b>File Type:</b>"
+msgstr "<b>Filtyp:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/FileProperties.glade:233
+msgid "<b>Label:</b>"
+msgstr "<b>Etikett:</b>"
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:8
+msgid "Profiles Manager"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:24
+msgid "Profile"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:87
+msgid "Profile Name"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:121
+msgid "Size"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:129
+msgid "Aspect Ratio"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:191
+msgid "x"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:212
+msgid "Progressive"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:228
+msgid "Default profile"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:289
+msgid "Frame Rate"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:301
+msgid "Pixel Ratio"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:378
+msgid "<b>Profile Properties</b>"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/profiles.glade:442
+msgid "Import"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:8
+msgid "Clip Properties"
+msgstr "Klippegenskaper"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:32
+msgid "Preview"
+msgstr "Förhandsvisning"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:115
+msgid "N/A"
+msgstr "-"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:147
+msgid "Enable Video:"
+msgstr "Aktivera video:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:180
+msgid "Enable Audio:"
+msgstr "Aktivera ljud:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:240
+msgid "<b>In</b> (seconds):"
+msgstr "<b>In</b> (sekunder):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:274
+msgid "<b>Out</b> (seconds):"
+msgstr "<b>Ut</b> (sekunder):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:309
+msgid "<b>Length</b> (seconds):"
+msgstr "<b>Längd</b> (sekunder):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:383
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:464
+msgid "Speed:"
+msgstr "Hastighet:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:526
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Speed"
+msgstr "Hastighet"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:554
+msgid "Key Frame:"
+msgstr "Nyckelbildruta:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:596
+msgid "Height (%):"
+msgstr "Höjd (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:630
+msgid "Width (%):"
+msgstr "Bredd (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:664
+msgid "X (%):"
+msgstr "X (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:698
+msgid "Y (%):"
+msgstr "Y (%):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:732
+msgid "Alpha:"
+msgstr "Alfa:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:785
+msgid "Volume:"
+msgstr "Volym:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:845
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1121
+msgid "Fade In:"
+msgstr "Tona in:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:878
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1154
+msgid "Fade Out:"
+msgstr "Tona ut:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:911
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1187
+msgid "<b>Fade</b> (seconds):"
+msgstr "<b>Tona</b> (sekunder):"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:952
+msgid "Audio"
+msgstr "Ljud"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:970
+msgid "Stretch Full Screen:"
+msgstr "Sträck ut till helskärm:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1002
+msgid "Maintain Aspect Ratio:"
+msgstr "Behåll bildförhållande:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1045
+msgid "Horizontal Align:"
+msgstr "Horisontell justering:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1078
+msgid "Vertical Align:"
+msgstr "Vertikal justering:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1223
+msgid "Video"
+msgstr "Video"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ClipProperties.glade:1334
+msgid ""
+"<b>Effect Settings</b>\n"
+"Click on an effect to view its settings"
+msgstr ""
+"<b>Effektinställningar</b>\n"
+"Klicka på en effekt för att se dess inställningar"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:7
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:132
+msgid "Import Image Sequence"
+msgstr "Importera bildsekvens"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:18
+msgid ""
+"Use this screen to import a sequence of numbered images as a video clip.\n"
+"Be sure all pictures are in the same folder, and are sequencially numbered.  "
+"\n"
+"Use a %d for filenames starting with a number. If the filename is \n"
+"padded (i.e. 00001.png, 00002.png, use %05d).\n"
+"\n"
+"For example:\n"
+"/MyImageFolder/Image_1.png\n"
+"/MyImageFolder/Image_2.png\n"
+"\n"
+"or\n"
+"\n"
+"/MyImageFolder/Image_00001.png\n"
+"/MyImageFolder/Image_00002.png\n"
+"\n"
+msgstr ""
+"Använd denna skärm för att importera en sekvens av numrerade bilder som ett "
+"videoklipp.\n"
+"Försäkra dig om att alla bilder finns i samma mapp och att de är "
+"sekvensnumrerade.  \n"
+"Använd %d för filnamn som börjar med en siffra. Om filnamnet är \n"
+"utfyllt (t.ex. 00001.png, 00002.png, använd %05d).\n"
+"\n"
+"Till exempel:\n"
+"/MinBildMapp/Bild_1.png\n"
+"/MinBildMapp/Bild_2.png\n"
+"\n"
+"eller\n"
+"\n"
+"/MinBildMapp/Bild_00001.png\n"
+"/MinBildMapp/Bild_00002.png\n"
+"\n"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:46
+msgid "Frames per Image:"
+msgstr "Bildrutor per bild:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:56
+msgid "Image Folder:"
+msgstr "Bildmapp:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:66
+msgid "File Name Pattern:"
+msgstr "Filnamnsmönster:"
+
+#: /home/jonathan/openshot/openshot/windows/glade/ImportImageSeq.glade:73
+msgid "myfile_%d.png"
+msgstr "minfil_%d.png"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Old Dust"
+msgstr "Gammalt Damm"
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Phaser"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/nervous.xml
+msgid "Nervous"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Burning TV"
+msgstr "Brinnande TV"
+
+#: /home/jonathan/openshot/openshot/effects/phaser.xml
+msgid "Param"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lredscale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Chroma Key"
+msgstr "Genomskinlighetsfärg"
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Blur"
+msgstr "Oskärpa"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "diffspace"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Old Lines"
+msgstr "Gamla Linjer"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Rain"
+msgstr "Regn"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Surfer"
+msgstr "Surfare"
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Neutral Color"
+msgstr "Neutral färg"
+
+#: /home/jonathan/openshot/openshot/effects/glow.xml
+msgid "Glow"
+msgstr "Glöd"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Y"
+msgstr "Fixerad Y rotation"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate X"
+msgstr "Fixerad X rotation"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Fixed Rotate Z"
+msgstr "Fixerad Z rotation"
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Amount"
+msgstr "Mängd"
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Amplitude"
+msgstr "Amplitud"
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Variance"
+msgstr "Varians"
+
+#: /home/jonathan/openshot/openshot/effects/two_layer.xml
+msgid "Black and White"
+msgstr "Svart och vit"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Down"
+msgstr "Minskad ljusstyrka"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Width"
+msgstr "Bredd"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "Edgeglow"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Echo"
+msgstr "Eko"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Up"
+msgstr "Ökad ljusstyrka"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Swirl"
+msgstr "Virvel"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lthresh"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Foreground"
+msgstr "Förgrund"
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "triplevel"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Scale"
+msgstr "Skala"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "End"
+msgstr "Slut"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Oversaturate Color"
+msgstr "Mätta färger"
+
+#: /home/jonathan/openshot/openshot/effects/invert.xml
+msgid "Invert"
+msgstr "Invertera"
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "White Balance"
+msgstr "Vitbalans"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Old Film"
+msgstr "Gammal film"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Charcoal"
+msgstr "Träkol"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Noise"
+msgstr "Brus"
+
+#: /home/jonathan/openshot/openshot/effects/edgeglow.xml
+msgid "lupscale"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Brightness"
+msgstr "Ljusstyrka"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Red/Green Axis"
+msgstr "Röda/Gröna Axlar"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Water"
+msgstr "Vatten"
+
+#: /home/jonathan/openshot/openshot/effects/chroma_key.xml
+msgid "Key"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/cartoon.xml
+msgid "Cartoon"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "X Offset"
+msgstr "X-förskjutning"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Smooth"
+msgstr "Mjuk"
+
+#: /home/jonathan/openshot/openshot/effects/remove_red.xml
+msgid "Remove Red"
+msgstr "Ta bort röd"
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Block Size Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sobel.xml
+msgid "Sobel"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/mirror.xml
+msgid "Mirror"
+msgstr "Spegel"
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "Nosync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Decay"
+msgstr "Minskning"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Old Grain"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Start"
+msgstr "Start"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Count"
+msgstr "Max antal"
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "Start Value"
+msgstr "Startvärde"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "X Scatter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Method"
+msgstr "Metod"
+
+#: /home/jonathan/openshot/openshot/effects/old_grain.xml
+msgid "Contrast"
+msgstr "Kontrast"
+
+#: /home/jonathan/openshot/openshot/effects/hue.xml
+msgid "Hue"
+msgstr "Nyans"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Brightness Delta Every"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/scan_lines.xml
+msgid "Scan Lines"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Distort"
+msgstr "Förvräng"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Every"
+msgstr "Varje"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Lighter"
+msgstr "Ljusare"
+
+#: /home/jonathan/openshot/openshot/effects/old_film.xml
+msgid "Delta"
+msgstr "Delta"
+
+#: /home/jonathan/openshot/openshot/effects/old_dust.xml
+msgid "Max Diameter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Y Offset"
+msgstr "Y-förskjutning"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Randomize Swirl"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Y Scatter"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "Sepia"
+msgstr "Sepia"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Number"
+msgstr "Antal"
+
+#: /home/jonathan/openshot/openshot/effects/distort.xml
+msgid "Frequency"
+msgstr "Frekvens"
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "v"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/pixelate.xml
+msgid "Pixelate"
+msgstr "Pixelisera"
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Delay"
+msgstr "Fördröjning"
+
+#: /home/jonathan/openshot/openshot/effects/charcoal.xml
+msgid "Mix"
+msgstr "Blanda"
+
+#: /home/jonathan/openshot/openshot/effects/nosync.xml
+msgid "HSync"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/greyscale.xml
+msgid "Greyscale"
+msgstr "Gråskala"
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain In"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Y"
+msgstr "Rotera Y"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate X"
+msgstr "Rotera X"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate Z"
+msgstr "Rotera Z"
+
+#: /home/jonathan/openshot/openshot/effects/saturation.xml
+msgid "Saturation"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/remove_green.xml
+msgid "Remove Green"
+msgstr "Ta bort grön"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Wave"
+msgstr "Våg"
+
+#: /home/jonathan/openshot/openshot/effects/rotate.xml
+msgid "Rotate"
+msgstr "Rotera"
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform Y"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/wave.xml
+msgid "Deform X"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/white_balance.xml
+msgid "Green Tint"
+msgstr "Grön färgton"
+
+#: /home/jonathan/openshot/openshot/effects/echo.xml
+msgid "Gain Out"
+msgstr "Utförstäkning"
+
+#: /home/jonathan/openshot/openshot/effects/deinterlace.xml
+msgid "Deinterlace"
+msgstr "Avfläta"
+
+#: /home/jonathan/openshot/openshot/effects/water_rain.xml
+msgid "Physics"
+msgstr "Fysik"
+
+#: /home/jonathan/openshot/openshot/effects/gamma.xml
+msgid "Gamma"
+msgstr "Gamma"
+
+#: /home/jonathan/openshot/openshot/effects/old_lines.xml
+msgid "Darker"
+msgstr "Mörkare"
+
+#: /home/jonathan/openshot/openshot/effects/remove_blue.xml
+msgid "Remove Blue"
+msgstr "Ta bort blå"
+
+#: /home/jonathan/openshot/openshot/effects/tcolor.xml
+msgid "Blue/Yellow"
+msgstr "Blå/Gul"
+
+#: /home/jonathan/openshot/openshot/effects/sepia.xml
+msgid "u"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/brightness.xml
+msgid "End Value"
+msgstr "Slutvärde"
+
+#: /home/jonathan/openshot/openshot/effects/pitch.xml
+msgid "Pitch"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/effects/burningtv.xml
+msgid "Threshold"
+msgstr "Tröskelvärde"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Web"
+msgstr "Webb"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD-PAL"
+msgstr "DVD-PAL"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_ogg_flac.xml
+msgid "OGG (theora/flac)"
+msgstr "OGG (theora/flac)"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_pal.xml
+msgid "DVD"
+msgstr "Dvd"
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Xbox 360"
+msgstr "Xbox 360"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_x264.xml
+msgid "MP4 (h.264)"
+msgstr "MP4 (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_x264.xml
+msgid "MOV (h.264)"
+msgstr "MOV (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/metacafe.xml
+msgid "Metacafe"
+msgstr "Metacafe"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo.xml
+msgid "Vimeo-SD"
+msgstr "Vimeo-SD"
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "AVCHD Disks"
+msgstr "AVCHD-diskar"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_WS.xml
+msgid "Vimeo-SD Widescreen"
+msgstr "Vimeo-SD Widescreen"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_flv_x264.xml
+msgid "FLV (h.264)"
+msgstr "FLV (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mp4.xml
+msgid "AVI (mpeg4)"
+msgstr "AVI (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_mpeg4.xml
+msgid "MP4 (mpeg4)"
+msgstr "MP4 (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/apple_tv.xml
+msgid "Apple TV"
+msgstr "Apple TV"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mpeg_mpeg2.xml
+msgid "MPEG (mpeg2)"
+msgstr "MPEG (mpeg2)"
+
+#: /home/jonathan/openshot/openshot/export_presets/nokia_nHD.xml
+msgid "Nokia nHD"
+msgstr "Nokia nHD"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_x264.xml
+msgid "AVI (h.264)"
+msgstr "AVI (h.264)"
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube.xml
+msgid "YouTube"
+msgstr "YouTube"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_avi_mpeg2.xml
+msgid "AVI (mpeg2)"
+msgstr "AVI (mpeg2)"
+
+#: /home/jonathan/openshot/openshot/export_presets/xbox360.xml
+msgid "Device"
+msgstr "Enhet"
+
+#: /home/jonathan/openshot/openshot/export_presets/avchd.xml
+msgid "Blu-Ray/AVCHD"
+msgstr "Blu-Ray/AVCHD"
+
+#: /home/jonathan/openshot/openshot/export_presets/picasa.xml
+msgid "Picasa"
+msgstr "Picasa"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mp4_xvid.xml
+msgid "MP4 (Xvid)"
+msgstr "MP4 (Xvid)"
+
+#: /home/jonathan/openshot/openshot/export_presets/youtube_HD.xml
+msgid "YouTube-HD"
+msgstr "YouTube-HD"
+
+#: /home/jonathan/openshot/openshot/export_presets/dvd_ntsc.xml
+msgid "DVD-NTSC"
+msgstr "DVD-NTSC"
+
+#: /home/jonathan/openshot/openshot/export_presets/vimeo_HD.xml
+msgid "Vimeo-HD"
+msgstr "Vimeo-HD"
+
+#: /home/jonathan/openshot/openshot/export_presets/format_mov_mpeg4.xml
+msgid "MOV (mpeg4)"
+msgstr "MOV (mpeg4)"
+
+#: /home/jonathan/openshot/openshot/export_presets/flickr_HD.xml
+msgid "Flickr-HD"
+msgstr "Flickr-HD"
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_8.png
+msgid "Fractal 8"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out_big.pgm
+msgid "Vertical blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_2.png
+msgid "Fractal 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_3.png
+msgid "Fractal 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_1.png
+msgid "Fractal 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_6.png
+msgid "Fractal 6"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_7.png
+msgid "Fractal 7"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_4.png
+msgid "Fractal 4"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/fractal_5.png
+msgid "Fractal 5"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/openshot_logo.pgm
+msgid "Openshot logo"
+msgstr "Openshot-logotyp"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_1.png
+msgid "Wipe diagonal 1"
+msgstr "Diaginalt svep 1"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_3.png
+msgid "Wipe diagonal 3"
+msgstr "Diagonalt svep 3"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_2.png
+msgid "Wipe diagonal 2"
+msgstr "Diagonalt svep 2"
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_1.png
+msgid "Hatched 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_2.png
+msgid "Hatched 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hatched_3.png
+msgid "Hatched 3"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/mountains.png
+msgid "Mountains"
+msgstr "Berg"
+
+#: /home/jonathan/openshot/openshot/transitions/circle_in_to_out.svg
+msgid "Circle in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/clock_right_to_left.pgm
+msgid "Clock right to left"
+msgstr "Klocka moturs"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_medium.pgm
+msgid "Spiral medium"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_2.png
+msgid "Spiral abstract 2"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_left_to_right.svg
+msgid "Wipe left to right"
+msgstr "Svep från vänster till höger"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_bottom_to_top.svg
+msgid "Wipe bottom to top"
+msgstr "Svep från nedifrån och upp"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_abstract_1.png
+msgid "Spiral abstract 1"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_right_to_left.svg
+msgid "Wipe right to left"
+msgstr "Svep från höger till vänster"
+
+#: /home/jonathan/openshot/openshot/transitions/circle_out_to_in.svg
+msgid "Circle out to in"
+msgstr "Cirkel utifrån och in"
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out.pgm
+msgid "Blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_in_to_out.pgm
+msgid "Rectangle in to out"
+msgstr "Rektangel inifrån och ut"
+
+#: /home/jonathan/openshot/openshot/transitions/rectangle_out_to_in.pgm
+msgid "Rectangle out to in"
+msgstr "Rektangel utifrån och in"
+
+#: /home/jonathan/openshot/openshot/transitions/sand.svg
+msgid "Sand"
+msgstr "Sand"
+
+#: /home/jonathan/openshot/openshot/transitions/spots.png
+msgid "Spots"
+msgstr "Prickar"
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_sliding.png
+msgid "Blinds sliding"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/clock_left_to_right.pgm
+msgid "Clock left to right"
+msgstr "Klocka medurs"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_diagonal_4.png
+msgid "Wipe diagonal 4"
+msgstr "Diagonalt svep 4"
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_small.pgm
+msgid "Spiral small"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/sphere.png
+msgid "Sphere"
+msgstr "Klot"
+
+#: /home/jonathan/openshot/openshot/transitions/blinds_in_to_out_big.pgm
+msgid "Blinds in to out big"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/spiral_big.pgm
+msgid "Spiral big"
+msgstr "Stor sprial"
+
+#: /home/jonathan/openshot/openshot/transitions/star_2.png
+msgid "Star 2"
+msgstr "Stjärna 2"
+
+#: /home/jonathan/openshot/openshot/transitions/wipe_top_to_bottom.svg
+msgid "Wipe top to bottom"
+msgstr "Svep uppifrån och ned"
+
+#: /home/jonathan/openshot/openshot/transitions/star_1.png
+msgid "Star 1"
+msgstr "Stjärna 1"
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_4.png
+msgid "Hourglass 4"
+msgstr "Timglas 4"
+
+#: /home/jonathan/openshot/openshot/transitions/vertical_blinds_in_to_out.pgm
+msgid "Vertical blinds in to out"
+msgstr ""
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_1.png
+msgid "Hourglass 1"
+msgstr "Timglas 1"
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_3.png
+msgid "Hourglass 3"
+msgstr "Timglas 3"
+
+#: /home/jonathan/openshot/openshot/transitions/hourglass_2.png
+msgid "Hourglass 2"
+msgstr "Timglas 4"
