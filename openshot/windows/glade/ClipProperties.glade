@@ -794,7 +794,7 @@
                           <widget class="GtkHScale" id="sliderVolume">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
-                            <property name="adjustment">0 0 110 1 10 10</property>
+                            <property name="adjustment">0 0 1010 1 10 10</property>
                             <property name="digits">2</property>
                           </widget>
                           <packing>
